@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>每日前沿简报</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <span class="logo">◆</span>
+        <div>
+          <h1 id="siteName">每日前沿简报</h1>
+          <p class="sub">科技 · AI · 财经 · 教育 · 互联网 · 每日 08:00 / 18:00 更新</p>
+        </div>
+      </div>
+      <div class="meta">
+        <span class="badge">每日 08:00 / 18:00 更新</span>
+        <span id="dateLabel" class="date"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="toolbar">
+      <label for="dateInput">查看日期</label>
+      <input type="date" id="dateInput" list="archiveList" />
+      <datalist id="archiveList"></datalist>
+      <button id="latestBtn" type="button">最新</button>
+      <span id="dateStatus" class="date-status"></span>
+      <div id="editionTabs" class="edition-tabs" style="display:none"></div>
+    </div>
+
+    <section class="watch" id="watch">
+      <h2 class="section-title">长期关注 <small>基金 · 股市 · 随时间看趋势</small></h2>
+      <div class="watch-grid" id="watchGrid"></div>
+    </section>
+
+    <section class="news" id="news"></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>本简报由 WorkBuddy 每日定时自动生成并更新 · 数据来自公开新闻与市场行情，仅供学习参考，不构成投资建议。</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
