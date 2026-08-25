@@ -1,0 +1,76 @@
+{
+  "stocks": [
+    {
+      "id": "sh000001",
+      "name": "上证指数",
+      "code": "000001",
+      "value": 3982.65,
+      "unit": "点",
+      "changePct": 1.41,
+      "ytd": null,
+      "note": "2026-08-17 收盘，处多年高位区间"
+    },
+    {
+      "id": "sz399006",
+      "name": "创业板指",
+      "code": "399006",
+      "value": 2606.2,
+      "unit": "点",
+      "changePct": 2.84,
+      "ytd": null,
+      "note": "2025-08-18 曾创年内新高（历史参照）"
+    },
+    {
+      "id": "comex_gold",
+      "name": "COMEX 黄金(期货)",
+      "code": "GC",
+      "value": 4500,
+      "unit": "美元/盎司",
+      "changePct": 10,
+      "ytd": null,
+      "note": "8 月国际金价反弹，月内最大涨幅近 10%"
+    }
+  ],
+  "funds": [
+    {
+      "id": "fund_founder",
+      "name": "方正富邦新兴成长混合A",
+      "code": "—",
+      "value": 2.2426,
+      "unit": "累计净值(元)",
+      "changePct": null,
+      "ytd": 64.32,
+      "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+    },
+    {
+      "id": "fund_yinhua",
+      "name": "银华甄选价值成长混合A",
+      "code": "—",
+      "value": 1.9302,
+      "unit": "累计净值(元)",
+      "changePct": null,
+      "ytd": 30.85,
+      "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+    },
+    {
+      "id": "fund_wanjia",
+      "name": "万家精选混合A",
+      "code": "—",
+      "value": 3.6882,
+      "unit": "累计净值(元)",
+      "changePct": null,
+      "ytd": 36.38,
+      "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+    },
+    {
+      "id": "fund_huaan_gold",
+      "name": "华安黄金ETF",
+      "code": "518880",
+      "value": 1031,
+      "unit": "规模(亿元)",
+      "changePct": null,
+      "ytd": null,
+      "note": "黄金主题基金龙头，规模 1031 亿元"
+    }
+  ]
+}
