@@ -1,0 +1,65 @@
+name: Daily Digest Generator
+
+# 每天北京时间 08:00 和 18:00 自动生成简报（GitHub Actions 使用 UTC 时区：08:00 = 00:00 UTC，18:00 = 10:00 UTC）
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 北京时间 08:00
+    - cron: "0 10 * * *"  # 北京时间 18:00
+  workflow_dispatch: {}   # 支持手动触发
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run generator
+        env:
+          LLM_BASE: "https://api.deepseek.com/v1"
+          LLM_KEY: ${{ secrets.LLM_KEY }}
+          LLM_MODEL: "deepseek-chat"
+          LIMIT: "60"
+        run: node scripts/generate.js
+
+      - name: Commit generated data
+        run: |
+          git config user.name "daily-digest-bot"
+          git config user.email "daily-digest-bot@users.noreply.github.com"
+          git add site/data
+          if git diff --cached --quiet; then
+            echo "no data changes"
+          else
+            git commit -m "chore: auto update digest $(date -u +'%Y-%m-%d %H:%M') UTC"
+            git push
+          fi
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
