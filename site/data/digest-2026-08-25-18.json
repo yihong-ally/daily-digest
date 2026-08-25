@@ -1,0 +1,223 @@
+{
+  "date": "2026-08-25",
+  "slot": "18",
+  "edition": "晚报",
+  "updatedAt": "2026-08-25T16:47:50+08:00",
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "摩根大通放宽SpaceX股票质押，AI新贵财富争夺战开打",
+          "summary": "摩根大通允许SpaceX员工和早期投资者在上市后135天内就用持股质押借款，还打算对Anthropic如法炮制。看点：银行抢着服务AI富豪，背后是AI热潮催生的巨额财富，可能影响未来科技公司员工的融资方式。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/3954584383569027?f=rss",
+          "tag": "金融创新"
+        },
+        {
+          "title": "《道路交通安全法》拟大改：电鸡限速上调，暴走团占道将被严管",
+          "summary": "新修订草案将电动自行车限速从15km/h提到20km/h，并明确对“暴走团”占用机动车道等行为加强管理。看点：直接关系日常出行，新规实施后骑行和步行都得注意新规矩。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1676652?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "交通新规"
+        },
+        {
+          "title": "31省份人口数据出炉：11省正增长，浙江广东领跑",
+          "summary": "2023年各省人口数据全部公布，浙江、广东、海南等11个省份常住人口正增长，其余省份下降。看点：人口流向反映经济活力，对楼市、教育、就业等民生领域有长远影响。",
+          "source": "新浪新闻",
+          "url": "https://news.sina.com.cn/o/2024-06-19/doc-inazhmef8613187.shtml",
+          "tag": "人口数据"
+        },
+        {
+          "title": "9月或成机圈史上最激烈新品月，华米OV耀旗舰轮番上阵",
+          "summary": "数码博主爆料，9月华为、小米、苹果等将发布多款折叠屏和旗舰机，堪称史上最热闹。看点：想换手机的朋友可以持币观望，新机竞争激烈意味着更多选择和可能的价格调整。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/0/994/020.htm",
+          "tag": "新机发布"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "神秘模型Ox Alpha刷屏，疑似智谱新作",
+          "summary": "OpenRouter上出现一个名为Ox Alpha的免费模型，支持超长上下文和多模态，社区根据技术特征猜测它来自智谱GLM-5.x系列。看点：大模型公司搞匿名公测成风，背后是竞争白热化，普通用户可免费尝鲜前沿模型。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/369324",
+          "tag": "匿名公测"
+        },
+        {
+          "title": "实测小米AI手机：性能超iPhone，端侧AI超级快",
+          "summary": "爱范儿实测小米AI手机，称其性能超越iPhone，端侧AI处理速度极快。看点：端侧AI是趋势，手机不用联网就能跑大模型，隐私和速度都有提升，换机时可重点关注。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1676596?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "AI手机"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "SiFive发布全球首款企业级RISC-V服务器，挑战x86/ARM",
+          "summary": "SiFive推出BigSky SF-2U870，是全球首款可机架安装的2U RISC-V服务器，符合RVA23标准。看点：RISC-V架构在服务器领域迈出关键一步，未来可能打破Intel/AMD垄断，影响数据中心成本。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/0/994/015.htm",
+          "tag": "芯片架构"
+        },
+        {
+          "title": "2027款宝马i3 Touring旅行车曝光，续航预估885公里",
+          "summary": "宝马i3 Touring原型车路测图曝光，WLTP续航预估约885公里，预计2027年上市。看点：电动车续航突破800公里，旅行车形态实用性强，对家庭用户有吸引力。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/0/994/019.htm",
+          "tag": "电动车"
+        },
+        {
+          "title": "比亚迪电池与蒙古国乌兰巴托签约，推动电动化",
+          "summary": "比亚迪旗下弗迪电池与蒙古国首都乌兰巴托签署战略合作备忘录，扩大电动汽车推广应用。看点：中国新能源技术出海，蒙古国市场潜力大，比亚迪海外布局再下一城。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/0/994/036.htm",
+          "tag": "出海"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "澳洲最大风投基金募资7.5亿美元，摩根士丹利等参投",
+          "summary": "黑鸟创投完成10.5亿澳元基金募集，创澳洲风投纪录，摩根士丹利和施罗德参与。看点：国际资本加码澳洲科技，反映全球风投市场回暖，或带动相关领域投资热度。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/3954684266839424?f=rss",
+          "tag": "风投"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "5月分年龄组失业率：16-24岁达14.2%，青年就业压力仍大",
+          "summary": "国家统计局公布5月失业率，16-24岁（不含在校生）为14.2%，25-29岁为6.6%。看点：青年就业数据与生活息息相关，反映就业市场冷暖，对求职者和政策制定者都有参考价值。",
+          "source": "新浪新闻",
+          "url": "https://news.sina.com.cn/c/2024-06-19/doc-inazfuhp8852801.shtml",
+          "tag": "失业率"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "小米米家立式学习灯2C上架，1199元",
+          "summary": "小米推出米家立式学习灯2C，11000lm高光通量，双光源设计，定价1199元。看点：学习灯是家长刚需，国补后价格更低，护眼功能值得关注。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/0/993/956.htm",
+          "tag": "学习用品"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "水月雨与BanG Dream联动耳机，599元限量5000份",
+          "summary": "水月雨推出BanG Dream手游联动定制耳机，8月27日预售，售价599元，限量5000份。看点：二次元IP联动产品，粉丝向消费，手快有手慢无。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/0/994/068.htm",
+          "tag": "IP联动"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "《巫师4》确认2028年推出，超500人开发",
+          "summary": "CDPR公布《巫师4》发售时间目标为2028年，称这是迄今最大胆的作品。看点：游戏玩家有盼头了，但还要等两年，可以先关注科隆游戏展的更多消息。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/0/994/063.htm",
+          "tag": "游戏"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3889.44,
+        "unit": "点",
+        "changePct": 0.19,
+        "ytd": null,
+        "note": "2026-08-17 收盘，处多年高位区间"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 3397.52,
+        "unit": "点",
+        "changePct": -1,
+        "ytd": null,
+        "note": "2025-08-18 曾创年内新高（历史参照）"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": 10,
+        "ytd": null,
+        "note": "8 月国际金价反弹，月内最大涨幅近 10%"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
