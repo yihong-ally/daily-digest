@@ -310,14 +310,22 @@ function appendHistory(histFile, items, dateStr) {
 }
 
 // ---- 主流程 ----
-async function run() {
+async function run(slotOverride) {
   if (!LLM_KEY) throw new Error('LLM_KEY 未配置');
   const now = new Date();
   const dateStr = beijingDateStr(now);
   const hour = beijingHour(now);
-  const slot = hour < 14 ? SLOT_MORNING : SLOT_EVENING;
+  const slot = slotOverride || (hour < 14 ? SLOT_MORNING : SLOT_EVENING);
   const dateKey = dateStr + '-' + slot;
   const editionLabel = slot === SLOT_MORNING ? '晨报' : '晚报';
+
+  // ★ 已生成则跳过（补跑保险：同一天同一时段只生成一次，不重复不覆盖）
+  const existingFile = path.join(DATA_DIR, 'digest-' + dateKey + '.json');
+  if (!process.env.FORCE && loadJSON(existingFile)) {
+    log('skip: already generated', dateKey);
+    return { ok: true, skipped: dateKey, date: dateStr, slot, edition: editionLabel };
+  }
+
   log('start', dateKey, '(' + editionLabel + ')');
 
   // 1) 抓取素材
@@ -392,7 +400,39 @@ async function run() {
   return { ok: true, date: dateStr, slot, edition: editionLabel, dateKey, items: Object.values(sections).reduce((n, s) => n + (s.items ? s.items.length : 0), 0) };
 }
 
-if (require.main === module) {
-  run().then(r => { console.log(JSON.stringify(r)); process.exit(0); }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
+// ---- 兜底补全：检查当天 08/18 两个时段，缺失则生成（晚上定时触发）----
+async function runTopup() {
+  if (!LLM_KEY) throw new Error('LLM_KEY 未配置');
+  const now = new Date();
+  const dateStr = beijingDateStr(now);
+  log('topup check', dateStr);
+  const results = [];
+  for (const s of [SLOT_MORNING, SLOT_EVENING]) {
+    const f = path.join(DATA_DIR, 'digest-' + dateStr + '-' + s + '.json');
+    if (loadJSON(f)) {
+      log('topup: exists, skip', dateStr + '-' + s);
+      results.push({ slot: s, status: 'exists' });
+      continue;
+    }
+    log('topup: missing, generate', dateStr + '-' + s);
+    const savedLimit = LIMIT;
+    process.env.LIMIT = '45'; // 补全时少取素材，加快速度
+    try {
+      const r = await run(s); // 指定 slot，避免按当前小时误判
+      results.push({ slot: s, status: r.skipped ? 'exists' : 'generated' });
+    } catch (e) {
+      log('topup generate failed for', s, e.message);
+      results.push({ slot: s, status: 'failed', error: e.message });
+    } finally {
+      process.env.LIMIT = String(savedLimit);
+    }
+  }
+  return { ok: true, date: dateStr, results };
 }
-module.exports = { run };
+
+if (require.main === module) {
+  const mode = process.env.MODE || 'normal';
+  const job = mode === 'topup' ? runTopup() : run();
+  job.then(r => { console.log(JSON.stringify(r)); process.exit(0); }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
+}
+module.exports = { run, runTopup };
