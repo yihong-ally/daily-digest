@@ -397,7 +397,59 @@ async function run(slotOverride) {
   appendHistory(path.join(DATA_DIR, 'history', 'funds.json'), watchlist.funds, dateStr);
 
   log('done', dateKey, editionLabel, 'sections:', Object.keys(sections).join('/'));
+  // 5) 微信推送（失败不影响生成结果）
+  await sendPush(digest);
   return { ok: true, date: dateStr, slot, edition: editionLabel, dateKey, items: Object.values(sections).reduce((n, s) => n + (s.items ? s.items.length : 0), 0) };
+}
+
+// ---- 微信推送（PushPlus）：生成成功后把简报摘要推到微信 ----
+const PUSHPLUS_TOKEN = process.env.PUSHPLUS_TOKEN || '';
+const SITE_URL = 'https://yihong-ally.github.io/daily-digest/';
+
+async function sendPush(digest) {
+  if (!PUSHPLUS_TOKEN) { log('push: no PUSHPLUS_TOKEN, skip'); return; }
+  try {
+    const secs = digest.sections || {};
+    const lines = [];
+    // 各板块取前 2 条
+    for (const key of SECTIONS) {
+      const sec = secs[key];
+      const items = (sec && sec.items) || [];
+      if (!items.length) continue;
+      const label = sec.label || key;
+      lines.push('\n**【' + label + '】**');
+      for (const it of items.slice(0, 2)) {
+        lines.push('- [' + it.title + '](' + it.url + ')');
+      }
+    }
+    // 行情快照
+    const w = digest.watchlist || {};
+    const mkLine = (x) => {
+      if (!x || !x.name) return '';
+      const chg = typeof x.change === 'number' ? ' (' + (x.change > 0 ? '+' : '') + x.change + ')' : '';
+      return x.name + ' ' + (x.value != null ? x.value : '') + chg;
+    };
+    const stockLine = (w.stocks || []).map(mkLine).filter(Boolean).join(' ｜ ');
+    const fundLine = (w.funds || []).map(mkLine).filter(Boolean).join(' ｜ ');
+    if (stockLine) lines.push('\n**【行情】**\n' + stockLine);
+    if (fundLine) lines.push('\n**【基金】**\n' + fundLine);
+    lines.push('\n---\n[📖 打开完整简报](' + SITE_URL + ')');
+
+    const title = SITE_NAME + ' · ' + (digest.date || '') + ' ' + (digest.edition || '');
+    const body = JSON.stringify({ token: PUSHPLUS_TOKEN, title, content: lines.join('\n'), template: 'markdown' });
+    const res = await fetch('https://www.pushplus.plus/send', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body,
+      signal: AbortSignal.timeout(20000)
+    });
+    const txt = await res.text();
+    let ok = false, msg = txt.slice(0, 120);
+    try { const j = JSON.parse(txt); ok = j.code === 200; msg = j.msg || msg; } catch (_) {}
+    log('push:', ok ? 'sent' : 'failed', msg);
+  } catch (e) {
+    log('push error (ignore):', e.message);
+  }
 }
 
 // ---- 兜底补全：检查当天 08/18 两个时段，缺失则生成（晚上定时触发）----
