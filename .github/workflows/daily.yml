@@ -38,6 +38,7 @@ jobs:
           LLM_KEY: ${{ secrets.LLM_KEY }}
           LLM_MODEL: "deepseek-chat"
           LIMIT: "60"
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
         run: node scripts/generate.js
 
       - name: Commit generated data
