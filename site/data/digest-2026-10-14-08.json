@@ -1,0 +1,258 @@
+{
+  "date": "2026-10-14",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-10-14T01:22:57+08:00",
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "美国三大银行财报出炉：利率这么高，老百姓还在借钱花钱",
+          "summary": "摩根大通、花旗、富国银行公布第三季度业绩，三家净利息收入合计565亿美元再创纪录，客户在高利率下仍在持续借贷。看点：美国消费者韧性到底有多强，直接决定美联储接下来还敢不敢继续维持高利率，也牵动全球股市和你的基金账户。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-14/doc-inivcatz7999826.shtml",
+          "tag": "银行财报"
+        },
+        {
+          "title": "摩根大通利润没达标，CEO戴蒙说经济「暗流在变」",
+          "summary": "摩根大通三季度利润虽继续增长，但核心业务收入较二季度回落，CEO戴蒙公开警示经济暗流正在变化。看点：华尔街最会看风向的人之一开始吹冷风，普通投资者该留意手里的美股和美元资产了。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-14/doc-inivcatx7339716.shtml",
+          "tag": "风向预警"
+        },
+        {
+          "title": "AI巨头Anthropic要IPO了，先向机构投资者晒家底",
+          "summary": "Anthropic本周将在总部向一批机构投资者披露更新后的财务数据，正筹备可能成为史上规模最大的IPO。看点：AI公司到底赚不赚钱、估值撑不撑得住，这份数据是今年科技圈最关键的「成绩单」之一。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-13/doc-inivcatx7289445.shtml",
+          "tag": "AI上市"
+        },
+        {
+          "title": "美光、SK海力士股价大跌，芯片股抛售潮蔓延",
+          "summary": "受韩国综合指数大幅下挫拖累，美光与SK海力士周二股价大跌5%，芯片板块抛售行情进一步发酵。看点：存储芯片是AI算力的「粮仓」，这波下跌是短期回调还是需求见顶的信号，值得盯紧。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-14/doc-inivcatw0542727.shtml",
+          "tag": "芯片抛售"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "Anthropic冲刺史上最大IPO，先给投资人看账本",
+          "summary": "Anthropic本周在公司总部向机构投资者公布更新后的财务数据，为可能创纪录的IPO铺路。看点：这是继OpenAI之后最受关注的AI公司上市动向，它的营收数字会直接影响整个AI赛道的估值逻辑。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-13/doc-inivcatx7289445.shtml",
+          "tag": "AI上市"
+        },
+        {
+          "title": "AI实验室的财务数据，成了科技市场交易的核心筹码",
+          "summary": "AI实验室的营收和亏损数据正成为科技市场交易的核心参考，Anthropic本周披露最新营收正是这一趋势的缩影。看点：以前市场看用户数，现在直接看AI公司赚了多少钱，说明AI从讲故事进入算账阶段。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-13/doc-inivcatx7289445.shtml",
+          "tag": "算账阶段"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "一加16上手：不偏科的旗舰，稳字当头",
+          "summary": "一加16体验评测出炉，配置均衡没有明显短板，被评价为「不出错」的旗舰机。看点：在旗舰机普遍堆参数的当下，一加选择收敛锐气做均衡，对不想折腾、只想买台省心手机的人是好事。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1684097?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "新机体验"
+        },
+        {
+          "title": "存储芯片遭抛售，美光、SK海力士单日跌5%",
+          "summary": "韩国股市重挫后芯片板块抛售加剧，美光和SK海力士周二股价大跌5%。看点：存储芯片是AI服务器和手机的核心零件，这波下跌可能预示市场对芯片需求预期在降温。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-14/doc-inivcatw0542727.shtml",
+          "tag": "芯片下跌"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "美国三大银行净利息收入创纪录，合计565亿美元",
+          "summary": "摩根大通、花旗、富国银行第三财季净利息收入合计565亿美元再创新高，高利率下客户仍在持续借款。看点：银行赚得盆满钵满，说明美国经济还没被高利率压垮，但也意味着降息可能没那么快。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-14/doc-inivcatz7999826.shtml",
+          "tag": "银行赚钱"
+        },
+        {
+          "title": "15万美国房主的月供要涨了，因为房贷利率要重设",
+          "summary": "今年约有15万户持有可调利率抵押贷款的美国房主迎来首次利率重设，月供将大幅走高。看点：这是高利率滞后冲击普通家庭的典型样本，也给国内关注海外楼市和美元资产的人提了个醒。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-13/doc-inivcatz7977236.shtml",
+          "tag": "月供上涨"
+        },
+        {
+          "title": "摩根大通财报刚发完，转头就推销新一批投资级债券",
+          "summary": "摩根大通在发布三季度业绩并预计2027年净利息收入强劲增长后，随即向市场推介最新一批美国投资级债券。看点：大行一边说经济有暗流，一边抓紧发债融资，普通投资者可留意投资级债的收益率变化。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-13/doc-inivcauc8712968.shtml",
+          "tag": "发债融资"
+        },
+        {
+          "title": "金佰利400亿美元并购科赴，欧盟附条件放行",
+          "summary": "欧盟委员会附条件批准金佰利与科赴400亿美元并购案，处置方案化解了卫生棉条市场竞争担忧。看点：这笔消费巨头合并将影响全球纸品和卫生用品格局，也可能间接影响国内相关品牌的价格竞争。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-13/doc-inivcatw0527864.shtml",
+          "tag": "巨头并购"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "美国小企业信心跌到三个月最低，老板们不想扩张了",
+          "summary": "美国9月小企业乐观情绪降至三个月低点，企业对未来经营预期转弱，认为当前是扩张好时机的比例下降。看点：小企业是美国就业的顶梁柱，他们不敢扩张，往往是大经济转弱的前兆。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-14/doc-inivchzz8620614.shtml",
+          "tag": "信心走弱"
+        },
+        {
+          "title": "沙特原油产量一个月暴增三分之一，从30年低点反弹",
+          "summary": "沙特向欧佩克上报数据显示，上月原油日产量增加约200万桶至837万桶，从三十多年最低水平大幅回升。看点：沙特突然增产，可能压制国际油价，国内成品油价格和出行成本有望间接受益。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-13/doc-inivcatx7263609.shtml",
+          "tag": "油价变量"
+        },
+        {
+          "title": "黑石总裁和美联储理事齐警告：法国财政压力是给高赤字国家的警钟",
+          "summary": "黑石集团总裁Jon Gray和美联储理事沃勒表示，法国面临的财政压力给大举支出的政府敲响警钟。看点：全球高债务国家都在被市场盯着，这句话对理解各国财政政策和利率走向很有参考价值。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-13/doc-inivcatw0493555.shtml",
+          "tag": "财政警钟"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "泰国严管校园电子烟，老师可以直接没收",
+          "summary": "因学生使用电子烟人数激增，泰国教育部和商务部联手赋予全国教师没收电子烟的权力。看点：校园电子烟管控正在成为亚洲多国共同难题，泰国的做法对国内校园管理和家长都有借鉴意义。",
+          "source": "环球时报",
+          "url": "https://news.sina.com.cn/w/2024-06-18/doc-inazaymt5757349.shtml",
+          "tag": "校园管控"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "奈飞股价暴跌后，分析师支招四步自救",
+          "summary": "KeyBanc分析师指出奈飞可通过四项举措终止股价暴跌，并提到奈飞2026年不会整合华纳兄弟探索公司资产。看点：流媒体龙头增长遇到瓶颈，它的自救策略会牵动整个内容行业的走向。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-14/doc-inivcatw0565585.shtml",
+          "tag": "流媒体困局"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "中国吃货把榴莲吃成了东南亚的财富密码",
+          "summary": "中国市场对榴莲的旺盛需求推动东南亚榴莲经济兴旺，当地面貌因此改变。看点：一颗榴莲背后是跨境农业、冷链物流和消费升级的大生意，也解释了为什么国内榴莲价格越来越亲民。",
+          "source": "环球时报",
+          "url": "https://news.sina.com.cn/w/2024-06-18/doc-inazaymr8980499.shtml",
+          "tag": "榴莲经济"
+        },
+        {
+          "title": "丰田5月全球销量跌了2%，中国品牌压力给到了",
+          "summary": "丰田汽车5月全球销量超88万辆，同比下降2%，产量也下滑5%。看点：全球第一大车企销量走弱，背后是中国自主品牌崛起的挤压，对关注车市和买车的人来说是个信号。",
+          "source": "新京报",
+          "url": "https://news.sina.com.cn/o/2024-06-27/doc-incafawe6648210.shtml",
+          "tag": "车市变局"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3800.86,
+        "unit": "点",
+        "changePct": 0.1,
+        "ytd": null,
+        "note": "2026-08-17 收盘，处多年高位区间"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2958.34,
+        "unit": "点",
+        "changePct": -0.18,
+        "ytd": null,
+        "note": "2025-08-18 曾创年内新高（历史参照）"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": 10,
+        "ytd": null,
+        "note": "8 月国际金价反弹，月内最大涨幅近 10%"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
