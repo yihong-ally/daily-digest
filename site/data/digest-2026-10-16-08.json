@@ -1,0 +1,293 @@
+{
+  "date": "2026-10-16",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-10-16T01:59:40+08:00",
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "美国房贷利率卡在7.4%，买房的人还是笑不出来",
+          "summary": "美国30年期抵押贷款利率过去一周维持在7.4%不变，连续数周高企让房地产市场持续降温。看点：利率不降，美国普通家庭的月供压力就下不来，也会拖累全球资产定价的情绪。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-16/doc-inivivhe1474905.shtml",
+          "tag": "房贷利率"
+        },
+        {
+          "title": "美国PPI又超预期，美联储降通胀这仗还没打完",
+          "summary": "美国最新PPI数据高于预期，经济学家警告这会传导到美联储最看重的PCE物价指数，本月晚些时候可能再度走高。看点：通胀数据一热，降息预期就要往后挪，全球股市和汇率都得跟着抖一抖。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-inivivha4684527.shtml",
+          "tag": "通胀反弹"
+        },
+        {
+          "title": "英伟达市值冲上全球第一，AI芯片卖疯了",
+          "summary": "英伟达股价盘中上涨3.2%，市值达到3.33万亿美元，超越微软成为全球市值最高的上市公司。看点：一家卖GPU的公司坐上全球市值头把交椅，说明AI算力需求还在疯狂吸金，科技股的权重越来越集中。",
+          "source": "央视新闻",
+          "url": "https://news.sina.com.cn/o/2024-06-19/doc-inazfiss3151806.shtml",
+          "tag": "市值登顶"
+        },
+        {
+          "title": "多地开始收储卖不掉的新房，保交房要提速了",
+          "summary": "央行推进保障性住房再贷款后，惠州等地已落地收储未售商品房，业内预计保交房工作将加快。看点：政府出手收购存量房，既想稳住楼市，也想把烂尾风险摁下去，后续其他城市大概率跟进。",
+          "source": "新浪新闻",
+          "url": "https://news.sina.com.cn/o/2024-06-19/doc-inazhrmx7185900.shtml",
+          "tag": "楼市收储"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "德国政府要跟英伟达合作搞工业AI，砸数亿欧元",
+          "summary": "德国政府计划与英伟达合作推动人工智能在工业领域的应用，预计投入数亿欧元。看点：欧洲制造业强国开始把AI往工厂里塞，工业AI可能成为大模型落地最实在的场景之一。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-16/doc-inivivha4690548.shtml",
+          "tag": "工业AI"
+        },
+        {
+          "title": "黄仁勋：CoreWeave财务好转，英伟达不用给它兜底了",
+          "summary": "英伟达CEO黄仁勋表示CoreWeave财务状况正在改善，英伟达无需为其提供财务支持。看点：CoreWeave此前因信贷恶化暴跌，黄仁勋这番话是在给市场吃定心丸，也说明AI算力租赁的泡沫争议还没完。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-16/doc-inivivhe1479857.shtml",
+          "tag": "算力租赁"
+        },
+        {
+          "title": "CNN和谷歌签多年合作，用生成式AI拉新闻流量",
+          "summary": "CNN与谷歌达成多年合作协议，研究如何用谷歌生成式AI产品提升新闻报道的用户参与度。看点：传统媒体开始认真把AI当流量工具用，新闻业的内容分发方式可能被重新洗牌。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-inivivhe1459690.shtml",
+          "tag": "AI新闻"
+        },
+        {
+          "title": "苹果高管回应OpenAI做硬件：不慌，我们更在乎隐私和体验",
+          "summary": "苹果全球营销高级副总裁乔斯维亚克表示，苹果不担心OpenAI进军硬件，软硬件整合能力才是护城河，比起追AGI更重视用户隐私和日常体验。看点：苹果和OpenAI在硬件赛道迟早要撞上，这番表态等于提前划清路线差异。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/013/683.htm",
+          "tag": "硬件之争"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "苹果10月28日发布会曝光：触屏MacBook、iPad mini 8、M6 Mac要来了",
+          "summary": "彭博社爆料苹果已向部分媒体发出10月28日洛杉矶发布会邀请，预计推出首款触屏MacBook、iPad mini新品和搭载M6芯片的Mac。看点：触屏MacBook传了多年终于要落地，Mac产品线可能迎来交互方式的大改。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/013/687.htm",
+          "tag": "苹果发布会"
+        },
+        {
+          "title": "宝马新世代i3实测跑了1213公里，百公里能耗才8.8度",
+          "summary": "宝马新世代i3搭载大圆柱电池，实测续航达到1213公里，百公里能耗仅8.8度。看点：如果这个能耗数据能量产落地，电动车的续航焦虑基本可以翻篇了，大圆柱电池的路线也更有说服力。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1684510",
+          "tag": "电动车续航"
+        },
+        {
+          "title": "OPPO做了个能全天录音的穿戴设备，但重点不是转写",
+          "summary": "OPPO推出心力球穿戴录音硬件，主打24小时全天候录音，但真正的难点在于如何把录音自然融入日常工作流。看点：AI穿戴硬件从拼麦克风转向拼工作流整合，谁能解决“录了之后怎么用”谁就能赢。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/372428",
+          "tag": "AI穿戴"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "CoreWeave四天蒸发百亿美元市值，德银却说可以抄底",
+          "summary": "AI算力公司CoreWeave因信贷状况恶化，四个交易日市值蒸发超100亿美元，德意志银行认为这是买入机会。看点：AI概念股开始出现剧烈分化，市场对高负债算力公司的耐心正在变少。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-iniviqye4794652.shtml",
+          "tag": "AI股暴跌"
+        },
+        {
+          "title": "花旗警告：全球七成盈利增长靠科技股，AI一凉股市就悬",
+          "summary": "花旗策略师预计科技股将贡献2027年全球近70%的盈利增长，如果AI热潮降温，股市涨势将面临风险。看点：盈利增长过度集中在科技板块，意味着市场对AI的依赖已经到了不能出意外的程度。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-16/doc-inivivha4706458.shtml",
+          "tag": "科技股集中"
+        },
+        {
+          "title": "美国原油库存意外大降855万桶，油价要抬头？",
+          "summary": "EIA数据显示美国上周原油库存减少855.7万桶，远超市场预期的增加15万桶，汽油库存则意外增加。看点：原油库存骤降通常利好油价，但汽油累库说明终端需求存疑，能源市场信号有点打架。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/world/2026-10-16/doc-inivivfx7919854.shtml",
+          "tag": "原油库存"
+        },
+        {
+          "title": "华尔街开始厌倦“英伟达银行、AMD银行、博通银行”",
+          "summary": "贝尔德分析师指出，本轮AI相关股票抛售的核心越来越聚焦企业融资需求和融资成本。看点：市场不再只看AI故事，开始算账了——这些公司借了多少钱、利息多高，成了新的定价逻辑。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-15/doc-iniviqxx7260824.shtml",
+          "tag": "AI融资成本"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "法国德国联手，要放宽欧盟汽车排放规则",
+          "summary": "法国与德国达成汽车工业协议，支持进一步放宽欧盟汽车排放规则。看点：欧洲两大汽车强国联手松绑排放标准，说明电动车转型给传统车企的压力已经大到要政策让步了。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-inivivha4726797.shtml",
+          "tag": "排放松绑"
+        },
+        {
+          "title": "英国财政大臣要拿银行开刀加税，补中东战争的财政窟窿",
+          "summary": "英国财政大臣希利准备在10月28日预算案中向银行业征税，以弥补中东战争对公共财政造成的损失。看点：地缘冲突的账单开始落到金融机构头上，英国银行业的利润预期可能要下调。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-iniviqxx7290712.shtml",
+          "tag": "银行加税"
+        },
+        {
+          "title": "美国财政部怼IMF：你们自己的预测就漏洞百出",
+          "summary": "美国财政部顾问泽沃斯反驳IMF对美国债务的警告，称IMF应先审视自身预测记录。看点：两大机构公开互呛，背后是美国财政赤字问题越来越难被国际社会忽视。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-iniviqxx7288478.shtml",
+          "tag": "债务之争"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "台湾高中生不知道大禹治水，家长直接震惊了",
+          "summary": "台湾一名家长与高中孩子聊到大禹治水，发现孩子完全不知道大禹是谁，引发对课纲调整的讨论。看点：文言文和中华历史在台湾课纲中的比重变化，正在实实在在影响下一代的文化认知。",
+          "source": "新浪新闻",
+          "url": "https://news.sina.com.cn/c/2024-06-18/doc-inazckzm8770953.shtml",
+          "tag": "课纲争议"
+        },
+        {
+          "title": "泰国严管校园电子烟，老师可以直接没收",
+          "summary": "泰国教育部和商务部联手赋予全国教师没收电子烟的权力，应对学生使用电子烟人数激增。看点：校园电子烟泛滥不只中国头疼，东南亚国家开始用硬手段堵，效果值得观察。",
+          "source": "环球时报",
+          "url": "https://news.sina.com.cn/w/2024-06-18/doc-inazaymt5757349.shtml",
+          "tag": "校园禁烟"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "西南航空全面改革常旅客计划，精英等级从两档变三档",
+          "summary": "西南航空将原有两档精英常旅客等级替换为银卡、金卡、白金卡三档，对标其他航司，明年1月1日废除现行A-List体系。看点：廉航也开始卷会员体系，说明航空业竞争已经从票价打到用户忠诚度了。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-inivivfv7168346.shtml",
+          "tag": "航司会员"
+        },
+        {
+          "title": "捷蓝航空推出国内头等舱BlueFirst，12月8日首飞",
+          "summary": "捷蓝航空全新国内头等舱BlueFirst开放订票，首条航线为劳德代尔堡往返波士顿，12月8日投入使用。看点：美国廉航纷纷加码高端舱位，经济舱和头等舱的界限正在被重新定义。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-16/doc-inivivhe1459057.shtml",
+          "tag": "头等舱"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "韩国想引进菲律宾护理员，结果因为叫“菲佣”吵起来了",
+          "summary": "韩国政府计划引进100名菲律宾护理员评估可行性，但因称谓问题引发纠纷。看点：老龄化社会缺护理人手是硬需求，但跨国劳务背后的文化和尊严问题，比想象中更难摆平。",
+          "source": "环球时报",
+          "url": "https://news.sina.com.cn/w/2024-06-20/doc-inazinrv4667491.shtml",
+          "tag": "护理劳工"
+        },
+        {
+          "title": "新疆昌吉突发山洪泥石流，车辆被困4人失联",
+          "summary": "新疆昌吉市庙尔沟乡山区因强降雨引发山洪和泥石流堵塞道路，有车辆被困，4人失联。看点：极端天气引发的次生灾害进入高发期，山区出行和露营要格外关注天气预警。",
+          "source": "新浪新闻",
+          "url": "https://news.sina.com.cn/c/2024-06-18/doc-inazckzq3896646.shtml",
+          "tag": "山洪灾害"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3707.48,
+        "unit": "点",
+        "changePct": -1.59,
+        "ytd": null,
+        "note": "2026-08-17 收盘，处多年高位区间"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2783.17,
+        "unit": "点",
+        "changePct": -2.92,
+        "ytd": null,
+        "note": "2025-08-18 曾创年内新高（历史参照）"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": 10,
+        "ytd": null,
+        "note": "8 月国际金价反弹，月内最大涨幅近 10%"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
