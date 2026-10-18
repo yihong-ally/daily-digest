@@ -1,0 +1,229 @@
+{
+  "date": "2026-10-19",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-10-19T01:03:51+08:00",
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "欧洲多国爆发示威，法国2000多人被捕",
+          "summary": "法国、意大利、葡萄牙、比利时等国17日爆发示威，抗议生活成本高企、公共服务不足和政府财政紧缩，法国已有2000多人被捕。看点：生活成本压力正在把欧洲街头变成政治火药桶，后续财政政策和社会稳定值得关注。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivsnmc7665103.shtml",
+          "tag": "欧洲示威"
+        },
+        {
+          "title": "海关总署警示：SWISSE部分产品铅超标",
+          "summary": "海关总署进出口食品安全局发布风险警示，SWISSE品牌2批次“Beauty Skin Regeneration+”产品被检出铅含量超出标准限值。看点：进口保健品再曝安全问题，家里有这款产品的赶紧核对批次，海淘和代购也要多留个心眼。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivshcm7224823.shtml",
+          "tag": "食品安全"
+        },
+        {
+          "title": "霍尔木兹海峡又出事：两艘超级油轮触雷起火",
+          "summary": "伊朗革命卫队称两艘超级油轮在霍尔木兹海峡附近触雷起火，沙特与胡塞武装冲突同步升级。看点：全球石油运输咽喉再受威胁，油价和航运成本可能被推高，有车一族和做外贸的都要留意。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfr6569845.shtml",
+          "tag": "中东局势"
+        },
+        {
+          "title": "美国堪萨斯州一车辆冲入足球场，至少2死多伤",
+          "summary": "当地时间10月17日，美国堪萨斯州威奇托市一处体育中心发生车辆冲撞事件，造成至少两人死亡、多人受伤。看点：公共场所安全再敲警钟，事件性质和动机还在调查中。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivqtzr6894925.shtml",
+          "tag": "突发事件"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "Anthropic放话：2030年AI或让美国GDP多涨近50%",
+          "summary": "Anthropic联合创始人杰克·克拉克称，公司内部模型预测在特定条件下，到2030年AI可能让美国GDP提升近50%。看点：这个数字激进得离谱，但头部AI公司敢公开押注，说明资本和产业界对AI拉动经济的预期还在升温。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrers1134467.shtml",
+          "tag": "AI经济"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "韩国财长：半导体景气至少撑到2027年",
+          "summary": "韩国财政部长李炯日表示，半导体行业繁荣将至少延续至2027年，他在IMF与世界银行年会间隙作出这一判断。看点：存储芯片周期还没见顶，对手机、电脑、汽车等下游产品的价格和供应都是关键信号。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrert7843032.shtml",
+          "tag": "芯片周期"
+        },
+        {
+          "title": "瑞银盯iPhone 18 Pro：等货时间缩短，涨价后需求待考",
+          "summary": "瑞银追踪全球30多个市场发现，iPhone 18 Pro平均等待时间比去年同期缩短约4天，维持苹果296美元目标价和“中性”评级。看点：等货变快通常意味着需求没预期那么猛，苹果涨价能不能被市场消化，接下来几周见分晓。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfr6600790.shtml",
+          "tag": "苹果新机"
+        },
+        {
+          "title": "伯恩斯坦看好GE航空：发动机维修生意还能火",
+          "summary": "伯恩斯坦重申GE Aerospace“跑赢大盘”评级和421美元目标价，看好LEAP发动机售后业务及宽体机维修需求。看点：航空供应链的赚钱重心正从卖发动机转向修发动机，出行复苏的红利还在往售后端转移。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfr6601150.shtml",
+          "tag": "航空制造"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "俄罗斯柴油要进美国市场了，签合同后15-20天到货",
+          "summary": "俄副总理诺瓦克称，俄罗斯柴油将在合同签署后15至20天进入美国市场，美方已确定交易方和买方公司。看点：制裁背景下俄油品仍能找到进入美国的通道，全球柴油供应和价格格局可能生变。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivshcf7795823.shtml",
+          "tag": "能源贸易"
+        },
+        {
+          "title": "印度停买甘蔗乙醇，糖价上涨压力有望缓一缓",
+          "summary": "印度下令国有燃油零售商停止采购以食糖和甘蔗为原料的乙醇，以抑制糖价上涨，今夏干旱已重创甘蔗产量。看点：印度这一刀砍向乙醇，等于把甘蔗还给食糖市场，全球糖价短期可能降温。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfn1008034.shtml",
+          "tag": "糖价"
+        },
+        {
+          "title": "石药集团一口气授出7808万股限制性股票",
+          "summary": "石药集团根据2026年股份奖励计划，向205名获选参与者授出合共7808.5万股受限制股份。看点：大手笔股权激励通常绑定业绩目标，反映公司对后续管线或业绩的信心，也值得持股者关注摊薄影响。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvp7257249.shtml",
+          "tag": "股权激励"
+        },
+        {
+          "title": "中远海运港口要卖青岛港董家口矿石码头25%股权",
+          "summary": "中远海运港口公告，拟通过北京产权交易所挂牌捆绑出售青岛港董家口矿石码头25%股权。看点：港口资产整合在加速，这笔交易能看出大宗商品码头资产的估值冷暖。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvh1007718.shtml",
+          "tag": "港口资产"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "粤海置地发盈喜：前三季度扭亏为盈",
+          "summary": "粤海置地预计截至2026年9月30日止九个月股东应占溢利不少于2.40亿港元，去年同期为亏损。看点：地产公司能扭亏为盈是个积极信号，但能否持续还要看销售和回款。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvp7253288.shtml",
+          "tag": "房企业绩"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "卓越教育回购9.5万股，花22.72万港元",
+          "summary": "卓越教育集团10月16日斥资22.72万港元回购9.5万股。看点：教育公司回购规模不大，但释放出管理层认为股价被低估的信号，教培行业转型期的资本动作值得留意。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvh1015202.shtml",
+          "tag": "教育公司"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": []
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "乐道汽车赞助户外运动产业大会，总裁说这是品牌使命",
+          "summary": "乐道汽车成为2026中国户外运动产业大会官方赞助商，L90、L80、L60成为官方指定用车，总裁沈斐称参与城市体育是品牌使命的自然延伸。看点：新能源车品牌扎堆体育营销，乐道想靠户外场景拉近和家庭用户的距离。",
+          "source": "新浪科技",
+          "url": "https://finance.sina.com.cn/tob/2026-10-18/doc-inivshce0924140.shtml",
+          "tag": "汽车营销"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3716.28,
+        "unit": "点",
+        "changePct": 0.24,
+        "ytd": null,
+        "note": "2026-08-17 收盘，处多年高位区间"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2772.38,
+        "unit": "点",
+        "changePct": -0.39,
+        "ytd": null,
+        "note": "2025-08-18 曾创年内新高（历史参照）"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": 10,
+        "ytd": null,
+        "note": "8 月国际金价反弹，月内最大涨幅近 10%"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
