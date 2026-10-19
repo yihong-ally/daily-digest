@@ -1,40 +1,40 @@
 {
-  "date": "2026-10-19",
+  "date": "2026-10-20",
   "slot": "08",
   "edition": "晨报",
-  "updatedAt": "2026-10-19T01:03:51+08:00",
+  "updatedAt": "2026-10-20T00:48:27+08:00",
   "siteName": "每日前沿简报",
   "sections": {
     "headlines": {
       "label": "今日必读",
       "items": [
         {
-          "title": "欧洲多国爆发示威，法国2000多人被捕",
-          "summary": "法国、意大利、葡萄牙、比利时等国17日爆发示威，抗议生活成本高企、公共服务不足和政府财政紧缩，法国已有2000多人被捕。看点：生活成本压力正在把欧洲街头变成政治火药桶，后续财政政策和社会稳定值得关注。",
+          "title": "Anthropic要发新模型，号称比现在所有AI都更会“猜心思”",
+          "summary": "据外媒报道，Anthropic正准备发布一款新模型，推理和直觉能力优于市面上现有模型，尤其擅长判断用户深层意图，哪怕用户给的信息很少。看点：如果属实，AI助手将从“听指令干活”升级到“懂你没说出口的需求”，对普通用户意味着更少解释、更高效率，也意味着大模型竞争进入“读心”阶段。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivsnmc7665103.shtml",
-          "tag": "欧洲示威"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkf6060787.shtml",
+          "tag": "新模型"
         },
         {
-          "title": "海关总署警示：SWISSE部分产品铅超标",
-          "summary": "海关总署进出口食品安全局发布风险警示，SWISSE品牌2批次“Beauty Skin Regeneration+”产品被检出铅含量超出标准限值。看点：进口保健品再曝安全问题，家里有这款产品的赶紧核对批次，海淘和代购也要多留个心眼。",
-          "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivshcm7224823.shtml",
-          "tag": "食品安全"
+          "title": "光伏巨头晶科能源不到两年亏超百亿，想靠储能翻身",
+          "summary": "晶科能源发布2026年前三季度业绩预告，不到两年累计亏损超百亿元，市值近400亿元，公司正把希望寄托在储能业务上。看点：光伏行业产能过剩、价格战的后遗症正在龙头身上集中体现，储能能不能成为第二增长曲线，关系到整个新能源产业链的估值逻辑。",
+          "source": "雷达Finance",
+          "url": "https://finance.sina.com.cn/stock/s/2026-10-19/doc-inivumae1003972.shtml",
+          "tag": "光伏亏损"
         },
         {
-          "title": "霍尔木兹海峡又出事：两艘超级油轮触雷起火",
-          "summary": "伊朗革命卫队称两艘超级油轮在霍尔木兹海峡附近触雷起火，沙特与胡塞武装冲突同步升级。看点：全球石油运输咽喉再受威胁，油价和航运成本可能被推高，有车一族和做外贸的都要留意。",
+          "title": "AI智能体火了，CPU需求跟着复苏，AMD被重申买入",
+          "summary": "TD Cowen重申对AMD的“买入”评级和675美元目标价，理由是自主AI智能体和企业AI推理负载快速增长，带动CPU需求回暖。看点：AI不只需要GPU，智能体大规模跑起来后CPU同样吃紧，这给芯片格局添了新变量，也解释了AMD近期为何被资金盯上。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfr6569845.shtml",
-          "tag": "中东局势"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurka0923234.shtml",
+          "tag": "AI芯片"
         },
         {
-          "title": "美国堪萨斯州一车辆冲入足球场，至少2死多伤",
-          "summary": "当地时间10月17日，美国堪萨斯州威奇托市一处体育中心发生车辆冲撞事件，造成至少两人死亡、多人受伤。看点：公共场所安全再敲警钟，事件性质和动机还在调查中。",
+          "title": "沙特“沙漠达沃斯”被迫取消线下办，胡塞袭击搅黄了招商局",
+          "summary": "因胡塞武装针对沙特机场的袭击不断升级，沙特计划推迟旗舰投资大会的线下活动，这场被称为“沙漠达沃斯”的大会原本是利雅得吸引外资的门面。看点：地缘冲突直接冲击中东的资本吸引力，沙特打造全球商业中心的计划遇挫，全球资金对中东风险溢价的判断可能重新调整。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivqtzr6894925.shtml",
-          "tag": "突发事件"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkc7693360.shtml",
+          "tag": "地缘风险"
         }
       ]
     },
@@ -42,11 +42,25 @@
       "label": "AI · 大模型动态",
       "items": [
         {
-          "title": "Anthropic放话：2030年AI或让美国GDP多涨近50%",
-          "summary": "Anthropic联合创始人杰克·克拉克称，公司内部模型预测在特定条件下，到2030年AI可能让美国GDP提升近50%。看点：这个数字激进得离谱，但头部AI公司敢公开押注，说明资本和产业界对AI拉动经济的预期还在升温。",
+          "title": "Anthropic新模型被曝“读心”能力超群，信息少也能猜准意图",
+          "summary": "Anthropic据报准备发布一款推理和直觉能力优于同侪的新模型，善于判断用户深层意图，即使用户提供的信息不多。看点：这意味着AI交互门槛进一步降低，未来可能不需要写长提示词，模型自己就能补全你的真实需求，对产品设计和用户体验是颠覆性的。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrers1134467.shtml",
-          "tag": "AI经济"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkf6060787.shtml",
+          "tag": "读心AI"
+        },
+        {
+          "title": "Anthropic成了今年大型IPO的最后希望",
+          "summary": "投资者年初曾对SpaceX、Anthropic、OpenAI等超大市值公司IPO充满期待，如今OpenAI已掉队，Anthropic被视为今年大型IPO的最后一大希望。看点：AI独角兽的上市窗口正在收窄，Anthropic能否撑起场子，将影响一级市场对AI公司的估值信心和退出预期。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkf6125340.shtml",
+          "tag": "IPO"
+        },
+        {
+          "title": "AI智能体跑起来，CPU需求跟着复苏，AMD成受益标的",
+          "summary": "TD Cowen重申AMD买入评级和675美元目标价，认为自主AI智能体和生产环境AI推理负载快速增长，将带动CPU需求复苏。看点：市场此前只盯着GPU，现在发现智能体大规模部署后CPU同样紧缺，芯片投资逻辑从“单一算力”转向“算力组合”。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurka0923234.shtml",
+          "tag": "算力需求"
         }
       ]
     },
@@ -54,25 +68,18 @@
       "label": "科技硬核",
       "items": [
         {
-          "title": "韩国财长：半导体景气至少撑到2027年",
-          "summary": "韩国财政部长李炯日表示，半导体行业繁荣将至少延续至2027年，他在IMF与世界银行年会间隙作出这一判断。看点：存储芯片周期还没见顶，对手机、电脑、汽车等下游产品的价格和供应都是关键信号。",
+          "title": "AI智能体带火CPU，AMD被大行重申买入目标价675美元",
+          "summary": "TD Cowen认为自主AI智能体和企业推理负载增长将推动CPU需求复苏，重申AMD买入评级和675美元目标价。看点：硬科技投资主线正从“堆GPU”扩展到“CPU+GPU协同”，AMD在AI算力版图中的位置被重新定价。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrert7843032.shtml",
-          "tag": "芯片周期"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurka0923234.shtml",
+          "tag": "芯片"
         },
         {
-          "title": "瑞银盯iPhone 18 Pro：等货时间缩短，涨价后需求待考",
-          "summary": "瑞银追踪全球30多个市场发现，iPhone 18 Pro平均等待时间比去年同期缩短约4天，维持苹果296美元目标价和“中性”评级。看点：等货变快通常意味着需求没预期那么猛，苹果涨价能不能被市场消化，接下来几周见分晓。",
+          "title": "纽约证交所延长部分期权交易时段，英伟达、阿里在列",
+          "summary": "纽约证交所对部分NYSE American期权延长交易时段，首批标的包括SPDR标普500 ETF、罗素2000 ETF、黄金信托以及苹果、英伟达、阿里巴巴等证券。看点：美股期权交易时间拉长，对普通投资者意味着盘后也能对冲风险，但也考验交易纪律，别在流动性差的时段乱下单。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfr6600790.shtml",
-          "tag": "苹果新机"
-        },
-        {
-          "title": "伯恩斯坦看好GE航空：发动机维修生意还能火",
-          "summary": "伯恩斯坦重申GE Aerospace“跑赢大盘”评级和421美元目标价，看好LEAP发动机售后业务及宽体机维修需求。看点：航空供应链的赚钱重心正从卖发动机转向修发动机，出行复苏的红利还在往售后端转移。",
-          "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfr6601150.shtml",
-          "tag": "航空制造"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkc7762985.shtml",
+          "tag": "交易新规"
         }
       ]
     },
@@ -80,32 +87,32 @@
       "label": "财经 · 市场",
       "items": [
         {
-          "title": "俄罗斯柴油要进美国市场了，签合同后15-20天到货",
-          "summary": "俄副总理诺瓦克称，俄罗斯柴油将在合同签署后15至20天进入美国市场，美方已确定交易方和买方公司。看点：制裁背景下俄油品仍能找到进入美国的通道，全球柴油供应和价格格局可能生变。",
+          "title": "摩根士丹利：美股回调快结束了，可以准备逢低买",
+          "summary": "摩根士丹利策略师发文称美股回调已临近尾声，建议投资者准备增配风险资产，重点关注盈利预期改善的优质企业。看点：大行喊“抄底”往往有风向标意义，但普通投资者要看清：是回调尾声还是下跌中继，关键看接下来企业财报能不能接住。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/jjxw/2026-10-18/doc-inivshcf7795823.shtml",
-          "tag": "能源贸易"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivumai6166324.shtml",
+          "tag": "美股策略"
         },
         {
-          "title": "印度停买甘蔗乙醇，糖价上涨压力有望缓一缓",
-          "summary": "印度下令国有燃油零售商停止采购以食糖和甘蔗为原料的乙醇，以抑制糖价上涨，今夏干旱已重创甘蔗产量。看点：印度这一刀砍向乙醇，等于把甘蔗还给食糖市场，全球糖价短期可能降温。",
+          "title": "白宫经济顾问哈塞特：通胀又需要“下些功夫”了",
+          "summary": "白宫国家经济委员会主任哈塞特表示，此前三个月通胀似乎完全得到控制，但现在看来又需要下一番功夫应对。看点：白宫经济高官公开承认通胀反复，意味着降息路径可能再添变数，对全球资产定价和汇率都有传导。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-18/doc-inivrrfn1008034.shtml",
-          "tag": "糖价"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurki6787162.shtml",
+          "tag": "通胀反复"
         },
         {
-          "title": "石药集团一口气授出7808万股限制性股票",
-          "summary": "石药集团根据2026年股份奖励计划，向205名获选参与者授出合共7808.5万股受限制股份。看点：大手笔股权激励通常绑定业绩目标，反映公司对后续管线或业绩的信心，也值得持股者关注摊薄影响。",
+          "title": "Lombard Odier转向看涨美元，理由是美国增长更强",
+          "summary": "随着美国经济增长更强劲、市场对美联储独立性的担忧缓解，Lombard Odier & Cie扭转此前看空立场，转而看涨美元。看点：机构集体调头看多美元，对持有外币资产或做外贸的人来说，汇率波动方向可能生变，换汇和配置节奏值得留意。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvp7257249.shtml",
-          "tag": "股权激励"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkc7740001.shtml",
+          "tag": "美元走强"
         },
         {
-          "title": "中远海运港口要卖青岛港董家口矿石码头25%股权",
-          "summary": "中远海运港口公告，拟通过北京产权交易所挂牌捆绑出售青岛港董家口矿石码头25%股权。看点：港口资产整合在加速，这笔交易能看出大宗商品码头资产的估值冷暖。",
+          "title": "法国抗议变暴力，欧洲股市被拖累下跌",
+          "summary": "法国周末有关生活成本的抗议演变成暴力事件，欧洲斯托克600指数收跌0.8%，盘中一度跌1.2%，投资者同时等待密集的企业财报。看点：生活成本危机正在从社会问题演变成市场风险，欧洲政治不确定性叠加财报季，短期波动可能加大。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvh1007718.shtml",
-          "tag": "港口资产"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivuvsc6027792.shtml",
+          "tag": "欧洲股市"
         }
       ]
     },
@@ -113,11 +120,25 @@
       "label": "宏观经济",
       "items": [
         {
-          "title": "粤海置地发盈喜：前三季度扭亏为盈",
-          "summary": "粤海置地预计截至2026年9月30日止九个月股东应占溢利不少于2.40亿港元，去年同期为亏损。看点：地产公司能扭亏为盈是个积极信号，但能否持续还要看销售和回款。",
+          "title": "白宫经济顾问承认通胀又抬头，降息预期添变数",
+          "summary": "哈塞特称前三个月通胀“完全得到控制”，但现在看来又需要下功夫应对。看点：白宫口径变化往往领先于政策调整，如果通胀反复被官方确认，美联储降息节奏可能放缓，全球资金成本下降的预期要打折扣。",
           "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvp7253288.shtml",
-          "tag": "房企业绩"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurki6787162.shtml",
+          "tag": "通胀"
+        },
+        {
+          "title": "伊朗放话：为保安全，只能对霍尔木兹海峡行使主权",
+          "summary": "伊朗第一副总统在塔吉克斯坦与俄罗斯总理会晤时表示，为了维护安全，伊朗别无选择只能对霍尔木兹海峡行使主权。看点：霍尔木兹海峡是全球石油运输咽喉，伊朗这一表态叠加胡塞袭击，能源供应链风险上升，油价和航运成本可能受扰动。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivuvrz7672858.shtml",
+          "tag": "能源风险"
+        },
+        {
+          "title": "土耳其基金危机余波：监管机构负责人以健康原因辞职",
+          "summary": "土耳其资本市场监管机构负责人Mahmut Sutcu周一辞职，称是“健康原因”，此前一场基金危机扰乱了该国市场并持续引发余波。看点：新兴市场金融监管层动荡往往是风险暴露的信号，土耳其市场的波动可能外溢到相关基金和跨境资产。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurka0989927.shtml",
+          "tag": "新兴市场"
         }
       ]
     },
@@ -125,27 +146,49 @@
       "label": "教育",
       "items": [
         {
-          "title": "卓越教育回购9.5万股，花22.72万港元",
-          "summary": "卓越教育集团10月16日斥资22.72万港元回购9.5万股。看点：教育公司回购规模不大，但释放出管理层认为股价被低估的信号，教培行业转型期的资本动作值得留意。",
-          "source": "新浪财经",
-          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-10-18/doc-inivrzvh1015202.shtml",
-          "tag": "教育公司"
+          "title": "台湾高中生不知道“大禹治水”，家长震惊",
+          "summary": "台湾一名家长与高中孩子聊到“大禹治水”，发现孩子完全不知道大禹是谁，引发对课纲和传统文化教育的讨论。看点：这背后是课纲调整与历史文化认同的拉扯，对家长来说，也提醒课外阅读和家庭补充教育的重要性。",
+          "source": "新浪新闻",
+          "url": "https://news.sina.com.cn/c/2024-06-18/doc-inazckzm8770953.shtml",
+          "tag": "课纲争议"
         }
       ]
     },
     "internet": {
       "label": "互联网大厂",
-      "items": []
+      "items": [
+        {
+          "title": "Anthropic成今年大型IPO最后希望，OpenAI已掉队",
+          "summary": "投资者年初期待的超大市值IPO中，OpenAI已无法如期推进，Anthropic被视为今年大型IPO的最后一大希望。看点：AI大厂的上市节奏直接反映资本市场对AI泡沫的判断，Anthropic若成功上市，将给整个AI创业生态定锚。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkf6125340.shtml",
+          "tag": "AI上市"
+        },
+        {
+          "title": "纽交所延长期权交易时段，苹果、英伟达、阿里都能盘后交易",
+          "summary": "纽约证交所对部分NYSE American期权延长交易时段，首批标的包括苹果、英伟达、阿里巴巴等热门证券。看点：互联网巨头股票衍生品交易时间拉长，意味着盘后消息冲击可以即时对冲，但也可能放大盘后波动。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-19/doc-inivurkc7762985.shtml",
+          "tag": "交易延长"
+        }
+      ]
     },
     "life": {
       "label": "生活 · 消费",
       "items": [
         {
-          "title": "乐道汽车赞助户外运动产业大会，总裁说这是品牌使命",
-          "summary": "乐道汽车成为2026中国户外运动产业大会官方赞助商，L90、L80、L60成为官方指定用车，总裁沈斐称参与城市体育是品牌使命的自然延伸。看点：新能源车品牌扎堆体育营销，乐道想靠户外场景拉近和家庭用户的距离。",
-          "source": "新浪科技",
-          "url": "https://finance.sina.com.cn/tob/2026-10-18/doc-inivshce0924140.shtml",
-          "tag": "汽车营销"
+          "title": "沈阳男子花10元中1000万，说先存起来不急用",
+          "summary": "体彩大乐透第26118期开奖，沈阳购彩者郑先生用10元5注单式票中得1000万元（含税），表示先存起来不急用钱。看点：又一条“小投入大回报”的彩票新闻，看着热闹，但普通人更该记住的是概率极低，别把彩票当理财。",
+          "source": "新浪体育",
+          "url": "https://sports.sina.com.cn/l/2026-10-19/doc-inivtynm7756794.shtml",
+          "tag": "彩票中奖"
+        },
+        {
+          "title": "法国生活成本抗议变暴力，欧洲旅游注意安全",
+          "summary": "法国周末有关生活成本的抗议演变成暴力事件，欧洲股市随之下跌。看点：如果近期有赴法或欧洲旅行计划，需关注当地示威和交通管制，生活成本危机正在多国发酵，出行前查一下目的地安全提示很有必要。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivuvsc6027792.shtml",
+          "tag": "出行安全"
         }
       ]
     }
@@ -156,9 +199,9 @@
         "id": "sh000001",
         "name": "上证指数",
         "code": "000001",
-        "value": 3716.28,
+        "value": 3730.92,
         "unit": "点",
-        "changePct": 0.24,
+        "changePct": 0.39,
         "ytd": null,
         "note": "2026-08-17 收盘，处多年高位区间"
       },
@@ -166,9 +209,9 @@
         "id": "sz399006",
         "name": "创业板指",
         "code": "399006",
-        "value": 2772.38,
+        "value": 2746.29,
         "unit": "点",
-        "changePct": -0.39,
+        "changePct": -0.94,
         "ytd": null,
         "note": "2025-08-18 曾创年内新高（历史参照）"
       },
