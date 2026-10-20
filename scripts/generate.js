@@ -67,6 +67,7 @@ const NEWS_SOURCES = [
   // 宏观经济
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2510&num=30', type: 'json', tag: 'economy' },
   { url: 'https://api-one.wallstcn.com/apiv1/content/lives?channel=global-channel&limit=30', type: 'json', tag: 'economy' },
+  { url: 'https://api-one.wallstcn.com/apiv1/content/articles?channel=global&limit=20', type: 'json', tag: 'economy' },
   { url: 'https://www.chinanews.com.cn/rss/finance.xml', type: 'rss', tag: 'economy' },
   // 教育（免费 RSS 大多已死，用垂直媒体 + 教育部官网）
   { url: 'https://www.jiemodui.com/rss', type: 'rss', tag: 'education' },
