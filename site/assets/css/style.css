@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #f5f7fa;
   --card: #ffffff;
   --ink: #1f2733;
@@ -69,3 +69,5 @@ body {
 .edition-btn.active { background: var(--brand); color: #fff; border-color: var(--brand); }
 .edition-label { display: inline-block; background: var(--brand-soft); color: var(--brand); font-size: 12px; padding: 3px 10px; border-radius: 6px; font-weight: 600; }
 .site-footer { margin-top: 40px; padding: 20px 0; color: var(--muted); font-size: 12px; text-align: center; border-top: 1px solid var(--line); }
+.site-footer .footer-tagline { font-size: 13px; letter-spacing: 0.3px; margin: 0 0 6px; }
+.site-footer .footer-note { margin: 0; opacity: 0.75; }
