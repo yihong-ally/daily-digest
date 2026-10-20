@@ -1,3 +1,19 @@
+# 依赖与系统垃圾
 node_modules/
 .DS_Store
 *.log
+
+# 本地归档区：旧腾讯云版本、旧前端副本、旧 .git 备份等（只留在本地，绝不进仓库）
+_local-archive/
+
+# 助手工作目录（WorkBuddy 记忆等）
+.workbuddy/
+
+# 编辑/上传工具留下的临时目录与临时文件
+*.tmpdir/
+*.tmp
+
+# 本地密钥（历史上放在 digest-server/ 的那批：腾讯云 API Key、Cookie 签名密钥等）
+env.local
+pg.local.json
+*.env
