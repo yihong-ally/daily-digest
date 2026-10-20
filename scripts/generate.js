@@ -65,7 +65,8 @@ const NEWS_SOURCES = [
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&num=30', name: '新浪', type: 'json', tag: 'tech' },
   { url: 'https://hnrss.org/frontpage', name: 'Hacker News', type: 'rss', tag: 'tech' },                    // Hacker News（国外）
   { url: 'https://feeds.arstechnica.com/arstechnica/technology-lab', name: 'Ars Technica', type: 'rss', tag: 'tech' }, // Ars Technica（国外）
-  { url: 'https://www.technologyreview.com/feed/', name: 'MIT 科技评论', type: 'rss', tag: 'tech' },          // MIT 科技评论（国外）
+  { url: 'https://www.technologyreview.com/feed/', name: 'MIT 科技评论', type: 'rss', tag: 'tech' },
+  { url: 'https://www.solidot.org/index.rss', name: '奇客Solidot', type: 'rss', tag: 'tech' },          // MIT 科技评论（国外）
   // 财经 · 市场
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2518&num=30', name: '新浪', type: 'json', tag: 'finance' },
   // 宏观经济
@@ -84,7 +85,7 @@ const NEWS_SOURCES = [
 ];
 
 // 每个板块的目标产出条数（写进素材标题，作为模型的即时提醒）
-const TAG_TARGET = { headlines: 5, ai: 10, tech: 8, finance: 5, economy: 5, education: 3, internet: 5, life: 3 };
+const TAG_TARGET = { headlines: 5, ai: 10, tech: 6, finance: 5, economy: 5, education: 3, internet: 5, life: 3 };
 
 // 每个板块送进模型的素材上限（AI/科技板块要给足，才能支撑"AI 10 条、科技 8 条"）
 // 板块素材不足时会自动少送，不会硬凑
@@ -421,10 +422,12 @@ async function callLLM(material) {
     + '  不收：纯观点评论、教程、评测、招聘、旧闻回顾、与 AI 无关的科技新闻。\n'
     + '  国内外都要有：国外（OpenAI/Anthropic/Google/Meta/xAI/NVIDIA/微软/Mistral/亚马逊/Tenstorrent 等）≥3 条；国内（阿里/字节/腾讯/百度/DeepSeek/月之暗面/MiniMax/智谱/商汤/上海 AI Lab 等）≥4 条。\n'
     + '  排序：重磅新模型 > 智能体/产品升级 > 算力芯片 > 融资/安全。\n'
-    + '■ tech（科技硬核）— 必须 8 条\n'
+    + '■ tech（科技硬核）— 目标 6 条（最低 3 条，宁少勿滥）\n'
     + '  1级：旗舰硬件/新品类正式发布（苹果、华为、三星等）、航天与火箭（发射/回收/载人）、汽车突破（飞行汽车、自动驾驶、新车型量产）、芯片新架构/新制程、机器人、能源与材料突破。\n'
     + '  补充顺序（用于补满）：①重大基础设施投产/下线 ②重要开源项目或软件大版本发布 ③通信与网络重大进展 ④国家级科技工程节点。\n'
     + '  不收：开售预告与定档、颜色/存储版本、参数曝光、跑分对比、折痕/发热等细节八卦、优惠促销、配件周边、未证实的供应链传闻。\n'
+    + '  严禁凑数：灯泡/耳机/NAS/路由器/游戏上架/软件小版本这类常规商品动态一律不要，即使因此不足 6 条也可以只写 3-4 条。\n'
+    + '  判断标准：这条能不能上科技媒体头条？不能就换候选里更重要的；候选里没有就不写。\n'
     + '  国内外都要有：国外 ≥3 条、国内 ≥3 条。\n'
     + '■ headlines（今日必读）— 必须 5 条\n'
     + '  当天最重要的综合要闻（政策、国际大事、经济数据、社会重大事件）。不收产品发布（那属于 ai/tech）。\n'
