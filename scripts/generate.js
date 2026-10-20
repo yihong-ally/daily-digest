@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 /**
  * 每日前沿简报 · 独立生成脚本（GitHub Actions / 本地均可运行）
  * - 抓取中文新闻源（RSS + JSON API）→ 调用大模型生成八板块简报 → 写入静态 JSON
@@ -448,10 +448,15 @@ async function callLLM(material) {
     + '）的素材，已按板块分组。请只从对应板块的素材里挑选，按模块模板生成简报：\n'
     + buildMaterialText(material);
 
+  return await llmRequest(sys, user, 0.5);
+}
+
+// 通用大模型请求（JSON 模式优先，失败回退普通模式）
+async function llmRequest(sys, user, temperature) {
   const base = {
     model: LLM_MODEL,
     messages: [{ role: 'system', content: sys }, { role: 'user', content: user }],
-    temperature: 0.5
+    temperature: temperature === undefined ? 0.5 : temperature
   };
 
   const doCall = async (useJson) => {
@@ -490,6 +495,54 @@ async function callLLM(material) {
   }
   if (parsed === undefined) throw lastErr || new Error('LLM all attempts failed');
   return parsed;
+}
+
+// 补稿：某板块条数未达目标时，用该板块剩余的候选素材再要一轮，只补缺额
+async function topUpSections(sections, material) {
+  const usedUrls = new Set();
+  for (const s of SECTIONS) {
+    for (const it of ((sections[s] && sections[s].items) || [])) {
+      if (it.url) usedUrls.add(it.url);
+      if (it.title) usedUrls.add('T:' + normalizeTitle(it.title));
+    }
+  }
+  const blocks = [];
+  const needs = [];
+  for (const s of SECTIONS) {
+    const target = TAG_TARGET[s] || 3;
+    const have = (sections[s] && sections[s].items ? sections[s].items.length : 0);
+    if (have >= target) continue;
+    const candidates = material.filter(m => m.tag === s && !usedUrls.has(m.url) && !usedUrls.has('T:' + normalizeTitle(m.title)));
+    if (!candidates.length) { log('topup: no candidate left for', s); continue; }
+    needs.push({ section: s, need: target - have });
+    blocks.push('【' + (TAG_LABELS[s] || s) + '】还需 ' + (target - have) + ' 条，候选素材：');
+    candidates.slice(0, 15).forEach((m, i) => {
+      blocks.push((i + 1) + '. [' + m.title + '](' + m.url + ')  来源:' + (m.source || '未知'));
+      if (m.summary) blocks.push('   ' + m.summary);
+    });
+  }
+  if (!needs.length) return null;
+
+  const sys2 = '你是简报补稿编辑。只输出一个 JSON 对象：'
+    + '{"sections":{"<板块key>":{"label":"","items":[{"title":"","summary":"","source":"","url":"","tag":""}]}}}。'
+    + '规则：①每条 title 改写成大白话（20-28 字）；②summary 两句——「发生了什么」+「看点：为什么值得看」；'
+    + '③url 必须原样取自给定候选，不许自己拼；④不许编造候选里没有的公司/数字；⑤同一事件不要重复写；'
+    + '⑥板块 key 用我给出的英文 key（如 ai、tech、finance、economy、education、internet、life、headlines）；'
+    + '⑦按每个板块要求的「还需 N 条」如数补齐，不要多写。';
+  const user2 = '以下板块条数不足，请补齐。\n\n' + blocks.join('\n');
+
+  const extra = await llmRequest(sys2, user2, 0.4);
+  const added = {};
+  const ex = (extra && extra.sections) || {};
+  for (const need of needs) {
+    const src = ex[need.section];
+    if (!src || !Array.isArray(src.items)) continue;
+    if (!sections[need.section]) sections[need.section] = { label: TAG_LABELS[need.section] || need.section, items: [] };
+    const got = src.items.filter(it => it && it.title && it.url).slice(0, need.need);
+    sections[need.section].items = sections[need.section].items.concat(got);
+    added[need.section] = got.length;
+  }
+  return added;
 }
 
 // ---- 自选列表（实时行情，失败回退默认）----
@@ -665,6 +718,20 @@ async function runEdition(dateStr, slot, opts) {
   const dupRemoved = dedupeSections(sections);
   if (dupRemoved.length) {
     log('dedupe: removed', dupRemoved.length, dupRemoved.map(d => d.section + '←' + d.sameAs + ':' + d.title.slice(0, 16)).join(' | '));
+  }
+
+  // 补稿：未达目标条数的板块，用剩余候选再要一轮（失败不影响主流程，最多两轮）
+  for (let round = 1; round <= 2; round++) {
+    try {
+      const added = await topUpSections(sections, material);
+      const totalAdded = added ? Object.values(added).reduce((a, b) => a + b, 0) : 0;
+      if (!added || !totalAdded) break;
+      const dup2 = dedupeSections(sections);
+      log('topup round', round, 'added:', JSON.stringify(added), dup2.length ? ('dedupe removed: ' + dup2.length) : '');
+    } catch (e) {
+      log('topup failed (ignore):', e.message);
+      break;
+    }
   }
 
   // 3) 组装 digest
