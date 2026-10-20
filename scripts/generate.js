@@ -318,6 +318,38 @@ function buildMaterialText(material) {
   return parts.join('\n');
 }
 
+// ---- 结果后处理：跨板块去重（模型偶尔会把同一事件同时写进两个板块）----
+function normalizeTitle(s) {
+  return (s || '').replace(/[\s，。、；：""''（）()【】\[\]「」《》!！?？—\-·|/:：]/g, '');
+}
+// 两个标题是否共享 >= n 个连续汉字（用于判断是否同一事件）
+function shareLongPhrase(a, b, n) {
+  if (a.length < n || b.length < n) return false;
+  for (let i = 0; i + n <= a.length; i++) {
+    if (b.indexOf(a.slice(i, i + n)) >= 0) return true;
+  }
+  return false;
+}
+// 按 SECTIONS 顺序（越靠前越重要）保留首次出现，后面板块的重复条目删掉
+function dedupeSections(sections, minPhrase) {
+  const n = minPhrase || 6;
+  const seen = [];
+  const removed = [];
+  for (const sec of SECTIONS) {
+    const s = sections[sec];
+    if (!s || !Array.isArray(s.items)) continue;
+    s.items = s.items.filter(it => {
+      const t = normalizeTitle(it.title);
+      const dup = seen.find(k => (k.url && it.url && k.url === it.url) ||
+        (t.length >= n && k.t.length >= n && shareLongPhrase(t, k.t, n)));
+      if (dup) { removed.push({ section: sec, title: it.title, sameAs: dup.section }); return false; }
+      seen.push({ url: it.url, t, section: sec });
+      return true;
+    });
+  }
+  return removed;
+}
+
 // ---- 大模型调用 ----
 function extractJson(text) {
   const fenced = text.match(/```(?:json)?\s*([\s\S]*?)```/);
@@ -346,8 +378,9 @@ async function callLLM(material) {
     + '  国内外都要有：至少 3 条国外（OpenAI / Anthropic / Google / Meta / xAI / NVIDIA / 微软 / Mistral 等），至少 4 条国内（阿里 / 字节 / 腾讯 / 百度 / DeepSeek / 月之暗面 / MiniMax / 智谱 / 商汤等）。\n'
     + '  按重要性排序：重磅新模型 > 智能体/产品升级 > 算力突破。\n'
     + '■ tech（科技硬核）— 目标 8 条\n'
-    + '  只收：国内外重大科技事件——新硬件/旗舰产品发布（苹果、华为、三星等）、航天与火箭、汽车（飞行汽车、自动驾驶、新车型重大突破）、芯片与半导体、机器人、能源与材料突破。\n'
-    + '  不收：小版本更新、配件与周边、优惠促销、跑分对比、供应链传闻（除非官方确认）。\n'
+    + '  只收：国内外重大科技事件——旗舰硬件/新品类正式发布（苹果、华为、三星等）、航天与火箭（发射/回收/载人）、汽车（飞行汽车、自动驾驶、量产新车重大突破）、芯片与半导体（新架构/新制程/流片）、机器人、能源与材料突破。\n'
+    + '  不收：开售预告与定档、颜色/存储版本、参数曝光、跑分对比、折痕/发热等细节八卦、优惠促销、配件周边、供应链传闻（除非官方确认）。凡是"还没正式发生"的，一律不要。\n'
+    + '  判断标准：这件事是否值得上科技媒体头条？如果只是常规产品线更新，放到 tech 的末尾或干脆不写。\n'
     + '  国内外都要有：至少 3 条国外、至少 3 条国内。\n'
     + '■ headlines（今日必读）— 目标 5 条\n'
     + '  只收：当天最重要的综合要闻（政策、国际大事、经济数据、社会重大事件）。不收产品发布（那属于 ai/tech）。\n'
@@ -589,6 +622,11 @@ async function runEdition(dateStr, slot, opts) {
   for (const s of SECTIONS) {
     if (!sections[s] || !Array.isArray(sections[s].items)) sections[s] = { label: s, items: [] };
   }
+  // 后处理：跨板块去重（同一事件只保留最靠前板块的那一条）
+  const dupRemoved = dedupeSections(sections);
+  if (dupRemoved.length) {
+    log('dedupe: removed', dupRemoved.length, dupRemoved.map(d => d.section + '←' + d.sameAs + ':' + d.title.slice(0, 16)).join(' | '));
+  }
 
   // 3) 组装 digest
   const watchlist = await fetchWatchlist();
@@ -748,4 +786,4 @@ if (require.main === module) {
     process.exit(r.ok === false ? 1 : 0);
   }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
 }
-module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour, buildMaterialText, balancedSample, parsePubDate, parseJsonNews };
+module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour, buildMaterialText, balancedSample, parsePubDate, parseJsonNews, dedupeSections };
