@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 /**
  * 每日前沿简报 · 独立生成脚本（GitHub Actions / 本地均可运行）
  * - 抓取中文新闻源（RSS + JSON API）→ 调用大模型生成八板块简报 → 写入静态 JSON
@@ -83,6 +83,9 @@ const NEWS_SOURCES = [
   { url: 'https://sspai.com/feed', type: 'rss', tag: 'life' },
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2512&num=30', type: 'json', tag: 'life' }
 ];
+
+// 每个板块的目标产出条数（写进素材标题，作为模型的即时提醒）
+const TAG_TARGET = { headlines: 5, ai: 10, tech: 8, finance: 5, economy: 5, education: 3, internet: 5, life: 3 };
 
 // 每个板块送进模型的素材上限（AI/科技板块要给足，才能支撑"AI 10 条、科技 8 条"）
 // 板块素材不足时会自动少送，不会硬凑
@@ -333,7 +336,9 @@ function buildMaterialText(material) {
   for (const tag of SECTIONS) {
     const g = groups[tag] || [];
     if (!g.length) continue;
-    parts.push('\n===== 【' + (TAG_LABELS[tag] || tag) + '】候选素材（' + g.length + ' 条）=====');
+    const tgt = TAG_TARGET[tag] || 3;
+    const hint = g.length >= tgt ? ('→ 本板块必须产出 ' + tgt + ' 条') : ('→ 目标 ' + tgt + ' 条，但候选只有 ' + g.length + ' 条，按实际素材写，不要编造');
+    parts.push('\n===== 【' + (TAG_LABELS[tag] || tag) + '】候选素材 ' + g.length + ' 条 ' + hint + ' =====');
     for (const m of g) {
       n += 1;
       const marks = (m.pubDate ? '' : ' [无日期]') + (m.derived ? ' [跨板块补充]' : '');
@@ -702,7 +707,11 @@ async function runEdition(dateStr, slot, opts) {
     appendHistory(path.join(DATA_DIR, 'history', 'funds.json'), watchlist.funds, dateStr);
   }
 
-  log('done', dateKey, editionLabel, 'sections:', Object.keys(sections).join('/'));
+  const secCounts = {};
+  for (const s of SECTIONS) secCounts[s] = (sections[s] && sections[s].items ? sections[s].items.length : 0);
+  log('done', dateKey, editionLabel, '条数:', JSON.stringify(secCounts));
+  const shortSecs = SECTIONS.filter(s => secCounts[s] < (TAG_TARGET[s] || 3));
+  if (shortSecs.length) log('WARN 未达目标条数的板块:', shortSecs.map(s => s + '(' + secCounts[s] + '/' + (TAG_TARGET[s] || 3) + ')').join(', '));
   // 5) 微信推送（失败不影响生成结果）
   await sendPush(digest);
   return { ok: true, date: dateStr, slot, edition: editionLabel, dateKey, items: Object.values(sections).reduce((n, s) => n + (s.items ? s.items.length : 0), 0) };
