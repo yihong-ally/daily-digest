@@ -43,25 +43,42 @@ const WATCHLIST_DEFAULT = (() => {
   } catch (e) { return { stocks: [], funds: [] }; }
 })();
 
-// ---- 新闻源（中文、当日更新、多源容错；某源失效只记日志，不影响整体）----
+// ---- 新闻源（多源容错：某源失效只记日志，不影响整体）----
+// 2026-10-20 实测调整：删掉 3 个已失效源（澎湃 RSS 已返回 HTML、虎嗅 RSS 稳定超时、新浪教育 lid=2523 空响应），
+// 补上已验证可用的源：AI 前沿（雷峰网）、英文前沿（Hacker News）、宏观财经（华尔街见闻快讯 / 中新网财经）、
+// 互联网商业（钛媒体）、教育（芥末堆 + 教育部官网列表页，后者是 HTML 需专用解析）。
 const FETCH_TIMEOUT = 15000;
 const LLM_TIMEOUT = 90000;
 const NEWS_SOURCES = [
+  // 综合要闻
   { url: 'https://news-at.zhihu.com/api/4/news/latest', type: 'json', tag: 'headlines' },
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2510&num=30', type: 'json', tag: 'economy' },
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2511&num=30', type: 'json', tag: 'headlines' },
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2512&num=30', type: 'json', tag: 'life' },
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&num=30', type: 'json', tag: 'tech' },
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2518&num=30', type: 'json', tag: 'finance' },
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2523&num=30', type: 'json', tag: 'education' },
-  { url: 'https://www.36kr.com/feed', type: 'rss', tag: 'tech' },
-  { url: 'https://www.ithome.com/rss/', type: 'rss', tag: 'tech' },
+  // AI · 大模型
   { url: 'https://www.geekpark.net/rss', type: 'rss', tag: 'ai' },
+  { url: 'https://www.leiphone.com/feed', type: 'rss', tag: 'ai' },
+  // 科技硬核
+  { url: 'https://www.ithome.com/rss/', type: 'rss', tag: 'tech' },
+  { url: 'https://www.36kr.com/feed', type: 'rss', tag: 'tech' },
   { url: 'https://www.ifanr.com/feed', type: 'rss', tag: 'tech' },
-  { url: 'https://www.huxiu.com/rss/0.xml', type: 'rss', tag: 'internet' },
+  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&num=30', type: 'json', tag: 'tech' },
+  { url: 'https://hnrss.org/frontpage', type: 'rss', tag: 'tech' },   // 英文前沿（模型会改写成中文）
+  // 财经 · 市场
+  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2518&num=30', type: 'json', tag: 'finance' },
+  // 宏观经济
+  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2510&num=30', type: 'json', tag: 'economy' },
+  { url: 'https://api-one.wallstcn.com/apiv1/content/lives?channel=global-channel&limit=30', type: 'json', tag: 'economy' },
+  { url: 'https://www.chinanews.com.cn/rss/finance.xml', type: 'rss', tag: 'economy' },
+  // 教育（免费 RSS 大多已死，用垂直媒体 + 教育部官网）
+  { url: 'https://www.jiemodui.com/rss', type: 'rss', tag: 'education' },
+  { url: 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/', type: 'html', tag: 'education', base: 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/' },
+  // 互联网大厂
+  { url: 'https://www.tmtpost.com/rss.xml', type: 'rss', tag: 'internet' },
+  // 生活 · 消费
   { url: 'https://sspai.com/feed', type: 'rss', tag: 'life' },
-  { url: 'https://www.thepaper.cn/rss_news.xml', type: 'rss', tag: 'headlines' }
+  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2512&num=30', type: 'json', tag: 'life' }
 ];
+// 每个板块至少要送进模型的素材条数（公平取样用；不足则有多少送多少）
+const PER_TAG_MIN = 4;
 
 const SITE_NAME = '每日前沿简报';
 const SECTIONS = ['headlines', 'ai', 'tech', 'finance', 'economy', 'education', 'internet', 'life'];
@@ -104,11 +121,19 @@ function cleanText(s) {
 
 function parsePubDate(raw) {
   if (!raw) return null;
+  // 数字时间戳（秒 / 毫秒）：新浪 ctime="1792495780"、华尔街见闻 display_time=1792495979
+  const str = String(raw).trim();
+  if (/^\d{10,13}$/.test(str)) {
+    const n = parseInt(str, 10);
+    const ms = str.length <= 10 ? n * 1000 : n;
+    const d = new Date(ms);
+    if (!isNaN(d.getTime()) && d.getFullYear() > 2000) return beijingDateStr(d);
+  }
   try {
     const d = new Date(raw);
     if (!isNaN(d.getTime())) return beijingDateStr(d);
   } catch (e) {}
-  const m1 = raw.match(/(\d{4})[年\-\/](\d{1,2})[月\-\/](\d{1,2})/);
+  const m1 = str.match(/(\d{4})[年\-\/](\d{1,2})[月\-\/](\d{1,2})/);
   if (m1) return m1[1] + '-' + m1[2].padStart(2, '0') + '-' + m1[3].padStart(2, '0');
   return null;
 }
@@ -121,16 +146,77 @@ function parseJsonNews(text, tag) {
     else if (data.result && Array.isArray(data.result.data)) list = data.result.data;
     else if (Array.isArray(data.stories)) list = data.stories;
     else if (Array.isArray(data)) list = data;
+    else if (data.data) {                                  // 华尔街见闻等：{data:{items:[...]}}
+      for (const k of ['data', 'items', 'lives', 'articles', 'list', 'roll_data']) {
+        if (Array.isArray(data.data[k])) { list = data.data[k]; break; }
+      }
+    }
     return list.map(a => {
-      const title = cleanText(a.title || a.name || '');
-      const url = cleanText(a.url || a.share_url || a.link || '');
-      const summary = cleanText(a.intro || a.description || a.summary || a.content || a.hint || '').slice(0, 300);
-      const source = cleanText(a.source || a.sourceName || a.siteName || '');
-      const pubDateRaw = a.ctime || a.intime || a.pubDate || a.publishedAt || a.publish_time || a.created_at || a.date || '';
+      const title = cleanText(a.title || a.highlight_title || a.name || a.content_short || '').slice(0, 120);
+      const url = cleanText(a.url || a.share_url || a.link || a.uri || a.content_more_uri || '');
+      const summary = cleanText(
+        a.intro || a.description || a.summary || a.content_text || a.content_short || a.content || a.hint || ''
+      ).slice(0, 300);
+      const source = cleanText(a.source || a.sourceName || a.siteName || (a.global_channel_name || '') || '');
+      const pubDateRaw = a.ctime || a.intime || a.display_time || a.pubDate || a.publishedAt ||
+        a.publish_time || a.created_at || a.date || '';
       const pubDate = parsePubDate(pubDateRaw);
       return { title, url, summary, source, tag, pubDate };
     }).filter(m => m.title && m.url && /^https?:/i.test(m.url));
   } catch (e) { return []; }
+}
+
+// 政府/机构站点列表页（HTML）解析：抓 <li> 里的「链接 + 标题 + 日期」
+function parseHtmlList(html, tag, base) {
+  const items = [];
+  const hostTitle = cleanText((html.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || '');
+  const source = hostTitle.replace(/[-_|].*$/, '').trim() || '官网';
+  const liRe = /<li[^>]*>([\s\S]*?)<\/li>/gi;
+  let m;
+  while ((m = liRe.exec(html))) {
+    const inner = m[1];
+    const a = inner.match(/<a[^>]+href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/i);
+    if (!a) continue;
+    const title = cleanText(a[2]);
+    if (!title || title.length < 8) continue;
+    let href = a[1];
+    try { href = new URL(href, base).toString(); } catch (e) { continue; }
+    if (!/^https?:/i.test(href)) continue;
+    const d = inner.match(/(\d{4}-\d{2}-\d{2})/);
+    items.push({ title, url: href, summary: '', source, tag, pubDate: d ? d[1] : null });
+  }
+  return items;
+}
+
+async function fetchSource(source) {
+  try {
+    const ctrl = new AbortController();
+    const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT);
+    const res = await fetch(source.url, {
+      signal: ctrl.signal,
+      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; DailyBriefBot/1.0)' }
+    });
+    clearTimeout(t);
+    if (!res.ok) { log('source not ok', source.url, res.status); return []; }
+    let text;
+    if (source.type === 'html') {
+      // 政府站点编码不统一，UTF-8 解出乱码时回退 GBK
+      const buf = await res.arrayBuffer();
+      text = new TextDecoder('utf-8').decode(buf);
+      if (((text.match(/\uFFFD/g) || []).length) > 50) text = new TextDecoder('gbk').decode(buf);
+    } else {
+      text = await res.text();
+    }
+    let items;
+    if (source.type === 'json') items = parseJsonNews(text, source.tag);
+    else if (source.type === 'html') items = parseHtmlList(text, source.tag, source.base || source.url);
+    else items = parseRss(text, source.tag);
+    log('source ok', source.url, items.length);
+    return items;
+  } catch (e) {
+    log('source failed', source.url, e.message);
+    return [];
+  }
 }
 
 function parseRss(xml, tag) {
@@ -157,24 +243,48 @@ function parseRss(xml, tag) {
   return items;
 }
 
-async function fetchSource(source) {
-  try {
-    const ctrl = new AbortController();
-    const t = setTimeout(() => ctrl.abort(), FETCH_TIMEOUT);
-    const res = await fetch(source.url, {
-      signal: ctrl.signal,
-      headers: { 'User-Agent': 'Mozilla/5.0 (compatible; DailyBriefBot/1.0)' }
-    });
-    clearTimeout(t);
-    if (!res.ok) { log('source not ok', source.url, res.status); return []; }
-    const text = await res.text();
-    const items = source.type === 'json' ? parseJsonNews(text, source.tag) : parseRss(text, source.tag);
-    log('source ok', source.url, items.length);
-    return items;
-  } catch (e) {
-    log('source failed', source.url, e.message);
-    return [];
+// ---- 素材取样 ----
+function shuffle(arr) {
+  const a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
   }
+  return a;
+}
+
+// 按板块公平取样：每个板块先保底 min 条，剩余名额在板块间轮转补足
+function balancedSample(items, limit, perTagMin) {
+  const groups = {};
+  for (const it of items) {
+    const k = it.tag || 'other';
+    (groups[k] = groups[k] || []).push(it);
+  }
+  const tags = Object.keys(groups);
+  if (!tags.length) return [];
+  const picked = [];
+  const used = {};
+  tags.forEach(t => { used[t] = 0; });
+
+  // 第一轮：每板块保底
+  const quota = perTagMin || 0;
+  for (const t of tags) {
+    const take = Math.min(quota, groups[t].length);
+    picked.push.apply(picked, groups[t].slice(0, take));
+    used[t] = take;
+    if (picked.length >= limit) return picked.slice(0, limit);
+  }
+  // 第二轮：轮转补足
+  let progressed = true;
+  while (picked.length < limit && progressed) {
+    progressed = false;
+    for (const t of tags) {
+      if (picked.length >= limit) break;
+      const next = groups[t][used[t]];
+      if (next) { picked.push(next); used[t]++; progressed = true; }
+    }
+  }
+  return picked.slice(0, limit);
 }
 
 // ---- 大模型调用 ----
@@ -209,6 +319,7 @@ async function callLLM(material) {
     + '}\n'
     + '要求：今日必读 / AI / 科技硬核 / 财经市场 每板块 3-4 条；宏观经济 / 教育 / 互联网大厂 / 生活消费 每板块 2-3 条；title 为简体中文、口语化；summary 为「发生了什么 + 看点」两句话；source 用素材里的真实媒体名；url 用素材里的真实链接；tag 为 2-6 字口语标签（如「降息」「新机发布」「监管新规」）。'
     + '板块定位：headlines=当天最重要的综合要闻；ai=大模型/AI 应用；tech=芯片/机器人/航天等硬科技；finance=股市/基金/黄金/外汇；economy=宏观政策/经济数据/国际贸易；education=教育政策/升学/校园/教育科技；internet=互联网大厂/电商/社交/App；life=民生/消费/健康/出行。'
+    + '选题偏好：读者最关心「AI 与大模型的前沿进展」（新模型、新能力、落地应用）和「财经/宏观动向」，这两类优先挑；其次是硬科技与互联网大厂；教育、生活有真正相关的再放，没有就少放。'
     + '同一事件全简报只能出现一次，严禁跨板块重复；哪个板块素材不足就少于该条数，但绝不编造、绝不用过期旧闻充数。';
 
   const user = '以下是今日（'
@@ -401,12 +512,15 @@ async function runEdition(dateStr, slot, opts) {
   if (material.length === 0) throw new Error('no news material fetched (after date filter)');
 
   // 打乱顺序，避免取前 N 条全是同一来源
-  for (let i = material.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [material[i], material[j]] = [material[j], material[i]];
-  }
-  if (material.length > LIMIT) material = material.slice(0, LIMIT);
-  log('use', material.length, 'items for llm');
+  material = shuffle(material);
+
+  // ★ 按板块公平取样：小板块（教育/互联网）素材天然少，若整体打乱后截断，它们大概率进不了 60 条，
+  //   结果就是这几个板块长期空着。这里改成「每个板块先保底 PER_TAG_MIN 条，再余量轮转补足」。
+  const beforeBalance = material.length;
+  material = balancedSample(material, LIMIT, PER_TAG_MIN);
+  const byTag = {};
+  for (const m of material) byTag[m.tag] = (byTag[m.tag] || 0) + 1;
+  log('use', material.length, '/', beforeBalance, 'items for llm | per-tag:', JSON.stringify(byTag));
 
   // 2) 大模型生成
   const llm = await callLLM(material);
