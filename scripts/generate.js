@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 /**
  * 每日前沿简报 · 独立生成脚本（GitHub Actions / 本地均可运行）
  * - 抓取中文新闻源（RSS + JSON API）→ 调用大模型生成八板块简报 → 写入静态 JSON
@@ -51,37 +51,36 @@ const FETCH_TIMEOUT = 15000;
 const LLM_TIMEOUT = 90000;
 const NEWS_SOURCES = [
   // 综合要闻（注意：新浪滚动 2510/2511 实测返回 2024-2025 旧闻，已弃用）
-  { url: 'https://news-at.zhihu.com/api/4/news/latest', type: 'json', tag: 'headlines' },
-  { url: 'https://www.chinanews.com.cn/rss/scroll-news.xml', type: 'rss', tag: 'headlines' },
+  { url: 'https://news-at.zhihu.com/api/4/news/latest', name: '知乎', type: 'json', tag: 'headlines' },
+  { url: 'https://www.chinanews.com.cn/rss/scroll-news.xml', name: '中新网', type: 'rss', tag: 'headlines' },
   // AI · 大模型（国内 + 国外各留专用源，保证"国内外都有"）
-  { url: 'https://www.leiphone.com/feed', type: 'rss', tag: 'ai' },                    // 雷峰网（国内，AI 前沿）
-  { url: 'https://www.geekpark.net/rss', type: 'rss', tag: 'ai' },                     // 极客公园（国内，AI 应用）
-  { url: 'https://www.qbitai.com/feed', type: 'rss', tag: 'ai' },                      // 量子位（国内，AI 垂直）
-  { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', type: 'rss', tag: 'ai' }, // TechCrunch AI（国外，AI 专属）
-  { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', type: 'rss', tag: 'ai' }, // The Verge AI（国外）
+  { url: 'https://www.leiphone.com/feed', name: '雷峰网', type: 'rss', tag: 'ai' },                    // 雷峰网（国内，AI 前沿）
+  { url: 'https://www.geekpark.net/rss', name: '极客公园', type: 'rss', tag: 'ai' },                     // 极客公园（国内，AI 应用）
+  { url: 'https://www.qbitai.com/feed', name: '量子位', type: 'rss', tag: 'ai' },                      // 量子位（国内，AI 垂直）
+  { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', name: 'TechCrunch', type: 'rss', tag: 'ai' }, // TechCrunch AI（国外，AI 专属）
   // 科技硬核（国内外重大事件：新硬件发布 / 航天 / 汽车 / 芯片 / 机器人）
-  { url: 'https://www.ithome.com/rss/', type: 'rss', tag: 'tech' },
-  { url: 'https://www.36kr.com/feed', type: 'rss', tag: 'tech' },
-  { url: 'https://www.ifanr.com/feed', type: 'rss', tag: 'tech' },
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&num=30', type: 'json', tag: 'tech' },
-  { url: 'https://hnrss.org/frontpage', type: 'rss', tag: 'tech' },                    // Hacker News（国外）
-  { url: 'https://feeds.arstechnica.com/arstechnica/technology-lab', type: 'rss', tag: 'tech' }, // Ars Technica（国外）
-  { url: 'https://www.technologyreview.com/feed/', type: 'rss', tag: 'tech' },          // MIT 科技评论（国外）
+  { url: 'https://www.ithome.com/rss/', name: 'IT之家', type: 'rss', tag: 'tech' },
+  { url: 'https://www.36kr.com/feed', name: '36氪', type: 'rss', tag: 'tech' },
+  { url: 'https://www.ifanr.com/feed', name: '爱范儿', type: 'rss', tag: 'tech' },
+  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&num=30', name: '新浪', type: 'json', tag: 'tech' },
+  { url: 'https://hnrss.org/frontpage', name: 'Hacker News', type: 'rss', tag: 'tech' },                    // Hacker News（国外）
+  { url: 'https://feeds.arstechnica.com/arstechnica/technology-lab', name: 'Ars Technica', type: 'rss', tag: 'tech' }, // Ars Technica（国外）
+  { url: 'https://www.technologyreview.com/feed/', name: 'MIT 科技评论', type: 'rss', tag: 'tech' },          // MIT 科技评论（国外）
   // 财经 · 市场
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2518&num=30', type: 'json', tag: 'finance' },
+  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2518&num=30', name: '新浪', type: 'json', tag: 'finance' },
   // 宏观经济
-  { url: 'https://api-one.wallstcn.com/apiv1/content/lives?channel=global-channel&limit=30', type: 'json', tag: 'economy' },
-  { url: 'https://api-one.wallstcn.com/apiv1/content/articles?channel=global&limit=20', type: 'json', tag: 'economy' },
-  { url: 'https://www.chinanews.com.cn/rss/finance.xml', type: 'rss', tag: 'economy' },
+  { url: 'https://api-one.wallstcn.com/apiv1/content/lives?channel=global-channel&limit=30', name: '华尔街见闻', type: 'json', tag: 'economy' },
+  { url: 'https://api-one.wallstcn.com/apiv1/content/articles?channel=global&limit=20', name: '华尔街见闻', type: 'json', tag: 'economy' },
+  { url: 'https://www.chinanews.com.cn/rss/finance.xml', name: '中新网', type: 'rss', tag: 'economy' },
   // 教育（免费 RSS 大多已死，用垂直媒体 + 教育部官网两个栏目）
-  { url: 'https://www.jiemodui.com/rss', type: 'rss', tag: 'education' },
-  { url: 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/', type: 'html', tag: 'education', base: 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/' },
-  { url: 'http://www.moe.gov.cn/jyb_xwfb/s5147/', type: 'html', tag: 'education', base: 'http://www.moe.gov.cn/jyb_xwfb/s5147/' },
+  { url: 'https://www.jiemodui.com/rss', name: '芥末堆', type: 'rss', tag: 'education' },
+  { url: 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/', name: '教育部', type: 'html', tag: 'education', base: 'http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/' },
+  { url: 'http://www.moe.gov.cn/jyb_xwfb/s5147/', name: '教育部', type: 'html', tag: 'education', base: 'http://www.moe.gov.cn/jyb_xwfb/s5147/' },
   // 互联网大厂
-  { url: 'https://www.tmtpost.com/rss.xml', type: 'rss', tag: 'internet' },
+  { url: 'https://www.tmtpost.com/rss.xml', name: '钛媒体', type: 'rss', tag: 'internet' },
   // 生活 · 消费
-  { url: 'https://sspai.com/feed', type: 'rss', tag: 'life' },
-  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2512&num=30', type: 'json', tag: 'life' }
+  { url: 'https://sspai.com/feed', name: '少数派', type: 'rss', tag: 'life' },
+  { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2512&num=30', name: '新浪', type: 'json', tag: 'life' }
 ];
 
 // 每个板块的目标产出条数（写进素材标题，作为模型的即时提醒）
@@ -149,7 +148,7 @@ function parsePubDate(raw) {
   return null;
 }
 
-function parseJsonNews(text, tag) {
+function parseJsonNews(text, tag, defaultSource) {
   try {
     const data = JSON.parse(text);
     let list = [];
@@ -168,7 +167,7 @@ function parseJsonNews(text, tag) {
       const summary = cleanText(
         a.intro || a.description || a.summary || a.content_text || a.content_short || a.content || a.hint || ''
       ).slice(0, 300);
-      const source = cleanText(a.source || a.sourceName || a.siteName || (a.global_channel_name || '') || '');
+      const source = cleanText(a.source || a.sourceName || a.siteName || (a.global_channel_name || '') || defaultSource || '');
       const pubDateRaw = a.ctime || a.intime || a.display_time || a.pubDate || a.publishedAt ||
         a.publish_time || a.created_at || a.date || '';
       const pubDate = parsePubDate(pubDateRaw);
@@ -178,10 +177,10 @@ function parseJsonNews(text, tag) {
 }
 
 // 政府/机构站点列表页（HTML）解析：抓 <li> 里的「链接 + 标题 + 日期」
-function parseHtmlList(html, tag, base) {
+function parseHtmlList(html, tag, base, defaultSource) {
   const items = [];
   const hostTitle = cleanText((html.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || '');
-  const source = hostTitle.replace(/[-_|].*$/, '').trim() || '官网';
+  const source = defaultSource || hostTitle.replace(/[-_|].*$/, '').trim() || '官网';
   const liRe = /<li[^>]*>([\s\S]*?)<\/li>/gi;
   let m;
   while ((m = liRe.exec(html))) {
@@ -219,9 +218,9 @@ async function fetchSource(source) {
       text = await res.text();
     }
     let items;
-    if (source.type === 'json') items = parseJsonNews(text, source.tag);
-    else if (source.type === 'html') items = parseHtmlList(text, source.tag, source.base || source.url);
-    else items = parseRss(text, source.tag);
+    if (source.type === 'json') items = parseJsonNews(text, source.tag, source.name);
+    else if (source.type === 'html') items = parseHtmlList(text, source.tag, source.base || source.url, source.name);
+    else items = parseRss(text, source.tag, source.name);
     log('source ok', source.url, items.length);
     return items;
   } catch (e) {
@@ -230,10 +229,10 @@ async function fetchSource(source) {
   }
 }
 
-function parseRss(xml, tag) {
+function parseRss(xml, tag, defaultSource) {
   const items = [];
   const channelTitle = (xml.match(/<channel>[\s\S]*?<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1] || '';
-  const channelSource = cleanText(channelTitle);
+  const channelSource = defaultSource || cleanText(channelTitle).split(/[|｜]/)[0].trim();
   const blocks = xml.match(/<item[\s\S]*?<\/item>|<entry[\s\S]*?<\/entry>/g) || [];
   for (const b of blocks) {
     const pick = (t) => {
@@ -910,4 +909,4 @@ if (require.main === module) {
     process.exit(r.ok === false ? 1 : 0);
   }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
 }
-module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour, buildMaterialText, balancedSample, parsePubDate, parseJsonNews, dedupeSections };
+module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour, buildMaterialText, balancedSample, parsePubDate, parseJsonNews, parseRss, dedupeSections };
