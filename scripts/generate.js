@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 /**
  * 每日前沿简报 · 独立生成脚本（GitHub Actions / 本地均可运行）
  * - 抓取中文新闻源（RSS + JSON API）→ 调用大模型生成八板块简报 → 写入静态 JSON
@@ -34,7 +34,7 @@ const LLM_BASE = (process.env.LLM_BASE || 'https://api.deepseek.com/v1').replace
 const LLM_KEY = process.env.LLM_KEY || '';
 const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-chat';
 const DATA_DIR = path.resolve(process.env.DATA_DIR || path.join(__dirname, '..', 'site', 'data'));
-const LIMIT = parseInt(process.env.LIMIT || '60', 10) || 60;
+const LIMIT = parseInt(process.env.LIMIT || '120', 10) || 120;
 
 // watchlist 默认值（随脚本打包，实时行情获取失败时回退用）
 const WATCHLIST_DEFAULT = (() => {
@@ -53,15 +53,20 @@ const NEWS_SOURCES = [
   // 综合要闻
   { url: 'https://news-at.zhihu.com/api/4/news/latest', type: 'json', tag: 'headlines' },
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2511&num=30', type: 'json', tag: 'headlines' },
-  // AI · 大模型
-  { url: 'https://www.geekpark.net/rss', type: 'rss', tag: 'ai' },
-  { url: 'https://www.leiphone.com/feed', type: 'rss', tag: 'ai' },
-  // 科技硬核
+  // AI · 大模型（国内 + 国外各留专用源，保证"国内外都有"）
+  { url: 'https://www.leiphone.com/feed', type: 'rss', tag: 'ai' },                    // 雷峰网（国内，AI 前沿）
+  { url: 'https://www.geekpark.net/rss', type: 'rss', tag: 'ai' },                     // 极客公园（国内，AI 应用）
+  { url: 'https://www.qbitai.com/feed', type: 'rss', tag: 'ai' },                      // 量子位（国内，AI 垂直）
+  { url: 'https://techcrunch.com/category/artificial-intelligence/feed/', type: 'rss', tag: 'ai' }, // TechCrunch AI（国外，AI 专属）
+  { url: 'https://www.theverge.com/rss/ai-artificial-intelligence/index.xml', type: 'rss', tag: 'ai' }, // The Verge AI（国外）
+  // 科技硬核（国内外重大事件：新硬件发布 / 航天 / 汽车 / 芯片 / 机器人）
   { url: 'https://www.ithome.com/rss/', type: 'rss', tag: 'tech' },
   { url: 'https://www.36kr.com/feed', type: 'rss', tag: 'tech' },
   { url: 'https://www.ifanr.com/feed', type: 'rss', tag: 'tech' },
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2516&num=30', type: 'json', tag: 'tech' },
-  { url: 'https://hnrss.org/frontpage', type: 'rss', tag: 'tech' },   // 英文前沿（模型会改写成中文）
+  { url: 'https://hnrss.org/frontpage', type: 'rss', tag: 'tech' },                    // Hacker News（国外）
+  { url: 'https://feeds.arstechnica.com/arstechnica/technology-lab', type: 'rss', tag: 'tech' }, // Ars Technica（国外）
+  { url: 'https://www.technologyreview.com/feed/', type: 'rss', tag: 'tech' },          // MIT 科技评论（国外）
   // 财经 · 市场
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2518&num=30', type: 'json', tag: 'finance' },
   // 宏观经济
@@ -78,8 +83,10 @@ const NEWS_SOURCES = [
   { url: 'https://sspai.com/feed', type: 'rss', tag: 'life' },
   { url: 'https://feed.mix.sina.com.cn/api/roll/get?pageid=153&lid=2512&num=30', type: 'json', tag: 'life' }
 ];
-// 每个板块至少要送进模型的素材条数（公平取样用；不足则有多少送多少）
-const PER_TAG_MIN = 4;
+
+// 每个板块送进模型的素材上限（AI/科技板块要给足，才能支撑"AI 10 条、科技 8 条"）
+// 板块素材不足时会自动少送，不会硬凑
+const TAG_QUOTA = { ai: 26, tech: 24, headlines: 10, finance: 12, economy: 14, internet: 10, education: 8, life: 8 };
 
 const SITE_NAME = '每日前沿简报';
 const SECTIONS = ['headlines', 'ai', 'tech', 'finance', 'economy', 'education', 'internet', 'life'];
@@ -254,8 +261,8 @@ function shuffle(arr) {
   return a;
 }
 
-// 按板块公平取样：每个板块先保底 min 条，剩余名额在板块间轮转补足
-function balancedSample(items, limit, perTagMin) {
+// 按板块配额取样：每个板块先按 TAG_QUOTA 取足（不足则全取），剩余名额再在板块间轮转补足
+function balancedSample(items, limit) {
   const groups = {};
   for (const it of items) {
     const k = it.tag || 'other';
@@ -267,15 +274,15 @@ function balancedSample(items, limit, perTagMin) {
   const used = {};
   tags.forEach(t => { used[t] = 0; });
 
-  // 第一轮：每板块保底
-  const quota = perTagMin || 0;
+  // 第一轮：按板块配额
   for (const t of tags) {
-    const take = Math.min(quota, groups[t].length);
+    const cap = TAG_QUOTA[t] || 6;
+    const take = Math.min(cap, groups[t].length);
     picked.push.apply(picked, groups[t].slice(0, take));
     used[t] = take;
     if (picked.length >= limit) return picked.slice(0, limit);
   }
-  // 第二轮：轮转补足
+  // 第二轮：还有余量就轮转补足
   let progressed = true;
   while (picked.length < limit && progressed) {
     progressed = false;
@@ -286,6 +293,29 @@ function balancedSample(items, limit, perTagMin) {
     }
   }
   return picked.slice(0, limit);
+}
+
+// 按板块分组的素材文本：让模型清楚「这条素材属于哪个板块」，杜绝跨板块乱搬
+const TAG_LABELS = {
+  headlines: '今日必读', ai: 'AI·大模型动态', tech: '科技硬核', finance: '财经·市场',
+  economy: '宏观经济', education: '教育', internet: '互联网大厂', life: '生活·消费'
+};
+function buildMaterialText(material) {
+  const groups = {};
+  for (const m of material) (groups[m.tag] = groups[m.tag] || []).push(m);
+  const parts = [];
+  let n = 0;
+  for (const tag of SECTIONS) {
+    const g = groups[tag] || [];
+    if (!g.length) continue;
+    parts.push('\n===== 【' + (TAG_LABELS[tag] || tag) + '】候选素材（' + g.length + ' 条）=====');
+    for (const m of g) {
+      n += 1;
+      parts.push(n + '. [' + m.title + '](' + m.url + ')  来源:' + (m.source || '未知'));
+      if (m.summary) parts.push('   ' + m.summary);
+    }
+  }
+  return parts.join('\n');
 }
 
 // ---- 大模型调用 ----
@@ -299,13 +329,40 @@ function extractJson(text) {
 }
 
 async function callLLM(material) {
-  const sys = '你是一位帮用户筛选「今天值得看」的多领域资讯编辑（科技 / AI / 财经 / 宏观 / 教育 / 互联网 / 生活），不是新闻通稿播报员。根据下面的新闻素材，产出一份有用、好读、像人话的每日简报。\n'
-    + '风格要求（非常重要）：\n'
-    + '1. 说人话：title 不要照抄原标题，改写成大白话，让人一眼看懂讲的是啥。\n'
-    + '2. 每条都要有「看点」：summary 用两句话——第一句讲「发生了什么」（大白话），第二句用「看点：」开头点出为什么值得花30秒看（对普通人的影响 / 背后的趋势 / 信息量在哪）。\n'
-    + '3. 宁缺毋滥：只挑当天真正有信息量、和普通人相关的消息（影响钱包、生活、工作、科技趋势）；过滤掉广告、软文、口水花边、纯蹭热点的内容。\n'
-    + '4. 内容要新鲜、具体、有信息量：基于素材写，不编造；同一期简报里不要重复相似内容；不要出现「据悉、日前、有关人士」这类官腔套话。\n'
-    + '只输出一个 JSON 对象，不要任何解释文字，格式如下：\n'
+  const sys = '你是一位帮用户筛选「今天值得看」的多领域资讯编辑，产出结构化的每日简报。严格按下面的「模块模板」写作。\n'
+    + '\n【最重要的三条铁律】\n'
+    + 'A. 素材已按板块分组标注（见【XX 板块候选素材】）。每个板块只能从它自己那组素材里挑，不得跨组搬运；若发现素材明显归错组（例如 AI 专属素材混进科技组），可以调整，但必须确实属于目标板块。\n'
+    + 'B. 只写「今天发生的、具体的、新的事件」。凡是回顾、盘点、教程、评测、榜单、周年纪念、营销软文、纯观点评论，一律不要。素材里出现旧新闻（标题含往年/往月、明显不是今天）也不要。\n'
+    + 'C. 绝不编造。素材里没有的模型名、数字、公司动作不许写；某板块符合标准的素材不够，就少写，不要拿凑数的垃圾填满。\n'
+    + '\n【写作风格】\n'
+    + '1. title 不要照抄原标题，改写成一句大白话（20-28 字），一眼看懂谁做了什么。\n'
+    + '2. summary 固定两句话：第一句讲「发生了什么」（把关键数字、型号、公司写清楚）；第二句以「看点：」开头，说明为什么值得花 30 秒看（对普通人的影响 / 背后的趋势）。\n'
+    + '3. source 用素材里的真实媒体名；url 必须用素材里的真实链接，不许自己拼。\n'
+    + '4. tag 为 2-6 字口语标签（如「新模型」「降息」「发射成功」「新机发布」）。\n'
+    + '\n【模块模板（严格按此执行）】\n'
+    + '■ ai（AI·大模型动态）— 目标 10 条\n'
+    + '  只收：①大模型发布/新版本/新能力（如某公司发布 X 模型、上下文扩容、多模态升级）；②AI 智能体（Agent）发布或升级；③AI 产品/功能正式上线或重大升级（编程、视频、绘图、办公、搜索等）；④与大模型直接相关的算力/训练突破（如新芯片用于大模型训练）。\n'
+    + '  不收：融资八卦（除非同时伴随重大发布）、人事变动、法律纠纷、政策监管、纯观点评论、教程、评测、招聘。\n'
+    + '  国内外都要有：至少 3 条国外（OpenAI / Anthropic / Google / Meta / xAI / NVIDIA / 微软 / Mistral 等），至少 4 条国内（阿里 / 字节 / 腾讯 / 百度 / DeepSeek / 月之暗面 / MiniMax / 智谱 / 商汤等）。\n'
+    + '  按重要性排序：重磅新模型 > 智能体/产品升级 > 算力突破。\n'
+    + '■ tech（科技硬核）— 目标 8 条\n'
+    + '  只收：国内外重大科技事件——新硬件/旗舰产品发布（苹果、华为、三星等）、航天与火箭、汽车（飞行汽车、自动驾驶、新车型重大突破）、芯片与半导体、机器人、能源与材料突破。\n'
+    + '  不收：小版本更新、配件与周边、优惠促销、跑分对比、供应链传闻（除非官方确认）。\n'
+    + '  国内外都要有：至少 3 条国外、至少 3 条国内。\n'
+    + '■ headlines（今日必读）— 目标 5 条\n'
+    + '  只收：当天最重要的综合要闻（政策、国际大事、经济数据、社会重大事件）。不收产品发布（那属于 ai/tech）。\n'
+    + '■ finance（财经·市场）— 目标 5 条\n'
+    + '  只收：A股/港股/美股行情、基金、黄金、外汇、大宗商品的当日重要变动，必须带具体数字或涨跌幅与原因。\n'
+    + '■ economy（宏观经济）— 目标 5 条\n'
+    + '  只收：宏观政策、经济数据（CPI/PMI/就业/GDP）、央行操作、国际贸易与关税，国内与国外各半。\n'
+    + '■ education（教育）— 目标 3 条\n'
+    + '  只收：教育政策、升学考试、校园重大事件、教育科技/AI 教育落地。没有符合条件的就只写 1-2 条。\n'
+    + '■ internet（互联网大厂）— 目标 5 条\n'
+    + '  只收：国内外互联网大厂动态（新业务/新功能发布、组织与竞争格局、平台规则、监管处罚），电商/社交/短视频/App。\n'
+    + '■ life（生活·消费）— 目标 3 条\n'
+    + '  只收：与钱包和日常直接相关的民生、消费趋势、物价、健康、出行变化。\n'
+    + '\n【去重】同一事件全简报只能出现一次；同一发布会拆成多条时，只保留信息量最大的 1 条。\n'
+    + '\n【输出格式】只输出一个 JSON 对象，不要任何解释文字：\n'
     + '{\n'
     + '  "sections": {\n'
     + '    "headlines": {"label":"今日必读","items":[{"title":"","summary":"发生了什么…。看点：…","source":"","url":"","tag":""}]},\n'
@@ -317,16 +374,12 @@ async function callLLM(material) {
     + '    "internet": {"label":"互联网大厂","items":[...]},\n'
     + '    "life": {"label":"生活 · 消费","items":[...]}\n'
     + '  }\n'
-    + '}\n'
-    + '要求：今日必读 / AI / 科技硬核 / 财经市场 每板块 3-4 条；宏观经济 / 教育 / 互联网大厂 / 生活消费 每板块 2-3 条；title 为简体中文、口语化；summary 为「发生了什么 + 看点」两句话；source 用素材里的真实媒体名；url 用素材里的真实链接；tag 为 2-6 字口语标签（如「降息」「新机发布」「监管新规」）。'
-    + '板块定位：headlines=当天最重要的综合要闻；ai=大模型/AI 应用；tech=芯片/机器人/航天等硬科技；finance=股市/基金/黄金/外汇；economy=宏观政策/经济数据/国际贸易；education=教育政策/升学/校园/教育科技；internet=互联网大厂/电商/社交/App；life=民生/消费/健康/出行。'
-    + '选题偏好：读者最关心「AI 与大模型的前沿进展」（新模型、新能力、落地应用）和「财经/宏观动向」，这两类优先挑；其次是硬科技与互联网大厂；教育、生活有真正相关的再放，没有就少放。'
-    + '同一事件全简报只能出现一次，严禁跨板块重复；哪个板块素材不足就少于该条数，但绝不编造、绝不用过期旧闻充数。';
+    + '}';
 
   const user = '以下是今日（'
     + new Date().toLocaleDateString('zh-CN')
-    + '）收集到的新闻素材（标题 / 链接 / 摘要）：\n\n'
-    + material.map((m, i) => `${i + 1}. [${m.title}](${m.url})\n   ${m.summary}`).join('\n\n');
+    + '）的素材，已按板块分组。请只从对应板块的素材里挑选，按模块模板生成简报：\n'
+    + buildMaterialText(material);
 
   const base = {
     model: LLM_MODEL,
@@ -525,7 +578,7 @@ async function runEdition(dateStr, slot, opts) {
   // ★ 按板块公平取样：小板块（教育/互联网）素材天然少，若整体打乱后截断，它们大概率进不了 60 条，
   //   结果就是这几个板块长期空着。这里改成「每个板块先保底 PER_TAG_MIN 条，再余量轮转补足」。
   const beforeBalance = material.length;
-  material = balancedSample(material, LIMIT, PER_TAG_MIN);
+  material = balancedSample(material, LIMIT);
   const byTag = {};
   for (const m of material) byTag[m.tag] = (byTag[m.tag] || 0) + 1;
   log('use', material.length, '/', beforeBalance, 'items for llm | per-tag:', JSON.stringify(byTag));
@@ -695,4 +748,4 @@ if (require.main === module) {
     process.exit(r.ok === false ? 1 : 0);
   }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
 }
-module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour };
+module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour, buildMaterialText, balancedSample, parsePubDate, parseJsonNews };
