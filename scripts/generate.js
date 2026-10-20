@@ -16,6 +16,15 @@
  *   LLM_MODEL  模型名，默认 deepseek-chat
  *   DATA_DIR   输出目录，默认 <脚本目录>/../site/data
  *   LIMIT      送入模型的最大素材条数，默认 60
+ *   MODE       normal（默认）=延迟感知+缺口自愈；topup=强制扫描昨天+今天四个时段补齐
+ *   FORCE      设为 1 时忽略"已生成则跳过"，强制重做当期
+ *   PUSHPLUS_TOKEN  有值时生成成功后推一条摘要到微信（失败不影响生成）
+ *
+ * 调度说明（重要）：
+ *   GitHub Actions 的 schedule 实际触发时间可能比 cron 设定晚数小时，跨过午夜后
+ *   "按当前钟点判断晨报/晚报"会把晚报写成第二天的晨报。因此本脚本不再按时钟推断版次，
+ *   而是先规划该补哪几期（当天到点的时段优先，其次回补昨天的缺口），再逐期生成。
+ *   结果：定时延迟只会让某期晚出，不会再出现"晚报永久缺失 + 晨报凌晨发布"。
  */
 
 const fs = require('fs');
@@ -309,24 +318,72 @@ function appendHistory(histFile, items, dateStr) {
   saveJSON(histFile, hist);
 }
 
-// ---- 主流程 ----
-async function run(slotOverride) {
-  if (!LLM_KEY) throw new Error('LLM_KEY 未配置');
-  const now = new Date();
-  const dateStr = beijingDateStr(now);
+// ---- 时段判定与缺口自愈 ----
+// GitHub Actions 的 schedule 实际触发时间会晚于 cron 设定（实测有延迟数小时的情况）。
+// 若仍按「现在几点 → 算晨报还是晚报」，18:00 的晚报任务一旦漂过午夜就会被写成「第二天的晨报」，
+// 于是前一天的晚报永久缺失。现在改成：先规划「该补哪几期」，再由调用方逐期生成，与当前钟点无关。
+const MORNING_READY_HOUR = 6;    // 早于 6 点不生成当天晨报（避免凌晨就产出"晨报"）
+const EVENING_READY_HOUR = 14;   // 早于 14 点不生成当天晚报
+const MAX_EDITIONS_PER_RUN = 2;  // 单次运行最多生成几期（控制大模型调用成本）
+
+function pad2(n) { return String(n).padStart(2, '0'); }
+
+// 按天平移（以 UTC 计算，避开本地时区/夏令时干扰）
+function shiftDate(dateStr, days) {
+  const parts = dateStr.split('-').map(Number);
+  const t = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
+  t.setUTCDate(t.getUTCDate() + days);
+  return t.getUTCFullYear() + '-' + pad2(t.getUTCMonth() + 1) + '-' + pad2(t.getUTCDate());
+}
+
+function editionFile(dateStr, slot) {
+  return path.join(DATA_DIR, 'digest-' + dateStr + '-' + slot + '.json');
+}
+
+function editionExists(dateStr, slot) {
+  return !!loadJSON(editionFile(dateStr, slot));
+}
+
+// 规划本次运行要生成哪几期：先补「昨天晚报」缺口，再补到点的当天时段
+function planTargets(now) {
+  const today = beijingDateStr(now);
   const hour = beijingHour(now);
-  const slot = slotOverride || (hour < 14 ? SLOT_MORNING : SLOT_EVENING);
+  const yesterday = shiftDate(today, -1);
+  const targets = [];
+  const add = (dateStr, slot, reason) => {
+    if (targets.length >= MAX_EDITIONS_PER_RUN) return;
+    if (targets.some(t => t.date === dateStr && t.slot === slot)) return;
+    if (editionExists(dateStr, slot)) return;
+    targets.push({ date: dateStr, slot, reason });
+  };
+
+  // ① 今天到点的时段优先（正常情况就是这一期）
+  if (hour >= MORNING_READY_HOUR) add(today, SLOT_MORNING, '今日晨报');
+  if (hour >= EVENING_READY_HOUR) add(today, SLOT_EVENING, '今日晚报');
+  // ② 昨天晚报缺口（典型场景：18:00 的任务延迟到次日凌晨才跑，会被这里捡回来）
+  add(yesterday, SLOT_EVENING, '补昨天晚报（定时延迟跨夜）');
+  // ③ 昨天晨报也缺 → 只在上半天补，避免整天的缺口一直漏下去
+  if (hour < EVENING_READY_HOUR) add(yesterday, SLOT_MORNING, '补昨天晨报（缺口自愈）');
+
+  return { today, hour, targets };
+}
+
+// ---- 生成一期（日期与版次由调用方指定，不再按当前钟点推断）----
+async function runEdition(dateStr, slot, opts) {
+  opts = opts || {};
+  const force = opts.force !== undefined ? opts.force : !!process.env.FORCE;
+  const now = new Date();
   const dateKey = dateStr + '-' + slot;
   const editionLabel = slot === SLOT_MORNING ? '晨报' : '晚报';
+  const isToday = dateStr === beijingDateStr(now);
 
-  // ★ 已生成则跳过（补跑保险：同一天同一时段只生成一次，不重复不覆盖）
-  const existingFile = path.join(DATA_DIR, 'digest-' + dateKey + '.json');
-  if (!process.env.FORCE && loadJSON(existingFile)) {
+  // ★ 已生成则跳过（补跑保险：同一期只生成一次，不重复不覆盖）
+  if (!force && editionExists(dateStr, slot)) {
     log('skip: already generated', dateKey);
     return { ok: true, skipped: dateKey, date: dateStr, slot, edition: editionLabel };
   }
 
-  log('start', dateKey, '(' + editionLabel + ')');
+  log('start', dateKey, '(' + editionLabel + ')' + (isToday ? '' : ' [回补]'));
 
   // 1) 抓取素材
   const sources = await Promise.all(NEWS_SOURCES.map(fetchSource));
@@ -360,7 +417,7 @@ async function run(slotOverride) {
 
   // 3) 组装 digest
   const watchlist = await fetchWatchlist();
-  const digest = {
+  const digest = Object.assign({
     date: dateStr,
     slot: slot,
     edition: editionLabel,
@@ -368,7 +425,7 @@ async function run(slotOverride) {
     siteName: SITE_NAME,
     sections,
     watchlist
-  };
+  }, isToday ? {} : { backfilled: true });
 
   // 4) 写文件
   fs.mkdirSync(DATA_DIR, { recursive: true });
@@ -392,9 +449,11 @@ async function run(slotOverride) {
   dates.sort();
   saveJSON(archFile, { dates });
 
-  // history：追加当日行情
-  appendHistory(path.join(DATA_DIR, 'history', 'stocks.json'), watchlist.stocks, dateStr);
-  appendHistory(path.join(DATA_DIR, 'history', 'funds.json'), watchlist.funds, dateStr);
+  // history：只给「今天这期」追加行情（回补历史期时拿到的是当前行情，记到历史日期会失真）
+  if (isToday) {
+    appendHistory(path.join(DATA_DIR, 'history', 'stocks.json'), watchlist.stocks, dateStr);
+    appendHistory(path.join(DATA_DIR, 'history', 'funds.json'), watchlist.funds, dateStr);
+  }
 
   log('done', dateKey, editionLabel, 'sections:', Object.keys(sections).join('/'));
   // 5) 微信推送（失败不影响生成结果）
@@ -452,39 +511,66 @@ async function sendPush(digest) {
   }
 }
 
-// ---- 兜底补全：检查当天 08/18 两个时段，缺失则生成（晚上定时触发）----
-async function runTopup() {
+// ---- 兜底补全：扫描 昨天+今天 的 08/18 四期，缺哪期补哪期 ----
+async function runTopup(now) {
   if (!LLM_KEY) throw new Error('LLM_KEY 未配置');
-  const now = new Date();
-  const dateStr = beijingDateStr(now);
-  log('topup check', dateStr);
+  now = now || new Date();
+  const today = beijingDateStr(now);
+  const yesterday = shiftDate(today, -1);
+  log('topup check', yesterday, '~', today);
   const results = [];
-  for (const s of [SLOT_MORNING, SLOT_EVENING]) {
-    const f = path.join(DATA_DIR, 'digest-' + dateStr + '-' + s + '.json');
-    if (loadJSON(f)) {
-      log('topup: exists, skip', dateStr + '-' + s);
-      results.push({ slot: s, status: 'exists' });
-      continue;
-    }
-    log('topup: missing, generate', dateStr + '-' + s);
-    const savedLimit = LIMIT;
-    process.env.LIMIT = '45'; // 补全时少取素材，加快速度
-    try {
-      const r = await run(s); // 指定 slot，避免按当前小时误判
-      results.push({ slot: s, status: r.skipped ? 'exists' : 'generated' });
-    } catch (e) {
-      log('topup generate failed for', s, e.message);
-      results.push({ slot: s, status: 'failed', error: e.message });
-    } finally {
-      process.env.LIMIT = String(savedLimit);
+  let generated = 0;
+  for (const d of [yesterday, today]) {
+    for (const s of [SLOT_MORNING, SLOT_EVENING]) {
+      const dateKey = d + '-' + s;
+      if (editionExists(d, s)) { results.push({ dateKey, status: 'exists' }); continue; }
+      if (generated >= MAX_EDITIONS_PER_RUN) { results.push({ dateKey, status: 'deferred' }); continue; }
+      log('topup: missing, generate', dateKey);
+      const savedLimit = LIMIT;
+      process.env.LIMIT = '45'; // 补全时少取素材，加快速度
+      try {
+        const r = await runEdition(d, s, { force: false });
+        generated++;
+        results.push({ dateKey, status: r.skipped ? 'exists' : 'generated', items: r.items });
+      } catch (e) {
+        log('topup generate failed for', dateKey, e.message);
+        results.push({ dateKey, status: 'failed', error: e.message });
+      } finally {
+        process.env.LIMIT = String(savedLimit);
+      }
     }
   }
-  return { ok: true, date: dateStr, results };
+  return { ok: !results.some(r => r.status === 'failed'), today, results };
+}
+
+// ---- 常规运行：按「延迟感知 + 缺口自愈」规划逐期生成 ----
+async function runPlan(now) {
+  if (!LLM_KEY) throw new Error('LLM_KEY 未配置');
+  const plan = planTargets(now || new Date());
+  const today = plan.today;
+  const hour = plan.hour;
+  const targets = plan.targets;
+  log('plan', today, 'hour=' + hour, 'targets=' + (targets.map(t => t.date + '-' + t.slot).join(',') || 'none(已齐，无需生成)'));
+  const generated = [];
+  for (const t of targets) {
+    const dateKey = t.date + '-' + t.slot;
+    try {
+      const r = await runEdition(t.date, t.slot);
+      generated.push({ dateKey, reason: t.reason, status: r.skipped ? 'exists' : 'generated', items: r.items });
+    } catch (e) {
+      log('generate failed', dateKey, e.message);
+      generated.push({ dateKey, reason: t.reason, status: 'failed', error: e.message });
+    }
+  }
+  return { ok: !generated.some(g => g.status === 'failed'), date: today, generated };
 }
 
 if (require.main === module) {
-  const mode = process.env.MODE || 'normal';
-  const job = mode === 'topup' ? runTopup() : run();
-  job.then(r => { console.log(JSON.stringify(r)); process.exit(0); }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
+  const mode = (process.env.MODE || 'normal').toLowerCase();
+  const job = mode === 'topup' ? runTopup() : runPlan();
+  job.then(r => {
+    console.log(JSON.stringify(r));
+    process.exit(r.ok === false ? 1 : 0);
+  }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
 }
-module.exports = { run, runTopup };
+module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour };

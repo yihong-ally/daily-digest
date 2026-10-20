@@ -8,7 +8,7 @@
       "unit": "点",
       "changePct": 1.41,
       "ytd": null,
-      "note": "2026-08-17 收盘，处多年高位区间"
+      "note": "A股大盘基准 · 实时行情"
     },
     {
       "id": "sz399006",
@@ -18,7 +18,7 @@
       "unit": "点",
       "changePct": 2.84,
       "ytd": null,
-      "note": "2025-08-18 曾创年内新高（历史参照）"
+      "note": "成长股风向标 · 实时行情"
     },
     {
       "id": "comex_gold",
@@ -26,9 +26,10 @@
       "code": "GC",
       "value": 4500,
       "unit": "美元/盎司",
-      "changePct": 10,
+      "changePct": null,
       "ytd": null,
-      "note": "8 月国际金价反弹，月内最大涨幅近 10%"
+      "static": true,
+      "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
     }
   ],
   "funds": [

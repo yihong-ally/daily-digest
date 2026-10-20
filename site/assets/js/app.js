@@ -65,11 +65,17 @@ function renderWatch(group, seriesAll, color) {
     const chgCls = changeClass(item.changePct);
     const ytd = (item.ytd !== null && item.ytd !== undefined)
       ? ` · <span class="${item.ytd >= 0 ? 'up' : 'down'}">年内 ${(item.ytd > 0 ? '+' : '')}${item.ytd}%</span>` : "";
+    // 没有涨跌数据时不要留空行，更不能拿静态数字冒充当日涨跌
+    const chgLine = (chg || ytd)
+      ? `<div class="wchg ${chgCls}">${chg}${ytd}</div>`
+      : `<div class="wchg flat"><span class="wnote">静态参考值（无实时行情）</span></div>`;
+    // 静态条目没有真实走势，不画走势曲线
+    const chart = item.static ? "" : sparkline(s, color);
     return `<div class="wcard">
       <div class="wname">${item.name}<span class="wcode">${item.code || ""}</span></div>
       <div class="wval">${fmt(item.value)}<span class="wunit">${item.unit}</span></div>
-      <div class="wchg ${chgCls}">${chg}${ytd}</div>
-      ${sparkline(s, color)}
+      ${chgLine}
+      ${chart}
       <div class="wnote">${item.note || ""}</div>
     </div>`;
   }).join("");

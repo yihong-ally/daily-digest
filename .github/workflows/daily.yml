@@ -2,14 +2,27 @@ name: Daily Digest Generator
 
 # 每天北京时间 08:00 / 18:00 自动生成简报；另加 08:05 / 18:05 补跑 + 22:00 兜底补全，防止 schedule 漏触发
 # GitHub Actions 使用 UTC 时区：08:00=00:00 UTC，08:05=00:05 UTC，18:00=10:00 UTC，18:05=10:05 UTC，22:00=14:00 UTC
+#
+# 关于「定时延迟」：GitHub 的 schedule 实际触发可能比设定晚数小时。脚本已改为「延迟感知 + 缺口自愈」——
+#   每跑一次先规划该补哪几期（当天到点的时段优先，其次补昨天的缺口），因此无论延迟多久都不会写错版次。
+#   手动触发时可选 mode=topup，强制扫描「昨天 + 今天」四个时段，缺哪期补哪期。
 on:
   schedule:
     - cron: "0 0 * * *"   # 北京时间 08:00（晨报主触发）
-    - cron: "5 0 * * *"   # 北京时间 08:05（晨报补跑：若 08:00 已生成则自动跳过）
+    - cron: "5 0 * * *"   # 北京时间 08:05（晨报补跑：若已生成则自动跳过）
     - cron: "0 10 * * *"  # 北京时间 18:00（晚报主触发）
-    - cron: "5 10 * * *"  # 北京时间 18:05（晚报补跑：若 18:00 已生成则自动跳过）
-    - cron: "0 14 * * *"  # 北京时间 22:00（兜底：当天缺哪个时段补哪个）
-  workflow_dispatch: {}   # 支持手动触发
+    - cron: "5 10 * * *"  # 北京时间 18:05（晚报补跑：若已生成则自动跳过）
+    - cron: "0 14 * * *"  # 北京时间 22:00（兜底：扫描昨天+今天，缺哪期补哪期）
+  workflow_dispatch:      # 支持手动触发
+    inputs:
+      mode:
+        description: "运行模式：normal=正常（延迟感知+缺口自愈）；topup=强制补齐昨天+今天"
+        required: false
+        default: normal
+        type: choice
+        options:
+          - normal
+          - topup
 
 permissions:
   contents: write
@@ -39,6 +52,7 @@ jobs:
           LLM_MODEL: "deepseek-chat"
           LIMIT: "60"
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+          MODE: ${{ github.event.inputs.mode || 'normal' }}
         run: node scripts/generate.js
 
       - name: Commit generated data
