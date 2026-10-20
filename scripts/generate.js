@@ -456,7 +456,8 @@ function editionExists(dateStr, slot) {
 }
 
 // 规划本次运行要生成哪几期：先补「昨天晚报」缺口，再补到点的当天时段
-function planTargets(now) {
+function planTargets(now, opts) {
+  opts = opts || {};
   const today = beijingDateStr(now);
   const hour = beijingHour(now);
   const yesterday = shiftDate(today, -1);
@@ -467,6 +468,12 @@ function planTargets(now) {
     if (editionExists(dateStr, slot)) return;
     targets.push({ date: dateStr, slot, reason });
   };
+
+  // ⓿ 强制模式（FORCE=1）：把当前该出的一期直接排到最前面，忽略"已存在"
+  if (opts.force) {
+    const slot = hour >= EVENING_READY_HOUR ? SLOT_EVENING : SLOT_MORNING;
+    targets.push({ date: today, slot, reason: '强制重做（FORCE=1）' });
+  }
 
   // ① 今天到点的时段优先（正常情况就是这一期）
   if (hour >= MORNING_READY_HOUR) add(today, SLOT_MORNING, '今日晨报');
@@ -660,7 +667,7 @@ async function runTopup(now) {
 // ---- 常规运行：按「延迟感知 + 缺口自愈」规划逐期生成 ----
 async function runPlan(now) {
   if (!LLM_KEY) throw new Error('LLM_KEY 未配置');
-  const plan = planTargets(now || new Date());
+  const plan = planTargets(now || new Date(), { force: !!process.env.FORCE });
   const today = plan.today;
   const hour = plan.hour;
   const targets = plan.targets;
