@@ -2,46 +2,46 @@
   "date": "2026-10-20",
   "slot": "18",
   "edition": "晚报",
-  "updatedAt": "2026-10-20T19:59:17+08:00",
+  "updatedAt": "2026-10-20T20:02:38+08:00",
   "siteName": "每日前沿简报",
   "sections": {
     "headlines": {
       "label": "今日必读",
       "items": [
         {
-          "title": "国家数据集团在雄安挂牌，数据要素国家队正式登场",
-          "summary": "10月20日，国家数据集团有限公司在河北雄安新区正式成立，由国务院国资委履行出资人职责，主责主业为数据资源开发利用。看点：这是全球少见的国家级数据央企，数据跨行业跨区域流动的规则和商业化路径可能由此提速。",
+          "title": "国家数据集团在雄安正式成立，新央企落子数据要素",
+          "summary": "国家数据集团有限公司10月20日在雄安成立，成为又一家新设央企。看点：数据要素市场化配置有了国家级运营主体，后续数据确权、交易规则值得关注。",
           "source": "中新网财经新闻",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717985.shtml",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717992.shtml",
           "tag": "新央企"
         },
         {
-          "title": "李强赴杜尚别出席上合组织总理理事会第25次会议",
-          "summary": "10月20日，国务院总理李强在塔吉克斯坦杜尚别出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议，多国领导人和国际组织负责人与会。看点：上合框架下的经贸与安全合作走向，直接影响中亚方向的外贸与能源通道。",
-          "source": "7x24快讯",
-          "url": "https://wallstreetcn.com/livenews/3181878",
-          "tag": "上合会议"
+          "title": "前三季度台湾接大陆订单1395.7亿美元，同比增38.9%",
+          "summary": "台当局经济事务主管部门20日公布，前三季度台湾外销订单8192亿美元、同比增56%，其中大陆（含香港）订单1395.7亿美元、同比增38.9%。看点：两岸经贸依存度仍在抬升，订单结构变化是观察产业链走向的窗口。",
+          "source": "中新网即时新闻",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718034.shtml",
+          "tag": "两岸经贸"
         },
         {
-          "title": "泽连斯基赴奥斯陆谈和平方案，美方施压乌方让步",
-          "summary": "10月20日，乌克兰总统泽连斯基前往挪威奥斯陆参加新的和平谈判，美国特使及挪威、芬兰领导人与会，背景是美国持续向基辅施压要求其作出让步。看点：谈判节奏变化会牵动欧洲能源价格与避险资产情绪。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmk0969948.shtml",
-          "tag": "和平谈判"
+          "title": "广交会带火入境游，广州五星豪华酒店预订量同比增34%",
+          "summary": "第140届广交会期间（10月15日至11月4日），平台广州文旅产品预订量同比增长近10%，五星级/豪华型酒店预订量同比增长34%，“广交会附近酒店”搜索量同比增134%。看点：大型展会正成为入境消费的直接拉动力。",
+          "source": "中新网即时新闻",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10718041.shtml",
+          "tag": "入境游"
         },
         {
-          "title": "法国骚乱受损商铺翻倍至3000家，损失或达数亿欧元",
-          "summary": "法国政府10月19日公布，周末骚乱中遭破坏商铺数量从约1500家增至至少3000家，零售行业估计损失可能达数亿欧元。看点：生活成本抗议正从街头蔓延到商业信心，欧洲消费与保险赔付承压。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmp5827498.shtml",
-          "tag": "法国骚乱"
+          "title": "慕田峪长城今年入境游客首破百万，同比增77%",
+          "summary": "2026年至今慕田峪长城累计接待入境游客106万人次，首次突破年接待百万大关，同比增长77%。看点：入境游复苏从数据走向具体景区，国际化服务配套正在跟进。",
+          "source": "中新网即时新闻",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-20/10718020.shtml",
+          "tag": "入境游"
         },
         {
-          "title": "工信部就汽车数据安全等五项强制性国标征求意见",
-          "summary": "10月20日，工信部发布公告，《汽车数据安全要求》等五项强制性国家标准的制修订已形成征求意见稿，公开征求社会各界意见。看点：智能网联汽车的数据合规红线正在落地，车企的数据处理流程要改。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/wm/2026-10-20/doc-inivwitp6482333.shtml",
-          "tag": "国标征求意见"
+          "title": "北京城市副中心统筹11个更新组团，保障市属国企总部落地",
+          "summary": "北京城市副中心20日表示，将统筹11个城市更新组团有序实施，保障M101线等轨道交通、市属国企总部、医院学校等项目加速落地。看点：“十五五”开局之年副中心建设提速，通州居住与就业配套将同步变化。",
+          "source": "中新网即时新闻",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10718040.shtml",
+          "tag": "城市更新"
         }
       ]
     },
@@ -49,72 +49,65 @@
       "label": "AI · 大模型动态",
       "items": [
         {
-          "title": "DeepSeek新模型登顶Code Arena开源榜，超过Kimi K3",
-          "summary": "10月19日，AI模型评测平台Arena宣布，DeepSeek-V4.1-Flash-1017（Max）以1670分超过Kimi K3（Max），成为Code Arena: WebDev榜单排名最高的开源模型，同时超过Claude Opus 5（High）等闭源模型。看点：开源模型在编程场景首次压过顶级闭源模型，开发者选型的天平在移动。",
-          "source": "极客公园",
-          "url": "http://www.geekpark.net/news/372568",
+          "title": "上海团队开源记忆原生大模型MemT-1.0，含288B与36B两款",
+          "summary": "10月20日，上海记忆张量团队发布并开源记忆原生模型MemT-1.0系列，含288B的Flash与36B的Nano，把可更新的内部记忆纳入模型前向计算，历史信息无需重复输入。看点：大模型从“每次从零开始”转向可持续记忆，长期任务与个性化助手是直接受益场景。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3181892",
+          "tag": "新模型"
+        },
+        {
+          "title": "小米MiMo-V2.6-Pro上线WorkBuddy，支持1M上下文多智能体协作",
+          "summary": "小米技术10月20日宣布，Xiaomi MiMo-V2.6-Pro正式上线WorkBuddy，具备1M超长上下文、多智能体分工协作及图像视频音频文本全模态理解，Artificial Analysis智能指数46分、称全球开源第一。看点：国产开源模型把长上下文与多智能体打包进办公产品，实际可用性值得实测。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/015/533.htm",
+          "tag": "智能体"
+        },
+        {
+          "title": "DeepSeek开源推理引擎DeepInfer",
+          "summary": "DeepSeek在GitHub开源其推理引擎DeepInfer，面向自家模型的推理部署。看点：开源推理栈能降低部署门槛，对自建推理服务的团队是直接利好。",
+          "source": "Hacker News: Front Page",
+          "url": "https://github.com/deepseek-ai/DeepInfer",
+          "tag": "开源"
+        },
+        {
+          "title": "MiniMax发布M3.1 Flash模型",
+          "summary": "MiniMax在官方博客发布M3.1 Flash模型，具体参数与定价未在素材中披露。看点：国产模型迭代节奏继续加快，Flash档位通常主打速度与成本，适合高频调用场景。",
+          "source": "Hacker News: Front Page",
+          "url": "https://www.minimax.io/blog/minimax-m31f",
           "tag": "新模型"
         },
         {
           "title": "Claude新模型曝光，主打跳出思维定势修Bug",
-          "summary": "10月20日，量子位报道Claude新模型曝光，称其能跳出思维定势、修Bug治标又治本，同期OpenAI只掏出一个6.1 Terra版本。看点：编程Agent的竞争从写代码转向定位根因，谁的调试能力强谁留住开发者。",
+          "summary": "量子位报道Claude新模型曝光，称其能跳出思维定势、修Bug治标又治本。看点：编程Agent的竞争焦点正从“能写”转向“能定位根因”，开发者工具格局可能再变。",
           "source": "量子位",
           "url": "https://www.qbitai.com/2026/10/504314.html",
-          "tag": "新模型"
+          "tag": "编程Agent"
         },
         {
-          "title": "Lovart 2.0推出设计Personal Agent「Arti」",
-          "summary": "10月20日，极客公园报道设计Agent产品Lovart升级到2.0，推出面向设计师的Personal Agent「Arti」，可记住设计师的配色与版式偏好并主动承接下一个项目。看点：Agent从通用助手转向记住「我」的偏好，设计工作流的入口可能被重做。",
+          "title": "Lovart 2.0的Arti上线，定位设计师的个人Agent",
+          "summary": "极客公园报道，Lovart 2.0推出设计Personal Agent“Arti”，把从设计思路到图片视频物料的流程放在一块画布上完成。看点：设计Agent从通用工具走向记住个人偏好的“专属助手”，创意工作流或被重写。",
           "source": "极客公园",
           "url": "http://www.geekpark.net/news/372612",
           "tag": "设计Agent"
         },
         {
-          "title": "Yelp上线AI功能，能替用户打电话问餐厅等位时间",
-          "summary": "10月20日，Yelp在App中嵌入多项新AI功能，可代用户致电餐厅查询等位时间，并生成记住个人偏好的个性化推荐。看点：AI代打电话这类「替人跑腿」功能开始进入大众App，语音Agent落地场景变具体。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/",
-          "tag": "AI助手"
-        },
-        {
-          "title": "亚马逊推TorchNeuron工具，想撬动英伟达对PyTorch的把持",
-          "summary": "10月19日，亚马逊发布新开发者工具TorchNeuron，目标是让更多开发者在自研芯片等替代硬件上运行基于PyTorch的AI应用，打破英伟达对这套工具链的掌控。看点：算力竞争从卖芯片延伸到抢开发者工具链，云厂商在挖英伟达的护城河。",
-          "source": "TechCrunch",
+          "title": "亚马逊推TorchNeuron工具，想让PyTorch跑在自家芯片上",
+          "summary": "TechCrunch报道，亚马逊发布TorchNeuron开发工具，目标是让更多开发者把基于PyTorch的AI应用跑在Trainium等替代芯片上，削弱英伟达对PyTorch生态的掌控。看点：AI芯片之争从硬件延伸到开发者工具链，谁能降低迁移成本谁就有机会。",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
           "url": "https://techcrunch.com/2026/10/19/amazon-is-taking-its-biggest-shot-at-nvidia-yet-with-new-torchneuron-dev-tool/",
-          "tag": "算力工具"
+          "tag": "AI芯片"
         },
         {
-          "title": "微软警告：AI智能体像内部威胁，前沿模型不可信",
-          "summary": "10月19日，微软表示企业应密切监控员工使用的、由非OpenAI和Anthropic等AI实验室控制的系统上的AI智能体，并将其类比为「内部威胁」，理由是前沿模型不可信任。看点：Agent大规模上岗前，权限与审计成了企业必须先补的一课。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
-          "tag": "Agent安全"
+          "title": "Tenstorrent完成15亿美元融资，估值达62亿美元",
+          "summary": "英伟达挑战者Tenstorrent以62亿美元估值完成15亿美元融资，此前曾收到收购意向，最终选择保持独立。看点：开放权重AI芯片赛道仍能拿到大额资本，算力供给多元化多了一个变量。",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
+          "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/",
+          "tag": "融资"
         },
         {
-          "title": "北大董豪团队推出HIL-UMI，机器人后训练摆脱真机依赖",
-          "summary": "10月20日，雷峰网报道北大董豪团队提出HIL-UMI方法，让具身智能的后训练不再依赖真实机器人采集数据，延续「无本体」范式。看点：机器人训练成本若大幅下降，具身智能的迭代速度会被重新定义。",
-          "source": "雷峰网",
-          "url": "https://www.leiphone.com/category/ai/XgCxObsqu8pc44px.html",
-          "tag": "具身智能"
-        },
-        {
-          "title": "爱奇艺AI「跳看」上线，8分钟长剧可浓缩成3分钟",
-          "summary": "10月20日，雷峰网披露爱奇艺用生成式AI实现「跳看」功能，用户手指一滑即可把8分钟开场戏压缩成3分钟，并可在剧情节点间进退切换。看点：长视频用AI改造观看方式，是在和短剧抢同一批没耐心的用户。",
-          "source": "雷峰网",
-          "url": "https://www.leiphone.com/category/industrynews/jJI2TPXI1eYWxECq.html",
-          "tag": "AI视频"
-        },
-        {
-          "title": "阿里云连续4年入选Gartner容器管理领导者象限",
-          "summary": "10月20日消息，Gartner发布2026年度《容器管理魔力象限》，阿里云连续4年入选「领导者」象限，是亚太唯一获此评价的科技公司，报告将「丰富的AI集成」列为核心优势。看点：AI与Agent生产时代，容器平台正成为大模型落地的底座。",
-          "source": "雷峰网",
-          "url": "https://www.leiphone.com/category/industrynews/z75kiSSlXYqfCza6.html",
-          "tag": "云与AI"
-        },
-        {
-          "title": "Anthropic传与Nscale洽谈450亿美元算力大单",
-          "summary": "10月19日，TechCrunch报道Nscale与Anthropic正就一份约450亿美元的算力协议进行洽谈，若成将是Anthropic一年内一系列巨额算力交易的最新一笔。看点：模型公司的资本开支正以百亿美元为单位锁定，算力即门票。",
-          "source": "TechCrunch",
+          "title": "Anthropic据报与Nscale洽谈450亿美元算力大单",
+          "summary": "TechCrunch报道，Anthropic正与Nscale洽谈规模约450亿美元的算力交易，若成将是其一年内一系列巨额算力协议的最新一笔。看点：模型公司的资本开支正以百亿美元为单位锁定算力，行业门槛被进一步抬高。",
+          "source": "AI News & Artificial Intelligence | TechCrunch",
           "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/",
           "tag": "算力大单"
         }
@@ -124,60 +117,60 @@
       "label": "科技硬核",
       "items": [
         {
-          "title": "小鹏汇天首架阿联酋低空示范区试验机下线交付",
-          "summary": "10月20日，小鹏汇天用于阿联酋先进低空飞行监管示范区的首架「陆地航母」飞行器X3-F在量产工厂下线，拉斯海玛酋长萨乌德率团到访并现场接收该试验机。看点：飞行汽车从国内演示走向海外监管沙盒，低空经济的出海路径开始成形。",
-          "source": "7x24快讯",
-          "url": "https://wallstreetcn.com/livenews/3181875",
-          "tag": "飞行汽车"
-        },
-        {
-          "title": "中国首台实船应用大功率极地破冰型吊舱推进器在沪下线",
-          "summary": "10月20日，中国首台实船应用的大功率极地破冰型吊舱推进器在上海正式下线。看点：极地船舶核心动力设备国产化，直接关系到北极航线与极地科考的装备自主。",
-          "source": "中新网财经新闻",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717914.shtml",
-          "tag": "船舶装备"
-        },
-        {
-          "title": "富临精工拟5亿元投建机器人智能电关节项目",
-          "summary": "10月20日，富临精工公告与绵阳市涪城区政府签约，拟投资5亿元分两期建设机器人智能电关节项目，一期2.5亿元，年产能预计200万套。看点：人形机器人关节零部件开始上产能，供应链在提前卡位。",
-          "source": "36氪",
-          "url": "https://36kr.com/newsflashes/4034084734964871?f=rss",
-          "tag": "机器人"
-        },
-        {
-          "title": "特斯拉中国车机将接入支付宝车载助手，停车费可在车内付",
-          "summary": "10月20日，特斯拉与支付宝正式签署车载助手项目合作协议，特斯拉中国车机计划上线支付宝车载助手智慧停车服务，车主OTA升级后可在车机屏幕完成停车费支付。看点：车机正在变成支付入口，本土化生态是外资车企的必答题。",
+          "title": "渝万高铁启动联调联试，设计时速350公里",
+          "summary": "国铁集团10月20日宣布，新建重庆至万州高速铁路正式启动联调联试，进入工程验收关键阶段，线路设计时速350公里，预计2027年建成通车。看点：成渝地区东出通道再加密，沿线出行与物流时效将明显改善。",
           "source": "IT之家",
-          "url": "https://www.ithome.com/1/015/468.htm",
-          "tag": "智能座舱"
+          "url": "https://www.ithome.com/1/015/492.htm",
+          "tag": "高铁"
         },
         {
-          "title": "三星平泽半导体新园区曝光，为AI内存需求大扩产",
-          "summary": "10月20日，MIT科技评论探访三星在韩国平泽新建的大型半导体制造园区，已有三座晶圆厂运转，用于生产与GPU封装配套的专用内存芯片。看点：HBM等AI内存的产能竞赛，决定下一轮大模型训练的成本曲线。",
-          "source": "MIT Technology Review",
-          "url": "https://www.technologyreview.com/2026/10/20/1145916/dispatch-visit-to-samsung-massive-new-semiconductor-hub/",
-          "tag": "半导体"
-        },
-        {
-          "title": "OpenXR新增「空间容器」特性，XR应用可多任务并行",
-          "summary": "10月20日，Khronos Group宣布OpenXR标准推出「空间容器」（Spatial Containers）特性，由系统统一管理XR内容，支持有界多任务与沉浸式两种模式。看点：跨设备XR体验向visionOS式多窗口靠拢，标准统一利好整个头显生态。",
+          "title": "OpenXR新增“空间容器”特性，XR应用可多任务并行",
+          "summary": "Khronos Group 10月20日宣布OpenXR标准新增“空间容器”特性，由系统统一管理应用窗口，支持有界多任务与沉浸式两种模式，体验接近苹果visionOS。看点：XR跨平台标准补上多任务短板，头显生态的通用性再进一步。",
           "source": "IT之家",
           "url": "https://www.ithome.com/1/015/494.htm",
           "tag": "XR标准"
         },
         {
-          "title": "ReactOS实现NTFS安装支持，开源Windows兼容系统迈过关键坎",
-          "summary": "10月20日，开源Windows兼容操作系统ReactOS通过新驱动获得NTFS文件系统安装支持，达成重要里程碑。看点：开源替代Windows的可行性又进一步，老设备续命多了一个选项。",
-          "source": "Ars Technica",
-          "url": "https://arstechnica.com/information-technology/2026/10/reactos-reaches-major-milestone-with-ntfs-install-support/",
-          "tag": "开源系统"
+          "title": "英伟达加码欧洲AI投资，首批扶持四家德国初创",
+          "summary": "英伟达在柏林德国投资峰会上公布扶持四家德国初创企业，分别为Agile Robots、Avelios Medical、Mirelo、Reflex Aerospace，属于其总额近100亿美元欧洲投资计划的一部分，具体金额未披露。看点：芯片巨头用投资绑定欧洲工业AI生态，机器人赛道是重点。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4034124646830983?f=rss",
+          "tag": "AI投资"
         },
         {
-          "title": "OpenBSD 8.0将采用Linux 6.18的显卡驱动",
-          "summary": "10月20日，OpenBSD开发者披露8.0版本将引入来自Linux 6.18的inteldrm、radeondrm与amdgpu驱动。看点：BSD系统显卡支持长期落后，这次直接借Linux驱动补课，桌面可用性提升。",
-          "source": "Hacker News",
-          "url": "https://bsd.network/@brynet/117407035545900963",
-          "tag": "系统更新"
+          "title": "中科通量亮相RISC-V中国峰会，展示视频+智算全栈方案",
+          "summary": "10月18日第六届RISC-V中国峰会在深圳开幕，中科通量携SmarCo AI工作站、智能视频编码一体机、智算加速卡等产品亮相，主打全栈RISC-V智能方案。看点：RISC-V已占全球处理器市场25%份额，正从嵌入式向数据中心场景渗透。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/2KBJmyhuJeiRQ7Op.html",
+          "tag": "RISC-V"
+        },
+        {
+          "title": "大众曾想用比亚迪海豚平台造捷达，被拒后押注小鹏",
+          "summary": "路透社10月20日报道，大众2022年曾探讨将比亚迪海豚平台用于捷达品牌，因比亚迪缺乏合作意愿未果，此后转向与小鹏合作。看点：中国车企的技术输出角色正在反转，合资模式的底层逻辑在变。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/015/459.htm",
+          "tag": "车企合作"
+        },
+        {
+          "title": "宇树科技市值重回2000亿，人形机器人股批量涨停",
+          "summary": "10月20日宇树科技市值重回2000亿元，人形机器人板块出现批量涨停，公司同日公告提示行业尚处商业化早期、估值存在回归风险。看点：概念热度与商业化进度之间的落差，是这轮机器人行情最大的不确定性。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4033470689268610?f=rss",
+          "tag": "机器人"
+        },
+        {
+          "title": "Go语言将拒绝含八个被弃用SPKI的证书链",
+          "summary": "Go项目在GitHub issue中确认，将拒绝包含八个被弃用SPKI的证书链，以应对相关证书信任问题。看点：主流语言运行时主动收紧证书信任，后端服务的TLS配置需要提前排查。",
+          "source": "Hacker News: Front Page",
+          "url": "https://github.com/golang/go/issues/82345",
+          "tag": "软件安全"
+        },
+        {
+          "title": "Plex媒体服务器漏洞正被利用植入恶意软件，官方已修复",
+          "summary": "Ars Technica报道，研究人员称攻击者正串联四个已修复的Plex媒体服务器漏洞，对未打补丁的设备植入恶意软件。看点：自建媒体服务器的用户应尽快升级，家庭网络暴露面不容忽视。",
+          "source": "Biz & IT - Ars Technica",
+          "url": "https://arstechnica.com/security/2026/10/recently-fixed-plex-media-vulnerabilities-are-being-exploited-to-install-malware/",
+          "tag": "漏洞预警"
         }
       ]
     },
@@ -185,39 +178,39 @@
       "label": "财经 · 市场",
       "items": [
         {
-          "title": "软银信用风险升至四年新高，AI融资压力显现",
-          "summary": "10月20日，以信用违约互换（CDS）衡量的软银集团信用风险攀升至近四年最高水平，市场担忧其对AI相关资金的投入以及一笔潜在大型收购。看点：AI热潮的融资端开始出现裂缝，杠杆玩家的成本在上升。",
-          "source": "未知",
+          "title": "沪指收涨0.12%报3718.44点，深成指微跌0.14%",
+          "summary": "10月20日A股收盘，上证综指上涨4.45点、涨幅0.12%，报3718.44点；深证成指下跌16.13点、跌幅0.14%。看点：指数在3700点上方窄幅震荡，结构分化仍是主要特征。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/money/future/fmnews/2026-10-20/doc-inivwith0935759.shtml",
+          "tag": "A股收盘"
+        },
+        {
+          "title": "软银信用风险升至近四年最高，AI融资压力显现",
+          "summary": "以信用违约互换衡量的软银集团信用风险已攀升至近四年最高水平，市场担忧其对AI相关投入及一笔潜在大型收购。看点：AI资本开支的融资压力开始反映在信用市场，而不只是股价上。",
+          "source": "新浪财经",
           "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmr6562704.shtml",
           "tag": "信用风险"
         },
         {
-          "title": "韩国数据中心公司Elice上市首日暴跌32%",
-          "summary": "10月20日，首尔数据中心基础设施公司Elice上市首日开盘大幅下挫，一度暴跌38%，收盘跌幅约32%。看点：一级市场对AI基建的定价开始分化，投资者追问巨额投入何时回本。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmr6556866.shtml",
-          "tag": "IPO破发"
-        },
-        {
-          "title": "摩根大通上调CoreWeave评级至买入，称银行风险敞口有限",
-          "summary": "10月20日，摩根大通将CoreWeave评级上调至买入、目标价125美元，并估计全球多数银行对其风险敞口有限；此前该公司股票和债券因债务担忧大跌。看点：AI云厂商的债务问题正被当成行业性风险来定价。",
-          "source": "未知",
+          "title": "摩根大通上调CoreWeave至买入，目标价125美元",
+          "summary": "摩根大通10月20日将CoreWeave评级上调至买入、目标价125美元，并估计全球多数银行对其风险敞口有限；此前该公司股票和债券因债务融资担忧大跌。看点：AI云厂商的债务问题正被重新定价，波动还会传导。",
+          "source": "新浪财经",
           "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmk0962266.shtml",
           "tag": "评级上调"
         },
         {
-          "title": "「大空头」艾斯曼警告英伟达集中度风险：70%应收来自五家客户",
-          "summary": "10月20日，电影《大空头》原型艾斯曼援引英伟达10-Q季报指出，其应收账款中70%来自五家客户，存在巨大「集中度风险」。看点：AI算力需求高度集中于少数大客户，一旦资本开支放缓，业绩弹性会双向放大。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmm7744456.shtml",
-          "tag": "英伟达"
+          "title": "伯恩斯坦上调Datadog至跑赢大盘，目标价350美元",
+          "summary": "伯恩斯坦分析师10月19日将Datadog评级上调至跑赢大盘、目标价提高至350美元，理由是AI Token消耗量激增带动监控需求超预期。看点：AI应用爆发正在转化为可观测性软件的实在订单。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmp5814272.shtml",
+          "tag": "评级上调"
         },
         {
-          "title": "法国10年期国债对德收益率溢价突破150个基点",
-          "summary": "10月20日，衡量法国债券风险的10年期国债相对德国国债收益率溢价突破150个基点，市场担忧法国控制预算赤字与平息生活成本抗议的能力。看点：欧元区核心国的信用溢价走阔，是欧洲资产定价的新变量。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwitp6486380.shtml",
-          "tag": "法债承压"
+          "title": "Strive一周斥资3.35亿美元增持比特币，持仓达36818枚",
+          "summary": "纳斯达克上市公司Strive披露，10月12日至16日累计买入4045枚比特币、耗资约3.35亿美元，均价约82803美元，持仓升至36818枚，同时启动6.3亿美元高息优先股融资。看点：上市公司用高息融资买币的模式，风险与杠杆同步放大。",
+          "source": "新浪财经",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmk0938074.shtml",
+          "tag": "比特币"
         }
       ]
     },
@@ -225,39 +218,39 @@
       "label": "宏观经济",
       "items": [
         {
-          "title": "央行连续9个工作日开展隔夜逆回购，单日上限1万亿元",
-          "summary": "10月20日，央行公告称将在10月21日至11月2日开展隔夜逆回购操作，采用固定利率、数量招标，每日操作量不超过1万亿元，为连续9个工作日开展。看点：短端流动性工具常态化，跨月资金面的呵护意图明确。",
+          "title": "前三季度规上工业增加值同比增5.3%，工业贡献率约35%",
+          "summary": "工信部总工程师王卫明10月20日在国新办发布会介绍，前三季度规模以上工业增加值同比增长5.3%，工业对经济增长的贡献率保持在35%左右。看点：工业仍是稳增长主力，结构升级方向决定后续政策力度。",
           "source": "中新网财经新闻",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717876.shtml",
-          "tag": "央行操作"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717923.shtml",
+          "tag": "工业数据"
         },
         {
-          "title": "商务部等9部门发布「科技兴商」意见，系首次系统性文件",
-          "summary": "10月19日，商务部等9部门发布《关于加快推进科技兴商的意见》，这是我国首次以「科技兴商」为主题出台的综合性、系统性文件。看点：商贸流通的数字化改造被提到国家文件层面，零售与供应链企业将迎政策红利。",
+          "title": "重庆前三季度GDP 25711.51亿元，同比增长4.3%",
+          "summary": "重庆市统计局10月20日发布，前三季度重庆地区生产总值25711.51亿元，按不变价格计算同比增长4.3%。看点：西部直辖市增速低于全国平均水平，地方经济分化值得留意。",
           "source": "中新网财经新闻",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717955.shtml",
-          "tag": "科技兴商"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717893.shtml",
+          "tag": "地方GDP"
         },
         {
-          "title": "工信部：绿色工厂累计达8336家",
-          "summary": "10月20日，工信部在国新办前三季度工业和信息化发展情况发布会上表示，今年以来绿色工厂累计达8336家，持续培育壮大绿色生产力。看点：绿色制造从试点走向规模化，出口企业的碳合规压力与机会同步上升。",
+          "title": "9月银行结汇19897亿元、售汇16098亿元，外汇市场总体稳健",
+          "summary": "国家外汇管理局10月20日公布，9月银行结汇19897亿元人民币、售汇16098亿元人民币；1至9月累计结汇163007亿元、累计售汇135947亿元。看点：结售汇保持顺差，跨境资金流动压力可控。",
           "source": "中新网财经新闻",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717874.shtml",
-          "tag": "绿色制造"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717951.shtml",
+          "tag": "外汇数据"
         },
         {
-          "title": "山西煤炭复工复产加快，9月日均产量较8月增约22万吨",
-          "summary": "10月20日，山西省能源局称9月26日全省煤炭安全稳产稳供推进会以来煤矿复工复产明显加快，9月日均产量较8月提升约22万吨，10月以来日产量加快恢复。看点：冬储供暖季前的保供节奏，直接影响煤价与电价预期。",
-          "source": "7x24快讯",
-          "url": "https://wallstreetcn.com/livenews/3181918",
-          "tag": "煤炭保供"
+          "title": "中韩自贸协定第二阶段第17轮谈判在首尔举行",
+          "summary": "商务部消息，10月12日至16日中韩自贸协定第二阶段第17轮谈判在首尔举行，双方就跨境服务贸易和投资负面清单市场准入深入磋商并取得积极进展。看点：服务与投资开放是下一阶段重点，相关行业准入有望放宽。",
+          "source": "中新网财经新闻",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10717888.shtml",
+          "tag": "自贸谈判"
         },
         {
-          "title": "澳大利亚国民银行裁员2500人，占员工总数6%",
-          "summary": "10月20日，澳大利亚国民银行（NAB）表示将削减2500个岗位，约占员工总数6%，以适应该行所称「不断变化的经营环境」，澳洲银行业前景转弱。看点：海外大行以裁员应对成本压力，是观察全球金融业景气度的一个切口。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmr6535939.shtml",
-          "tag": "银行裁员"
+          "title": "法国10年期国债对德债利差突破150基点至153",
+          "summary": "10月20日法国10年期国债相对德国国债收益率溢价升破150个基点至153，创10月2日以来新高，10年期收益率维持在4.94%附近。看点：财政赤字与政治动荡叠加，法国正成为欧元区主权债的薄弱环节。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/articles/3784034",
+          "tag": "法债风险"
         }
       ]
     },
@@ -266,10 +259,24 @@
       "items": [
         {
           "title": "教育部等三部门部署防控儿童青少年高度近视",
-          "summary": "10月20日，教育部等三部门发布部署，防控儿童青少年高度近视，相关工作动态在教育部官网公布。看点：近视防控从「防近视」转向盯「高度近视」这一致盲高风险人群，学校筛查与户外活动要求可能加码。",
+          "summary": "教育部等三部门10月20日发文，部署儿童青少年高度近视防控工作。看点：近视防控从“总体下降”转向“高度近视”这一更难的关口，学校和家庭的筛查责任会加码。",
           "source": "教育部",
           "url": "http://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202610/t20261020_1455232.html",
           "tag": "近视防控"
+        },
+        {
+          "title": "山西“十五五”全链条完善教师成长通道",
+          "summary": "山西省教育厅10月20日表示，“十五五”时期将实施高素质教师队伍建设工程，从师范生培养到职称评价全链条完善教师成长通道。看点：教师评价与培养体系改革进入地方落地阶段。",
+          "source": "中新网即时新闻",
+          "url": "https://www.chinanews.com.cn/edu/2026/10-20/10718022.shtml",
+          "tag": "教师政策"
+        },
+        {
+          "title": "昂立教育前三季度归母净利润9976.21万元，同比增117.2%",
+          "summary": "昂立教育10月20日披露，2026年前三季度归母净利润9976.21万元，同比增长117.2%，公司称系扩大业务规模并提升经营效率所致。看点：教培机构盈利修复情况，是观察行业转型成效的直接样本。",
+          "source": "芥末堆",
+          "url": "https://www.jiemodui.com/N/139611.html",
+          "tag": "教育财报"
         }
       ]
     },
@@ -277,39 +284,39 @@
       "label": "互联网大厂",
       "items": [
         {
-          "title": "X平台调整推荐算法，更看重停留时长和完读率",
-          "summary": "10月20日，马斯克宣布X平台主页时间线推荐算法两项更新：引入全新AI排序模型更准确预测用户停留时长，并优先推荐完读率高的贴文。看点：社交平台流量分配逻辑从「点击」转向「读完」，内容创作者的写法要跟着变。",
-          "source": "IT之家",
-          "url": "https://www.ithome.com/1/015/449.htm",
-          "tag": "算法调整"
-        },
-        {
-          "title": "抖音商城双11开门红：消费券带动破亿商家数同比增200%",
-          "summary": "10月20日，抖音电商公布10月15日至18日双11开门红数据：消费券带动成交额破亿商家数同比增长200%，破千万和破百万商家数分别增长36%和38%，破亿直播间数量同比增长80%。看点：平台出钱发券换增长，中小商家成为这轮大促的主要受益者。",
+          "title": "抖音电商双11开门红：消费券带动成交额破亿商家数增200%",
+          "summary": "抖音电商10月20日公布双11开门红数据，10月15日至18日消费券带动成交额破亿商家数同比增长200%，破百万、破千万商家数分别增长38%和36%，破亿直播间数量同比增长80%。看点：平台出钱发券换增长，中小商家是本轮大促的主要受益者。",
           "source": "雷峰网",
-          "url": "https://www.leiphone.com/category/industrynews/VSFOVaL9SbtiAsJX.html",
-          "tag": "双11战报"
+          "url": "https://www.leiphone.com/category/industrynews/30w2GXFtLv9CootW.html",
+          "tag": "双11数据"
         },
         {
-          "title": "阅文把DramaBuddy升级为OPC一站式平台，开放版权库做漫剧",
-          "summary": "10月20日，阅文在创作大会上宣布将DramaBuddy漫剧助手升级为OPC一站式平台，向「一人公司」创作者开放IP源头、AI制作、全球发行全链路；上半年短剧和漫剧收入4.3亿元，为去年同期三倍多。看点：网文IP正被批量改造成AI漫剧，内容供给端的产能要爆。",
-          "source": "36氪",
-          "url": "https://36kr.com/p/4032661941883525?f=rss",
-          "tag": "AI漫剧"
+          "title": "天猫双11今晚8点开卖，店铺立减叠平台券低至7.2折",
+          "summary": "天猫宣布真正的双11于10月20日晚8点开卖，店铺立减叠加平台消费券低至7.2折，叠加行业加补券、国补、淘金币后部分商品可到5折。看点：今年大促玩法核心是“券的叠加”，下单前先算总价再膨胀更划算。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/PxChMV65ai4TKgYz.html",
+          "tag": "双11"
         },
         {
-          "title": "汇源被判赔9700余万元后弃用「汇源」字号，改推「咱家果源」",
-          "summary": "10月20日消息，北京汇源因商标侵权被判停止使用「汇源」字号并赔偿9700余万元，公司终止相关生产并推出新品牌「咱家果源」。看点：老牌饮料的商标归属尘埃落定，货架上的品牌认知要重新建立。",
-          "source": "钛媒体",
-          "url": "https://www.tmtpost.com/8174668.html",
-          "tag": "商标纠纷"
+          "title": "苹果首款折叠屏iPhone Duo预购1分钟售罄，发货排到明年",
+          "summary": "10月16日晚8点苹果首款折叠屏iPhone Duo开启预购，开售约1分钟全型号售罄，约40分钟后官网预计送达时间跳至2027年1月底，美国市场半小时内交付日期也变为1月25日。看点：折叠屏终于被苹果点燃需求，黄牛价与产能爬坡是后续看点。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/372583",
+          "tag": "新机售罄"
         },
         {
-          "title": "OpenCode遭黑客攻击泄露用户API密钥，平台被刷爆额度",
-          "summary": "10月20日，开源AI编程Agent OpenCode的部分在线平台被黑客入侵，部分用户API密钥被窃取并在其AI账户上产生费用，OpenAI已为受影响用户退还被消耗的API额度。看点：AI编程工具的安全边界被现实敲打，密钥管理成了开发者的必修课。",
+          "title": "抖音起诉京东员工引双方声明交锋，起因是一条朋友圈",
+          "summary": "抖音起诉京东员工左琦一事登上热搜，抖音与京东官方账号先后发布声明，事件起因是该采销经理的一条朋友圈。看点：大厂公关战从官方口径下沉到个人账号，平台竞争的火药味在变浓。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/1qas4lUYu8NA19Ki.html",
+          "tag": "大厂互撕"
+        },
+        {
+          "title": "OpenCode陷“密钥泄露”风波，AI编程工具安全受关注",
+          "summary": "钛媒体报道，AI编程工具OpenCode陷入密钥泄露风波，引发对AI时代代码与凭证安全的讨论。看点：AI工具接入越多权限越大，密钥管理正成为开发者新的风险点。",
           "source": "钛媒体",
           "url": "https://www.tmtpost.com/8174735.html",
-          "tag": "安全事件"
+          "tag": "安全风波"
         }
       ]
     },
@@ -317,25 +324,25 @@
       "label": "生活 · 消费",
       "items": [
         {
-          "title": "瓶装饮料集体涨价，行业或迎最难一年",
-          "summary": "10月20日，钛媒体报道瓶装饮料出现集体涨价，一边是原料成本上涨，一边还要低价促销，饮料市场承压，2026年或成行业最难一年。看点：货架上的3元饮料正在变少，日常消费的价格带在悄悄上移。",
-          "source": "钛媒体",
-          "url": "https://www.tmtpost.com/8174439.html",
-          "tag": "饮料涨价"
+          "title": "双11华为平板叠加15%国补与教育优惠开卖",
+          "summary": "双11期间华为MatePad系列推出限时优惠，符合条件的用户可叠加15%国家补贴与教育优惠购机。看点：国补叠加教育优惠是今年换平板最实在的窗口，学生党可重点比价。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/lG1dWd9RNAK2bEb7.html",
+          "tag": "国补优惠"
         },
         {
-          "title": "广交会带动广州入境游，豪华酒店预订量同比增34%",
-          "summary": "10月20日，大型生活服务电商平台数据显示，第140届广交会期间（10月15日至11月4日）广州文旅产品预订量同比增长近10%，五星级/豪华型酒店预订量同比增长34%，「广交会附近酒店」搜索量同比增长134%。看点：展会经济正在实打实拉动本地消费，出差与旅游的成本同步走高。",
-          "source": "中新网财经新闻",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-20/10718041.shtml",
-          "tag": "出行消费"
+          "title": "小天鹅12kg热泵洗烘一体机到手4399元，创破冰新低",
+          "summary": "小天鹅TDH12K500热泵洗烘一体机日常价10459元，京东11.11期间10月20日晚8点起叠加PLUS立减与15%国补后到手4399元。看点：大家电叠加国补后价差明显，有换新需求的可以盯这一波。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/015/524.htm",
+          "tag": "家电降价"
         },
         {
-          "title": "胡塞袭击致利雅得机场关闭，沙特私人包机价格暴涨",
-          "summary": "10月20日，胡塞武装袭击沙特造成利雅得主要机场关闭、多家商业航司取消数千架次航班，进出沙特的私人飞机包机价格随之飙升。看点：中东航线风险上升，出差与旅行改签成本会传导到票价上。",
-          "source": "未知",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-20/doc-inivwcmm7717600.shtml",
-          "tag": "航班中断"
+          "title": "米家净水器2到手843元，1200G通量配7年RO滤芯",
+          "summary": "小米米家净水器2（1200G）京东11.11期间支付定金后活动价1240.52元，叠加PLUS立减等优惠后到手843元，官方建议零售价1999元。看点：净水器进入低价高配阶段，滤芯寿命成为比价关键。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/015/267.htm",
+          "tag": "净水器"
         }
       ]
     }
