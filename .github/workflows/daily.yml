@@ -23,6 +23,14 @@ on:
         options:
           - normal
           - topup
+      force:
+        description: "是否强制重做（yes=忽略“已生成则跳过”，重写当期；常规使用选 no）"
+        required: false
+        default: "no"
+        type: choice
+        options:
+          - "no"
+          - "yes"
 
 permissions:
   contents: write
@@ -53,6 +61,7 @@ jobs:
           LIMIT: "60"
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           MODE: ${{ github.event.inputs.mode || 'normal' }}
+          FORCE: ${{ github.event.inputs.force == 'yes' && '1' || '' }}
         run: node scripts/generate.js
 
       - name: Commit generated data
