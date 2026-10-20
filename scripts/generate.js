@@ -508,11 +508,25 @@ async function topUpSections(sections, material) {
   }
   const blocks = [];
   const needs = [];
+  // 已出现过的标题：补稿时不能再挑同一事件（否则补上又被去重删掉，条数永远差一条）
+  const existingTitles = [];
+  for (const s of SECTIONS) {
+    for (const it of ((sections[s] && sections[s].items) || [])) {
+      if (it.title) existingTitles.push(normalizeTitle(it.title));
+    }
+  }
   for (const s of SECTIONS) {
     const target = TAG_TARGET[s] || 3;
     const have = (sections[s] && sections[s].items ? sections[s].items.length : 0);
     if (have >= target) continue;
-    const candidates = material.filter(m => m.tag === s && !usedUrls.has(m.url) && !usedUrls.has('T:' + normalizeTitle(m.title)));
+    const candidates = material.filter(m => {
+      if (m.tag !== s) return false;
+      if (usedUrls.has(m.url)) return false;
+      const t = normalizeTitle(m.title);
+      if (usedUrls.has('T:' + t)) return false;
+      if (existingTitles.some(x => x.length >= 6 && t.length >= 6 && shareLongPhrase(t, x, 6))) return false;
+      return true;
+    });
     if (!candidates.length) { log('topup: no candidate left for', s); continue; }
     needs.push({ section: s, need: target - have });
     blocks.push('【' + (TAG_LABELS[s] || s) + '】还需 ' + (target - have) + ' 条，候选素材：');
