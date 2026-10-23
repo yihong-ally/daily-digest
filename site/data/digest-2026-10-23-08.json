@@ -1,0 +1,420 @@
+{
+  "date": "2026-10-23",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-10-23T11:51:45+08:00",
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "西藏那曲巴青县发生7.0级地震，国家启动三级应急响应",
+          "summary": "10月22日22时33分西藏那曲市巴青县发生7.0级地震，震源深度10公里，国务院抗震救灾指挥部办公室、应急管理部已启动国家地震灾害三级应急响应，中国气象局同步进入地震灾害气象服务保障特别工作状态。看点：高原震区救援难度大，后续余震与天气影响值得持续关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719588.shtml",
+          "tag": "地震救援"
+        },
+        {
+          "title": "台风“蔷琵”逼近，浙闽海洋灾害应急响应升至三级",
+          "summary": "受第30号强台风“蔷琵”和冷空气共同影响，10月22日至23日上海至福建沿海出现30～80厘米风暴增水，东海南部出现6～9米狂浪，自然资源部将浙江、福建海洋灾害应急响应提升至三级。看点：东南沿海出行与渔业作业需及时调整，风暴潮叠加天文潮可能加剧影响。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719600.shtml",
+          "tag": "台风预警"
+        },
+        {
+          "title": "中期选举前两周，特朗普支持率跌至任内新低",
+          "summary": "《纽约时报》与锡耶纳学院联合民调显示，距离美国中期选举仅两周，特朗普施政满意度跌至新低，主因是选民不认可其对经济、伊朗战事和高油价的处理。看点：选情变化将影响美国后续政策走向与全球市场情绪。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/10-23/10719603.shtml",
+          "tag": "美国选情"
+        },
+        {
+          "title": "商务部：前三季度网上零售支撑消费增长，电商动能持续创新",
+          "summary": "商务部电子商务司负责人10月23日介绍，2026年1-9月我国电子商务发展动能持续创新，网上零售有力支撑消费增长，国际合作走深走实。看点：消费复苏的线上渠道表现是观察内需强弱的重要窗口。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-23/10719592.shtml",
+          "tag": "电商数据"
+        },
+        {
+          "title": "尼泊尔萨利扬县恙虫病疫情持续数月，已致10人死亡",
+          "summary": "尼泊尔西部萨利扬县恙虫病疫情持续数月，累计报告817例病例、10人死亡。看点：周边国家传染病疫情抬头，出境旅行需注意野外防护。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/10-23/10719564.shtml",
+          "tag": "疫情通报"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "DeepSeek完成约150亿美元融资，估值与IPO计划浮出水面",
+          "summary": "据《华尔街日报》等消息，DeepSeek完成第二轮私募融资，筹资150亿美元（约合1003亿元人民币），腾讯和宁德时代为出资最多的投资方，并正推进明年初在上海IPO。看点：国内大模型公司单轮融资规模创纪录，算力与人才军备竞赛将进一步升级。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/016/875.htm",
+          "tag": "巨额融资"
+        },
+        {
+          "title": "OpenAI寻求300亿美元新融资，估值目标下调至1.25万亿美元",
+          "summary": "知情人士称OpenAI融资磋商进入最后阶段，计划融资约300亿美元，估值目标下调至1.25万亿美元，并筹备IPO。看点：若成行将刷新全球私营公司估值纪录，AI资本热潮的冷热由此可窥。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-23/doc-iniweiyw4776379.shtml",
+          "tag": "估值纪录"
+        },
+        {
+          "title": "谷歌推出ACE服务，给每个AI智能体配一台“专属电脑”",
+          "summary": "谷歌10月22日发布智能体计算引擎ACE，为AI智能体提供安全、持久、可弹性伸缩的专属计算环境，空闲时自动休眠、唤醒不到500毫秒。看点：智能体从演示走向规模化落地，基础设施层开始专门为Agent设计。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/016/853.htm",
+          "tag": "智能体基建"
+        },
+        {
+          "title": "Anthropic把Agent Skills标准捐给Linux基金会社区共治",
+          "summary": "Anthropic于10月22日宣布将Agent Skills开放标准捐赠给Linux基金会旗下的Agentic AI Foundation，使其从公司项目转为社区共治的智能体能力标准。看点：智能体接口标准走向中立化，生态互通有望加速。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/016/811.htm",
+          "tag": "开放标准"
+        },
+        {
+          "title": "Canva发布首个自研图像生成模型，向所有用户开放",
+          "summary": "Canva推出其首款图像生成模型，向全部用户开放，宣称性能更好、可定制性更强且成本更低。看点：设计工具厂商自研模型，直接冲击现有AI绘图服务格局。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/",
+          "tag": "AI绘图"
+        },
+        {
+          "title": "Uber把ChatGPT Work铺给全部3万名员工",
+          "summary": "Uber在较小范围试点后，将ChatGPT Work企业级智能体推广至全公司3万名员工。看点：大企业全员上AI助手，办公场景的AI渗透率正在快速抬升。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+          "tag": "企业AI"
+        },
+        {
+          "title": "微软AI诊断系统在疑难病例上胜过全科医生",
+          "summary": "微软Mustafa Suleyman称其新AI诊断系统在《Science》发表的研究中于疑难病例上击败全科医生，但改进主要来自底层模型而非系统本身。看点：医疗AI进入实证比拼阶段，基层诊断格局或生变。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+          "tag": "医疗AI"
+        },
+        {
+          "title": "1Password上线新功能，让AI智能体代登录而不见密码",
+          "summary": "1Password推出新功能，允许AI智能体代替用户登录个人账户，同时不暴露账户密码等私密凭据。看点：智能体接管账号操作的安全难题有了产品化解法。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+          "tag": "账号安全"
+        },
+        {
+          "title": "前OPPO员工做的AI旅行眼镜，海外众筹卖了40多万美元",
+          "summary": "一位前OPPO团队打造的AI旅行眼镜在众筹平台筹到超40万美元。看点：在Meta、谷歌等巨头夹击下，创业公司靠细分场景能否站稳，值得观察。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4037858588284034?f=rss",
+          "tag": "AI硬件"
+        },
+        {
+          "title": "微软说黑进ConnectWise的是中国黑客，还用了AI帮手",
+          "summary": "微软把ConnectWise被入侵的锅指向一个亲中国的黑客组织，称其靠AI代理快速攻入数千家客户。看点：AI代理第一次被明确当成大规模入侵的加速器，安全圈得重新算账。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/",
+          "tag": "安全"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "苹果2000美元折叠屏iPhone Duo正式开售，门店排起长队",
+          "summary": "苹果首款折叠屏手机iPhone Duo于周五正式发售，起售价2000美元，首批现货送达全球苹果店，供不应求令店外大排长龙。看点：折叠屏首次进入苹果产品线，能否带动高端换机潮值得观察。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-23/doc-iniweiyu8148952.shtml",
+          "tag": "新机开售"
+        },
+        {
+          "title": "蔚来萤火虫发布60kWh电池，CLTC续航提升至560公里",
+          "summary": "蔚来firefly萤火虫10月23日发布60kWh版本电池，体积与整备质量不变，CLTC续航提升至560公里，整车购买13.68万元起，老用户可升级。看点：小车续航短板被补齐，入门电动车竞争进一步加剧。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/016/840.htm",
+          "tag": "电池升级"
+        },
+        {
+          "title": "英伟达Vera Rubin平台确认全面量产，黄仁勋谈欧洲算力落地",
+          "summary": "在GTC柏林大会上，黄仁勋确认Vera Rubin平台已全面量产，并重点讨论算力中心建设、智能体管理与物理AI进入欧洲工厂和道路。看点：AI算力从芯片发布转向产能与落地速度的比拼。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/372763",
+          "tag": "算力平台"
+        },
+        {
+          "title": "拿铁熊猫推出Sigma 2单板计算机，搭载酷睿Ultra X7 358H",
+          "summary": "DFRobot旗下拿铁熊猫发布Sigma 2单板计算机，基于英特尔酷睿Ultra X7 358H处理器，板载64GB LPDDR5X-8533内存，面向边缘AI与嵌入式应用。看点：边缘AI硬件性能再上台阶，本地私有部署门槛降低。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/016/835.htm",
+          "tag": "边缘计算"
+        },
+        {
+          "title": "RISC-V中国峰会在深圳开幕，车规芯片已量产上车",
+          "summary": "RISC-V中国峰会在深圳开幕，会上披露车规级RISC-V芯片已实现量产上车，但AI与数据中心方向仍在补软件生态。看点：开源指令集从物联网走向汽车，生态短板决定其天花板。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8178185.html",
+          "tag": "RISC-V"
+        },
+        {
+          "title": "SK旗下数据中心公司洽谈融资，推进3500亿美元AI基建",
+          "summary": "SK Hyper正与大型科技企业和金融投资者谈判筹资，用于其规划的AI数据中心建设，加入全球AI基础设施部署热潮。看点：AI基建融资规模惊人，算力投资回报问题仍待验证。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-23/doc-iniweiyr4916084.shtml",
+          "tag": "AI基建"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "A股三大指数集体跌超2%，全市场超5200只个股下跌",
+          "summary": "10月23日A股三大指数均跌超2%，创业板指跌破2500点、日内跌超3%，CPO、半导体板块领跌，全市场超5200只个股下跌，沪深京三市上午半天成交1.08万亿元。看点：AI算力链集体回调，市场风险偏好明显降温。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4037831804458120?f=rss",
+          "tag": "A股大跌"
+        },
+        {
+          "title": "现货黄金跌破4000美元/盎司，为7月以来首次",
+          "summary": "10月23日现货黄金跌破4000美元/盎司关口，为7月以来首次，日内跌0.6%。看点：避险资产与风险资产同步走弱，反映市场流动性预期变化。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/money/future/fmnews/2026-10-23/doc-iniweiyt5703399.shtml",
+          "tag": "金价跳水"
+        },
+        {
+          "title": "日韩股市低开，韩国综指开盘下跌2.4%",
+          "summary": "10月23日日经225指数开盘报62667.05点跌0.38%，韩国综合股价指数开盘下跌2.4%至5403.17点，SK海力士与三星电子盘前双双走低。看点：半导体权重股承压，亚洲市场情绪跟随美股AI板块走弱。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-23/doc-iniweiyr4878575.shtml",
+          "tag": "亚太股市"
+        },
+        {
+          "title": "全球信用利差升至17个月高位，AI投资疑虑升温",
+          "summary": "随着AI概念股遭抛售和地缘紧张加剧，全球公司债券信用利差走阔至最高129个基点，为2025年5月以来最高，亚洲高评级美元债利差升至去年7月以来最高。看点：债市避险信号增强，AI相关融资成本可能抬升。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4037888301486976?f=rss",
+          "tag": "信用利差"
+        },
+        {
+          "title": "日本9月核心通胀今年首超2%，强化央行加息预期",
+          "summary": "日本总务省10月23日公布，9月剔除生鲜食品的CPI同比涨幅超过央行2%目标，为九个月来首次，市场对12月加息的预期升温，10年期日债收益率下跌9个基点至2.790%。看点：日本货币政策正常化将影响全球资金流向。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-23/doc-iniweiyu8014373.shtml",
+          "tag": "日本加息"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "央行10月23日开展2580亿元隔夜逆回购，7天期操作为零",
+          "summary": "央行10月23日根据一级交易商需求开展2580亿元隔夜逆回购操作，当日7天期逆回购操作量为零。看点：短端流动性投放方式调整，资金面呵护意图明显。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-23/10719522.shtml",
+          "tag": "央行操作"
+        },
+        {
+          "title": "9月中国跨境收支规模环比增长9%，结售汇增17%",
+          "summary": "国家外汇管理局数据显示，9月我国跨境收支和结售汇规模环比分别增长9%和17%，涉外交易保持活跃。看点：跨境资金流动回暖，是外贸与外资信心的直观指标。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-23/10719527.shtml",
+          "tag": "跨境资金"
+        },
+        {
+          "title": "六部门出台意见，推进老旧街区厂区改造提升",
+          "summary": "住房城乡建设部、工业和信息化部等六部门联合印发《关于推进老旧街区厂区改造提升的指导意见》，要求结合城市体检确定改造范围和实施时序。看点：城市更新再获政策加码，相关基建与地产链条受益。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3184113",
+          "tag": "城市更新"
+        },
+        {
+          "title": "加拿大未排除中期选举前与美国达成贸易协议",
+          "summary": "消息人士称加拿大官员未排除在下月美国中期选举前与美国快速达成贸易协议的可能，但提醒希望依然渺茫。看点：北美贸易谈判节奏与选举政治高度绑定。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-23/doc-iniweiyu8045006.shtml",
+          "tag": "贸易谈判"
+        },
+        {
+          "title": "美财长贝森特：AI热潮没有系统性问题，不会重演互联网泡沫",
+          "summary": "美国财长贝森特在纽约一场私人会议上告诉数百名投资者，没发现AI热潮存在系统性问题。看点：官方对AI泡沫担忧的公开淡化，会影响市场对AI投资周期的判断。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/016/795.htm",
+          "tag": "宏观政策"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "哈工程成立哈军工精神与国防教育研究院，启动“国防教育北疆行”",
+          "summary": "10月22日，“国防教育北疆行”活动启动暨哈尔滨工程大学哈军工精神与国防教育研究院成立大会举行，师生与一曼小学学生代表共同参加公开课和主题展览。看点：高校国防教育平台化，边疆课堂向中小学延伸。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/edu/2026/10-23/10719595.shtml",
+          "tag": "国防教育"
+        },
+        {
+          "title": "广东省教育厅原副厅长魏中林被开除党籍",
+          "summary": "据广东省纪委监委10月23日消息，经省委批准，对广东省教育厅原党组副书记、副厅长魏中林严重违纪违法问题立案审查调查后给予开除党籍处分。看点：教育系统反腐持续，省级教育部门人事监管受关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-23/10719596.shtml",
+          "tag": "教育反腐"
+        },
+        {
+          "title": "中国东方教育盘中涨超8%，东吴证券首次覆盖给予买入评级",
+          "summary": "中国东方教育10月23日盘中涨超8%，截至发稿涨4.59%报4.33港元；东吴证券首次覆盖给予“买入”评级，此前教育部在2026年世界职业技术教育发展大会上发布《中国职业教育》相关报告。看点：职业教育政策利好正被资本市场定价。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/hkstock/marketalerts/2026-10-23/doc-iniweqhu4935398.shtml",
+          "tag": "职业教育"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "「千问Go!」上线“我的应用”，说句话就能搭专属应用",
+          "summary": "「千问Go!」上线新功能“我的应用”，用户无需编程，说出需求即可搭建生活、工作、学习场景应用，生成的应用支持对外分享和持续更新数据。看点：无代码应用搭建向大众开放，个人生产力工具形态再变。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3184130",
+          "tag": "无代码"
+        },
+        {
+          "title": "Meta因隐私及内容审核问题被判支付250亿美元罚款",
+          "summary": "Meta因隐私及内容审核问题被判决支付250亿美元罚款。看点：全球平台监管处罚金额再创新高，合规成本成为大厂硬约束。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4037687068021637?f=rss",
+          "tag": "监管处罚"
+        },
+        {
+          "title": "扫地机市场集体下滑，云鲸面临掉队压力",
+          "summary": "扫地机器人行业整体销量下滑，云鲸被指产品结构“偏科”，在头部竞争中面临跌入others阵营的风险。看点：清洁电器红利退潮，中小品牌生存空间收窄。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8177924.html",
+          "tag": "行业洗牌"
+        },
+        {
+          "title": "人形机器人租金暴跌，厂商仍大举铺设线下渠道",
+          "summary": "人形机器人租赁价格大幅下跌，厂商仍在加速开出门店铺设渠道，但每多交付一台机器人往往仍需多配一名工程师。看点：机器人商业化从展示走向交付，渠道效率成为胜负手。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8177860.html",
+          "tag": "机器人渠道"
+        },
+        {
+          "title": "马斯克算力生意一年回本，Meta的Muse项目还遥遥无期",
+          "summary": "钛媒体对比两家巨头的AI算力投入，马斯克相关算力生意一年回本，Meta的Muse项目进展缓慢。看点：长期AI故事要讲，短期账更得算，投入产出节奏正成为大厂分水岭。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8178416.html",
+          "tag": "大厂AI"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "全国蛋价跌回“4元时代”，后市走势引关注",
+          "summary": "国庆节前偏高的鸡蛋价格近期明显回落，全国蛋价跌回“4元时代”，市民购买感受到实惠，市场关注后续是否继续下降。看点：菜篮子成本下降，直接减轻家庭日常开支。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-23/10719473.shtml",
+          "tag": "蛋价回落"
+        },
+        {
+          "title": "网传“家电国补正在退场”是假的，全年2500亿元已下达",
+          "summary": "总台中国之声辟谣称“家电国补即将停止”为不实信息，今年家电以旧换新补贴仍在实施，国家发改委9月30日已下达第四批625亿元资金，全年2500亿元消费品以旧换新资金全部下达。看点：双十一换家电别被谣言带节奏，补贴仍可正常申领。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/016/833.htm",
+          "tag": "国补辟谣"
+        },
+        {
+          "title": "星巴克回应消费入座争议，10月22日起全国施行并摆提示牌",
+          "summary": "星巴克就“消费入座”争议作出回应，自10月22日起在全国门店施行相关规定并摆放提示牌。看点：连锁咖啡门店座位规则变化，直接影响日常办公与社交场景。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/zaobao/3jq4Bj4E3zJhjVBp.html",
+          "tag": "门店新规"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3614.12,
+        "unit": "点",
+        "changePct": -1.2,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2521.77,
+        "unit": "点",
+        "changePct": -2.14,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
