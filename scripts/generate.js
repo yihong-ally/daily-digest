@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 /**
  * 每日前沿简报 · 独立生成脚本（GitHub Actions / 本地均可运行）
  * - 抓取中文新闻源（RSS + JSON API）→ 调用大模型生成八板块简报 → 写入静态 JSON
@@ -809,7 +809,17 @@ async function runEdition(dateStr, slot, opts) {
 
   // 4) 写文件
   fs.mkdirSync(DATA_DIR, { recursive: true });
-  saveJSON(path.join(DATA_DIR, 'digest-latest.json'), digest);
+  // digest-latest.json（首页默认展示）：只有当本期比现有 latest 更新时才覆盖，
+  // 避免"回补昨天的晚报"把首页改成旧一期
+  const latestFile = path.join(DATA_DIR, 'digest-latest.json');
+  const curLatest = loadJSON(latestFile);
+  const keyNew = dateStr + '-' + slot;
+  const keyCur = curLatest ? (curLatest.date + '-' + curLatest.slot) : '';
+  if (!curLatest || keyNew >= keyCur) {
+    saveJSON(latestFile, digest);
+  } else {
+    log('latest 保持不变（本期 ' + keyNew + ' 为回补，现有 latest=' + keyCur + '）');
+  }
   saveJSON(path.join(DATA_DIR, 'digest-' + dateKey + '.json'), digest);
 
   // editions/{date}.json：该日所有版次列表（含历史，按 slot 排序）
