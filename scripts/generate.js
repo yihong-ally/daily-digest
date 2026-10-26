@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 /**
  * 每日前沿简报 · 独立生成脚本（GitHub Actions / 本地均可运行）
  * - 抓取中文新闻源（RSS + JSON API）→ 调用大模型生成八板块简报 → 写入静态 JSON
@@ -34,7 +34,7 @@ const LLM_BASE = (process.env.LLM_BASE || 'https://api.deepseek.com/v1').replace
 const LLM_KEY = process.env.LLM_KEY || '';
 const LLM_MODEL = process.env.LLM_MODEL || 'deepseek-chat';
 const DATA_DIR = path.resolve(process.env.DATA_DIR || path.join(__dirname, '..', 'site', 'data'));
-const LIMIT = parseInt(process.env.LIMIT || '120', 10) || 120;
+const LIMIT = parseInt(process.env.LIMIT || '90', 10) || 90;
 
 // watchlist 默认值（随脚本打包，实时行情获取失败时回退用）
 const WATCHLIST_DEFAULT = (() => {
@@ -89,7 +89,7 @@ const TAG_TARGET = { headlines: 5, ai: 10, tech: 6, finance: 5, economy: 5, educ
 
 // 每个板块送进模型的素材上限（AI/科技板块要给足，才能支撑"AI 10 条、科技 8 条"）
 // 板块素材不足时会自动少送，不会硬凑
-const TAG_QUOTA = { ai: 26, tech: 24, headlines: 10, finance: 12, economy: 14, internet: 10, education: 12, life: 8 };
+const TAG_QUOTA = { ai: 22, tech: 18, headlines: 8, finance: 8, economy: 10, internet: 8, education: 8, life: 6 };
 
 const SITE_NAME = '每日前沿简报';
 const SECTIONS = ['headlines', 'ai', 'tech', 'finance', 'economy', 'education', 'internet', 'life'];
@@ -492,6 +492,14 @@ async function callLLM(material) {
   return await llmRequest(sys, user, 0.5);
 }
 
+// 单期 token 用量统计（用于核对花费）
+const USAGE = { calls: 0, prompt: 0, completion: 0 };
+function resetUsage() { USAGE.calls = 0; USAGE.prompt = 0; USAGE.completion = 0; }
+function usageLine() {
+  const cost = USAGE.prompt * 2 / 1e6 + USAGE.completion * 8 / 1e6; // deepseek-chat 参考价：输入2元/百万，输出8元/百万
+  return 'calls=' + USAGE.calls + ' prompt=' + USAGE.prompt + ' completion=' + USAGE.completion +
+    ' 估算≈¥' + cost.toFixed(4);
+}
 // 通用大模型请求（JSON 模式优先，失败回退普通模式）
 async function llmRequest(sys, user, temperature) {
   const base = {
@@ -517,6 +525,8 @@ async function llmRequest(sys, user, temperature) {
       throw new Error('LLM ' + res.status + ': ' + t2.slice(0, 300));
     }
     const data = await res.json();
+    if (data.usage) { USAGE.prompt += data.usage.prompt_tokens || 0; USAGE.completion += data.usage.completion_tokens || 0; }
+    USAGE.calls += 1;
     const content = data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content;
     if (!content) throw new Error('LLM empty content');
     return content;
@@ -730,6 +740,7 @@ async function runEdition(dateStr, slot, opts) {
     return { ok: true, skipped: dateKey, date: dateStr, slot, edition: editionLabel };
   }
 
+  resetUsage();
   log('start', dateKey, '(' + editionLabel + ')' + (isToday ? '' : ' [回补]'));
 
   // 1) 抓取素材
@@ -781,7 +792,7 @@ async function runEdition(dateStr, slot, opts) {
   }
 
   // 补稿：未达目标条数的板块，用剩余候选再要一轮（失败不影响主流程，最多两轮）
-  for (let round = 1; round <= 2; round++) {
+  for (let round = 1; round <= 1; round++) {
     try {
       const added = await topUpSections(sections, material);
       const totalAdded = added ? Object.values(added).reduce((a, b) => a + b, 0) : 0;
@@ -848,6 +859,7 @@ async function runEdition(dateStr, slot, opts) {
   const secCounts = {};
   for (const s of SECTIONS) secCounts[s] = (sections[s] && sections[s].items ? sections[s].items.length : 0);
   log('done', dateKey, editionLabel, '条数:', JSON.stringify(secCounts));
+  log('llm 用量:', usageLine());
   const shortSecs = SECTIONS.filter(s => secCounts[s] < (TAG_TARGET[s] || 3));
   if (shortSecs.length) log('WARN 未达目标条数的板块:', shortSecs.map(s => s + '(' + secCounts[s] + '/' + (TAG_TARGET[s] || 3) + ')').join(', '));
   // 5) 微信推送（失败不影响生成结果）

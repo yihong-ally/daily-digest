@@ -58,7 +58,7 @@ jobs:
           LLM_BASE: "https://api.deepseek.com/v1"
           LLM_KEY: ${{ secrets.LLM_KEY }}
           LLM_MODEL: "deepseek-chat"
-          LIMIT: "120"
+          LIMIT: "90"
           PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
           MODE: ${{ github.event.inputs.mode || 'normal' }}
           FORCE: ${{ github.event.inputs.force == 'yes' && '1' || '' }}
