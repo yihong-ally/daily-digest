@@ -94,7 +94,7 @@ const TAG_QUOTA = { ai: 26, tech: 24, headlines: 10, finance: 12, economy: 14, i
 const SITE_NAME = '每日前沿简报';
 const SECTIONS = ['headlines', 'ai', 'tech', 'finance', 'economy', 'education', 'internet', 'life'];
 const SLOT_MORNING = '08';
-const SLOT_EVENING = '18';
+const SLOT_EVENING = '21';
 
 // ---- 北京时间工具 ----
 const BEIJING_TZ = 'Asia/Shanghai';
@@ -114,6 +114,24 @@ function beijingISO(d) {
   return g('year') + '-' + g('month') + '-' + g('day') + 'T' + g('hour') + ':' + g('minute') + ':' + g('second') + '+08:00';
 }
 
+// 本期覆盖时段（北京时间），两期首尾相接、不留空档：
+//   晨报(08)：前一天 21:00 → 当天 08:00（隔夜 + 晚报截稿之后的新闻）
+//   晚报(21)：当天 08:00 → 当天 21:00（白天到晚间）
+// 晚报 21:00 出刊，21:00 之后的消息由次日晨报接住，所以晨报起点取 21:00（而非 22:00），避免丢一小时。
+function slotWindow(dateStr, slot) {
+  const p = dateStr.split('-').map(Number);
+  const y = p[0], m = p[1], d = p[2];
+  if (slot === SLOT_MORNING) {
+    return {
+      from: Date.UTC(y, m - 1, d - 1, 13, 0, 0), // 前一天 21:00 北京时间
+      to: Date.UTC(y, m - 1, d, 0, 0, 0)         // 当天 08:00 北京时间
+    };
+  }
+  return {
+    from: Date.UTC(y, m - 1, d, 0, 0, 0),        // 当天 08:00
+    to: Date.UTC(y, m - 1, d, 13, 0, 0)          // 当天 21:00
+  };
+}
 function log(...a) { console.log('[generate]', ...a); }
 
 // ---- 文件读写 ----
@@ -141,23 +159,31 @@ function cleanText(s) {
   return decodeEntities((s || '').toString().replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1').replace(/<[^>]+>/g, ' ')).replace(/\s+/g, ' ').trim();
 }
 
-function parsePubDate(raw) {
+function parsePubMs(raw) {
   if (!raw) return null;
-  // 数字时间戳（秒 / 毫秒）：新浪 ctime="1792495780"、华尔街见闻 display_time=1792495979
   const str = String(raw).trim();
+  // 数字时间戳（秒 / 毫秒）：新浪 ctime="1792495780"、华尔街见闻 display_time=1792495979
   if (/^\d{10,13}$/.test(str)) {
     const n = parseInt(str, 10);
     const ms = str.length <= 10 ? n * 1000 : n;
-    const d = new Date(ms);
-    if (!isNaN(d.getTime()) && d.getFullYear() > 2000) return beijingDateStr(d);
+    if (ms > 946684800000) return ms; // 只认 2000 年之后的时间戳
+    return null;
   }
   try {
     const d = new Date(raw);
-    if (!isNaN(d.getTime())) return beijingDateStr(d);
+    if (!isNaN(d.getTime())) return d.getTime();
   } catch (e) {}
   const m1 = str.match(/(\d{4})[年\-\/](\d{1,2})[月\-\/](\d{1,2})/);
-  if (m1) return m1[1] + '-' + m1[2].padStart(2, '0') + '-' + m1[3].padStart(2, '0');
+  if (m1) {
+    const d = new Date(Number(m1[1]), Number(m1[2]) - 1, Number(m1[3]), 0, 0, 0);
+    if (!isNaN(d.getTime())) return d.getTime();
+  }
   return null;
+}
+
+function parsePubDate(raw) {
+  const ms = parsePubMs(raw);
+  return ms === null ? null : beijingDateStr(new Date(ms));
 }
 
 function parseJsonNews(text, tag, defaultSource) {
@@ -183,7 +209,8 @@ function parseJsonNews(text, tag, defaultSource) {
       const pubDateRaw = a.ctime || a.intime || a.display_time || a.pubDate || a.publishedAt ||
         a.publish_time || a.created_at || a.date || '';
       const pubDate = parsePubDate(pubDateRaw);
-      return { title, url, summary, source, tag, pubDate };
+      const pubAt = parsePubMs(pubDateRaw);
+      return { title, url, summary, source, tag, pubDate, pubAt };
     }).filter(m => m.title && m.url && /^https?:/i.test(m.url));
   } catch (e) { return []; }
 }
@@ -205,7 +232,7 @@ function parseHtmlList(html, tag, base, defaultSource) {
     try { href = new URL(href, base).toString(); } catch (e) { continue; }
     if (!/^https?:/i.test(href)) continue;
     const d = inner.match(/(\d{4}-\d{2}-\d{2})/);
-    items.push({ title, url: href, summary: '', source, tag, pubDate: d ? d[1] : null });
+    items.push({ title, url: href, summary: '', source, tag, pubDate: d ? d[1] : null, pubAt: parsePubMs(d ? d[1] : null) });
   }
   return items;
 }
@@ -260,7 +287,8 @@ function parseRss(xml, tag, defaultSource) {
     const desc = pick('description') || pick('summary') || pick('content');
     const pubDateRaw = pick('pubDate') || pick('published') || pick('date') || pick('updated') || '';
     const pubDate = parsePubDate(pubDateRaw);
-    if (title && link) items.push({ title, url: link, summary: desc.slice(0, 300), source: channelSource, tag, pubDate });
+    const pubAt = parsePubMs(pubDateRaw);
+    if (title && link) items.push({ title, url: link, summary: desc.slice(0, 300), source: channelSource, tag, pubDate, pubAt });
   }
   return items;
 }
@@ -634,8 +662,8 @@ function appendHistory(histFile, items, dateStr) {
 // GitHub Actions 的 schedule 实际触发时间会晚于 cron 设定（实测有延迟数小时的情况）。
 // 若仍按「现在几点 → 算晨报还是晚报」，18:00 的晚报任务一旦漂过午夜就会被写成「第二天的晨报」，
 // 于是前一天的晚报永久缺失。现在改成：先规划「该补哪几期」，再由调用方逐期生成，与当前钟点无关。
-const MORNING_READY_HOUR = 6;    // 早于 6 点不生成当天晨报（避免凌晨就产出"晨报"）
-const EVENING_READY_HOUR = 14;   // 早于 14 点不生成当天晚报
+const MORNING_READY_HOUR = 7;    // 早于 7 点不生成当天晨报
+const EVENING_READY_HOUR = 21;   // 早于 21 点不生成当天晚报
 const MAX_EDITIONS_PER_RUN = 2;  // 单次运行最多生成几期（控制大模型调用成本）
 
 function pad2(n) { return String(n).padStart(2, '0'); }
@@ -710,14 +738,19 @@ async function runEdition(dateStr, slot, opts) {
   const seen = new Set();
   material = material.filter(m => { const k = m.url; if (seen.has(k)) return false; seen.add(k); return true; });
 
-  // 只保留今天发布的新闻（pubDate 为空则保留，避免误杀无法解析日期的源）
+  // 只保留「本期覆盖时段」内发布的新闻：
+  //   晨报 08:00 → 前一天 22:00 ~ 当天 08:00（隔夜）
+  //   晚报 21:00 → 当天 08:00 ~ 当天 21:00
+  // 无时间戳的素材（如知乎热榜）只在要闻板块保留，其余板块丢弃，避免旧闻混入
+  const win = slotWindow(dateStr, slot);
   const beforeFilter = material.length;
   material = material.filter(m => {
-    if (!m.pubDate) return true;
-    return m.pubDate === dateStr;
+    if (!m.pubAt) return m.tag === 'headlines';
+    return m.pubAt >= win.from && m.pubAt < win.to;
   });
-  log('date filter: kept', material.length, '/', beforeFilter, '(today=' + dateStr + ')');
-  if (material.length === 0) throw new Error('no news material fetched (after date filter)');
+  log('window filter: ' + beijingISO(new Date(win.from)) + ' ~ ' + beijingISO(new Date(win.to)),
+    'kept', material.length, '/', beforeFilter);
+  if (material.length === 0) throw new Error('no news material inside window ' + beijingISO(new Date(win.from)) + ' ~ ' + beijingISO(new Date(win.to)));
 
   // 关键词补充：教育/AI 等专属源偏少的板块，从其他板块按关键词补候选（文本里标 [跨板块补充]）
   const beforeEnrich = material.length;
@@ -768,6 +801,7 @@ async function runEdition(dateStr, slot, opts) {
     slot: slot,
     edition: editionLabel,
     updatedAt: beijingISO(now),
+    coverage: { from: beijingISO(new Date(win.from)), to: beijingISO(new Date(win.to)) },
     siteName: SITE_NAME,
     sections,
     watchlist
@@ -923,4 +957,4 @@ if (require.main === module) {
     process.exit(r.ok === false ? 1 : 0);
   }).catch(e => { console.error('[generate] ERROR', e.message); process.exit(1); });
 }
-module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour, buildMaterialText, balancedSample, parsePubDate, parseJsonNews, parseRss, dedupeSections };
+module.exports = { runEdition, runPlan, runTopup, planTargets, shiftDate, beijingDateStr, beijingHour, buildMaterialText, balancedSample, parsePubDate, parsePubMs, parseJsonNews, parseRss, dedupeSections, slotWindow };

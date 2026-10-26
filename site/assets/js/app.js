@@ -102,9 +102,12 @@ function renderNews(sections) {
 
 function renderAll(data, stocksSeries, fundsSeries) {
   document.getElementById("siteName").textContent = data.siteName || "每日前沿简报";
-  // 日期+版次显示
+  // 日期 + 版次 + 本期覆盖时段
   const editionTag = data.edition ? ` · ${data.edition}` : "";
-  document.getElementById("dateLabel").textContent = "更新于 " + (data.date || "") + editionTag;
+  const cov = (data.coverage && data.coverage.from && data.coverage.to)
+    ? ` · 覆盖 ${data.coverage.from.slice(5, 16).replace("T", " ")} ~ ${data.coverage.to.slice(5, 16).replace("T", " ")}`
+    : "";
+  document.getElementById("dateLabel").textContent = "更新于 " + (data.date || "") + editionTag + cov;
   const watch = data.watchlist || {};
   const grid = document.getElementById("watchGrid");
   grid.innerHTML =
