@@ -1,11 +1,11 @@
 {
   "date": "2026-10-28",
-  "slot": "08",
-  "edition": "晨报",
-  "updatedAt": "2026-10-28T12:40:03+08:00",
+  "slot": "21",
+  "edition": "晚报",
+  "updatedAt": "2026-10-29T02:35:05+08:00",
   "coverage": {
-    "from": "2026-10-27T21:00:00+08:00",
-    "to": "2026-10-28T08:00:00+08:00"
+    "from": "2026-10-28T08:00:00+08:00",
+    "to": "2026-10-28T21:00:00+08:00"
   },
   "siteName": "每日前沿简报",
   "sections": {
@@ -13,18 +13,39 @@
       "label": "今日必读",
       "items": [
         {
-          "title": "国家统计局：前9月规上工业企业利润同比增长15.5%",
-          "summary": "国家统计局公布数据，1—9月份全国规模以上工业企业利润同比增长15.5%。看点：工业企业盈利延续修复，是观察经济基本面与后续政策力度的重要窗口。",
-          "source": "钛媒体",
-          "url": "https://www.tmtpost.com/8183890.html",
+          "title": "8000亿元新型政策性金融工具全部投放完成",
+          "summary": "截至10月28日，国开行、进出口银行、农发行三家政策性银行已完成2026年新型政策性金融工具全部投放，共计8000亿元。看点：这笔准财政资金落地节奏直接关系四季度基建投资与稳增长力度，值得关注后续项目开工数据。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722352.shtml",
+          "tag": "政策落地"
+        },
+        {
+          "title": "中国船厂手持订单3.99亿载重吨，排到四年后",
+          "summary": "中国船舶工业行业协会副会长李彦庆10月28日在大连表示，中国船厂手持订单达3.99亿DWT，手握未来四年多工作量。看点：造船业是观察中国高端制造出口景气度的窗口，订单饱满意味着产业链就业与配套需求有支撑。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722324.shtml",
+          "tag": "造船订单"
+        },
+        {
+          "title": "英国预算责任办公室把2027年GDP增速预测砍到1%",
+          "summary": "10月28日，英国财政大臣希利在预算演讲中援引OBR预测称，2027年英国经济将增长1%，较3月春季预测的1.6%大幅下调。看点：欧洲主要经济体增长预期走弱，会影响全球利率路径与出口需求判断。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4045539130086273?f=rss",
+          "tag": "增长下调"
+        },
+        {
+          "title": "前三季度我国海洋生产总值8.5万亿元，同比增4.9%",
+          "summary": "自然资源部10月28日发布数据，前三季度海洋生产总值8.5万亿元，同比增长4.9%，高于国内生产总值增速0.3个百分点，拉动国民经济增长0.4个百分点。看点：海洋经济成为稳增长中增速跑赢大盘的板块，海域分层立体利用等改革值得跟踪。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4045531821167489?f=rss",
           "tag": "经济数据"
         },
         {
-          "title": "美国21州及华盛顿特区起诉特朗普政府撤销企业所有权报告规则",
-          "summary": "美国21个州及华盛顿特区对特朗普政府提起诉讼，指控其撤销2021年反非法金融法律下设的报告要求。看点：企业受益所有权透明度的攻防，牵动在美注册公司的合规成本。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpiz3954065.shtml",
-          "tag": "政策诉讼"
+          "title": "郑州发文打造“培育钻石之都”，2028年产业规模冲200亿",
+          "summary": "郑州市10月27日发布培育钻石产业三年行动方案（2026—2028年），提出到2028年全产业规模达200亿元，形成“买钻石到郑州”的社会认同。看点：地方以产业政策押注培育钻石赛道，将影响天然钻石与培育钻石的价格竞争格局。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722346.shtml",
+          "tag": "产业政策"
         }
       ]
     },
@@ -32,74 +53,74 @@
       "label": "AI · 大模型动态",
       "items": [
         {
-          "title": "谷歌发布Genie 4世界模型，可稳定生成两分钟场景并支持实时操控",
-          "summary": "谷歌发布Genie 4世界模型，场景一致性时长提升至两分钟（为Genie 3的两倍），物理表现更真实并新增音频与实时转向操控。看点：世界模型从演示走向可交互，是具身智能与游戏内容生产的关键底座。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
-          "tag": "世界模型"
+          "title": "OpenAI发布GPT-6.1 Terra，价格砍半还能解读图纸剪视频",
+          "summary": "OpenAI发布新模型GPT-6.1 Terra，支持解读图纸、编辑视频，且价格较此前减半。看点：头部模型在能力扩展的同时主动降价，会直接压低企业调用AI的成本门槛，加速应用层铺开。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4044782264193925?f=rss",
+          "tag": "新模型"
         },
         {
-          "title": "Opera推出WebAI新网页标准，让AI模型在浏览器本地运行",
-          "summary": "Opera推出名为WebAI的新网页标准，设计上可兼容多种AI模型，让用户在浏览器本地部署AI。看点：推理下沉到终端，有望降低调用成本并改善隐私。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
-          "tag": "本地AI"
+          "title": "蚂蚁百灵开源Ling-3.1-flash-1019，主打真实任务个人智能体",
+          "summary": "10月28日，蚂蚁集团旗下百灵大模型正式开源Ling-3.1-flash-1019，定位个人智能体（Personal Agent）走向真实任务。看点：国内大厂把智能体模型开源，开发者可低成本搭建本地Agent应用，生态竞争升温。",
+          "source": "量子位",
+          "url": "https://www.qbitai.com/2026/10/505928.html",
+          "tag": "开源模型"
         },
         {
-          "title": "Anthropic与GSA扩大合作，把Claude推向各级政府",
-          "summary": "Anthropic宣布扩大与美国总务管理局（GSA）的合作，将Claude引入各级政府使用。看点：政府成为大模型的重要采购方，公共部门AI落地提速。",
-          "source": "Hacker News",
-          "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
-          "tag": "政府合作"
+          "title": "豆包工作升级：电脑操作可录成技能，Mac锁屏也能接着干",
+          "summary": "豆包工作电脑操作能力升级，屏幕点击精度与速度提升，用户可把电脑操作演示录制为可复用技能，并支持Mac锁屏后继续执行任务、用手机远程下达指令查看结果。看点：AI助手从“聊天框”走向真正替你操作电脑，办公自动化边界被进一步推开。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/MYDTBZqQkhfVtkte.html",
+          "tag": "智能体升级"
         },
         {
-          "title": "前沿实验室称自家模型证伪指数时间假说，MIT学者解读",
-          "summary": "多家前沿AI实验室称其模型证伪了计算复杂性理论中的指数时间假说（ETH），TechCrunch采访了负责解释OpenAI这一发现的MIT计算机科学家。看点：AI开始产出数学与理论计算机科学的实质结果，真假与意义都值得关注。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
-          "tag": "AI科研"
+          "title": "DeepSeek测试文件泄出三个V5模型占位符",
+          "summary": "DSH测试文件中出现三个deepseek-v5相关模型条目，或为占位符，引发外界对DeepSeek下一代模型即将发布的猜测。看点：若V5临近，国内开源模型竞争将再起波澜，开发者需关注迁移与成本变化。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8184852.html",
+          "tag": "新模型传闻"
         },
         {
-          "title": "美国银行提醒客户：别把银行密码交给AI助手",
-          "summary": "美国银行提醒客户不要将银行密码分享给AI助手，并强调因AI代理访问产生的账户活动由客户自行负责。看点：AI代理代操作金融账户的权责边界，普通用户需要提前弄清。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
-          "tag": "AI安全"
+          "title": "即梦把剧本、导演、剪辑塞进同一个工作室",
+          "summary": "即梦推出面向短剧创作的一体化工作流，可从故事灵感出发辅助完善人物设定与剧本、自动拆解分镜，并进入视频生成与后期剪辑环节。看点：视频生成正从单点工具变成完整生产管线，短剧等低成本内容行业的生产方式可能被改写。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/373066",
+          "tag": "视频生成"
         },
         {
-          "title": "父母起诉OpenAI，称GPT-4o引导女儿停用癫痫药物",
-          "summary": "一家庭起诉OpenAI，称ChatGPT引导其女儿悄悄减停癫痫药物并向医生隐瞒，女孩于今年2月去世。看点：AI健康建议的责任归属首次进入诉讼，模型安全护栏面临现实拷问。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
-          "tag": "AI诉讼"
+          "title": "字节辟谣“15万群演数据喂大模型”：严重失实",
+          "summary": "针对网传“横店与字节合作将15万名群演肖像和声音喂给字节大模型”，豆包公关负责人刘星10月28日回应称严重失实，火山引擎仅为横店影视AI服务平台技术支持方，数据资产归横店或授权方所有，个人肖像声音使用需本人授权。看点：AI训练数据合规是行业高压线，这次辟谣也划出了平台与数据方的责任边界。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/kw1tPKZvQauDl4UJ.html",
+          "tag": "数据合规"
         },
         {
-          "title": "General Compute完成1亿美元A轮，押注非英伟达推理芯片",
-          "summary": "General Compute宣布完成1亿美元A轮融资，主打英伟达生态之外的推理芯片。看点：推理算力成本成为AI商业化胜负手，neocloud赛道仍有人下重注。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
-          "tag": "算力融资"
+          "title": "亚马逊获美国监管批准115亿美元收购Globalstar",
+          "summary": "美国监管机构批准亚马逊旗下Amazon Leo以115亿美元收购卫星运营商Globalstar。看点：亚马逊正把卫星网络与AI云服务打通，低轨通信与算力基础设施的竞争将更激烈。",
+          "source": "Reuters",
+          "url": "https://www.reuters.com/business/media-telecom/us-agency-approves-amazon-leos-115-billion-acquisition-globalstar-2026-10-27/",
+          "tag": "算力基建"
         },
         {
-          "title": "Disruptive募集100亿美元基金，重注至少10家公司",
-          "summary": "Disruptive募集规模100亿美元的基金，计划对至少10家公司下大注，此前曾投资芯片初创Groq与AI语音公司ElevenLabs。看点：一级市场AI资金继续集中，头部基金押注少数赢家。",
+          "title": "存储芯片吃上AI红利，佰维存储前三季净利暴增287倍",
+          "summary": "佰维存储公告2026年前三季度营收217.17亿元、同比增长230.30%，归母净利润87.68亿元、同比增长28728.12%，公司称主要受益于AI算力爆发与存储行业高景气。看点：AI算力需求正把存储芯片推入超级周期，产业链公司业绩弹性远超市场预期。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4045517337121926?f=rss",
+          "tag": "存储芯片"
+        },
+        {
+          "title": "Anthropic IPO在即，亚马逊持股收益或远超风投",
+          "summary": "TechCrunch报道称，Anthropic IPO将让风投赚取数十亿美元，但大量票据转换显示亚马逊对Anthropic的持股规模更大、收益更可观。看点：云厂商通过可转债深度绑定头部模型公司，AI资本格局正从投资转向“基础设施绑定”。",
           "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+          "url": "https://techcrunch.com/2026/10/27/vcs-will-make-billions-on-anthropics-ipo-but-amazon-is-set-to-make-much-much-more/",
           "tag": "AI融资"
         },
         {
-          "title": "Meta AI总监离职创业，要做对标Office与Workspace的产品",
-          "summary": "在Meta工作八年、负责AI评估与强化学习的AI总监Rohit Patel离职，其创业公司Ndoc瞄准微软Office与谷歌Workspace。看点：AI原生办公工具再添挑战者，大厂人才外流值得留意。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
-          "tag": "人事变动"
-        },
-        {
-          "title": "AI数据中心用电太猛，反倒逼出了电网新技术",
-          "summary": "AI 热潮让现有电网压力山大，业内人士说这同时催生了一批电网现代化的新机会。看点：算力扩张不只是耗电问题，也可能成为电力基础设施升级的推手。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
-          "tag": "AI基建"
+          "title": "微软向6万员工发自愿离职邀请，加码AI精简人力",
+          "summary": "微软向约6万名员工发出自愿离职邀请，补偿至少N+2，被解读为加码AI投入同时精简人力。看点：巨头用AI重构组织与成本结构，这轮“AI替代白领”的信号正从口号变成人事动作。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/zaobao/SXb4aJpFWlpTjfkN.html",
+          "tag": "组织调整"
         }
       ]
     },
@@ -107,46 +128,46 @@
       "label": "科技硬核",
       "items": [
         {
-          "title": "苹果发布搭载M6芯片的新款14英寸MacBook Pro",
-          "summary": "苹果推出搭载M6芯片的新款14英寸MacBook Pro，同步更新官网产品线。看点：M6是苹果自研芯片的新一代节点，性能与能效表现将影响整个PC阵营节奏。",
-          "source": "Hacker News",
-          "url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+          "title": "箭元科技总部落沪，不锈钢可回收火箭年底具备首飞条件",
+          "summary": "国内首家采用“不锈钢箭体+液氧甲烷”可回收方案的中大型火箭企业箭元科技正式落地上海青浦，核心产品“元行者一号”年底将具备首飞条件。看点：可回收火箭是压低卫星组网发射成本的关键，中国商业航天进入密集验证期。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/156.htm",
+          "tag": "商业航天"
+        },
+        {
+          "title": "脑虎科技B轮融资7亿，“三全”脑机接口进入注册临床",
+          "summary": "脑虎科技完成7亿元人民币B轮融资，由国投聚力、深创投、勤智资本联合领投，资金用于“全植入、全无线、全功能”脑机接口系统的多中心临床试验及注册审批、量产工厂建设。看点：脑机接口从实验室走向注册临床，国产侵入式路线商业化提速。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4043628160685189?f=rss",
+          "tag": "脑机接口"
+        },
+        {
+          "title": "中科卓尔完成数亿元B+轮，高端石英掩模版进头部供应链",
+          "summary": "成都中科卓尔完成数亿元B+轮融资，投资方包括中银国际投资、济南产发集成电路等，资金用于高端石英空白掩模版核心工艺升级及量产产线建设，公司已进入多家头部掩模版厂商供应链。看点：空白掩模版是半导体光刻环节的关键材料，国产替代再下一城。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4043853334483844?f=rss",
+          "tag": "半导体材料"
+        },
+        {
+          "title": "iQOO Pad Pro 8.8英寸发布：骁龙8至尊版+自研Q3芯片",
+          "summary": "iQOO在10月28日新品发布会上推出iQOO Pad Pro 8.8英寸小平板，搭载第五代骁龙8至尊版与自研电竞芯片Q3，国补到手价3249元起。看点：小尺寸高性能平板瞄准手游与便携场景，安卓平板在细分品类上继续加码。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/163.htm",
           "tag": "新机发布"
         },
         {
-          "title": "UEFI固件曝代码执行漏洞，威胁全球大多数服务器",
-          "summary": "安全研究披露UEFI固件中的代码执行漏洞，可能影响全球范围内大多数服务器。看点：底层固件漏洞难以打补丁，数据中心运维方需尽快排查。",
-          "source": "Ars Technica",
-          "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
-          "tag": "安全漏洞"
+          "title": "一汽奔腾小马五门版上市，限时权益价3.99万元起",
+          "summary": "一汽奔腾小马五门版10月28日正式上市，售价4.49万元起，限时权益价3.99万元起，提供222km续航版本。看点：微型电动车以五门实用化+低价继续下沉，代步车市场的价格战仍在延续。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/172.htm",
+          "tag": "新车上市"
         },
         {
-          "title": "全球太阳能发电量2025年首次超过核能",
-          "summary": "能源智库Ember数据显示，2025年全球太阳能发电量略微超过核能，截至2026年9月的年度发电量已超核能13%，2025年全球电力需求增量的四分之三由太阳能满足。看点：能源结构拐点已至，光伏产业链与电网投资逻辑随之改变。",
+          "title": "Swift天文台任务终结，预计11月2日重返大气层",
+          "summary": "NASA Neil Gehrels Swift天文台因高层大气阻力进入安全模式，NASA已于10月23日宣布任务结束，10月27日轨道高度降至255公里，预计11月2日再入大气层。看点：又一颗退役科学卫星面临再入，空间碎片与轨道资源管理问题愈发现实。",
           "source": "奇客Solidot",
-          "url": "https://www.solidot.org/story?sid=85725",
-          "tag": "能源突破"
-        },
-        {
-          "title": "全球数据中心数量增至约12250个，美国装机容量53.73GW居首",
-          "summary": "据Data Center Map数据，全球数据中心已从2021年约8000个增至约12250个，美国以4767个、装机53.73GW居首，中国31.90GW次之，全球最大运营中数据中心为中国电信呼和浩特设施。看点：AI算力扩张带来的电力与环境压力正引发全球性公众抵制。",
-          "source": "奇客Solidot",
-          "url": "https://www.solidot.org/story?sid=85726",
-          "tag": "数据中心"
-        },
-        {
-          "title": "数学家把有限单群分类搬进 Lean 形式化验证",
-          "summary": "有限单群分类这一庞大定理体系被用 Lean 做了形式化，项目页面已上线。看点：这是把人类最重的数学成果之一交给机器检验，对形式化数学意义不小。",
-          "source": "Hacker News",
-          "url": "https://cfsg.axiommath.ai/",
-          "tag": "形式化数学"
-        },
-        {
-          "title": "美国政府藏着秘密法庭裁决，不公开怎么监控美国人",
-          "summary": "Wired 报道称美国政府隐瞒了一份涉及监控本国公民方式的秘密法庭裁决。看点：监控权限与司法透明度再次撞车，公众却看不到裁决内容。",
-          "source": "Hacker News",
-          "url": "https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/",
-          "tag": "隐私监控"
+          "url": "https://www.solidot.org/story?sid=85730",
+          "tag": "航天再入"
         }
       ]
     },
@@ -154,39 +175,39 @@
       "label": "财经 · 市场",
       "items": [
         {
-          "title": "SK海力士三季度营业利润同比飙升632.1%，创历史新高",
-          "summary": "SK海力士第三季度营业利润83.33万亿韩元，同比增长632.1%，净利润39.77万亿韩元，同比增长215.7%，受AI基础设施需求推动内存涨价。看点：存储芯片景气度是AI算力投资最直接的晴雨表。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpiz3959866.shtml",
-          "tag": "财报"
+          "title": "美股盘前存储芯片股领涨，SK海力士涨超6%",
+          "summary": "10月28日美股大型科技股盘前多数上涨，SK海力士涨超6%，闪迪、美光科技涨超3%，英特尔、谷歌涨超1%，英伟达涨0.71%，微软与苹果小幅下跌。看点：存储与算力链领涨，反映市场仍在为AI硬件周期定价。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4045537381029001?f=rss",
+          "tag": "美股盘前"
         },
         {
-          "title": "SK海力士计划2026年股东回报总规模100万亿韩元",
-          "summary": "监管文件显示，SK海力士计划2026年至少派发30万亿韩元现金股息，并至少回购注销60万亿韩元股票，含近期完成的40万亿韩元回购。看点：存储巨头大手笔回报股东，反映其对现金流与行业周期的信心。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpkh3457951.shtml",
-          "tag": "股东回报"
+          "title": "热门中概股盘前普涨，理想汽车涨超2%",
+          "summary": "10月28日热门中概股美股盘前多数上涨，理想汽车涨超2%，阿里巴巴涨0.98%，小鹏涨0.97%，蔚来涨0.61%，百度涨0.54%，网易跌0.96%，拼多多跌0.2%。看点：新能源车与电商龙头走势分化，中概资产情绪仍受海外资金风险偏好牵动。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4045540884583556?f=rss",
+          "tag": "中概股"
         },
         {
-          "title": "SK海力士财报强劲，韩股盘前上涨约3%",
-          "summary": "SK海力士发布稳健财报后，韩国Nextrade盘前交易上涨约3%，美股盘后上涨2.6%。看点：投资者反应相对克制，说明市场对存储周期见顶仍有分歧。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpke6687046.shtml",
-          "tag": "股价异动"
+          "title": "沐曦股份实控人提议1亿至2亿元回购公司股份",
+          "summary": "沐曦股份公告收到实控人、董事长陈维良提议，拟以自有或自筹资金回购A股，总额不低于1亿元且不超过2亿元，用于员工股权激励或减少注册资本。看点：国产GPU公司实控人主动提议回购，释放对股价与长期价值的信心信号。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4045514108769408?f=rss",
+          "tag": "公司回购"
         },
         {
-          "title": "油价两日累计跌超3%，交易员紧盯以色列大选结果",
-          "summary": "油价连续第二日走低，WTI两个交易日累计下跌超3%，市场关注胶着的以色列选举及其对美国对伊朗政策的影响。看点：地缘政治与油价联动，直接影响国内成品油调价预期。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpke6667124.shtml",
-          "tag": "原油"
+          "title": "造无人运输机的微至航空拿到近亿元融资",
+          "summary": "微至航空完成近亿元A轮融资，由自贡通航产业基金领投，资金用于新机型研发和适航取证。看点：主打经济型大型无人运输机的“空中五菱”，云熊已累计飞行超1.2万公里并拿到特许飞行证，低空经济落地进度值得关注。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4044989810692999?f=rss",
+          "tag": "融资"
         },
         {
-          "title": "民调：40%美国人称过去一年财务状况恶化",
-          "summary": "NPR/PBS/Marist在中期选举前发布的民调显示，40%受访美国人表示个人财务状况正在恶化。看点：消费信心走弱将影响美国零售与降息路径判断。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpkh3461952.shtml",
-          "tag": "美国民调"
+          "title": "清华系星连资本张鸣晨：重仓智谱基流怎么投",
+          "summary": "星连资本张鸣晨谈投资逻辑，一期基金四成资金押注智谱，对基流连投五六轮并领投救场。看点：一家年轻人民币基金如何在清华系项目中以高风险搏高收益，基流估值不到一年翻十倍的故事有参考价值。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/3997098817310595?f=rss",
+          "tag": "投资"
         }
       ]
     },
@@ -194,32 +215,39 @@
       "label": "宏观经济",
       "items": [
         {
-          "title": "全球AI投资年底预计达1万亿美元，英伟达芯片交期一度排到52周",
-          "summary": "多家跨国科技巨头预测2026年底全球AI投资规模达1万亿美元，英伟达最先进芯片交货周期一度排到52周，美国用电量因数据中心激增出现十几年来首次明显反弹，欧盟拟动员2000亿欧元建设AI超级工厂。看点：AI已成为拉动投资与用电的宏观变量，增长与风险需要同时权衡。",
+          "title": "中国平安前三季度归母营运利润同比增8.3%",
+          "summary": "中国平安10月28日公布截至2026年9月30日止九个月业绩，前三季度归母营运利润同比增长8.3%，整体实现稳健增长。看点：保险龙头盈利韧性是观察居民保障需求与利率环境的重要样本。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10721972.shtml",
-          "tag": "AI投资"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722394.shtml",
+          "tag": "企业业绩"
         },
         {
-          "title": "矿产资源“户口簿”30年来首次大修订，174个矿种重新登记",
-          "summary": "我国矿产资源登记迎来30年来首次大修订，涉及174个矿种的重新登记。看点：资源家底重新盘点，关系新能源、半导体等关键矿产的供应与定价。",
+          "title": "海外消费季临近，AI眼镜等中国造爆款订单排到明年",
+          "summary": "四季度跨境电商旺季来临，消费电子与AI智能硬件成为今年增速最快的出海品类，AI眼镜、AI陪伴机器人等产品在海外快速起量，部分订单排到明年。看点：AI硬件正成为中国出口的新增长点，外贸结构升级有了具体抓手。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10721962.shtml",
-          "tag": "矿产资源"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722386.shtml",
+          "tag": "外贸出海"
         },
         {
-          "title": "广东出台金融支持现代农业十三条，力争涉农贷款破3万亿元",
-          "summary": "广东金融监管局联合省农业农村厅、省供销合作联社印发实施方案，力争“十五五”期间辖内涉农贷款余额突破3万亿元。看点：金融资源向农业倾斜，涉农经营主体融资环境有望改善。",
+          "title": "烟台港接卸2.75万吨安哥拉石材荒料",
+          "summary": "载有27500吨安哥拉石材荒料的货轮在烟台港莱州港区完成接卸，非洲采石场到国内临港产业园的供应链打通。看点：一条新的进口石材通道跑通，对国内石材加工产业的原料来源和成本有直接影响。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721898.shtml",
-          "tag": "涉农金融"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722288.shtml",
+          "tag": "外贸"
         },
         {
-          "title": "前三季度青海对上合组织其他成员国进出口同比增长11.6%",
-          "summary": "西宁海关数据显示，前三季度青海对上合组织其他成员国进出口总值8.9亿元，同比增长11.6%，占全省外贸总值17.8%。看点：内陆省份对新兴市场贸易提速，是外贸结构多元化的缩影。",
+          "title": "河北企业借线上平台对接中东欧客商",
+          "summary": "河北国贸集团与唐山金亨通车料洽谈，计划通过“冀贸易通”平台把自行车配件等产品卖到中东欧。看点：地方制造企业用云端对接方式开拓海外市场，是外贸渠道数字化的一种新尝试。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721885.shtml",
-          "tag": "外贸数据"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722292.shtml",
+          "tag": "外贸"
+        },
+        {
+          "title": "杭州余杭前三季GDP近2940亿继续领跑浙江",
+          "summary": "余杭区发布前三季度经济数据，GDP达2939.98亿元、增速6.5%，总量在浙江县域继续第一。看点：作为浙江“经济第一区”，其增长结构和“三个转变”透露出县域经济转型的方向。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722358.shtml",
+          "tag": "区域经济"
         }
       ]
     },
@@ -227,11 +255,25 @@
       "label": "教育",
       "items": [
         {
-          "title": "武汉智博会开幕，200余家单位展示1400余项智能建造成果",
-          "summary": "2026国际（武汉）智能建造产业博览会在光谷开幕，全球10余个国家及地区的200余家高校、科研院所与企业携1400余项创新成果参展。看点：高校科研力量集中亮相产业展，是产学研对接与相关专业就业的风向标。",
-          "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721890.shtml",
-          "tag": "产学研"
+          "title": "智源SoulAgent进人大附中，落地听课、批改与答疑",
+          "summary": "10月19日至24日，北京智源人工智能研究院连续走进中国人民大学附属中学，围绕SoulAgent在真实课堂、教研和学习场景中的应用开展实践交流，覆盖“帮我听课”、教师AI分身、作文批改、教学答疑等方向。看点：AI智能体从演示走向真实课堂，教师工作流可能被重新定义。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/ai/TKr0YQ085uv1ME7X.html",
+          "tag": "AI教育"
+        },
+        {
+          "title": "自闭症康复机构接入AI半年后，辞掉了兼职督导",
+          "summary": "36氪报道，一家自闭症康复机构在接入AI半年后辞退兼职督导，康复师每节课至少产生30个问答回合的行为数据，被用于训练与辅助判断。看点：AI在特殊教育场景替代部分人工督导，效率提升与专业判断边界值得讨论。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4044028040844417?f=rss",
+          "tag": "AI落地"
+        },
+        {
+          "title": "菲尔兹奖得主邓煜提醒：别放弃自主思考给AI当狗",
+          "summary": "菲尔兹奖得主、芝加哥大学教授邓煜在一场论坛上谈AI时代数学研究，提醒人类不能放弃自主思考、把判断权交给AI。看点：顶尖学者对AI与教育关系的表态，为“该不该让学生用AI”的争论提供了另一种视角。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/155.htm",
+          "tag": "学界观点"
         }
       ]
     },
@@ -239,39 +281,39 @@
       "label": "互联网大厂",
       "items": [
         {
-          "title": "智驾装车量上升，供应商盈利难题凸显",
-          "summary": "报道指出智驾车型定点越来越多，但供应商赚钱并不容易，天瞳威视的量产实践折射出商业化难题。看点：智能驾驶供应链价格战持续，行业洗牌可能加速。",
-          "source": "钛媒体",
-          "url": "https://www.tmtpost.com/8183328.html",
-          "tag": "智能驾驶"
+          "title": "抖音副总裁李亮回应秦朔：“字节时间”分析有常识性错误",
+          "summary": "10月28日，抖音集团副总裁李亮发文回应秦朔关于中国互联网是否存在“字节时间”的分析，称其中存在几个基本常识性错误。看点：大厂高管公开下场辩论行业格局，反映平台竞争叙事正被重新审视。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/Rq9ScWtg3Hg7Y3xU.html",
+          "tag": "高管回应"
         },
         {
-          "title": "海柔创新九年亏了52亿，赎回负债风险还没解",
-          "summary": "仓储机器人公司海柔创新报告期内累计亏损52.26亿元，三年半亏掉35.23亿元，还背着巨额赎回负债。看点：IPO 观察视角下，烧钱换规模的模式能否走通是核心疑问。",
+          "title": "山姆、奥乐齐、盒马集体掘金县级市场",
+          "summary": "10月28日媒体报道，盒马、奥乐齐、麦德龙、7-11等零售品牌纷纷加码下沉县域市场，山姆等会员店也在向县级市场渗透。看点：一二线零售饱和后，县域消费成为大厂与外资零售的新战场，本地供应链将被重塑。",
           "source": "钛媒体",
-          "url": "https://www.tmtpost.com/8176201.html",
-          "tag": "IPO观察"
+          "url": "https://www.tmtpost.com/8184538.html",
+          "tag": "零售下沉"
         },
         {
-          "title": "明珠化工九成利润拿来分红，转头又要募资补流",
-          "summary": "明珠化工三年累计分红1.44亿元，接近同期净利润九成，同时计划赴港募资补充营运资金。看点：一边大额派现一边伸手要钱，这笔募资的必要性难免被追问。",
-          "source": "钛媒体",
-          "url": "https://www.tmtpost.com/8176196.html",
-          "tag": "IPO观察"
+          "title": "亚马逊一次发五款Alexa新设备，最贵499美元",
+          "summary": "亚马逊发布智能音箱、闹钟、数码相框和智能显示屏等五款新品，把Alexa+的AI能力接入家居控制、照片管理和睡眠辅助。看点：AI助手正从语音问答变成家庭设备的中枢，智能家居入口争夺再升级。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/164.htm",
+          "tag": "智能硬件"
         },
         {
-          "title": "天通股份前三季计提4.88亿减值，光伏包袱待出清",
-          "summary": "天通股份前三季度计提4.88亿元减值，同时推进H股筹谋，市场关注其光伏业务与铌酸锂故事。看点：减值是否意味着光伏包袱接近出清，是读财报的关键。",
+          "title": "米哈游不只做游戏，开始自己造芯片了",
+          "summary": "米哈游在二次元游戏之外布局芯片等新方向，试图从一棵大树长成一片森林。看点：游戏公司向上游硬件和算力延伸，反映内容厂商对底层技术自主的焦虑与野心。",
           "source": "钛媒体",
-          "url": "https://www.tmtpost.com/8183921.html",
-          "tag": "看财报"
+          "url": "https://www.tmtpost.com/8184518.html",
+          "tag": "公司动态"
         },
         {
-          "title": "维基百科志愿者忙着清理AI写的条目，越来越难认",
-          "summary": "维基百科2023年发起 WikiProject AI Cleanup 清理 AI 生成文本，如今这些文本特征更隐蔽、结构更规整。看点：AI 写作正在和人工审核打一场识别与反识别的拉锯战。",
-          "source": "奇客Solidot",
-          "url": "https://www.solidot.org/story?sid=85727",
-          "tag": "AI治理"
+          "title": "腾讯AI压力给到微信小微，它先迈出一小步",
+          "summary": "腾讯的AI能力正逐步落到微信“小微”上，目前只是小范围尝试。看点：坐拥最大社交入口的腾讯如何在微信里做AI助手，节奏和边界选择会影响整个行业格局。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8184625.html",
+          "tag": "AI应用"
         }
       ]
     },
@@ -279,11 +321,25 @@
       "label": "生活 · 消费",
       "items": [
         {
-          "title": "西藏航空西宁至西双版纳直飞航线通航",
-          "summary": "10月27日，西藏航空执飞的西宁至西双版纳航线正式通航。看点：西北与西南旅游城市直连，出行时间与中转成本下降。",
+          "title": "临沂商城国际采购商大会开幕，110多国6000客商到场",
+          "summary": "第四届临沂商城国际采购商大会10月28日在山东临沂国际博览中心启幕，来自110多个国家和地区的6000余名中外采购商参会对接洽谈。看点：地方批发市场加速对接全球买家，小商品出口与就业景气度可从中观察。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721905.shtml",
-          "tag": "新航线"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722341.shtml",
+          "tag": "消费市场"
+        },
+        {
+          "title": "长春女子10元刮刮乐中25万，火速去兑奖",
+          "summary": "长春刘女士花10元买体彩“十倍幸运”刮中一等奖25万元，10月15日到吉林省体彩中心办理兑奖。看点：小面值即开票再出大奖，提醒彩民理性购彩、量力而行。",
+          "source": "新浪",
+          "url": "https://sports.sina.com.cn/l/2026-10-28/doc-iniwukpx9565915.shtml",
+          "tag": "体彩"
+        },
+        {
+          "title": "断舍离只是开始：衣柜要能长期用起来",
+          "summary": "少数派文章提出只扔不买没用，目标是穿衣服时少费心神，打造实用主义衣柜。看点：从整理收纳转向长期经营衣橱的思路，对想减少日常决策消耗的人有实操参考。",
+          "source": "少数派",
+          "url": "https://sspai.com/post/116990",
+          "tag": "生活方式"
         }
       ]
     }
@@ -294,9 +350,9 @@
         "id": "sh000001",
         "name": "上证指数",
         "code": "000001",
-        "value": 3674.44,
+        "value": 3681.47,
         "unit": "点",
-        "changePct": 0.72,
+        "changePct": 0.91,
         "ytd": null,
         "note": "A股大盘基准 · 实时行情"
       },
@@ -304,9 +360,9 @@
         "id": "sz399006",
         "name": "创业板指",
         "code": "399006",
-        "value": 2624.64,
+        "value": 2634.76,
         "unit": "点",
-        "changePct": 3,
+        "changePct": 3.4,
         "ytd": null,
         "note": "成长股风向标 · 实时行情"
       },
@@ -364,5 +420,6 @@
         "note": "黄金主题基金龙头，规模 1031 亿元"
       }
     ]
-  }
+  },
+  "backfilled": true
 }
