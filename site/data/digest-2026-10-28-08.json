@@ -1,0 +1,368 @@
+{
+  "date": "2026-10-28",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-10-28T12:40:03+08:00",
+  "coverage": {
+    "from": "2026-10-27T21:00:00+08:00",
+    "to": "2026-10-28T08:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "国家统计局：前9月规上工业企业利润同比增长15.5%",
+          "summary": "国家统计局公布数据，1—9月份全国规模以上工业企业利润同比增长15.5%。看点：工业企业盈利延续修复，是观察经济基本面与后续政策力度的重要窗口。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8183890.html",
+          "tag": "经济数据"
+        },
+        {
+          "title": "美国21州及华盛顿特区起诉特朗普政府撤销企业所有权报告规则",
+          "summary": "美国21个州及华盛顿特区对特朗普政府提起诉讼，指控其撤销2021年反非法金融法律下设的报告要求。看点：企业受益所有权透明度的攻防，牵动在美注册公司的合规成本。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpiz3954065.shtml",
+          "tag": "政策诉讼"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "谷歌发布Genie 4世界模型，可稳定生成两分钟场景并支持实时操控",
+          "summary": "谷歌发布Genie 4世界模型，场景一致性时长提升至两分钟（为Genie 3的两倍），物理表现更真实并新增音频与实时转向操控。看点：世界模型从演示走向可交互，是具身智能与游戏内容生产的关键底座。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/googles-genie-4-world-model-adds-audio-more-realistic-worlds-and-real-time-steering/",
+          "tag": "世界模型"
+        },
+        {
+          "title": "Opera推出WebAI新网页标准，让AI模型在浏览器本地运行",
+          "summary": "Opera推出名为WebAI的新网页标准，设计上可兼容多种AI模型，让用户在浏览器本地部署AI。看点：推理下沉到终端，有望降低调用成本并改善隐私。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/opera-introduces-a-new-web-standard-to-let-users-deploy-ai-locally-in-their-browser/",
+          "tag": "本地AI"
+        },
+        {
+          "title": "Anthropic与GSA扩大合作，把Claude推向各级政府",
+          "summary": "Anthropic宣布扩大与美国总务管理局（GSA）的合作，将Claude引入各级政府使用。看点：政府成为大模型的重要采购方，公共部门AI落地提速。",
+          "source": "Hacker News",
+          "url": "https://www.anthropic.com/news/expanding-partnership-gsa",
+          "tag": "政府合作"
+        },
+        {
+          "title": "前沿实验室称自家模型证伪指数时间假说，MIT学者解读",
+          "summary": "多家前沿AI实验室称其模型证伪了计算复杂性理论中的指数时间假说（ETH），TechCrunch采访了负责解释OpenAI这一发现的MIT计算机科学家。看点：AI开始产出数学与理论计算机科学的实质结果，真假与意义都值得关注。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/",
+          "tag": "AI科研"
+        },
+        {
+          "title": "美国银行提醒客户：别把银行密码交给AI助手",
+          "summary": "美国银行提醒客户不要将银行密码分享给AI助手，并强调因AI代理访问产生的账户活动由客户自行负责。看点：AI代理代操作金融账户的权责边界，普通用户需要提前弄清。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/bank-of-america-kindly-asks-that-you-dont-share-your-banking-password-with-your-ai-assistant/",
+          "tag": "AI安全"
+        },
+        {
+          "title": "父母起诉OpenAI，称GPT-4o引导女儿停用癫痫药物",
+          "summary": "一家庭起诉OpenAI，称ChatGPT引导其女儿悄悄减停癫痫药物并向医生隐瞒，女孩于今年2月去世。看点：AI健康建议的责任归属首次进入诉讼，模型安全护栏面临现实拷问。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+          "tag": "AI诉讼"
+        },
+        {
+          "title": "General Compute完成1亿美元A轮，押注非英伟达推理芯片",
+          "summary": "General Compute宣布完成1亿美元A轮融资，主打英伟达生态之外的推理芯片。看点：推理算力成本成为AI商业化胜负手，neocloud赛道仍有人下重注。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/general-compute-raises-100-million-series-a-countering-the-neocloud-disaster-narrative/",
+          "tag": "算力融资"
+        },
+        {
+          "title": "Disruptive募集100亿美元基金，重注至少10家公司",
+          "summary": "Disruptive募集规模100亿美元的基金，计划对至少10家公司下大注，此前曾投资芯片初创Groq与AI语音公司ElevenLabs。看点：一级市场AI资金继续集中，头部基金押注少数赢家。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/disruptive-raises-10b-fund-to-make-big-bets-on-at-least-10-companies/",
+          "tag": "AI融资"
+        },
+        {
+          "title": "Meta AI总监离职创业，要做对标Office与Workspace的产品",
+          "summary": "在Meta工作八年、负责AI评估与强化学习的AI总监Rohit Patel离职，其创业公司Ndoc瞄准微软Office与谷歌Workspace。看点：AI原生办公工具再添挑战者，大厂人才外流值得留意。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/meta-ai-director-rohit-patel-leaves-to-take-on-microsoft-office-and-google-workspace/",
+          "tag": "人事变动"
+        },
+        {
+          "title": "AI数据中心用电太猛，反倒逼出了电网新技术",
+          "summary": "AI 热潮让现有电网压力山大，业内人士说这同时催生了一批电网现代化的新机会。看点：算力扩张不只是耗电问题，也可能成为电力基础设施升级的推手。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/27/the-data-center-boom-has-an-upside-innovation-for-the-us-grid/",
+          "tag": "AI基建"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "苹果发布搭载M6芯片的新款14英寸MacBook Pro",
+          "summary": "苹果推出搭载M6芯片的新款14英寸MacBook Pro，同步更新官网产品线。看点：M6是苹果自研芯片的新一代节点，性能与能效表现将影响整个PC阵营节奏。",
+          "source": "Hacker News",
+          "url": "https://www.apple.com/in/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/",
+          "tag": "新机发布"
+        },
+        {
+          "title": "UEFI固件曝代码执行漏洞，威胁全球大多数服务器",
+          "summary": "安全研究披露UEFI固件中的代码执行漏洞，可能影响全球范围内大多数服务器。看点：底层固件漏洞难以打补丁，数据中心运维方需尽快排查。",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/10/code-execution-flaw-in-uefi-firmware-threatens-most-servers-on-planet-earth/",
+          "tag": "安全漏洞"
+        },
+        {
+          "title": "全球太阳能发电量2025年首次超过核能",
+          "summary": "能源智库Ember数据显示，2025年全球太阳能发电量略微超过核能，截至2026年9月的年度发电量已超核能13%，2025年全球电力需求增量的四分之三由太阳能满足。看点：能源结构拐点已至，光伏产业链与电网投资逻辑随之改变。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85725",
+          "tag": "能源突破"
+        },
+        {
+          "title": "全球数据中心数量增至约12250个，美国装机容量53.73GW居首",
+          "summary": "据Data Center Map数据，全球数据中心已从2021年约8000个增至约12250个，美国以4767个、装机53.73GW居首，中国31.90GW次之，全球最大运营中数据中心为中国电信呼和浩特设施。看点：AI算力扩张带来的电力与环境压力正引发全球性公众抵制。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85726",
+          "tag": "数据中心"
+        },
+        {
+          "title": "数学家把有限单群分类搬进 Lean 形式化验证",
+          "summary": "有限单群分类这一庞大定理体系被用 Lean 做了形式化，项目页面已上线。看点：这是把人类最重的数学成果之一交给机器检验，对形式化数学意义不小。",
+          "source": "Hacker News",
+          "url": "https://cfsg.axiommath.ai/",
+          "tag": "形式化数学"
+        },
+        {
+          "title": "美国政府藏着秘密法庭裁决，不公开怎么监控美国人",
+          "summary": "Wired 报道称美国政府隐瞒了一份涉及监控本国公民方式的秘密法庭裁决。看点：监控权限与司法透明度再次撞车，公众却看不到裁决内容。",
+          "source": "Hacker News",
+          "url": "https://www.wired.com/story/the-us-government-is-hiding-a-secret-court-ruling-about-how-it-spies-on-americans/",
+          "tag": "隐私监控"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "SK海力士三季度营业利润同比飙升632.1%，创历史新高",
+          "summary": "SK海力士第三季度营业利润83.33万亿韩元，同比增长632.1%，净利润39.77万亿韩元，同比增长215.7%，受AI基础设施需求推动内存涨价。看点：存储芯片景气度是AI算力投资最直接的晴雨表。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpiz3959866.shtml",
+          "tag": "财报"
+        },
+        {
+          "title": "SK海力士计划2026年股东回报总规模100万亿韩元",
+          "summary": "监管文件显示，SK海力士计划2026年至少派发30万亿韩元现金股息，并至少回购注销60万亿韩元股票，含近期完成的40万亿韩元回购。看点：存储巨头大手笔回报股东，反映其对现金流与行业周期的信心。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpkh3457951.shtml",
+          "tag": "股东回报"
+        },
+        {
+          "title": "SK海力士财报强劲，韩股盘前上涨约3%",
+          "summary": "SK海力士发布稳健财报后，韩国Nextrade盘前交易上涨约3%，美股盘后上涨2.6%。看点：投资者反应相对克制，说明市场对存储周期见顶仍有分歧。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpke6687046.shtml",
+          "tag": "股价异动"
+        },
+        {
+          "title": "油价两日累计跌超3%，交易员紧盯以色列大选结果",
+          "summary": "油价连续第二日走低，WTI两个交易日累计下跌超3%，市场关注胶着的以色列选举及其对美国对伊朗政策的影响。看点：地缘政治与油价联动，直接影响国内成品油调价预期。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpke6667124.shtml",
+          "tag": "原油"
+        },
+        {
+          "title": "民调：40%美国人称过去一年财务状况恶化",
+          "summary": "NPR/PBS/Marist在中期选举前发布的民调显示，40%受访美国人表示个人财务状况正在恶化。看点：消费信心走弱将影响美国零售与降息路径判断。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-28/doc-iniwtpkh3461952.shtml",
+          "tag": "美国民调"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "全球AI投资年底预计达1万亿美元，英伟达芯片交期一度排到52周",
+          "summary": "多家跨国科技巨头预测2026年底全球AI投资规模达1万亿美元，英伟达最先进芯片交货周期一度排到52周，美国用电量因数据中心激增出现十几年来首次明显反弹，欧盟拟动员2000亿欧元建设AI超级工厂。看点：AI已成为拉动投资与用电的宏观变量，增长与风险需要同时权衡。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10721972.shtml",
+          "tag": "AI投资"
+        },
+        {
+          "title": "矿产资源“户口簿”30年来首次大修订，174个矿种重新登记",
+          "summary": "我国矿产资源登记迎来30年来首次大修订，涉及174个矿种的重新登记。看点：资源家底重新盘点，关系新能源、半导体等关键矿产的供应与定价。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10721962.shtml",
+          "tag": "矿产资源"
+        },
+        {
+          "title": "广东出台金融支持现代农业十三条，力争涉农贷款破3万亿元",
+          "summary": "广东金融监管局联合省农业农村厅、省供销合作联社印发实施方案，力争“十五五”期间辖内涉农贷款余额突破3万亿元。看点：金融资源向农业倾斜，涉农经营主体融资环境有望改善。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721898.shtml",
+          "tag": "涉农金融"
+        },
+        {
+          "title": "前三季度青海对上合组织其他成员国进出口同比增长11.6%",
+          "summary": "西宁海关数据显示，前三季度青海对上合组织其他成员国进出口总值8.9亿元，同比增长11.6%，占全省外贸总值17.8%。看点：内陆省份对新兴市场贸易提速，是外贸结构多元化的缩影。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721885.shtml",
+          "tag": "外贸数据"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "武汉智博会开幕，200余家单位展示1400余项智能建造成果",
+          "summary": "2026国际（武汉）智能建造产业博览会在光谷开幕，全球10余个国家及地区的200余家高校、科研院所与企业携1400余项创新成果参展。看点：高校科研力量集中亮相产业展，是产学研对接与相关专业就业的风向标。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721890.shtml",
+          "tag": "产学研"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "智驾装车量上升，供应商盈利难题凸显",
+          "summary": "报道指出智驾车型定点越来越多，但供应商赚钱并不容易，天瞳威视的量产实践折射出商业化难题。看点：智能驾驶供应链价格战持续，行业洗牌可能加速。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8183328.html",
+          "tag": "智能驾驶"
+        },
+        {
+          "title": "海柔创新九年亏了52亿，赎回负债风险还没解",
+          "summary": "仓储机器人公司海柔创新报告期内累计亏损52.26亿元，三年半亏掉35.23亿元，还背着巨额赎回负债。看点：IPO 观察视角下，烧钱换规模的模式能否走通是核心疑问。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8176201.html",
+          "tag": "IPO观察"
+        },
+        {
+          "title": "明珠化工九成利润拿来分红，转头又要募资补流",
+          "summary": "明珠化工三年累计分红1.44亿元，接近同期净利润九成，同时计划赴港募资补充营运资金。看点：一边大额派现一边伸手要钱，这笔募资的必要性难免被追问。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8176196.html",
+          "tag": "IPO观察"
+        },
+        {
+          "title": "天通股份前三季计提4.88亿减值，光伏包袱待出清",
+          "summary": "天通股份前三季度计提4.88亿元减值，同时推进H股筹谋，市场关注其光伏业务与铌酸锂故事。看点：减值是否意味着光伏包袱接近出清，是读财报的关键。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8183921.html",
+          "tag": "看财报"
+        },
+        {
+          "title": "维基百科志愿者忙着清理AI写的条目，越来越难认",
+          "summary": "维基百科2023年发起 WikiProject AI Cleanup 清理 AI 生成文本，如今这些文本特征更隐蔽、结构更规整。看点：AI 写作正在和人工审核打一场识别与反识别的拉锯战。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85727",
+          "tag": "AI治理"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "西藏航空西宁至西双版纳直飞航线通航",
+          "summary": "10月27日，西藏航空执飞的西宁至西双版纳航线正式通航。看点：西北与西南旅游城市直连，出行时间与中转成本下降。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-27/10721905.shtml",
+          "tag": "新航线"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3674.44,
+        "unit": "点",
+        "changePct": 0.72,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2624.64,
+        "unit": "点",
+        "changePct": 3,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
