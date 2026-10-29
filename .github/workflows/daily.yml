@@ -7,6 +7,12 @@
 #   - 未到点或已生成则快速跳过（不抓新闻、不调大模型），且无数据变更时不重新部署 Pages；
 #   - 无论 schedule 延迟多久，出刊最多比 READY 晚约半个轮询周期，稳定满足目标。
 # UTC 说明：北京时间 = UTC+8，轮询在 UTC 整点/半点触发。
+#
+# 触发方式：
+#   1) schedule       —— 定时轮询出刊（每 30 分钟）
+#   2) workflow_dispatch —— 手动补跑 / 强制重做
+#   3) push(main)     —— 前端/脚本改动后自动部署 Pages（排除机器人自动提交的 site/data，避免无意义部署）
+#      push 触发时只做「上传站点 + 部署」，不跑生成脚本、不调大模型。
 on:
   schedule:
     - cron: "0,30 * * * *"  # 每 30 分钟轮询一次（脚本内部判断该出哪期）
@@ -28,14 +34,21 @@ on:
         options:
           - "no"
           - "yes"
+  push:
+    branches: [main]
+    paths-ignore:
+      - "site/data/**"       # 机器人自动提交的数据，不重复部署
+      - "**.md"
+      - "_local-archive/**"
 
 permissions:
   contents: write
   pages: write
   id-token: write
 
+# 按事件分组：避免「前端部署」与「定时出刊部署」互相取消
 concurrency:
-  group: "pages"
+  group: "pages-${{ github.event_name }}"
   cancel-in-progress: true
 
 jobs:
@@ -48,11 +61,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node
+        if: github.event_name != 'push'
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Run generator
+        if: github.event_name != 'push'
         env:
           LLM_BASE: "https://api.deepseek.com/v1"
           LLM_KEY: ${{ secrets.LLM_KEY }}
@@ -65,6 +80,7 @@ jobs:
 
       - name: Commit generated data
         id: commit
+        if: github.event_name != 'push'
         run: |
           git config user.name "daily-digest-bot"
           git config user.email "daily-digest-bot@users.noreply.github.com"
@@ -79,14 +95,14 @@ jobs:
           fi
 
       - name: Upload Pages artifact
-        if: steps.commit.outputs.changed == 'true'
+        if: always() && (github.event_name == 'push' || steps.commit.outputs.changed == 'true')
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
   deploy:
     needs: generate
-    if: needs.generate.outputs.changed == 'true'
+    if: always() && needs.generate.result == 'success' && (github.event_name == 'push' || needs.generate.outputs.changed == 'true')
     runs-on: ubuntu-latest
     environment:
       name: github-pages
