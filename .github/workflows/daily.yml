@@ -9,10 +9,12 @@
 # UTC 说明：北京时间 = UTC+8，轮询在 UTC 整点/半点触发。
 #
 # 触发方式：
-#   1) schedule       —— 定时轮询出刊（每 30 分钟）
-#   2) workflow_dispatch —— 手动补跑 / 强制重做
-#   3) push(main)     —— 前端/脚本改动后自动部署 Pages（排除机器人自动提交的 site/data，避免无意义部署）
-#      push 触发时只做「上传站点 + 部署」，不跑生成脚本、不调大模型。
+#   1) schedule       —— 定时轮询出刊（每 30 分钟；注意：GitHub 的 schedule 实际很不可靠，
+#                        实测出现过「设定 30 分钟一次、连续 24 小时一次都没触发」的情况）
+#   2) workflow_dispatch —— 手动补跑 / 强制重做 / 外部定时器调用
+#   3) push(main)     —— 前端/脚本改动后自动部署 Pages（排除机器人自动提交的 site/data，避免循环）
+#      push 时同样会跑一次生成脚本：脚本是幂等的（该出的期都已存在就秒退，不调大模型），
+#      因此 push 既是「部署前端」也是「顺手补上缺失的期次」，不会产生额外模型费用。
 on:
   schedule:
     - cron: "0,30 * * * *"  # 每 30 分钟轮询一次（脚本内部判断该出哪期）
@@ -61,13 +63,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Setup Node
-        if: github.event_name != 'push'
         uses: actions/setup-node@v4
         with:
           node-version: 20
 
       - name: Run generator
-        if: github.event_name != 'push'
         env:
           LLM_BASE: "https://api.deepseek.com/v1"
           LLM_KEY: ${{ secrets.LLM_KEY }}
@@ -80,7 +80,6 @@ jobs:
 
       - name: Commit generated data
         id: commit
-        if: github.event_name != 'push'
         run: |
           git config user.name "daily-digest-bot"
           git config user.email "daily-digest-bot@users.noreply.github.com"
