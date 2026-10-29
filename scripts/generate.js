@@ -86,11 +86,13 @@ const NEWS_SOURCES = [
 ];
 
 // 每个板块的目标产出条数（写进素材标题，作为模型的即时提醒）
-const TAG_TARGET = { headlines: 5, ai: 10, tech: 6, finance: 5, economy: 5, education: 3, internet: 5, life: 3 };
+// 2026-10-29 调整：AI 10→6（每天真值得看的 AI 大事 5~7 条，硬凑 10 条会稀释质量）；
+// 教育/生活 3→2（不是每天都有 3 条真相关的，弹性 2~3，没料不硬凑）
+const TAG_TARGET = { headlines: 5, ai: 6, tech: 6, finance: 5, economy: 5, education: 2, internet: 5, life: 2 };
 
-// 每个板块送进模型的素材上限（AI/科技板块要给足，才能支撑"AI 10 条、科技 8 条"）
+// 每个板块送进模型的素材上限（AI/科技板块要给足，才能支撑 6 条目标 + 补稿余量）
 // 板块素材不足时会自动少送，不会硬凑
-const TAG_QUOTA = { ai: 22, tech: 18, headlines: 8, finance: 8, economy: 10, internet: 8, education: 8, life: 6 };
+const TAG_QUOTA = { ai: 14, tech: 18, headlines: 8, finance: 8, economy: 10, internet: 8, education: 8, life: 6 };
 
 const SITE_NAME = '每日前沿简报';
 const SECTIONS = ['headlines', 'ai', 'tech', 'finance', 'economy', 'education', 'internet', 'life'];
@@ -431,7 +433,15 @@ function extractJson(text) {
   throw new Error('no json in llm response');
 }
 
-async function callLLM(material) {
+// 晨报/晚报的板块侧重（2026-10-29 新增）：
+// 晨报覆盖隔夜时段，国内经济/市场新闻天然少，硬性"国内外各半"会逼模型凑数；
+// 所以按期次给侧重——晨报偏海外，晚报偏国内。
+const EDITION_FOCUS = {
+  [SLOT_MORNING]: '【本期侧重】这是晨报（覆盖隔夜时段）：finance 侧重美股、隔夜海外市场与大宗商品异动；economy 侧重海外央行、国际经济数据与贸易动态，国内宏观有大新闻才写。',
+  [SLOT_EVENING]: '【本期侧重】这是晚报（覆盖白天时段）：finance 侧重 A股/港股收盘与国内市场动态；economy 侧重国内政策与经济数据，海外有重大事件才写。'
+};
+
+async function callLLM(material, slot) {
   const sys = '你是一位帮用户筛选「今天值得看」的多领域资讯编辑，产出结构化的每日简报。严格按下面的「模块模板」写作。\n'
     + '\n【最重要的三条铁律】\n'
     + 'A. 素材已按板块分组标注（见【XX 板块候选素材】）。每个板块只能从它自己那组素材里挑，不得跨组搬运；若发现素材明显归错组（例如 AI 专属素材混进科技组），可以调整，但必须确实属于目标板块。\n'
@@ -445,11 +455,11 @@ async function callLLM(material) {
     + '3. source 用素材里的真实媒体名；url 必须用素材里的真实链接，不许自己拼。\n'
     + '4. tag 为 2-6 字口语标签（如「新模型」「降息」「发射成功」「新机发布」）。\n'
     + '\n【模块模板（严格按此执行，含目标条数、1级标准与补充顺序）】\n'
-    + '■ ai（AI·大模型动态）— 必须 10 条\n'
-    + '  1级（应占多数，≥6 条）：大模型发布/新版本/新能力、AI 智能体(Agent)发布或升级、AI 产品功能正式上线或重大升级（编程/视频/绘图/办公/搜索/助手）、大模型训练推理的算力与芯片突破。\n'
+    + '■ ai（AI·大模型动态）— 目标 6 条（素材够硬可到 8 条；不够就少写，严禁硬凑）\n'
+    + '  1级（应占多数，≥4 条）：大模型发布/新版本/新能力、AI 智能体(Agent)发布或升级、AI 产品功能正式上线或重大升级（编程/视频/绘图/办公/搜索/助手）、大模型训练推理的算力与芯片突破。\n'
     + '  补充顺序（用于补满）：①AI 公司重大融资与估值 ②AI 芯片与算力基础设施 ③AI 安全与监管 ④具身智能/机器人 AI 进展。\n'
     + '  不收：纯观点评论、教程、评测、招聘、旧闻回顾、与 AI 无关的科技新闻。\n'
-    + '  国内外都要有：国外（OpenAI/Anthropic/Google/Meta/xAI/NVIDIA/微软/Mistral/亚马逊/Tenstorrent 等）≥3 条；国内（阿里/字节/腾讯/百度/DeepSeek/月之暗面/MiniMax/智谱/商汤/上海 AI Lab 等）≥4 条。\n'
+    + '  国内外都要有：国外（OpenAI/Anthropic/Google/Meta/xAI/NVIDIA/微软/Mistral/亚马逊/Tenstorrent 等）≥2 条；国内（阿里/字节/腾讯/百度/DeepSeek/月之暗面/MiniMax/智谱/商汤/上海 AI Lab 等）≥2 条。\n'
     + '  排序：重磅新模型 > 智能体/产品升级 > 算力芯片 > 融资/安全。\n'
     + '■ tech（科技硬核）— 目标 6 条（最低 3 条，宁少勿滥）\n'
     + '  1级：旗舰硬件/新品类正式发布（苹果、华为、三星等）、航天与火箭（发射/回收/载人）、汽车突破（飞行汽车、自动驾驶、新车型量产）、芯片新架构/新制程、机器人、能源与材料突破。\n'
@@ -457,20 +467,21 @@ async function callLLM(material) {
     + '  不收：开售预告与定档、颜色/存储版本、参数曝光、跑分对比、折痕/发热等细节八卦、优惠促销、配件周边、未证实的供应链传闻。\n'
     + '  严禁凑数：灯泡/耳机/NAS/路由器/游戏上架/软件小版本这类常规商品动态一律不要，即使因此不足 6 条也可以只写 3-4 条。\n'
     + '  判断标准：这条能不能上科技媒体头条？不能就换候选里更重要的；候选里没有就不写。\n'
-    + '  国内外都要有：国外 ≥3 条、国内 ≥3 条。\n'
+    + '  国内外都要有：国外 ≥2 条、国内 ≥2 条。\n'
     + '■ headlines（今日必读）— 必须 5 条\n'
     + '  当天最重要的综合要闻（政策、国际大事、经济数据、社会重大事件）。不收产品发布（那属于 ai/tech）。\n'
     + '■ finance（财经·市场）— 必须 5 条\n'
     + '  当日重要变动：A股/港股/美股、基金、黄金、外汇、大宗商品，必须带具体数字或涨跌幅与原因。\n'
     + '■ economy（宏观经济）— 必须 5 条\n'
-    + '  宏观政策、经济数据（CPI/PMI/就业/GDP）、央行操作、国际贸易与关税；国内与国外尽量各半。\n'
-    + '■ education（教育）— 目标 3 条（素材确实不足时可为 2 条）\n'
+    + '  宏观政策、经济数据（CPI/PMI/就业/GDP）、央行操作、国际贸易与关税；国内外配比参照「本期侧重」执行。\n'
+    + '■ education（教育）— 目标 2~3 条（没有真正相关的就 2 条，宁缺毋滥，不硬凑）\n'
     + '  教育政策、升学考试、校园重大事件、教育科技/AI 教育落地、教育行业重要动态。\n'
     + '■ internet（互联网大厂）— 必须 5 条\n'
     + '  国内外互联网大厂动态：新业务/新功能发布、组织与竞争格局、平台规则、监管处罚；电商/社交/短视频/App。\n'
-    + '■ life（生活·消费）— 必须 3 条\n'
+    + '■ life（生活·消费）— 目标 2~3 条（与钱包和日常直接相关的优先，没料不硬凑）\n'
     + '  与钱包和日常直接相关：民生、消费趋势、物价、健康、出行变化。\n'
     + '\n【去重】同一事件全简报只能出现一次；同一发布会拆成多条时，只保留信息量最大的 1 条，并优先放在它最该在的板块。\n'
+    + '\n' + (EDITION_FOCUS[slot] || EDITION_FOCUS[SLOT_MORNING]) + '\n'
     + '\n【输出格式】只输出一个 JSON 对象，不要任何解释文字：\n'
     + '{\n'
     + '  "sections": {\n'
@@ -796,7 +807,7 @@ async function runEdition(dateStr, slot, opts) {
   log('use', material.length, '/', beforeBalance, 'items for llm | per-tag:', JSON.stringify(byTag));
 
   // 2) 大模型生成
-  const llm = await callLLM(material);
+  const llm = await callLLM(material, slot);
   const sections = llm.sections || {};
   for (const s of SECTIONS) {
     if (!sections[s] || !Array.isArray(sections[s].items)) sections[s] = { label: s, items: [] };
