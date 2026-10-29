@@ -1,19 +1,16 @@
 ﻿name: Daily Digest Generator
 
-# 每天北京时间 08:00 / 21:00 自动生成简报；另加 08:05 / 21:05 补跑 + 23:00 兜底补全，防止 schedule 漏触发
-# GitHub Actions 使用 UTC 时区：08:00=00:00 UTC，08:05=00:05 UTC，21:00=13:00 UTC，21:05=13:05 UTC，23:00=15:00 UTC
-#
-# 关于「定时延迟」：GitHub 的 schedule 实际触发可能比设定晚数小时。脚本已改为「延迟感知 + 缺口自愈」——
-#   每跑一次先规划该补哪几期（当天到点的时段优先，其次补昨天的缺口），因此无论延迟多久都不会写错版次。
-#   手动触发时可选 mode=topup，强制扫描「昨天 + 今天」四个时段，缺哪期补哪期。
+# 出刊目标（北京时间）：晨报 09:30 前可见，晚报 22:00 前可见。
+# GitHub 的 schedule 触发可能比设定晚数小时（实测 4~5 小时），稀疏定时（每天几个点）一延迟就错过窗口。
+# 因此改为「每 30 分钟轮询 + 脚本到点出刊」：
+#   - 脚本内部判断当前该出哪期（晨报 READY=09:00 / 晚报 READY=21:30），到点后的第一次轮询即生成；
+#   - 未到点或已生成则快速跳过（不抓新闻、不调大模型），且无数据变更时不重新部署 Pages；
+#   - 无论 schedule 延迟多久，出刊最多比 READY 晚约半个轮询周期，稳定满足目标。
+# UTC 说明：北京时间 = UTC+8，轮询在 UTC 整点/半点触发。
 on:
   schedule:
-    - cron: "0 0 * * *"   # 北京时间 08:00（晨报主触发）
-    - cron: "5 0 * * *"   # 北京时间 08:05（晨报补跑：若已生成则自动跳过）
-    - cron: "0 13 * * *"  # 北京时间 21:00（晚报主触发）
-    - cron: "5 13 * * *"  # 北京时间 21:05（晚报补跑：若已生成则自动跳过）
-    - cron: "0 15 * * *"  # 北京时间 23:00（兜底：扫描昨天+今天，缺哪期补哪期）
-  workflow_dispatch:      # 支持手动触发
+    - cron: "0,30 * * * *"  # 每 30 分钟轮询一次（脚本内部判断该出哪期）
+  workflow_dispatch:        # 支持手动触发
     inputs:
       mode:
         description: "运行模式：normal=正常（延迟感知+缺口自愈）；topup=强制补齐昨天+今天"
@@ -44,6 +41,8 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -65,24 +64,29 @@ jobs:
         run: node scripts/generate.js
 
       - name: Commit generated data
+        id: commit
         run: |
           git config user.name "daily-digest-bot"
           git config user.email "daily-digest-bot@users.noreply.github.com"
           git add site/data
           if git diff --cached --quiet; then
             echo "no data changes"
+            echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             git commit -m "chore: auto update digest $(date -u +'%Y-%m-%d %H:%M') UTC"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Upload Pages artifact
+        if: steps.commit.outputs.changed == 'true'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
   deploy:
     needs: generate
+    if: needs.generate.outputs.changed == 'true'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

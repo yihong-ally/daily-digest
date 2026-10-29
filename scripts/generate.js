@@ -4,7 +4,7 @@
  * - 抓取中文新闻源（RSS + JSON API）→ 调用大模型生成八板块简报 → 写入静态 JSON
  * - 输出目录结构（相对 DATA_DIR，默认 site/data）：
  *   digest-latest.json            最新一期
- *   digest-YYYY-MM-DD-HH.json     每期归档（HH=08/18）
+ *   digest-YYYY-MM-DD-HH.json     每期归档（HH=08 晨报 / 21 晚报）
  *   editions/YYYY-MM-DD.json      某日版次列表
  *   archive.json                  日期列表
  *   history/stocks.json           股票历史序列
@@ -24,7 +24,8 @@
  *   GitHub Actions 的 schedule 实际触发时间可能比 cron 设定晚数小时，跨过午夜后
  *   "按当前钟点判断晨报/晚报"会把晚报写成第二天的晨报。因此本脚本不再按时钟推断版次，
  *   而是先规划该补哪几期（当天到点的时段优先，其次回补昨天的缺口），再逐期生成。
- *   结果：定时延迟只会让某期晚出，不会再出现"晚报永久缺失 + 晨报凌晨发布"。
+ *   workflow 用每 30 分钟轮询触发：到 READY 时刻（晨报 09:00 / 晚报 21:30）后的第一次
+ *   轮询就生成该期，出刊时间基本不受 GitHub 延迟影响。
  */
 
 const fs = require('fs');
@@ -115,21 +116,21 @@ function beijingISO(d) {
 }
 
 // 本期覆盖时段（北京时间），两期首尾相接、不留空档：
-//   晨报(08)：前一天 21:00 → 当天 08:00（隔夜 + 晚报截稿之后的新闻）
-//   晚报(21)：当天 08:00 → 当天 21:00（白天到晚间）
-// 晚报 21:00 出刊，21:00 之后的消息由次日晨报接住，所以晨报起点取 21:00（而非 22:00），避免丢一小时。
+//   晨报(08)：前一天 21:30 → 当天 09:00（隔夜 + 晚报截稿之后的新闻，09:00~09:30 出刊）
+//   晚报(21)：当天 09:00 → 当天 21:30（白天到晚间，21:30~22:00 出刊）
+// 晚报 21:30 截稿，之后的消息由次日晨报接住，所以晨报起点取 21:30，避免丢时段。
 function slotWindow(dateStr, slot) {
   const p = dateStr.split('-').map(Number);
   const y = p[0], m = p[1], d = p[2];
   if (slot === SLOT_MORNING) {
     return {
-      from: Date.UTC(y, m - 1, d - 1, 13, 0, 0), // 前一天 21:00 北京时间
-      to: Date.UTC(y, m - 1, d, 0, 0, 0)         // 当天 08:00 北京时间
+      from: Date.UTC(y, m - 1, d - 1, 13, 30, 0), // 前一天 21:30 北京时间
+      to: Date.UTC(y, m - 1, d, 1, 0, 0)          // 当天 09:00 北京时间
     };
   }
   return {
-    from: Date.UTC(y, m - 1, d, 0, 0, 0),        // 当天 08:00
-    to: Date.UTC(y, m - 1, d, 13, 0, 0)          // 当天 21:00
+    from: Date.UTC(y, m - 1, d, 1, 0, 0),        // 当天 09:00
+    to: Date.UTC(y, m - 1, d, 13, 30, 0)         // 当天 21:30
   };
 }
 function log(...a) { console.log('[generate]', ...a); }
@@ -672,11 +673,26 @@ function appendHistory(histFile, items, dateStr) {
 // GitHub Actions 的 schedule 实际触发时间会晚于 cron 设定（实测有延迟数小时的情况）。
 // 若仍按「现在几点 → 算晨报还是晚报」，18:00 的晚报任务一旦漂过午夜就会被写成「第二天的晨报」，
 // 于是前一天的晚报永久缺失。现在改成：先规划「该补哪几期」，再由调用方逐期生成，与当前钟点无关。
-const MORNING_READY_HOUR = 7;    // 早于 7 点不生成当天晨报
-const EVENING_READY_HOUR = 21;   // 早于 21 点不生成当天晚报
+// 出刊目标（2026-10-29 调整）：晨报 09:30 前可见，晚报 22:00 前可见。
+// workflow 已改为每 30 分钟轮询触发，到 READY 时间后的第一次轮询即生成该期，
+// 因此无论 GitHub schedule 延迟多久，出刊时间最多比 READY 晚约半个轮询周期。
+const MORNING_READY = { h: 9, m: 0 };    // 早于 09:00 不生成当天晨报（预期 09:00~09:30 出刊）
+const EVENING_READY = { h: 21, m: 30 };  // 早于 21:30 不生成当天晚报（预期 21:30~22:00 出刊）
 const MAX_EDITIONS_PER_RUN = 2;  // 单次运行最多生成几期（控制大模型调用成本）
 
 function pad2(n) { return String(n).padStart(2, '0'); }
+
+// 北京时间「时:分」（分钟级判定到点，因为晚报 READY 定在 21:30）
+function beijingHourMinute(d) {
+  const p = new Intl.DateTimeFormat('en-GB', { timeZone: BEIJING_TZ, hour: '2-digit', minute: '2-digit', hour12: false }).formatToParts(d);
+  const g = k => { const x = p.find(t => t.type === k); return x ? parseInt(x.value, 10) : 0; };
+  return { h: g('hour'), m: g('minute') };
+}
+// 当前北京时间是否已到 ready（{h,m}）
+function isReady(now, ready) {
+  const t = beijingHourMinute(now);
+  return t.h > ready.h || (t.h === ready.h && t.m >= ready.m);
+}
 
 // 按天平移（以 UTC 计算，避开本地时区/夏令时干扰）
 function shiftDate(dateStr, days) {
@@ -698,7 +714,7 @@ function editionExists(dateStr, slot) {
 function planTargets(now, opts) {
   opts = opts || {};
   const today = beijingDateStr(now);
-  const hour = beijingHour(now);
+  const hm = beijingHourMinute(now);
   const yesterday = shiftDate(today, -1);
   const targets = [];
   const add = (dateStr, slot, reason) => {
@@ -710,19 +726,19 @@ function planTargets(now, opts) {
 
   // ⓿ 强制模式（FORCE=1）：把当前该出的一期直接排到最前面，忽略"已存在"
   if (opts.force) {
-    const slot = hour >= EVENING_READY_HOUR ? SLOT_EVENING : SLOT_MORNING;
+    const slot = isReady(now, EVENING_READY) ? SLOT_EVENING : SLOT_MORNING;
     targets.push({ date: today, slot, reason: '强制重做（FORCE=1）' });
   }
 
-  // ① 今天到点的时段优先（正常情况就是这一期）
-  if (hour >= MORNING_READY_HOUR) add(today, SLOT_MORNING, '今日晨报');
-  if (hour >= EVENING_READY_HOUR) add(today, SLOT_EVENING, '今日晚报');
-  // ② 昨天晚报缺口（典型场景：18:00 的任务延迟到次日凌晨才跑，会被这里捡回来）
+  // ① 今天到点的时段优先（正常情况就是这一期；到点 = 北京时间过 READY 时刻）
+  if (isReady(now, MORNING_READY)) add(today, SLOT_MORNING, '今日晨报');
+  if (isReady(now, EVENING_READY)) add(today, SLOT_EVENING, '今日晚报');
+  // ② 昨天晚报缺口（典型场景：轮询任务延迟跨夜才跑，会被这里捡回来）
   add(yesterday, SLOT_EVENING, '补昨天晚报（定时延迟跨夜）');
   // ③ 昨天晨报也缺 → 只在上半天补，避免整天的缺口一直漏下去
-  if (hour < EVENING_READY_HOUR) add(yesterday, SLOT_MORNING, '补昨天晨报（缺口自愈）');
+  if (!isReady(now, EVENING_READY)) add(yesterday, SLOT_MORNING, '补昨天晨报（缺口自愈）');
 
-  return { today, hour, targets };
+  return { today, hour: hm.h, minute: hm.m, targets };
 }
 
 // ---- 生成一期（日期与版次由调用方指定，不再按当前钟点推断）----
@@ -750,8 +766,8 @@ async function runEdition(dateStr, slot, opts) {
   material = material.filter(m => { const k = m.url; if (seen.has(k)) return false; seen.add(k); return true; });
 
   // 只保留「本期覆盖时段」内发布的新闻：
-  //   晨报 08:00 → 前一天 22:00 ~ 当天 08:00（隔夜）
-  //   晚报 21:00 → 当天 08:00 ~ 当天 21:00
+  //   晨报 08 → 前一天 21:30 ~ 当天 09:00（隔夜，09:00~09:30 出刊）
+  //   晚报 21 → 当天 09:00 ~ 当天 21:30（白天到晚间，21:30~22:00 出刊）
   // 无时间戳的素材（如知乎热榜）只在要闻板块保留，其余板块丢弃，避免旧闻混入
   const win = slotWindow(dateStr, slot);
   const beforeFilter = material.length;
@@ -954,9 +970,8 @@ async function runPlan(now) {
   if (!LLM_KEY) throw new Error('LLM_KEY 未配置');
   const plan = planTargets(now || new Date(), { force: !!process.env.FORCE });
   const today = plan.today;
-  const hour = plan.hour;
   const targets = plan.targets;
-  log('plan', today, 'hour=' + hour, 'targets=' + (targets.map(t => t.date + '-' + t.slot).join(',') || 'none(已齐，无需生成)'));
+  log('plan', today, 'time=' + pad2(plan.hour) + ':' + pad2(plan.minute), 'targets=' + (targets.map(t => t.date + '-' + t.slot).join(',') || 'none(已齐，无需生成)'));
   const generated = [];
   for (const t of targets) {
     const dateKey = t.date + '-' + t.slot;
