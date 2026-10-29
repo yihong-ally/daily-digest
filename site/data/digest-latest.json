@@ -1,11 +1,11 @@
 {
   "date": "2026-10-29",
-  "slot": "08",
-  "edition": "晨报",
-  "updatedAt": "2026-10-29T12:28:03+08:00",
+  "slot": "21",
+  "edition": "晚报",
+  "updatedAt": "2026-10-29T22:42:55+08:00",
   "coverage": {
-    "from": "2026-10-28T21:30:00+08:00",
-    "to": "2026-10-29T09:00:00+08:00"
+    "from": "2026-10-29T09:00:00+08:00",
+    "to": "2026-10-29T21:30:00+08:00"
   },
   "siteName": "每日前沿简报",
   "sections": {
@@ -13,39 +13,39 @@
       "label": "今日必读",
       "items": [
         {
-          "title": "美联储维持利率3.75%-4%不变，符合市场预期",
-          "summary": "美联储10月28日结束为期两天的货币政策会议，宣布将联邦基金利率目标区间维持在3.75%至4%不变。看点：这是连续第二次按兵不动，市场关注后续降息路径，对全球资产定价和汇率有直接影响。",
+          "title": "广州南沙四期自动化码头正式开通外贸业务",
+          "summary": "粤港澳大湾区首个全新建造的全自动化集装箱码头——广州港南沙港区四期码头29日正式开通外贸业务。看点：自动化码头打通外贸通道，大湾区货物出海效率有望提升，直接影响外贸企业物流成本。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722495.shtml",
-          "tag": "美联储"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10723006.shtml",
+          "tag": "外贸通道"
         },
         {
-          "title": "特朗普暂缓对机器人、工业机械加征关税，指示与贸易伙伴谈判",
-          "summary": "美国总统特朗普表示，将暂缓对机器人、工业机械及相关零部件进口加征关税，并要求官员就这些商品的进口与贸易伙伴展开谈判。看点：关税暂缓缓解了制造业成本压力，但谈判结果仍存不确定性，影响全球供应链布局。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2881792.shtml",
-          "tag": "关税"
+          "title": "一艘商船在黑海沿岸被无人机击中后沉没",
+          "summary": "保加利亚海事部门29日表示，一艘悬挂利比里亚国旗的船只在保加利亚黑海沿岸被无人机击中后沉没。看点：黑海航运安全风险再度升级，可能推高相关航线运费与能源运输成本。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/10-29/10722989.shtml",
+          "tag": "黑海局势"
         },
         {
-          "title": "三星第三季度营业利润增长近九倍，创历史新高",
-          "summary": "三星电子10月29日表示，受人工智能芯片需求强劲推动，其第三季度营业利润增长近九倍，创下历史新高。看点：AI芯片热潮带动存储芯片量价齐升，但投资者对AI支出可持续性仍持谨慎态度。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwra6144312.shtml",
-          "tag": "三星财报"
+          "title": "呼和浩特发布42个航空航天产业合作方向",
+          "summary": "呼和浩特市航空航天产业集群产需对接会29日举行，聚焦低空经济与商业航天，发布42个重点合作方向及引资项目清单。看点：地方国资密集布局低空经济与商业航天，产业链招商进入落地阶段。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-29/10722998.shtml",
+          "tag": "低空经济"
         },
         {
-          "title": "泄密网站公布超4万名美国国土安全部员工数据",
-          "summary": "泄密网站“分布式秘密拒绝”10月28日表示，已公布超过4万名美国国土安全部员工的数据。看点：这是近期又一起大规模政府数据泄露事件，凸显关键基础设施的网络安全风险。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwra6125891.shtml",
-          "tag": "数据泄露"
+          "title": "满洲里口岸今年出入境人员突破110万人次",
+          "summary": "2026年满洲里口岸出入境人员已突破110万人次，跨国“串门”式出行持续升温。看点：中俄边境人员往来快速恢复，跨境旅游与商贸活动回暖信号明显。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-29/10722997.shtml",
+          "tag": "口岸回暖"
         },
         {
-          "title": "欧盟能源部长将开会讨论冬季能源安全，应对供暖需求",
-          "summary": "欧盟各国能源部长将于10月29日举行会议，讨论冬季供暖季前的能源安全问题，目前伊朗、乌克兰和也门境内的战事已导致石油和天然气价格飙升。看点：能源价格波动直接影响欧洲通胀和居民取暖成本，会议结果可能影响冬季能源市场。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwri5444370.shtml",
-          "tag": "能源安全"
+          "title": "第十七届海峡两岸文博会在厦门开幕",
+          "summary": "第十七届海峡两岸（厦门）文化产业博览交易会29日开幕，汇聚1000余家海内外机构，展出近千件工艺精品。看点：两岸文化产业交流规模不减，工艺与科技融合成为展会新看点。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723002.shtml",
+          "tag": "两岸交流"
         }
       ]
     },
@@ -53,46 +53,46 @@
       "label": "AI · 大模型动态",
       "items": [
         {
-          "title": "谷歌发布Gemini 4 Carbon，性能超越Opus 5.5重回第一",
-          "summary": "谷歌10月29日正式发布Gemini 4 Carbon模型，在多项评测中超越Anthropic的Opus 5.5，重回世界第一。看点：这是谷歌迄今最强模型，直接对标OpenAI和Anthropic，大模型竞争进入新回合。",
-          "source": "爱范儿",
-          "url": "https://www.ifanr.com/1686587?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "title": "Gemini 4 Carbon登顶Artificial Analysis智能指数榜首",
+          "summary": "Gemini 4 Carbon在Artificial Analysis Intelligence Index v5中排名第一，成为该榜单最新冠军模型。看点：谷歌新模型在第三方评测中登顶，头部大模型竞争格局再起变化。",
+          "source": "Hacker News",
+          "url": "https://artificialanalysis.ai/articles/gemini-4-carbon-new-number-1",
           "tag": "新模型"
         },
         {
-          "title": "Anthropic推出新工具，让企业看清AI花费买了什么",
-          "summary": "Anthropic 10月28日发布新工具，向企业展示其模型使用情况和支出明细，为计划中的IPO做准备。看点：AI成本透明度成为企业采购关键，此举有助于Anthropic在上市前赢得企业客户信任。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
-          "tag": "AI成本"
+          "title": "豆包工作向企业客户开放第三方模型服务",
+          "summary": "豆包工作29日宣布向企业客户开放第三方模型服务，首批接入Kimi 3.1 Pro、GLM 5.3、DeepSeek V4.1 Flash等系列模型。看点：字节把自家平台变成多模型入口，企业选型不再被单一厂商绑定。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/733.htm",
+          "tag": "多模型接入"
         },
         {
-          "title": "英伟达发布开源语音转写模型，支持40种语言",
-          "summary": "英伟达10月28日发布免费语音转文字模型，可转写多达40种语言，但仅支持录音文件而非实时音频。看点：开源模型降低了会议和医疗转写工具的门槛，但实时场景仍由ElevenLabs等对手占据。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
-          "tag": "语音模型"
+          "title": "蚂蚁灵光2.0打通钉钉、支付宝等数十项服务",
+          "summary": "蚂蚁集团10月27日发布灵光2.0后，新版已原生打通支付宝生态并接入钉钉CLI等数十项外部工具，可代管家校群、提取待办。看点：AI助手从“会聊天”走向“能管事”，真实工作流接入成为落地关键。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/eigNbrwrLkMYpiwN.html",
+          "tag": "智能体升级"
         },
         {
-          "title": "微软首次披露Azure季度收入332亿美元",
-          "summary": "微软10月28日首次以美元金额披露Azure季度收入为332亿美元，显示其与AWS的差距进一步缩小。看点：云收入透明化让市场更清楚AI算力竞赛的格局，微软AI基础设施投入开始兑现。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/",
-          "tag": "云收入"
+          "title": "TRAE上线开发者个人助理“TRAE宝”",
+          "summary": "AI开发产品TRAE于10月29日正式上线开发者个人助理“TRAE宝”，采用“全局助理+项目助理”双层架构，持续理解项目历史与决策。看点：编程Agent从单次任务转向长期记忆，开发者切换会话的成本有望下降。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/VtaDCTK8rnfs2sSX.html",
+          "tag": "编程助手"
         },
         {
-          "title": "Chrome的AI自动填充可读取Gmail帮你填表",
-          "summary": "谷歌Chrome浏览器10月28日更新AI自动填充功能，经用户授权后可从Gmail中提取航班确认、物流信息、订单详情等来填写表单。看点：AI助手深入个人邮箱数据，便利性与隐私边界成为用户需要权衡的新问题。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
-          "tag": "浏览器AI"
+          "title": "XHEART发布大模型芯片X7 Ultra",
+          "summary": "XHEART正式发布大模型芯片X7 Ultra，X7系列已量产8个月，累计出货超20万颗，搭载10款量产车型，获超40款车型订单。看点：大模型芯片开始规模上车，车载算力竞争进入出货量比拼阶段。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4046954407213315?f=rss",
+          "tag": "AI芯片"
         },
         {
-          "title": "有人拿50个真实报税任务考AI智能体，看它能不能干专业活",
-          "summary": "一家机构用50个专业税务任务评测AI智能体，看它能否独立完成报税这类专业工作。看点：税务是高风险专业场景，这类评测能暴露AI在真实业务中的能力边界。",
-          "source": "Hacker News",
-          "url": "https://surgehq.ai/blog/dayjob-tax",
-          "tag": "AI评测"
+          "title": "阿里云以46.6%份额居中国大模型MaaS市场首位",
+          "summary": "IDC 10月29日发布报告显示，2026年上半年阿里云在中国大语言模型MaaS市场份额为46.6%，智谱、火山引擎分别以10.6%、10.2%位列二、三。看点：大模型“收入榜”座次落定，云厂商的模型分发优势进一步凸显。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/VsFzLhOgbV95UM6v.html",
+          "tag": "市场份额"
         }
       ]
     },
@@ -100,46 +100,46 @@
       "label": "科技硬核",
       "items": [
         {
-          "title": "苹果发布首款触屏MacBook Pro，顶配超11万元",
-          "summary": "苹果10月29日发布全新MacBook Pro，首次为Mac引入屏幕触控和灵动岛，采用双层串联OLED技术的PROLED XDR显示屏，搭载M5 Pro或M5 Max芯片，14英寸起售价22999元，顶配超11万元。看点：触控Mac颠覆乔布斯时代的判断，苹果产品线迎来重大交互变革。",
-          "source": "极客公园",
-          "url": "http://www.geekpark.net/news/373085",
-          "tag": "新机发布"
-        },
-        {
-          "title": "天文学家在柯伊伯带发现巨大矮行星候选天体",
-          "summary": "天文学家利用Vera C. Rubin天文台在柯伊伯带发现编号2026 ED138的矮行星候选天体，直径在600-1500公里之间，绕太阳一周约281年。看点：这可能成为太阳系又一颗确认的矮行星，帮助理解太阳系边缘的形成历史。",
-          "source": "奇客Solidot",
-          "url": "https://www.solidot.org/story?sid=85735",
-          "tag": "天文发现"
-        },
-        {
-          "title": "盛美上海首台量产型面板级电镀设备出机海外",
-          "summary": "盛美上海10月29日宣布，首台量产型310mm×310mm面板级水平电镀设备UltraECP ap-p顺利出机至中国大陆以外的亚洲市场。看点：先进封装面板级工艺是关键环节，国产设备出海意味着在半导体制造细分领域取得突破。",
+          "title": "阿维塔07L Max纯电版上市，搭华为乾崑ADS 5",
+          "summary": "阿维塔07L Max纯电版10月29日正式上市，官方指导价22.99万元起，限时权益价21.59万元起，搭载华为乾崑ADS 5。看点：华为高阶智驾下放到20万级车型，智能驾驶价格战继续升温。",
           "source": "IT之家",
-          "url": "https://www.ithome.com/1/019/295.htm",
-          "tag": "半导体设备"
+          "url": "https://www.ithome.com/1/019/716.htm",
+          "tag": "新车上市"
         },
         {
-          "title": "谷歌推出首款有线Android XR眼镜Xreal Aura",
-          "summary": "谷歌10月28日发布首款有线XR眼镜Xreal Aura，基于Android XR平台。看点：有线设计可能解决续航和算力瓶颈，XR眼镜竞争从无线转向新形态，值得关注实际体验。",
+          "title": "智己LS8 NEO纯电版开启预售，24.98万元起",
+          "summary": "智己LS8 NEO纯电版10月29日开启预售，权益价24.98万元起，采用全域800V高压平台、全新NEO飓风电机，配备宁德时代电池。看点：800V平台加速向25万级市场普及，纯电车型补能体验成为新卖点。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/760.htm",
+          "tag": "纯电预售"
+        },
+        {
+          "title": "苹果承认少量iPhone Duo存在内屏问题",
+          "summary": "苹果首款折叠屏手机iPhone Duo本月23日上市后，有消费者反映内屏沿折叠区域开裂、出现亮线，苹果承认少量设备存在内屏问题，故障原因及受影响数量暂未公布。看点：折叠屏首秀即遇品控质疑，苹果如何善后将影响其折叠产品线口碑。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/730.htm",
+          "tag": "折叠屏品控"
+        },
+        {
+          "title": "迈威尔科技洽谈收购光器件厂商Lumentum",
+          "summary": "据知情人士透露，芯片厂商迈威尔科技一直在洽谈收购数据中心光器件厂商Lumentum，后者市值超800亿美元，交易最早可能下周公布。看点：若落地将成为半导体行业最大并购之一，数据中心光互联赛道整合加速。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4046912174110978?f=rss",
+          "tag": "半导体并购"
+        },
+        {
+          "title": "美国单季新增电池储能20.2GWh创纪录",
+          "summary": "美国在三个月内新增电池储能装机20.2GWh，创下单季历史纪录。看点：储能装机爆发式增长，反映AI数据中心与电网调峰需求正共同拉动能源基础设施投资。",
           "source": "Hacker News",
-          "url": "https://blog.google/products-and-platforms/platforms/android/xreal-aura/",
-          "tag": "XR眼镜"
+          "url": "https://electrek.co/2026/08/31/the-us-added-a-record-20-2-gwh-of-battery-storage-in-just-3-months/",
+          "tag": "储能纪录"
         },
         {
-          "title": "华为Pura X View上市50天出货量突破100万台",
-          "summary": "据数码博主爆料，华为全新阔直板手机Pura X View上市50天出货量已突破100万台，过去三周周增销量最高近10万，拿下单型号国产旗舰手机销量第一。看点：华为在高端手机市场持续收复失地，阔直板新形态获得市场认可。",
+          "title": "System76推出Thelio Prime迷你主机",
+          "summary": "System76推出Thelio Prime迷你主机，采用11L紧凑设计，配备锐龙9000系列CPU、可选独显，起售价1599美元。看点：Linux厂商加码桌面硬件，为开发者提供预装开源系统的整机选择。",
           "source": "IT之家",
-          "url": "https://www.ithome.com/1/019/293.htm",
-          "tag": "华为手机"
-        },
-        {
-          "title": "奇瑞预计年底出口汽车海外生产比例超50%",
-          "summary": "奇瑞汽车常务副总裁张贵兵透露，预计到今年年底奇瑞出口汽车中海外生产的比例将超过50%，2027年提高至60%，2030年达70%。看点：中国车企从整车出口转向本地化制造，规避贸易壁垒并创造当地就业。",
-          "source": "IT之家",
-          "url": "https://www.ithome.com/1/019/291.htm",
-          "tag": "汽车出海"
+          "url": "https://www.ithome.com/1/019/768.htm",
+          "tag": "迷你主机"
         }
       ]
     },
@@ -147,39 +147,39 @@
       "label": "财经 · 市场",
       "items": [
         {
-          "title": "布伦特原油跌向114美元，交易员评估伊朗外交进展",
-          "summary": "10月29日油价下跌，布伦特原油跌向每桶114美元，WTI原油期货在每桶102美元附近，交易员评估中东为避免美国可能重启对伊朗军事打击而做出的新外交努力。看点：地缘风险溢价回落，油价波动直接影响全球通胀和出行成本。",
+          "title": "美股期指续跌，谷歌母公司盘前大跌超11%",
+          "summary": "10月29日美国9月PCE数据公布后，美股三大股指期货延续跌势，纳指期货跌0.92%，谷歌母公司Alphabet盘前跌超11%。看点：科技巨头财报不及预期，市场对AI巨额投入回报的质疑再度升温。",
           "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwrf8998921.shtml",
-          "tag": "原油"
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwxekn5919407.shtml",
+          "tag": "美股下跌"
         },
         {
-          "title": "日本爱德万测试股价涨9%，上调财年营收预期",
-          "summary": "日本芯片测试设备巨头爱德万测试上调2026财年营收和净利润预期后，股价涨幅扩大至9%，因AI相关测试需求强劲爆发。看点：AI芯片测试需求成为设备商新增长点，反映半导体产业链上游景气度。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwra6139949.shtml",
-          "tag": "芯片股"
+          "title": "美国9月核心PCE环比增0.3%符合预期",
+          "summary": "美国9月核心个人消费支出价格指数环比增长0.3%，符合市场预期，前值为0.2%。看点：通胀数据未超预期，但能源价格反弹令市场对美联储后续路径保持警惕。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4046931320158467?f=rss",
+          "tag": "PCE数据"
         },
         {
-          "title": "迈威尔科技据悉洽购数据中心光学器件商Lumentum",
-          "summary": "据知情人士透露，迈威尔科技正在就收购数据中心光学器件制造商Lumentum Holdings进行深入谈判。看点：数据中心光互连是AI算力扩张的关键环节，若交易达成将改变光器件竞争格局。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2871496.shtml",
-          "tag": "并购"
+          "title": "美国三季度GDP环比折年率初值3.4%超预期",
+          "summary": "美国第三季度GDP季调后环比折年率初值为3.4%，预估为3.2%，前值为2.2%。看点：企业投资与消费韧性支撑增长创一年最快，降息预期可能进一步被压低。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4046932827699458?f=rss",
+          "tag": "GDP超预期"
         },
         {
-          "title": "美联储按兵不动，利率继续停在3.75%到4%之间",
-          "summary": "美联储结束两天议息会议，宣布维持联邦基金利率目标区间在3.75%至4%不变，符合市场预期。看点：利率走向牵动全球资产定价，按兵不动意味着市场短期预期落空空间有限。",
+          "title": "科创芯片ETF将通过沪港互挂进入香港市场",
+          "summary": "上海证券交易所10月29日表示，科创芯片ETF将通过沪港ETF互挂机制进入香港市场。看点：内地芯片主题ETF打通香港渠道，境外资金配置科创板半导体又多一条通路。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722489.shtml",
-          "tag": "货币政策"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10723001.shtml",
+          "tag": "ETF互挂"
         },
         {
-          "title": "FTC盯上沃尔玛达美航空，要查它们怎么用消费者数据定价",
-          "summary": "美国联邦贸易委员会要求达美航空、沃尔玛等公司说明在制定价格时如何使用消费者数据。看点：个性化定价是否越界正被监管审视，结果可能影响零售和航空业的定价方式。",
+          "title": "人民币兑美元中间价6.7147再创年内新高",
+          "summary": "10月29日人民币兑美元中间价报6.7147，较前一日上调18个点，再次更新年内高点，部分原因是美联储宣布暂不加息。看点：美元强、人民币更强的罕见组合，反映资金流向与结汇需求正在变化。",
           "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwrf8984051.shtml",
-          "tag": "监管"
+          "url": "https://finance.sina.com.cn/roll/2026-10-29/doc-iniwxekr8706014.shtml",
+          "tag": "人民币走强"
         }
       ]
     },
@@ -187,39 +187,39 @@
       "label": "宏观经济",
       "items": [
         {
-          "title": "英国9月汽车产量同比增长36.3%",
-          "summary": "英国9月汽车产量同比增长36.3%，部分原因是去年同期受网络事件影响导致基数较低。看点：低基数掩盖了真实复苏力度，英国制造业能否持续回暖仍需观察后续数据。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2902517.shtml",
-          "tag": "英国制造"
-        },
-        {
-          "title": "美国国会预算办公室预测未来十年美债利息支出超20万亿美元",
-          "summary": "美国国会预算办公室发布2026年至2036年联邦收支预测，预计未来十年美国国债利息支出将超过20万亿美元。看点：利息支出膨胀挤压财政空间，美国债务可持续性成为全球市场长期风险。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2886213.shtml",
-          "tag": "美债"
-        },
-        {
-          "title": "前三季度中国海洋生产总值8.5万亿元，同比增长4.9%",
-          "summary": "自然资源部数据显示，前三季度海洋生产总值达8.5万亿元，同比增长4.9%，结构持续优化。看点：海洋经济是稳增长的重要板块，增速反映向新向优的转型势头。",
+          "title": "上海发布九大行动21项任务支持中小企业",
+          "summary": "上海市政府新闻办10月29日举行发布会，介绍《上海市推动中小企业高质量发展行动方案》，提出九大行动共21项任务。看点：地方针对中小企业“裉节问题”出招，融资与市场准入支持值得关注。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722469.shtml",
-          "tag": "经济数据"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722968.shtml",
+          "tag": "中小企业"
         },
         {
-          "title": "世界海拔最高风电场升压站建成，华电措美哲古一期全容量投产",
-          "summary": "华电措美哲古一期80兆瓦风电项目全部机组投产，配套的220千伏升压站为世界海拔最高。看点：超高海拔风电工程取得突破，为高海拔地区新能源开发积累经验。",
+          "title": "9月中国核发绿证3.26亿个",
+          "summary": "国家能源局10月29日公布，9月核发绿色电力证书3.26亿个，涉及可再生能源发电项目439.71万个，其中可交易绿证1.97亿个，占比60.45%。看点：绿证核发规模持续放大，企业绿电消费与出口碳合规有了更多凭证。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722462.shtml",
-          "tag": "新能源"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722864.shtml",
+          "tag": "绿证核发"
         },
         {
-          "title": "川渝16家AI企业路演，合计释放超10亿元融资需求",
-          "summary": "第六届数字经济投融资机构川渝行在成都举行，16家川渝企业现场路演，合计融资需求超10亿元。看点：境内外机构聚焦川渝人工智能赛道，区域AI融资热度可见一斑。",
+          "title": "前三季度青海外送绿电超300亿千瓦时",
+          "summary": "国网青海电力10月29日表示，前三季度青海累计外送电量308.66亿千瓦时、同比增长9.7%，其中清洁能源电量302.8亿千瓦时、占比98.1%。看点：西部绿电外送能力增强，跨省电力资源配置进一步优化。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722468.shtml",
-          "tag": "投融资"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722866.shtml",
+          "tag": "绿电外送"
+        },
+        {
+          "title": "前三季度内蒙古贷款余额超3.4万亿元",
+          "summary": "人民银行内蒙古自治区分行10月29日通报，前三季度内蒙古金融机构人民币各项贷款余额34090.7亿元，较年初新增1451.8亿元，同比增长6.2%。看点：区域信贷保持扩张，反映能源与农牧业大省的融资需求仍具韧性。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722965.shtml",
+          "tag": "区域信贷"
+        },
+        {
+          "title": "山东政企银联动对接汽车产业融资",
+          "summary": "金融助力山东省汽车产业高质量发展对接活动10月29日在潍坊举行，旨在打通产业、科技、资本、外贸对接通道。看点：地方以金融“活水”定向支持汽车产业链，车企与零部件企业融资渠道有望拓宽。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722896.shtml",
+          "tag": "产业金融"
         }
       ]
     },
@@ -227,18 +227,18 @@
       "label": "教育",
       "items": [
         {
-          "title": "全国大中小学生同上一堂思政大课，传承长征精神",
-          "summary": "教育部10月29日组织全国大中小学生同上一堂思政大课，主题为做伟大长征精神的传承者弘扬者践行者。看点：全国同上一堂课是思政教育创新形式，覆盖各学段，体现爱国主义教育常态化。",
-          "source": "教育部",
-          "url": "http://www.moe.gov.cn/jyb_xwfb/s5147/202610/t20261029_1456335.html",
-          "tag": "思政教育"
+          "title": "新东方2027财年Q1营收18.75亿美元增23.1%",
+          "summary": "新东方2027财年第一季度实现净营收18.75亿美元，同比增长23.1%，并计划开设更多线下学习中心。看点：教培龙头线下扩张重启，线下学习中心需求回暖信号值得关注。",
+          "source": "芥末堆",
+          "url": "https://www.jiemodui.com/N/139631.html",
+          "tag": "教培财报"
         },
         {
-          "title": "加州亿万富翁砸2.93亿美元，就为拦住向自己征税的提案",
-          "summary": "至少30位加州亿万富翁累计投入逾2.93亿美元，反对对10亿美元身家者一次性征收5%的亿万富翁税，该税将用于医保和教育。看点：科技新贵与公共教育资金的博弈，折射AI造富时代的税收争议。",
-          "source": "奇客Solidot",
-          "url": "https://www.solidot.org/story?sid=85736",
-          "tag": "教育经费"
+          "title": "一起教育科技与腾讯云共建教育智能应用生态",
+          "summary": "一起教育科技与腾讯云达成合作，教师智能体接入WorkBuddy，双方将在生态应用与云服务两大领域深度合作。看点：AI教师助手进入云生态落地阶段，教育智能应用的商业化路径逐渐清晰。",
+          "source": "芥末堆",
+          "url": "https://www.jiemodui.com/N/139634.html",
+          "tag": "AI教育"
         }
       ]
     },
@@ -246,32 +246,39 @@
       "label": "互联网大厂",
       "items": [
         {
-          "title": "谷歌AI搜索广告全球扩展，核心广告增长放缓",
-          "summary": "谷歌10月28日宣布将AI搜索广告扩展至全球，同日母公司Alphabet发布第三季度财报，营收同比增长25%至1276亿美元。看点：AI搜索商业化加速，但核心广告增速放缓，谷歌需在体验与变现间找平衡。",
-          "source": "TechCrunch",
-          "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
-          "tag": "广告变现"
+          "title": "字节跳动招人入局具身智能人形机器人",
+          "summary": "字节跳动启动招聘，正式下场布局具身智能人形机器人。看点：内容巨头切入机器人赛道，具身智能的人才争夺战进一步升级。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8185152.html",
+          "tag": "具身智能"
         },
         {
-          "title": "亚马逊设备与服务部门裁员约250人",
-          "summary": "亚马逊10月28日在其设备与服务业务部门裁减约250个岗位，此前数周刚密集发布新款Kindle和Alexa智能家居等产品。看点：硬件新品发布后随即裁员，反映亚马逊在设备业务上降本增效的压力。",
-          "source": "IT之家",
-          "url": "https://www.ithome.com/1/019/286.htm",
-          "tag": "裁员"
+          "title": "抖音李亮发文谈短剧竞争与内容质量",
+          "summary": "抖音李亮就短剧发展发文，称短剧与传统影视无本质区别，核心是内容质量，并呼吁同行在阳光下竞争、专家自媒体遵守基本道德规范。看点：平台高管公开定调短剧竞争规则，行业内容治理风向值得留意。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/poaG1T65huOcWV91.html",
+          "tag": "短剧竞争"
         },
         {
-          "title": "亚马逊提醒员工审慎使用AI工具，避免token最大化",
-          "summary": "亚马逊10月28日发布备忘录，修订针对软件工程师的指导方针，在鼓励使用AI的同时强调审慎运用，避免追求“token最大化”。看点：大厂开始给AI使用降温，关注成本与产出效率的平衡。",
-          "source": "新浪",
-          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwri5421013.shtml",
-          "tag": "AI管理"
+          "title": "长盈精密前三季度转亏，具身智能收入增532%",
+          "summary": "长盈精密2026年前三季度转亏0.66亿元，但具身智能业务收入大增532%，仍未撑起整体利润。看点：具身智能订单放量但盈利尚早，供应链企业第三曲线仍待验证。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8186722.html",
+          "tag": "具身智能财报"
         },
         {
-          "title": "OpenAI拟采购谷歌TPU，已招聘工程师适配前沿模型",
-          "summary": "据爱范儿早报，OpenAI计划采购谷歌TPU，并已招聘工程师适配前沿模型。看点：OpenAI寻求英伟达之外的算力来源，TPU外供若成真将改变AI芯片供应格局。",
-          "source": "爱范儿",
-          "url": "https://www.ifanr.com/1686590?utm_source=rss&utm_medium=rss&utm_campaign=",
-          "tag": "算力采购"
+          "title": "特朗普政府向核电站提供50亿美元贷款供数据中心",
+          "summary": "特朗普政府将向星座能源公司提供50亿美元贷款，用于扩大8座核电站发电能力，新增约1.1吉瓦装机，其中大部分电力已被谷歌、Meta或亚马逊预订。看点：科技巨头抢电大战延伸至核电，AI算力扩张正重塑能源采购格局。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4046927069755655?f=rss",
+          "tag": "数据中心供电"
+        },
+        {
+          "title": "美股科技股盘前多数下跌，谷歌跌超11%",
+          "summary": "美股大型科技股盘前多数走低，谷歌跌超11%，美光、亚马逊跌超2%，微软、苹果则涨超1%。看点：谷歌单日跌幅明显，反映市场对科技巨头预期分化，值得关注后续走势。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4046944590985731?f=rss",
+          "tag": "美股"
         }
       ]
     },
@@ -279,11 +286,18 @@
       "label": "生活 · 消费",
       "items": [
         {
-          "title": "消费品以旧换新带动销售额超2万亿元，惠及2.5亿人次",
-          "summary": "商务部10月28日召开全国消费品以旧换新工作推进会议，数据显示2026年以来以旧换新带动相关品类销售额超2万亿元，惠及超2.5亿人次，河南、山西等多地新增智能家居、适老产品补贴，部分最高补2000元。看点：补贴范围扩大至智能门锁、助听器等品类，消费者可关注本地申领规则。",
+          "title": "存储芯片涨价带动华强北二手手机销量涨超80%",
+          "summary": "今年以来存储芯片涨价引发新机调价潮，深圳华强北二手手机交易热度大增，销量涨超80%。看点：新机变贵把消费者推向二手市场，换机成本与保值率成为普通人买手机的新考量。",
           "source": "中新网",
-          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722496.shtml",
-          "tag": "以旧换新"
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722913.shtml",
+          "tag": "二手手机"
+        },
+        {
+          "title": "宁夏鲜活大闸蟹首次出口马来西亚",
+          "summary": "产自宁夏贺兰县盐碱水域的“贺之鲜·塞上湖蟹”10月28日深夜运抵吉隆坡国际机场，这是宁夏鲜活大闸蟹首次出口马来西亚。看点：盐碱地水产打开东南亚市场，内陆特色农产品出口又多一条新路子。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722873.shtml",
+          "tag": "农产品出口"
         }
       ]
     }
@@ -294,9 +308,9 @@
         "id": "sh000001",
         "name": "上证指数",
         "code": "000001",
-        "value": 3647.12,
+        "value": 3651.43,
         "unit": "点",
-        "changePct": -0.93,
+        "changePct": -0.82,
         "ytd": null,
         "note": "A股大盘基准 · 实时行情"
       },
@@ -304,9 +318,9 @@
         "id": "sz399006",
         "name": "创业板指",
         "code": "399006",
-        "value": 2539.04,
+        "value": 2517.59,
         "unit": "点",
-        "changePct": -3.63,
+        "changePct": -4.45,
         "ytd": null,
         "note": "成长股风向标 · 实时行情"
       },
