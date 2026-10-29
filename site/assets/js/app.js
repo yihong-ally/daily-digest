@@ -45,16 +45,16 @@ function sparkline(series, color) {
   });
   if (n === 1) {
     return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-      <circle cx="${pts[0][0]}" cy="${pts[0][1]}" r="3" fill="${color}"/>
-      <text x="${w / 2}" y="${h - 2}" text-anchor="middle" font-size="9" fill="#9aa6b2">仅 1 期 · 积累中</text>
+      <circle cx="${pts[0][0]}" cy="${pts[0][1]}" r="2.6" fill="${color}"/>
+      <text x="${w / 2}" y="${h - 2}" text-anchor="middle" font-size="9" fill="#8b8574" letter-spacing="1">仅 1 期 · 积累中</text>
     </svg>`;
   }
   const path = pts.map((p, i) => (i === 0 ? "M" : "L") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
   const area = path + ` L ${pts[n - 1][0].toFixed(1)} ${h} L ${pts[0][0].toFixed(1)} ${h} Z`;
-  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
-    <path d="${area}" fill="${color}" opacity="0.10"/>
-    <path d="${path}" fill="none" stroke="${color}" stroke-width="2"/>
-    <circle cx="${pts[n - 1][0].toFixed(1)}" cy="${pts[n - 1][1]}" r="3" fill="${color}"/>
+  return `<svg width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+    <path d="${area}" fill="${color}" opacity="0.07"/>
+    <path d="${path}" fill="none" stroke="${color}" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+    <circle cx="${pts[n - 1][0].toFixed(1)}" cy="${pts[n - 1][1].toFixed(1)}" r="2.6" fill="${color}"/>
   </svg>`;
 }
 
@@ -68,7 +68,7 @@ function renderWatch(group, seriesAll, color) {
     // 没有涨跌数据时不要留空行，更不能拿静态数字冒充当日涨跌
     const chgLine = (chg || ytd)
       ? `<div class="wchg ${chgCls}">${chg}${ytd}</div>`
-      : `<div class="wchg flat"><span class="wnote">静态参考值（无实时行情）</span></div>`;
+      : `<div class="wchg flat">无实时行情</div>`;
     // 静态条目没有真实走势，不画走势曲线
     const chart = item.static ? "" : sparkline(s, color);
     return `<div class="wcard">
@@ -83,19 +83,32 @@ function renderWatch(group, seriesAll, color) {
 
 function renderNews(sections) {
   let html = "";
+  let idx = 0;
   SECTION_KEYS.forEach(key => {
     const sec = sections[key];
-    if (!sec) return;
+    if (!sec || !Array.isArray(sec.items) || !sec.items.length) return;
+    idx += 1;
     const label = sec.label || COL_TITLES[key];
-    html += `<h3 class="col-title">${label}</h3>`;
-    html += '<div class="news-grid">';
+    const no = String(idx).padStart(2, "0");
+    html += `<section class="sec">
+      <div class="sec-head">
+        <span class="sec-no">${no}</span>
+        <h3 class="col-title">${label}</h3>
+        <span class="sec-count">${sec.items.length} 条</span>
+      </div>
+      <div class="news-list">`;
     html += sec.items.map(it => {
       const tag = it.tag ? `<span class="ntag">${it.tag}</span>` : "";
-      const src = it.source ? `<span>${it.source}</span>` : "<span></span>";
-      const link = it.url ? `<a href="${it.url}" target="_blank" rel="noopener">查看来源 ↗</a>` : "<span></span>";
-      return `<div class="ncard">${tag}<h3>${it.title}</h3><p>${it.summary}</p><div class="nmeta">${src}${link}</div></div>`;
+      const src = it.source ? `<span class="nsrc">${it.source}</span>` : "";
+      const link = it.url ? `<a href="${it.url}" target="_blank" rel="noopener">查看来源<span class="arr">↗</span></a>` : "";
+      const meta = (src || link) ? `<div class="nmeta">${src}${link}</div>` : "";
+      return `<article class="nitem">${tag}
+        <h4 class="ntitle">${it.title}</h4>
+        <p class="nsum">${it.summary}</p>
+        ${meta}
+      </article>`;
     }).join("");
-    html += '</div>';
+    html += `</div></section>`;
   });
   return html;
 }
@@ -111,8 +124,8 @@ function renderAll(data, stocksSeries, fundsSeries) {
   const watch = data.watchlist || {};
   const grid = document.getElementById("watchGrid");
   grid.innerHTML =
-    renderWatch(watch.stocks || [], stocksSeries, "#2f6bff") +
-    renderWatch(watch.funds || [], fundsSeries, "#9a5bff");
+    renderWatch(watch.stocks || [], stocksSeries, "#8a6b3b") +
+    renderWatch(watch.funds || [], fundsSeries, "#23433a");
   document.getElementById("news").innerHTML = renderNews(data.sections);
 }
 
@@ -187,7 +200,7 @@ async function setDate(dateStr) {
       }
       status.textContent = "该日期暂无内容";
       document.getElementById("news").innerHTML =
-        '<p style="color:#6b7785">所选日期（' + dateStr + '）暂无简报。本网站自 2026-08-19 起每日自动生成，请选择该日期之后的日子。</p>';
+        '<p class="empty-state">所选日期（' + dateStr + '）暂无简报。本站自 2026-08-19 起每日自动生成，请选择该日期之后的日子。</p>';
       renderEditionTabs(dateStr);
       return;
     }
@@ -263,6 +276,6 @@ async function setDate(dateStr) {
     renderEditionTabs(latestDate);
   } catch (e) {
     document.getElementById("news").innerHTML =
-      '<p style="color:#e23b3b">加载失败：' + e.message + '。</p>';
+      '<p class="empty-state">加载失败：' + e.message + '。</p>';
   }
 })();

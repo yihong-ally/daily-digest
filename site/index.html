@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="每日前沿简报：科技、AI、财经、宏观、教育、互联网、生活的每日精选，早晚两刊。" />
+  <meta name="theme-color" content="#fbfaf7" />
   <title>每日前沿简报</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/style.css?v=2" />
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
-      <div class="brand">
-        <span class="logo">◆</span>
-        <div>
-          <h1 id="siteName">每日前沿简报</h1>
-          <p class="sub">科技 · AI · 财经 · 教育 · 互联网 · 早报 09:30 前 / 晚报 22:00 前</p>
-        </div>
+      <div class="masthead-top">
+        <span class="kd"><span class="dot"></span>每日两刊 · 编辑部自动生成</span>
+        <span>EST. 2026 · DAILY FRONTIER BRIEF</span>
       </div>
-      <div class="meta">
-        <span class="badge">早报 09:30 前 · 晚报 22:00 前</span>
+
+      <div class="brand">
+        <h1 id="siteName">每日前沿简报</h1>
+        <p class="sub">科技 · AI · 财经 · 宏观 · 教育 · 互联网 · 生活</p>
+      </div>
+
+      <div class="masthead-rule"></div>
+
+      <div class="masthead-meta">
+        <span class="chip">早报 09:30 前 · 晚报 22:00 前</span>
         <span id="dateLabel" class="date"></span>
       </div>
     </div>
@@ -25,16 +32,20 @@
 
   <main class="wrap">
     <div class="toolbar">
-      <label for="dateInput">查看日期</label>
+      <label for="dateInput">日期</label>
       <input type="date" id="dateInput" list="archiveList" />
       <datalist id="archiveList"></datalist>
-      <button id="latestBtn" type="button">最新</button>
+      <button id="latestBtn" type="button">最新一期</button>
       <span id="dateStatus" class="date-status"></span>
       <div id="editionTabs" class="edition-tabs" style="display:none"></div>
     </div>
 
     <section class="watch" id="watch">
-      <h2 class="section-title">长期关注 <small>基金 · 股市 · 随时间看趋势</small></h2>
+      <div class="sec-head">
+        <span class="sec-no">◆</span>
+        <h2>长期关注</h2>
+        <small>基金 · 股市 · 随时间看趋势</small>
+      </div>
       <div class="watch-grid" id="watchGrid"></div>
     </section>
 
@@ -42,12 +53,15 @@
   </main>
 
   <footer class="site-footer">
-    <div class="wrap">
-      <p class="footer-tagline">逸鸿领阅，以前沿新闻为窗口，紧跟全球动态，读懂时代浪潮，看见世界日新月异的变化。</p>
-      <p class="footer-note">数据来自公开新闻与市场行情，仅供学习参考，不构成投资建议。</p>
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-tagline">逸鸿领阅，以前沿新闻为窗口，紧跟全球动态，读懂时代浪潮，看见世界日新月异的变化。</p>
+        <p class="footer-note">数据来自公开新闻与市场行情，仅供学习参考，不构成投资建议。</p>
+      </div>
+      <div class="footer-mark">DAILY FRONTIER BRIEF<br />AUTO-EDITED · NO.∞</div>
     </div>
   </footer>
 
-  <script src="assets/js/app.js"></script>
+  <script src="assets/js/app.js?v=2"></script>
 </body>
 </html>
