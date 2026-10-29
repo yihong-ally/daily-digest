@@ -6,7 +6,7 @@
   <meta name="description" content="每日前沿简报：科技、AI、财经、宏观、教育、互联网、生活的每日精选，早晚两刊。" />
   <meta name="theme-color" content="#fbfaf7" />
   <title>每日前沿简报</title>
-  <link rel="stylesheet" href="assets/css/style.css?v=2" />
+  <link rel="stylesheet" href="assets/css/style.css?v=3" />
 </head>
 <body>
   <header class="site-header">
@@ -31,13 +31,16 @@
   </header>
 
   <main class="wrap">
-    <div class="toolbar">
-      <label for="dateInput">日期</label>
-      <input type="date" id="dateInput" list="archiveList" />
-      <datalist id="archiveList"></datalist>
-      <button id="latestBtn" type="button">最新一期</button>
-      <span id="dateStatus" class="date-status"></span>
-      <div id="editionTabs" class="edition-tabs" style="display:none"></div>
+    <div class="sticky-top">
+      <div class="toolbar">
+        <label for="dateInput">日期</label>
+        <input type="date" id="dateInput" list="archiveList" />
+        <datalist id="archiveList"></datalist>
+        <button id="latestBtn" type="button">最新一期</button>
+        <span id="dateStatus" class="date-status"></span>
+        <div id="editionTabs" class="edition-tabs" style="display:none"></div>
+      </div>
+      <nav class="secnav" id="secNav"></nav>
     </div>
 
     <section class="watch" id="watch">
@@ -62,6 +65,6 @@
     </div>
   </footer>
 
-  <script src="assets/js/app.js?v=2"></script>
+  <script src="assets/js/app.js?v=3"></script>
 </body>
 </html>

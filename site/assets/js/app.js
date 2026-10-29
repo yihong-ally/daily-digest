@@ -10,9 +10,21 @@ const COL_TITLES = {
   life: "生活 · 消费"
 };
 
+const SHORT_LABELS = {
+  headlines: "要闻",
+  ai: "AI",
+  tech: "科技",
+  finance: "财经",
+  economy: "宏观",
+  education: "教育",
+  internet: "互联网",
+  life: "生活"
+};
+
+let NAV = [];
 let archiveDates = [];
 let currentEditions = [];   // 当前日期的版次列表 [{dateKey, slot, label}]
-let currentSlot = null;     // 当前正在看的版次 "08" or "18"
+let currentSlot = null;     // 当前正在看的版次 "08" or "21"
 
 async function loadJSON(path) {
   const r = await fetch(path, { cache: "no-store" });
@@ -84,24 +96,27 @@ function renderWatch(group, seriesAll, color) {
 function renderNews(sections) {
   let html = "";
   let idx = 0;
+  NAV = [];
   SECTION_KEYS.forEach(key => {
     const sec = sections[key];
     if (!sec || !Array.isArray(sec.items) || !sec.items.length) return;
     idx += 1;
+    const sid = "sec-" + key;
     const label = sec.label || COL_TITLES[key];
     const no = String(idx).padStart(2, "0");
-    html += `<section class="sec">
+    NAV.push({ id: sid, label: SHORT_LABELS[key] || label });
+    html += `<section class="sec" id="${sid}">
       <div class="sec-head">
         <span class="sec-no">${no}</span>
         <h3 class="col-title">${label}</h3>
         <span class="sec-count">${sec.items.length} 条</span>
       </div>
-      <div class="news-list">`;
+      <div class="news-grid">`;
     html += sec.items.map(it => {
       const tag = it.tag ? `<span class="ntag">${it.tag}</span>` : "";
-      const src = it.source ? `<span class="nsrc">${it.source}</span>` : "";
-      const link = it.url ? `<a href="${it.url}" target="_blank" rel="noopener">查看来源<span class="arr">↗</span></a>` : "";
-      const meta = (src || link) ? `<div class="nmeta">${src}${link}</div>` : "";
+      const src = it.source ? `<span class="nsrc">${it.source}</span>` : "<span></span>";
+      const link = it.url ? `<a href="${it.url}" target="_blank" rel="noopener">来源<span class="arr">↗</span></a>` : "";
+      const meta = (it.source || it.url) ? `<div class="nmeta">${src}${link}</div>` : "";
       return `<article class="nitem">${tag}
         <h4 class="ntitle">${it.title}</h4>
         <p class="nsum">${it.summary}</p>
@@ -111,6 +126,47 @@ function renderNews(sections) {
     html += `</div></section>`;
   });
   return html;
+}
+
+// 板块快捷跳转条：点击平滑滚动 + 滚动时高亮当前板块
+function renderSecNav() {
+  const el = document.getElementById("secNav");
+  if (!el) return;
+  if (!NAV.length) {
+    el.innerHTML = "";
+    el.style.display = "none";
+    return;
+  }
+  el.style.display = "flex";
+  el.innerHTML = NAV.map((n, i) =>
+    `<a href="#${n.id}" data-target="${n.id}"${i === 0 ? ' class="active"' : ""}>${n.label}</a>`
+  ).join("");
+
+  el.querySelectorAll("a").forEach(a => {
+    a.addEventListener("click", e => {
+      e.preventDefault();
+      const t = document.getElementById(a.dataset.target);
+      if (t) t.scrollIntoView({ behavior: "smooth", block: "start" });
+      el.querySelectorAll("a").forEach(x => x.classList.remove("active"));
+      a.classList.add("active");
+    });
+  });
+
+  if (window.__secObs) window.__secObs.disconnect();
+  if (!("IntersectionObserver" in window)) return;
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(en => {
+      if (!en.isIntersecting) return;
+      el.querySelectorAll("a").forEach(x =>
+        x.classList.toggle("active", x.dataset.target === en.target.id)
+      );
+    });
+  }, { rootMargin: "-130px 0px -62% 0px", threshold: 0 });
+  NAV.forEach(n => {
+    const t = document.getElementById(n.id);
+    if (t) obs.observe(t);
+  });
+  window.__secObs = obs;
 }
 
 function renderAll(data, stocksSeries, fundsSeries) {
@@ -127,6 +183,7 @@ function renderAll(data, stocksSeries, fundsSeries) {
     renderWatch(watch.stocks || [], stocksSeries, "#8a6b3b") +
     renderWatch(watch.funds || [], fundsSeries, "#23433a");
   document.getElementById("news").innerHTML = renderNews(data.sections);
+  renderSecNav();
 }
 
 // 渲染版次切换按钮
@@ -199,6 +256,8 @@ async function setDate(dateStr) {
         // 完全没数据
       }
       status.textContent = "该日期暂无内容";
+      NAV = [];
+      renderSecNav();
       document.getElementById("news").innerHTML =
         '<p class="empty-state">所选日期（' + dateStr + '）暂无简报。本站自 2026-08-19 起每日自动生成，请选择该日期之后的日子。</p>';
       renderEditionTabs(dateStr);
