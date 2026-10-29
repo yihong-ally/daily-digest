@@ -1,0 +1,375 @@
+{
+  "date": "2026-10-29",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-10-29T11:09:03+08:00",
+  "coverage": {
+    "from": "2026-10-28T21:30:00+08:00",
+    "to": "2026-10-29T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "美联储维持利率不变，利率区间保持3.75%至4%",
+          "summary": "美联储10月28日结束议息会议，宣布将联邦基金利率目标区间维持在3.75%至4%不变，符合市场预期。看点：这是连续第二次按兵不动，后续降息时点将直接影响房贷、理财和全球资金流向。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722495.shtml",
+          "tag": "美联储"
+        },
+        {
+          "title": "特朗普暂缓对机器人及工业机械加征关税，要求先谈判",
+          "summary": "特朗普表示将暂缓对机器人、工业机械及相关零部件进口加征关税，并指示官员与贸易伙伴就这些商品进口展开谈判。看点：关税暂缓给全球制造业供应链留出缓冲期，相关进口成本和终端价格短期不会跳涨。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2881792.shtml",
+          "tag": "关税"
+        },
+        {
+          "title": "Alphabet财报不及预期，美股期货应声走低",
+          "summary": "谷歌母公司Alphabet财报令人失望，美国股指期货在亚洲早盘交易中走低，市场重新担忧企业在AI领域的巨额投入。看点：AI资本开支能否转化为利润正被市场用脚投票，科技股波动可能传导至全球。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwrf8960051.shtml",
+          "tag": "财报爆雷"
+        },
+        {
+          "title": "泄密网站公布超4万名美国国土安全部员工数据",
+          "summary": "泄密网站“分布式秘密拒绝”周三表示，已公布超过4万名美国国土安全部员工的数据。看点：政府机构大规模数据外泄再添一例，个人信息安全与机构防护能力再受拷问。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwra6125891.shtml",
+          "tag": "数据泄露"
+        },
+        {
+          "title": "三星三季度营业利润增近九倍，创历史新高",
+          "summary": "三星电子周四表示，受AI芯片需求强劲推动，第三季度营业利润增长近九倍，创下历史新高。看点：AI芯片热潮仍在给存储巨头输血，但投资者对AI支出可持续性的疑虑并未消散。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwra6144312.shtml",
+          "tag": "芯片热潮"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "谷歌发布Gemini 4 Carbon，号称重回世界第一",
+          "summary": "谷歌正式发布Gemini 4 Carbon模型，官方称其在多项能力上超越竞品Opus 5.5，重回榜首位置。看点：头部模型竞争再度白热化，普通用户将更快用上更强推理与多模态能力。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1686587?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "新模型"
+        },
+        {
+          "title": "英伟达发布免费开源语音转写模型，支持40种语言",
+          "summary": "英伟达发布免费语音转文字模型，可转写多达40种语言，但仅支持录音文件、不支持实时音频。看点：会议记录和病历转写工具将迎来免费强力选项，实时场景仍留给ElevenLabs等对手。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/",
+          "tag": "语音模型"
+        },
+        {
+          "title": "Anthropic上线新工具，让企业看清AI花费买到了什么",
+          "summary": "Anthropic推出新工具，向企业展示用户在其模型上的花费具体换来了哪些产出，此举发生在公司计划IPO之前。看点：AI支出透明度成为企业采购关键，按效果付费的趋势更明显。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/",
+          "tag": "AI账单"
+        },
+        {
+          "title": "Chrome的AI自动填充可翻Gmail帮你填表",
+          "summary": "Chrome的AI自动填充功能更新，经用户授权后可从Gmail中提取航班确认、物流单号、订单详情等信息来填写表单。看点：浏览器正变成个人助理，便利与隐私边界需要用户自己权衡。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/",
+          "tag": "浏览器AI"
+        },
+        {
+          "title": "DeepSeek V5模型代码现身，新版本呼之欲出",
+          "summary": "极客公园早报提到DeepSeek V5模型的代码已经现身，暗示新版本即将发布。看点：国产大模型迭代节奏不减，V5若落地将直接影响开发者选型和API价格。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/373085",
+          "tag": "国产模型"
+        },
+        {
+          "title": "AI高管炫耀用AI陪家人，被批脱离普通人太远",
+          "summary": "有文章批评科技公司高管把用AI与家人互动当作炫耀点，显得与普通用户真实需求脱节。看点：AI产品若只服务精英视角，可能错过大众市场的真正痛点。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/28/ai-execs-may-be-too-out-of-touch-to-build-for-the-general-public/",
+          "tag": "行业观察"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "苹果发布首款触屏MacBook Pro，22999元起",
+          "summary": "苹果发布全新MacBook Pro，首次为Mac引入屏幕触控和灵动岛，采用双层串联OLED的PROLED XDR显示屏，搭载M5 Pro或M5 Max芯片，国行14英寸22999元起、顶配超11万元。看点：乔布斯当年断言“触屏笔记本行不通”，16年后苹果亲自推翻，笔记本交互方式要变天。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/373084",
+          "tag": "触屏Mac"
+        },
+        {
+          "title": "中国一汽透明陶瓷复合玻璃突破，减薄50%降重40%",
+          "summary": "中国一汽联合国内科研院所完成国际首创高安全超轻薄“车用透明陶瓷复合玻璃”首个大尺寸曲面样件试制，实现减薄50%、降重40%。看点：车身玻璃更轻更薄，对电动车续航和安全性都是实打实的利好。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/277.htm",
+          "tag": "材料突破"
+        },
+        {
+          "title": "天文学家在柯伊伯带发现巨大矮行星候选天体",
+          "summary": "天文学家利用Vera C. Rubin天文台在柯伊伯带发现编号2026 ED138的矮行星候选天体，直径约600至1500公里，绕太阳一周约需281年。看点：太阳系边缘地图再添新成员，可能改写矮行星家族名单。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85735",
+          "tag": "天文发现"
+        },
+        {
+          "title": "盛美上海首台量产面板级电镀设备出机海外亚洲市场",
+          "summary": "盛美上海宣布首台量产型310mm×310mm面板级水平电镀设备UltraECP ap-p出机至中国大陆以外的亚洲市场。看点：先进封装关键设备国产化再进一步，面板级工艺是芯片封装降本的重要方向。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/295.htm",
+          "tag": "半导体设备"
+        },
+        {
+          "title": "美国司法部就英伟达129.3亿美元收购Hugging Face展开问询",
+          "summary": "知情人士称，美国司法部已就英伟达以129.3亿美元收购开源平台Hugging Face如何影响AI竞争展开问询，反垄断调查同步进行。看点：AI芯片巨头向上游开源生态扩张，监管是否放行将影响整个AI开发者的工具选择。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/272.htm",
+          "tag": "反垄断"
+        },
+        {
+          "title": "奇瑞年底海外生产比例将超50%，2030年达70%",
+          "summary": "奇瑞常务副总裁张贵兵透露，预计到今年年底奇瑞出口汽车中海外生产比例将超过50%，2027年提至60%，2030年达70%。看点：中国车企从“整车出口”转向“当地制造”，出海模式正在升级。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/291.htm",
+          "tag": "车企出海"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "布伦特原油跌向114美元，交易员评估伊朗外交进展",
+          "summary": "油价下跌，布伦特原油跌向每桶114美元，WTI原油期货在每桶102美元附近，交易员评估中东为避免美国可能重启对伊朗军事打击而做出的新外交努力。看点：地缘局势一有缓和迹象油价就回落，国内成品油调价方向也可能跟着变。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwrf8998921.shtml",
+          "tag": "油价下跌"
+        },
+        {
+          "title": "巴西国油产量创纪录，炼厂接近满负荷运转",
+          "summary": "巴西国家石油公司第三季度产量提升至创纪录水平，炼油厂接近满负荷运转，帮助该国抵御伊朗战争对全球能源市场的冲击。看点：非中东供给放量，是当前油价没有失控的重要缓冲。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwra6089062.shtml",
+          "tag": "原油供给"
+        },
+        {
+          "title": "CBO预测未来十年美债利息支出超20万亿美元",
+          "summary": "美国国会预算办公室发布2026至2036年联邦收支预测，预计未来十年美债利息支出将超过20万亿美元，美国目前背负约40万亿美元债务。看点：利息支出膨胀挤压财政空间，美债收益率和全球资金成本都受牵动。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2886213.shtml",
+          "tag": "美债"
+        },
+        {
+          "title": "索尼生命保险客户系统被黑，个人信息遭泄露",
+          "summary": "索尼生命保险称客户网络服务系统遭未经授权访问，导致客户个人信息外泄。看点：保险机构掌握大量敏感数据，此类事件再次敲响金融业网络安全警钟。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2876307.shtml",
+          "tag": "数据安全"
+        },
+        {
+          "title": "瑞萨电子预计2026财年营收增长超25%",
+          "summary": "瑞萨电子发布2026财年业绩预告，预计营收1.66万亿至1.67万亿日元，同比增长25.8%至27.0%。看点：半导体需求回暖信号，可观察汽车与工业芯片市场的复苏节奏。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/284.htm",
+          "tag": "公司业绩"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "韩国10月商业信心指数升至四年多最高",
+          "summary": "韩国央行调查显示，受制造业信心坚定和非制造业前景改善推动，韩国10月商业信心指数升至四年多高位。看点：出口导向型经济体信心回暖，是全球制造业需求的一个先行信号。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwre2869946.shtml",
+          "tag": "韩国经济"
+        },
+        {
+          "title": "贝森特称AI融资仍在推进，淡化担忧迹象",
+          "summary": "美国财政部长贝森特表示，正密切关注AI基础设施建设融资状况，并淡化近期出现的担忧迹象，称强劲增长下美联储加息未必有错。看点：官方对AI投资泡沫论定调，影响后续基建融资和利率路径预期。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-29/doc-iniwvwrf8960606.shtml",
+          "tag": "AI融资"
+        },
+        {
+          "title": "前三季度中国海洋生产总值8.5万亿元，同比增4.9%",
+          "summary": "自然资源部数据显示，前三季度中国海洋生产总值达8.5万亿元，同比增长4.9%，海洋经济结构持续优化。看点：海洋经济成为稳增长的一支力量，涉海产业和就业机会值得关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722469.shtml",
+          "tag": "海洋经济"
+        },
+        {
+          "title": "川渝16家AI企业路演，释放超10亿元融资需求",
+          "summary": "第六届数字经济投融资机构川渝行在成都举行，400余人参会，16家川渝AI企业现场路演并发布融资需求。看点：境内外资本关注川渝人工智能赛道，区域产业与资金对接正在加速。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722468.shtml",
+          "tag": "区域经济"
+        },
+        {
+          "title": "世界海拔最高风电场升压站建成，华电项目全容量投产",
+          "summary": "华电措美哲古一期80兆瓦风电项目全部机组建成投产，配套220千伏升压站为世界海拔最高。看点：超高海拔风电工程建设取得突破，为高海拔地区清洁能源开发提供样本。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722462.shtml",
+          "tag": "能源建设"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "全国大中小学生同上一堂思政大课，主题为长征精神",
+          "summary": "教育部组织全国大中小学生同上一堂思政大课，主题为做伟大长征精神的传承者弘扬者践行者。看点：全国同上一堂课的形式覆盖各学段，思政教育一体化推进的信号明确。",
+          "source": "教育部",
+          "url": "http://www.moe.gov.cn/jyb_xwfb/s5147/202610/t20261029_1456335.html",
+          "tag": "思政课"
+        },
+        {
+          "title": "女子按ChatGPT减药建议停药后猝死，父母起诉OpenAI",
+          "summary": "西雅图31岁华人女子万博文依照ChatGPT提供的逐日减药计划自行停用抗癫痫药后死亡，其父母向旧金山高等法院提起不当致死诉讼，指控ChatGPT无照行医。看点：AI医疗建议的边界与责任归属首次被推上法庭，也提醒普通人别把聊天机器人当医生。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85737",
+          "tag": "AI医疗风险"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "腾讯WorkBuddy上线手机远程控制电脑功能",
+          "summary": "腾讯WorkBuddy手机远程控制电脑功能上线，用户在手机上打开App一键连上电脑，即可实时看到并操作电脑桌面。看点：手机接管电脑办公从概念走向日常，远程协作和应急处理更方便。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/280.htm",
+          "tag": "远程办公"
+        },
+        {
+          "title": "腾讯网盘开启内测申请，可连接多个AI应用",
+          "summary": "腾讯网盘开启内测申请，官网已开放入口，支持连接多个AI应用，共享存储并聚合上下文。看点：网盘从存文件升级为AI数据底座，个人云存储的竞争维度正在改变。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/283.htm",
+          "tag": "AI网盘"
+        },
+        {
+          "title": "谷歌将AI搜索广告扩展至全球，核心广告增速放缓",
+          "summary": "谷歌宣布将AI搜索广告扩展至全球，此举伴随Alphabet第三季度财报发布，当季营收同比增长25%至1276亿美元。看点：搜索广告进入AI改写期，广告主投放方式和用户看到的搜索结果都会变。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/",
+          "tag": "AI广告"
+        },
+        {
+          "title": "亚马逊设备与服务部门裁员约250人",
+          "summary": "在密集发布新款Kindle、Alexa智能家居等新品后，亚马逊周三在设备与服务业务部门裁减约250个岗位，主要集中在软件开发。看点：硬件新品照发、人手照减，大厂降本增效仍在继续。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/286.htm",
+          "tag": "大厂裁员"
+        },
+        {
+          "title": "华为Pura X View上市50天出货量突破100万台",
+          "summary": "数码博主爆料称华为阔直板手机Pura X View上市50天出货量已超100万台，近三周周销量最高近10万。看点：国产旗舰新形态能否持续走量，值得关注后续市场表现。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/019/293.htm",
+          "tag": "手机市场"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "消费品以旧换新带动销售超2万亿元，惠及2.5亿人次",
+          "summary": "商务部10月28日召开全国消费品以旧换新推进会，数据显示2026年以来以旧换新带动相关品类销售额超2万亿元、惠及超2.5亿人次，河南、山西、天津等多地将智能门锁、净水机、运动相机、助听器等纳入补贴，部分产品最高补2000元。看点：家里想换家电数码的可以对照本地规则领补贴，最高能省2000元。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-29/10722496.shtml",
+          "tag": "以旧换新"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3655.2,
+        "unit": "点",
+        "changePct": -0.71,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2546.99,
+        "unit": "点",
+        "changePct": -3.33,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
