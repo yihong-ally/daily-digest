@@ -35,13 +35,14 @@ on:
   workflow_dispatch:        # 支持手动触发
     inputs:
       mode:
-        description: "运行模式：normal=正常（延迟感知+缺口自愈）；topup=强制补齐昨天+今天"
+        description: "运行模式：normal=正常；topup=强制补齐昨天+今天；pushtest=只测微信推送（不生成、不调模型）"
         required: false
         default: normal
         type: choice
         options:
           - normal
           - topup
+          - pushtest
       force:
         description: "是否强制重做（yes=忽略“已生成则跳过”，重写当期；常规使用选 no）"
         required: false
@@ -83,7 +84,20 @@ jobs:
         with:
           node-version: 20
 
+      - name: Push test (仅 mode=pushtest)
+        if: github.event.inputs.mode == 'pushtest'
+        env:
+          PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+        run: |
+          if [ -z "$PUSHPLUS_TOKEN" ]; then echo "::error::PUSHPLUS_TOKEN 未配置"; exit 1; fi
+          code=$(curl -s -o /tmp/r.txt -w "%{http_code}" -X POST https://www.pushplus.plus/send \
+            -H 'Content-Type: application/json' \
+            -d "{\"token\":\"$PUSHPLUS_TOKEN\",\"title\":\"每日前沿简报 · 推送测试\",\"content\":\"收到这条说明推送链路已打通。\n\n以后每天早报、晚报生成完会自动推到你微信。\n\n如果没有内容可读，点这里看网站：https://yihong-ally.github.io/daily-digest/\",\"template\":\"txt\"}")
+          echo "HTTP $code"; cat /tmp/r.txt; echo
+          if grep -q '"code":200' /tmp/r.txt; then echo "::notice::推送成功"; else echo "::error::推送失败，见上方返回内容"; exit 1; fi
+
       - name: Run generator
+        if: github.event.inputs.mode != 'pushtest'
         env:
           LLM_BASE: "https://api.deepseek.com/v1"
           LLM_KEY: ${{ secrets.LLM_KEY }}
