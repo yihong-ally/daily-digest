@@ -9,7 +9,8 @@
  *   2) Edit code → 全选删除 → 粘贴本文件内容 → Deploy
  *   3) Settings → Variables and Secrets → Add → 类型 Secret
  *        Name: GITHUB_TOKEN   Value: ghp_ 开头的 GitHub token（需 Actions: Read and write）
- *   4) Settings → Triggers → Cron Triggers → Add Cron Trigger → 填 * * * * *
+ *   4) Settings → Triggers → Cron Triggers → Add Cron Trigger → 填 * * * * *（必须「每分钟」）
+ *      注意：若选成「Every 30 minutes」，只有 :00 / :30 会被唤醒，09:20、21:45 永远命不中。
  *   5) 浏览器打开 https://<worker名>.<你的子域>.workers.dev 可手动触发一次（返回 204 即成功）
  */
 
@@ -27,6 +28,21 @@ function beijingHHMM(date) {
   const hh = String(t.getUTCHours()).padStart(2, '0');
   const mm = String(t.getUTCMinutes()).padStart(2, '0');
   return hh + ':' + mm;
+}
+
+function toMin(hhmm) {
+  const p = hhmm.split(':');
+  return Number(p[0]) * 60 + Number(p[1]);
+}
+
+// 目标时刻之后 0~2 分钟内都算命中：cron 抖动几十秒、晚一两分钟也不会漏。
+// 重复触发不要紧——workflow 里「该期已存在」会秒退。
+function hit(nowHHMM) {
+  const n = toMin(nowHHMM);
+  return SCHEDULE.some(function (t) {
+    const d = n - toMin(t);
+    return d >= 0 && d <= 2;
+  });
 }
 
 async function dispatch(env, note) {
@@ -50,7 +66,10 @@ export default {
   // Cron 每分钟调用一次，只在目标分钟真正触发（避免占用多个 cron 配额）
   async scheduled(event, env, ctx) {
     const now = beijingHHMM(new Date());
-    if (!SCHEDULE.includes(now)) return;
+    // 心跳日志：每次被 cron 唤醒都留一行。去 Observability → 日志 搜 tick，
+    // 能看到「定时到底有没有跑」「实际落在第几分钟」，是排查漏刊最直接的一条线索。
+    console.log('tick ' + now + ' cron=' + (event && event.cron ? event.cron : '-'));
+    if (!hit(now)) return;
     ctx.waitUntil(dispatch(env, 'cron ' + now));
   },
 
