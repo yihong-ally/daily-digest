@@ -1,0 +1,382 @@
+{
+  "date": "2026-10-31",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-10-31T09:00:59+08:00",
+  "coverage": {
+    "from": "2026-10-30T21:30:00+08:00",
+    "to": "2026-10-31T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "新一股冷空气影响我国大部，西藏青海有强雨雪",
+          "summary": "中央气象台预计10月31日西藏、青海有明显雨雪天气，今明两天新一股冷空气影响我国大部，带来大风降温，黄淮、江汉、江淮、江南西部等地有中到大雨，渤海、黄海等海域风力大。看点：降温与雨雪叠加，出行、能源供应和农牧业都需提前防范。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-31/10723758.shtml",
+          "tag": "天气预警"
+        },
+        {
+          "title": "广西以旧换新政策今年已带动消费超400亿元",
+          "summary": "广西商务厅介绍，截至10月29日，2026年广西消费品以旧换新累计惠及消费者近700万人次，带动销售额超400亿元。看点：以旧换新对消费的拉动效应持续显现，是观察地方促消费政策成效的一个样本。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-31/10723729.shtml",
+          "tag": "以旧换新"
+        },
+        {
+          "title": "防城港海警查获走私香烟2.9万余条，案值约600万元",
+          "summary": "广西防城港海警局30日通报，近期在辖区海域查获一起涉嫌走私香烟案，查扣搭载4台大马力发动机的摩托艇1艘、香烟2.9万余条，案值约600万元。看点：海上走私手法升级，边境海域监管压力不减。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/10-31/10723731.shtml",
+          "tag": "走私案"
+        },
+        {
+          "title": "广西获2029年第十五届世界水牛大会举办权",
+          "summary": "北京时间10月29日在意大利举办的第十四届世界水牛大会上，经国际水牛联合会全体会员投票，广西高票获得2029年第十五届世界水牛大会举办权。看点：国际行业大会落地，对地方水牛产业和农业对外交流是加分项。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-31/10723744.shtml",
+          "tag": "国际会议"
+        },
+        {
+          "title": "山西布局“十五五”数字政府建设，让数字红利普惠可及",
+          "summary": "山西省委宣传部、省政府新闻办30日举行“十五五”系列主题新闻发布会，介绍该省将紧扣营商环境优化、提升政府履职效能、破解群众办事堵点，加快推进数字政府建设。看点：数字政府建设进入地方“十五五”规划，办事体验有望进一步简化。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723745.shtml",
+          "tag": "数字政府"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "苹果官宣国行Apple智能11月开测，Siri接入阿里千问",
+          "summary": "10月31日苹果中国官网宣布，Apple智能首批功能将于11月4日随iOS开发者Beta版开放测试，12月随iOS 27.3正式面向中国用户推出，阿里巴巴千问被集成至Siri、写作工具和视觉智能。看点：国行iPhone用户终于能用上系统级AI，Siri背后换成国产大模型，体验和隐私处理方式值得关注。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/373238",
+          "tag": "国行AI"
+        },
+        {
+          "title": "阿里与苹果达成合作，千问接入Siri与写作工具",
+          "summary": "10月31日阿里巴巴宣布与Apple达成合作，中国用户可在Siri、写作工具及视觉智能中直接调用千问的文本与图像理解、内容生成能力，功能11月4日起随iOS开发者Beta版测试，12月正式推出。看点：国产大模型首次以系统级助手身份进入iPhone，阿里在端侧AI入口上抢到关键一席。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/es0ZV9LsDEsG7QLE.html",
+          "tag": "大模型合作"
+        },
+        {
+          "title": "DeepSeek完成第二轮1055亿元融资，估值达6155亿元",
+          "summary": "极客公园早报披露，DeepSeek完成第二轮1055亿元融资，估值达6155亿元。看点：国内大模型公司融资规模再上台阶，资本仍在向头部模型团队集中。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/373220",
+          "tag": "巨额融资"
+        },
+        {
+          "title": "Zest推出AI订餐智能体，可发短信找餐厅并订位",
+          "summary": "TechCrunch报道，Zest上线新的AI智能体，能综合多人口味、发起餐厅投票并通过短信完成订位。看点：AI Agent从聊天走向替人办事，订餐这类高频小事是最先被改造的场景。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+          "tag": "AI智能体"
+        },
+        {
+          "title": "谷歌首颗数据中心卫星上线，太空TPU跑Gemma 4模型",
+          "summary": "TechCrunch报道，谷歌首颗数据中心卫星已上线运行，太空中首块TPU正在运行Google DeepMind的Gemma 4模型并写诗。看点：算力基础设施开始向太空延伸，是AI算力布局的一次标志性尝试。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/30/googles-first-data-center-satellite-is-online-and-writing-poetry/",
+          "tag": "太空算力"
+        },
+        {
+          "title": "Claude Code官方VS Code扩展被植入后门约11小时",
+          "summary": "安全研究人员在Cursor Marketplace的Claude Code for VS Code官方扩展中发现后门，受影响版本Anthropic.claude-code 2.1.313上线约11小时，估计约5000名用户受影响，该扩展会尝试植入持久SSH后门并收集主机与用户信息。看点：AI编程工具供应链攻击风险浮出水面，开发者需尽快核查插件版本。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85756",
+          "tag": "安全事件"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "英伟达拟为Nscale的Anthropic数据中心提供债务担保",
+          "summary": "知情人士透露，英伟达正洽谈为新兴AI云服务商Nscale提供数十亿美元债务信贷担保，用于建设一座460兆瓦、供Anthropic使用的数据中心。看点：芯片巨头亲自为下游算力项目兜底，AI基础设施的融资模式正在变形。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepa5112648.shtml",
+          "tag": "算力基建"
+        },
+        {
+          "title": "亚马逊设立800亿美元供应商融资安排，为AI投资供血",
+          "summary": "亚马逊设立800亿美元供应商相关融资安排，用于在斥资数千亿美元建设AI基础设施之际保持财务灵活性。看点：云巨头用供应链金融撬动AI基建，资金链安排成为竞争新维度。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepa5101078.shtml",
+          "tag": "AI投资"
+        },
+        {
+          "title": "苹果市值反超英伟达，重夺全球第一",
+          "summary": "周五苹果股价下跌1.2%、市值降至5.03万亿美元，英伟达下跌4.2%、收盘市值4.93万亿美元，苹果自7月底以来首次重新成为全球市值最高公司。看点：AI支出担忧下资金转向“安全感”资产，科技股座次重排。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepe1886719.shtml",
+          "tag": "市值易主"
+        },
+        {
+          "title": "英特尔股价暴跌29%，市值蒸发逾1370亿美元",
+          "summary": "英特尔周五股价暴跌29%，创公司最大单日跌幅，市值蒸发逾1370亿美元，公司预计第四季度营收150亿至160亿美元，低于分析师平均预期的170.7亿美元，并预计今年无法实现正向现金流。看点：PC市场低迷抵消AI与制造投入，老牌芯片巨头的转型阵痛集中爆发。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85757",
+          "tag": "芯片股灾"
+        },
+        {
+          "title": "特斯拉推出5年零息方案，Model 3/Y首付3.99万元起",
+          "summary": "爱范儿早报显示，特斯拉推出5年零息购车方案，Model 3与Model Y首付3.99万元起。看点：零息金融方案实质是变相降价，年底车市价格战仍在延续。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1686979?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "汽车金融"
+        },
+        {
+          "title": "OpenAI融资目标砍掉100亿美元，估值仍达1.25万亿",
+          "summary": "OpenAI把最新一轮融资目标下调了100亿美元，正在加紧敲定这笔融资。看点：公开市场AI板块正被抛售，加上头号对手Anthropic即将上市，融资进程承压，这轮估值能否撑住值得关注。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixakuy5042231.shtml",
+          "tag": "AI融资"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "纳指100重挫3.5%，创2025年3月以来最差单月表现",
+          "summary": "周五科技股连续第二日重挫，纳斯达克100指数下跌3.5%，盘中一度跌4.45%，创2025年3月以来最差单月表现，AI支出担忧与大型科技公司核心业务疲软双双施压。看点：AI叙事遭遇估值拷问，隔夜美股波动会直接传导到今天的亚太市场。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepa5130478.shtml",
+          "tag": "美股重挫"
+        },
+        {
+          "title": "布伦特原油结算价逼近每桶118美元，中东风险推高油价",
+          "summary": "周五到期的12月布伦特原油期货结算价接近每桶118美元，因市场担忧美国可能恢复对伊朗的打击行动，给中东供应增添新风险；同日铜价跌至一周低点，金价下挫。看点：油价与基本金属走势背离，地缘风险正在重新定价大宗商品。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepe1867839.shtml",
+          "tag": "油价上涨"
+        },
+        {
+          "title": "比特币一个月来首次跌破77000美元，币安黑客事件发酵",
+          "summary": "比特币一个多月来首次跌破77000美元，币安遭遇创纪录黑客攻击引发行业震动，并再次引发对客户资产安全性的质疑。看点：交易所安全事件叠加风险偏好回落，加密市场短期承压明显。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepe1877660.shtml",
+          "tag": "比特币跳水"
+        },
+        {
+          "title": "科技巨头债券违约保护成本创新高，AI融资恐慌升温",
+          "summary": "多家美国科技巨头的债务违约保险成本周五创下新高，英特尔和亚马逊令人失望的季度业绩加剧了市场对AI融资热潮能否获得回报的担忧。看点：信用市场开始给AI狂热定价，这比股价波动更值得警惕。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepi4212361.shtml",
+          "tag": "信用风险"
+        },
+        {
+          "title": "三季度FOF重仓债券ETF增至40只，配置工具更丰富",
+          "summary": "公募基金2026年三季报披露收官，FOF重仓名单里的债券ETF增至40只。看点：FOF对债券ETF的配置持续加码，反映低波动工具在组合中的地位上升，配置思路变化值得留意。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/jjxw/2026-10-31/doc-inixaepe1900438.shtml",
+          "tag": "基金配置"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "日本央行维持利率1.25%不变，12月加息渐近",
+          "summary": "10月30日日本央行货币政策会议以8票赞成、1票反对决定将基准利率维持在1.25%不变，符合市场预期，但通胀风险抬头，市场预期12月加息渐近。看点：日元与日本国债的下一步方向，取决于这次“鹰派按兵不动”之后的表态。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/roll/2026-10-31/doc-inixakuy5011186.shtml",
+          "tag": "日本央行"
+        },
+        {
+          "title": "三位美联储官员支持进一步加息，但主张循序渐进",
+          "summary": "三位美联储官员重申有必要进一步加息，同时主张采取渐进的紧缩方式以尽量减少对金融市场和经济的冲击。看点：加息周期尚未结束的信号，会继续影响全球资产定价。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepa5104387.shtml",
+          "tag": "美联储"
+        },
+        {
+          "title": "圣路易斯联储行长：有必要进一步加息且应尽快行动",
+          "summary": "圣路易斯联储行长穆萨莱姆表示，需要进一步收紧货币政策以使通胀回到美联储目标水平，而且要尽快行动。看点：美联储内部鹰派声音增强，市场对降息的押注可能继续降温。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepa5092597.shtml",
+          "tag": "鹰派表态"
+        },
+        {
+          "title": "美债收益率10月普遍跌超30个基点，避险买盘提振短债",
+          "summary": "周五纽约尾盘10年期美债收益率报4.9289%，10月累计下跌35.60个基点，两年期收益率报4.5876%，10月累跌29.94个基点，大型科技股遭抛售带来的避险买盘支撑美债。看点：股债跷跷板再现，避险资金流向是判断市场情绪的关键指标。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3191858",
+          "tag": "美债走强"
+        },
+        {
+          "title": "标普下调Meta评级展望至负面，AI支出拖累现金流",
+          "summary": "标普将Meta评级展望从稳定下调至负面，理由是资本支出将在多长时间内保持高位以及自由运营现金流将在多长时间内保持负值存在不确定性。看点：评级机构开始对科技巨头的AI烧钱模式亮黄牌。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-10-31/doc-inixaepf7775719.shtml",
+          "tag": "评级下调"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "人类命运共同体国际智库论坛在京举办，12国专家研讨AI治理",
+          "summary": "“全球治理与国际传播：人类命运共同体国际智库论坛（2026）”日前在中国传媒大学举办，来自12个国家的高校、智库和研究机构代表围绕人工智能与全球治理、多边合作与国际传播等议题展开研讨。看点：AI治理成为高校智库的国际议题，教育与研究的交叉属性更明显。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723727.shtml",
+          "tag": "智库论坛"
+        },
+        {
+          "title": "全国漫剧人才进雄安，bilibili千部漫剧落地河北",
+          "summary": "“漫聚雄安·创领OPC”全国漫剧人才进雄安交流对接活动30日举行，创作者、平台、高校与行业协会代表200余人参加，现场启动“bilibili千部漫剧落地河北”计划。看点：内容平台与地方联手做人才对接，为相关专业学生提供新的就业出口。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-30/10723608.shtml",
+          "tag": "人才对接"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "《影之刃零》爆火，美团闪购游戏手柄销量涨108%",
+          "summary": "国产3A游戏《影之刃零》10月29日发售后Steam同时在线峰值达43万人、居全球畅销榜第一，美团闪购本周游戏手柄销量同比增长108%，游戏设备配件销量增长64%。看点：爆款游戏直接带动即时零售硬件销售，平台正分享游戏经济的溢出红利。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/enkwU0KIpvIsMoN3.html",
+          "tag": "游戏带货"
+        },
+        {
+          "title": "DoorDash称AI智能体下单仅“数百单”",
+          "summary": "DoorDash表示目前仅收到来自AI智能体的“数百”笔订单，但对外部智能体厂商合作持开放态度。看点：Agent代下单还处在极早期，平台态度开放但规模远未起量。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/",
+          "tag": "Agent下单"
+        },
+        {
+          "title": "隐私AI助手Ollie宣布一周内关停",
+          "summary": "主打隐私保护的AI助手Ollie创始人表示，产品将在一周内关停，原因是AI助手市场涌入者过多。看点：助手赛道拥挤，缺乏差异化的小团队加速出清。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/10/30/ollie-a-privacy-focused-ai-assistant-is-shutting-down/",
+          "tag": "产品关停"
+        },
+        {
+          "title": "国行iPhone的AI真来了，Siri搭档换成千问",
+          "summary": "苹果国行AI迈出关键一步，千问成为Siri的新搭档。看点：国行iPhone的AI能力落地方式与海外不同，本土大模型接入苹果生态，对用户和行业格局都有影响。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1686969?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "苹果AI"
+        },
+        {
+          "title": "代谢创新药进入中国时间，药企从产品出海转向能力出海",
+          "summary": "中国药企在全球代谢赛道的位置正在重排，竞争重心转向研发、临床、供应链、商业化全链条能力出海。看点：从卖产品到输出能力，是中国创新药国际化路径的一次跃迁。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8187920.html",
+          "tag": "创新药出海"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "11月起一批新规施行，电动自行车CCC认证要求更严",
+          "summary": "11月起一批新规正式施行，涉及社会民生多个领域，其中包括电动自行车“一车一池一充一码”的CCC认证要求更加严格。看点：电动自行车是通勤刚需，认证收紧关系到买车、换电池和上路合规。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/wm/2026-10-31/doc-inixaepf7789962.shtml",
+          "tag": "新规施行"
+        },
+        {
+          "title": "华南首条无目的地海上游试点航线从深圳启航",
+          "summary": "“梦想”号邮轮30日从深圳蛇口国际邮轮母港出发，华南地区首条无目的地海上游试点航线启航，深圳成为继上海、天津之后中国内地第三个落地该试点的港口。看点：短途海上度假多了一个新选择，邮轮消费供给继续扩容。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/10-30/10723675.shtml",
+          "tag": "邮轮出游"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3599.02,
+        "unit": "点",
+        "changePct": -1.44,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2413.63,
+        "unit": "点",
+        "changePct": -4.13,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
