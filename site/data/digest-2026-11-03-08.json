@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-03",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-03T09:01:01+08:00",
+  "coverage": {
+    "from": "2026-11-02T21:30:00+08:00",
+    "to": "2026-11-03T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "美国中期选举今日正式投票，两党争夺国会两院控制权",
+          "summary": "11月3日，美国中期选举迎来正式投票日，共和党和民主党围绕国会两院席位及州级地方席位展开激烈争夺。看点：选举结果将决定未来两年美国立法走向，并直接影响特朗普政府的施政空间。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-03/10725081.shtml",
+          "tag": "中期选举"
+        },
+        {
+          "title": "力箭二号遥二火箭发射成功，千帆极轨21组卫星入轨",
+          "summary": "11月3日8时15分，力箭二号遥二运载火箭在东风商业航天创新试验区发射升空，将千帆极轨21组卫星顺利送入预定轨道。看点：这是力箭二号火箭的第2次飞行，商业航天密集组网能力再获验证。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/11-03/10725111.shtml",
+          "tag": "发射成功"
+        },
+        {
+          "title": "长江中下游等地有中到大雨，4日起冷空气影响东北华北",
+          "summary": "中央气象台预计未来三天长江中下游等地有中到大雨，内蒙古东北部、东北地区多雨雪天气，4日起东北、华北、内蒙古等地有大风降温。看点：雨雪降温叠加将影响交通运输、能源保障和农业生产，相关地区需提前防范。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725105.shtml",
+          "tag": "天气预警"
+        },
+        {
+          "title": "高新企业核心商业秘密和技术人员被“打包”带走，撬走近2亿元生意",
+          "summary": "有高新企业遭遇“塌方式”技术迁移，前员工将核心商业秘密和技术人员整体带走，直接撬走近2亿元生意。看点：技术密集型企业的商业秘密保护漏洞再次暴露，司法如何界定“集体跳槽”与侵权值得关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725101.shtml",
+          "tag": "商业秘密"
+        },
+        {
+          "title": "赵乐际同俄罗斯联邦委员会主席马特维延科举行会谈",
+          "summary": "11月2日，全国人大常委会委员长赵乐际在北京人民大会堂同俄罗斯联邦委员会主席马特维延科举行会谈。看点：中俄立法机构高层交往持续推进，双边合作机制化信号明确。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/11-03/10725092.shtml",
+          "tag": "中俄会谈"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "商汤发布SenseNova 6.8 Flash，免费国产AI接住顶级模型翻车任务",
+          "summary": "商汤推出SenseNova 6.8 Flash模型，量子位报道称其以免费形式接住了此前顶级AI翻车的任务。看点：国产模型在实用场景的补位能力提升，免费策略可能进一步压低AI使用门槛。",
+          "source": "量子位",
+          "url": "https://www.qbitai.com/2026/11/507277.html",
+          "tag": "新模型"
+        },
+        {
+          "title": "OpenAI合并ChatGPT的Chat与Work标签页，Codex共用额度池",
+          "summary": "OpenAI宣布将ChatGPT的Chat和Work两个标签页合并，ChatGPT与Codex此后从同一额度池中调用。看点：产品线整合意味着OpenAI正把编程与通用对话统一为单一入口，用户体验和计费逻辑都会变化。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/openai-is-finally-merging-chatgpts-chat-and-work-tabs/",
+          "tag": "产品整合"
+        },
+        {
+          "title": "Anthropic警告已非常接近RSI能力，即AI自我构建AI",
+          "summary": "Anthropic警告称其已非常接近RSI（递归自我改进）能力，即AI训练自身并引发能力加速。看点：这是头部AI公司首次公开量化“自我进化”进度，AI安全治理的紧迫性随之上升。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+          "tag": "AI安全"
+        },
+        {
+          "title": "马斯克因成本过高限制Grok Bot使用额度",
+          "summary": "马斯克表示Grok Bot成本“高得不可持续”，已对其使用额度进行限制。看点：AI智能体的推理成本压力开始显性化，免费或无限使用的商业模式面临考验。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+          "tag": "成本压力"
+        },
+        {
+          "title": "42AI结束隐身状态，融资6250万美元做可预测人类行为的世界模型",
+          "summary": "42AI结束隐身状态并完成6250万美元融资，其世界模型声称能预测人类行为，即使面对全新情境。看点：世界模型从物理仿真走向行为预测，具身智能与推荐、安防等场景的想象空间被打开。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/42ai-comes-out-of-stealth-with-62-5m-and-a-world-model-that-can-predict-human-behavior/",
+          "tag": "世界模型"
+        },
+        {
+          "title": "Trajectory融资4500万美元，让非技术专家也能训练AI模型",
+          "summary": "成立一年的Trajectory完成4500万美元融资，估值达3亿美元，主打让非技术专家参与AI模型训练。看点：模型训练门槛下移，行业专家而非工程师可能成为下一波AI应用的主力。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/trajectory-raises-45m-to-make-ai-model-training-accessible-to-nontechnical-experts/",
+          "tag": "AI融资"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "特斯拉10月欧洲多市场新车注册量大幅增长，复苏不均衡",
+          "summary": "特斯拉今年10月在欧洲多个市场的新车注册量大幅增长，延续该地区复苏势头，但增长情况并不均衡。看点：欧洲电动车需求回暖信号增强，但区域分化意味着特斯拉的定价与产能策略仍需精细调整。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixmhha9960140.shtml",
+          "tag": "电动车"
+        },
+        {
+          "title": "美国ITC终止对三星电子的专利侵权调查，因与Netlist达成和解",
+          "summary": "美国国际贸易委员会发布联邦公告，在Netlist与三星电子达成和解后，正式终止涉及三星及多家美国科技公司的专利侵权调查。看点：存储芯片专利战阶段性收束，三星在美销售的不确定性暂时解除。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixmhhh2336836.shtml",
+          "tag": "专利和解"
+        },
+        {
+          "title": "Revolut获批新西兰银行业务牌照，正式提供银行服务",
+          "summary": "新西兰央行周二宣布完成对Revolut Bank New Zealand的注册，准许其在新西兰提供银行服务。看点：数字银行继续向传统金融腹地扩张，中小市场的牌照开放成为金融科技出海的新切口。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyf0052117.shtml",
+          "tag": "数字银行"
+        },
+        {
+          "title": "科学家解开鳄鱼为何躲过恐龙灭绝小行星之谜",
+          "summary": "一项分析7000多块化石、400多种物种的大规模研究显示，鳄鱼及其近亲2.5亿年来始终追随温暖气候，小行星撞击后热带成为其避难所。看点：古气候与生物演化的关联研究，为理解极端气候下的物种存续提供参照。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85777",
+          "tag": "科学发现"
+        },
+        {
+          "title": "纽约州报告30多年来首例麻疹相关儿童死亡病例",
+          "summary": "纽约州卫生官员11月2日宣布，刘易斯县一名儿童因麻疹死亡，为该州30多年来首例麻疹相关儿童死亡病例。看点：麻疹疫苗接种率下滑的后果正在显现，公共卫生防线出现缺口。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyf0051576.shtml",
+          "tag": "公共卫生"
+        },
+        {
+          "title": "韩国总统李在明和166名随行人员个人信息网上裸奔五个月",
+          "summary": "韩国总统李在明夫妇及另外166名搭乘总统专机出行人员的个人信息在网上暴露约五个月，李在明6月赴比利时期间的信息也在其中。看点：国家元首级别的行程与随行名单长期泄露，暴露的是政府信息安全链条的系统性漏洞。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyf0054182.shtml",
+          "tag": "信息安全"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "油价创三个月最大跌幅，铜价金价反弹",
+          "summary": "美国和伊朗均示意对谈判持开放态度，油价创下三个月来最大跌幅；铜价从一周低点反弹，金价因能源价格回落缓解通胀担忧而上涨。看点：地缘缓和预期正在重新定价大宗商品，油价与金价的跷跷板值得盯紧。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyk2437066.shtml",
+          "tag": "大宗商品"
+        },
+        {
+          "title": "甲骨文拟发债和售股筹资200亿美元，加码AI与云基础设施",
+          "summary": "监管文件显示，甲骨文计划通过发行债券和出售股票筹集200亿美元，用于支持AI和云基础设施的大规模建设。看点：云厂商的AI资本开支正从利润转向举债，财务杠杆风险开始累积。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzym8907974.shtml",
+          "tag": "AI融资"
+        },
+        {
+          "title": "黑石生命科学与波士顿科学签署4.55亿美元协议，共同资助心脏泵研发",
+          "summary": "黑石生命科学与波士顿科学达成价值4.55亿美元的交易，双方将共同出资研发一种微创心脏泵。看点：私募资本与医疗器械巨头联合承担研发风险的模式，正在心血管赛道复制。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyf0043197.shtml",
+          "tag": "医疗投资"
+        },
+        {
+          "title": "韩国KOSPI开盘跌2.5%至5715.19点，日股休市",
+          "summary": "韩国综合股价指数11月3日开盘下跌2.5%，报5715.19点，日本股市当日休市。看点：亚太市场开盘承压，与美股科技股冲高回落形成联动，短线情绪偏谨慎。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixmhhh2343186.shtml",
+          "tag": "亚太股市"
+        },
+        {
+          "title": "币安遭63亿美元盗窃案，部分交易者反而意外获利",
+          "summary": "币安遭遇63亿美元盗窃案，多数投资者视其为数字资产风险的再次警示，但一小部分行动迅速的交易公司和技术投资者借此获得意外之财。看点：加密市场极端事件中的套利机会与系统性风险并存，交易所安全仍是最大变量。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixmhhh2335157.shtml",
+          "tag": "加密风险"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "韩国10月CPI同比涨2.8%，通胀居高不下为加息提供依据",
+          "summary": "韩国数据与统计部公布10月CPI同比上涨2.8%，通胀依然居高不下，韩国央行上月按兵不动后正考虑进一步加息。看点：亚洲主要经济体的货币政策分化加剧，韩元与债市波动可能外溢。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyh6820324.shtml",
+          "tag": "韩国通胀"
+        },
+        {
+          "title": "旧金山联储研究：强厄尔尼诺或推高美国2027年通胀",
+          "summary": "旧金山联邦储备银行一项研究提示，本轮强厄尔尼诺现象可能为美国2027年通胀带来“实质性风险”。看点：气候因素正被纳入央行通胀分析框架，极端天气对食品和能源价格的传导不可忽视。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/money/bond/2026-11-03/doc-inixmhha9926965.shtml",
+          "tag": "通胀风险"
+        },
+        {
+          "title": "港交所扩大人民币债券抵押品适用范围，首日抵押总值超4亿元",
+          "summary": "港交所旗下期货结算公司及联交所期权结算所开始接受合资格人民币定息资产作为非现金抵押品，首日7家机构提交债券总值超4亿元人民币。看点：人民币资产在港使用场景拓宽，离岸人民币流动性管理工具进一步丰富。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-02/10725078.shtml",
+          "tag": "人民币"
+        },
+        {
+          "title": "贝森特与委内瑞拉外长会晤，讨论能源及金融领域",
+          "summary": "美国财政部声明称，财长贝森特与委内瑞拉外长布兰科举行会晤，就能源及金融领域展开讨论。看点：美委关系松动若延续，将影响全球重质原油供应格局与相关制裁安排。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixkzyf0041837.shtml",
+          "tag": "美委关系"
+        },
+        {
+          "title": "宁夏完成首笔小时级绿电交易电费结算",
+          "summary": "宁夏完成首笔省内小时级绿电交易电费结算，绿电交易核算模式从“按月统计”升级为“按小时核算”，实现全流程小时级可追溯。看点：绿电交易颗粒度细化，为高耗能企业和算力中心精准匹配绿电提供基础。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-02/10725005.shtml",
+          "tag": "绿电交易"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "教育部发文：以高质量党建引领基础教育高质量发展",
+          "summary": "教育部网站11月3日刊文，强调以高质量党建引领基础教育高质量发展。看点：基础教育治理继续强化党建主线，学校管理与教师队伍建设方向明确。",
+          "source": "教育部",
+          "url": "http://www.moe.gov.cn/jyb_xwfb/s5147/202611/t20261103_1456857.html",
+          "tag": "教育政策"
+        },
+        {
+          "title": "高校学术讲坛如何“叫好又叫座”，多地高校推动讲座提质",
+          "summary": "中新网报道，近年来各地高校优化内容供给、创新传播形式，推动校园讲座论坛从“有”向“优”、从“覆盖”向“提质”转变。看点：学术讲座正成为校园文化竞争的新抓手，内容运营能力开始影响高校吸引力。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/edu/2026/11-03/10725082.shtml",
+          "tag": "高校讲座"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "纽约时报等媒体起诉浏览器Brave，指控其抓取内容并转售",
+          "summary": "纽约时报等媒体起诉隐私浏览器公司Brave，指控其抓取受版权保护的内容并非法分发给Anthropic、Perplexity等客户。看点：AI训练数据来源的版权诉讼再添一案，浏览器与AI公司的数据链条被推上被告席。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/",
+          "tag": "版权诉讼"
+        },
+        {
+          "title": "网站托管商Squarespace裁员19%，启动组织重组",
+          "summary": "网站建设平台Squarespace宣布裁减19%的员工，作为更广泛组织重组的一部分。看点：建站工具赛道增长放缓，中小互联网平台开始以裁员换取现金流安全。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/02/web-host-squarespace-lays-off-19-of-its-employees/",
+          "tag": "裁员重组"
+        },
+        {
+          "title": "迪士尼计划裁员数千人，部分管理层被要求削减20%成本",
+          "summary": "知情人士透露，华特迪士尼公司计划裁减数千个工作岗位，并已要求部分管理层将年度成本削减20%作为目标。看点：流媒体盈利压力传导至传统娱乐巨头，内容行业降本潮仍在延续。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixmhha9954223.shtml",
+          "tag": "降本裁员"
+        },
+        {
+          "title": "特朗普称若民主党调查马斯克将出手保护，并暗示特赦亲信",
+          "summary": "特朗普周一表示，若民主党在中期选举后对马斯克展开调查，他将采取行动保护马斯克，并暗示可能特赦其他亲信人员。看点：科技巨头与政治权力的绑定加深，中期选举后的监管走向充满变数。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-03/doc-inixmhha9941223.shtml",
+          "tag": "政商关系"
+        },
+        {
+          "title": "苹果第四财季营收涨12%，服务收入又创了新高",
+          "summary": "苹果公布第四财季业绩，营收同比增长12%，服务业务收入再创历史新高；同期《影之刃零》72小时销量突破400万套，还传出三星Fold9回归屏下摄像头的消息。看点：硬件增长放缓时服务业务成了苹果的稳定器，这组数据能看出大厂收入结构正在往哪边倾斜。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1687189?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "财报"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "雪豹幼崽“凌小寒”经26天抢救无效病亡",
+          "summary": "青海省野生动物救护繁育中心10月7日接收的重伤雪豹幼崽“凌小寒”，因颅骨多发骨折伴脑出血等伤情，经26天全力抢救无效病亡。看点：野生动物救护的极限与公众关注度同步上升，高原生态保护议题再受聚焦。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725108.shtml",
+          "tag": "动物保护"
+        },
+        {
+          "title": "沉浸式体验“炸药包”突然扔向人群，引发安全担忧",
+          "summary": "有沉浸式体验项目将“炸药包”突然扔向人群，引发观众受惊与安全争议，评论呼吁沉浸式体验不能吓着观众。看点：文旅沉浸式项目快速扩张，安全边界与体验设计的平衡成为消费者权益新问题。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-03/10725096.shtml",
+          "tag": "消费安全"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3638.03,
+        "unit": "点",
+        "changePct": 1.08,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2458.7,
+        "unit": "点",
+        "changePct": 1.87,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
