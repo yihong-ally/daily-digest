@@ -1,0 +1,389 @@
+{
+  "date": "2026-11-04",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-04T09:00:58+08:00",
+  "coverage": {
+    "from": "2026-11-03T21:30:00+08:00",
+    "to": "2026-11-04T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "特朗普宣布停止每年约40亿美元对以色列援助",
+          "summary": "美国总统特朗普3日表示已与内塔尼亚胡达成协议，美国将在今年之后停止向以色列提供每年约40亿美元的援助，但仍继续出售武器。看点：美以安全关系出现数十年来最大调整，中东局势与军援格局可能连锁变化。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725711.shtml",
+          "tag": "美以关系"
+        },
+        {
+          "title": "APEC第37届外交和贸易双部长会议以视频方式举行",
+          "summary": "11月3日，APEC第37届外交和贸易双部长会议以视频方式在京举行，由王毅和王文涛共同主持，各成员经济体代表及秘书处等参加。看点：亚太经贸规则协调进入关键节点，为后续领导人会议铺路。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/11-04/10725709.shtml",
+          "tag": "APEC"
+        },
+        {
+          "title": "我国重要农业文化遗产新增88项 总数增至276项",
+          "summary": "农业农村部认定第八批重要农业文化遗产，新增88项传统农业系统，我国重要农业文化遗产总数增至276项。看点：农耕遗产保护与活化进入规模化阶段，关系乡村文旅与地方品牌。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-04/10725713.shtml",
+          "tag": "农业遗产"
+        },
+        {
+          "title": "冷空气影响内蒙古东北 贵州湖南江西有中到大雨",
+          "summary": "中央气象台4日通报，湖北、江西、浙江、海南等地部分地区出现大到暴雨，未来三天冷空气影响内蒙古、东北、华北，内蒙古黑龙江有较强降雪，贵州湖南江西有中到大雨。看点：雨雪叠加影响交通、能源供应和农业生产，出行需提前安排。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-04/10725723.shtml",
+          "tag": "天气预警"
+        },
+        {
+          "title": "日本宪法公布80周年 国会前响起和平呼声",
+          "summary": "新华社东京11月3日电，日本宪法公布80周年之际，国会前出现和平呼声集会。看点：日本安保政策讨论升温，周边地区安全议题再受关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725735.shtml",
+          "tag": "日本宪政"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "ChatGPT周活跃用户达12亿 两个月新增2亿",
+          "summary": "OpenAI消费者产品负责人Adam Fry透露，ChatGPT周活跃用户已达12亿，过去60天从10亿增至12亿，约每30天新增1亿。看点：AI助手用户规模仍在加速扩张，商业化与算力压力同步放大。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/878.htm",
+          "tag": "用户增长"
+        },
+        {
+          "title": "百度Apollo发布世界模型Apollo World 用于萝卜快跑",
+          "summary": "11月3日百度AI Day·Apollo专场首次披露智能体驱动全模态世界模型Apollo World，提出世界模型“2+3”判断标准，已用于萝卜快跑全球化测试与验证。看点：世界模型从生成视频转向验证无人驾驶安全，自动驾驶落地路径更清晰。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/NVxn28w1vAG2qbFy.html",
+          "tag": "世界模型"
+        },
+        {
+          "title": "蚂蚁灵波在乌镇展示全栈开源机器人通用大脑",
+          "summary": "11月2日至5日世界互联网大会乌镇峰会上，蚂蚁集团旗下具身智能公司蚂蚁灵波携全栈开源机器人通用大脑亮相，已开源覆盖空间智能、灵巧操作与环境反馈的核心模型。看点：开源从语言代码延伸到物理世界，机器人“大脑”门槛有望降低。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/ADcxxdwtaojQvzhp.html",
+          "tag": "具身智能"
+        },
+        {
+          "title": "英伟达称AI让芯片工厂仿真提速最高35倍",
+          "summary": "英伟达11月3日发布文章称，AI正推动晶圆厂进入“AI定义工厂”阶段，通过加速仿真、学习型物理模型和数字孪生，仿真提速最高35倍，工程师决策从数天缩至数分钟。看点：AI开始改造芯片制造本身，半导体研发周期有望明显压缩。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/857.htm",
+          "tag": "AI造芯"
+        },
+        {
+          "title": "AI推理初创Fal融资13亿美元 估值翻倍至160亿美元",
+          "summary": "成立五年的AI推理初创公司Fal完成13亿美元融资，由Bessemer领投，估值翻倍至160亿美元。看点：推理需求爆发带动资本加注，AI算力产业链重心从训练向推理转移。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+          "tag": "AI融资"
+        },
+        {
+          "title": "Netflix上线AI Discover标签 按心情推荐内容",
+          "summary": "Netflix推出AI驱动的Discover实验标签，首个功能可根据用户当前心情推荐观看内容。看点：流媒体用AI改造内容发现环节，推荐体验竞争升级。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/",
+          "tag": "AI推荐"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "苹果推送iOS 27.3预览版 国行Apple智能与Siri开测",
+          "summary": "苹果11月4日面向iPhone发布iOS 27.3开发者预览版，国行“Apple智能与Siri”如约而至，iPhone 15 Pro及更新机型升级后可用。看点：苹果AI功能正式进入国行测试，国内iPhone用户体验将迎来实质变化。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/861.htm",
+          "tag": "苹果AI"
+        },
+        {
+          "title": "拓竹发布旗舰3D打印机H3C 9头闪切6秒换头",
+          "summary": "11月3日拓竹发布第三代旗舰3D打印机H3C，标准套装起售价16499元，首发直降1000元，搭载Swaptek多头闪切系统，支持75A TPU打印与叠色打印。看点：消费级3D打印向多色多材料工业级品质靠拢，桌面制造门槛再降。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/xBbVCZ6pFQNa7XzR.html",
+          "tag": "新机发布"
+        },
+        {
+          "title": "广东推动L3自动驾驶准入试点 11只概念股获机构看好",
+          "summary": "广东省发改委印发扩大消费实施方案，提出推动整车企业争取L3级自动驾驶车型准入和上路通行试点，有序开展大湾区智能驾驶测试和商业化运营；11只概念股获至少10家机构评级。看点：L3政策破冰，智能驾驶商业化落地节奏加快。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4054734396871815?f=rss",
+          "tag": "自动驾驶"
+        },
+        {
+          "title": "光迅科技澄清物料短缺与停工传闻 三季度净利增102%",
+          "summary": "光迅科技11月3日发布澄清公告，否认物料短缺、生产停工传闻；其三季度营收50.73亿元同比增长54.27%，净利润7.02亿元同比增长102.62%。看点：光模块龙头用业绩回应传闻，AI算力供应链情绪波动值得留意。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/844.htm",
+          "tag": "光模块"
+        },
+        {
+          "title": "苹果CEO特努斯称没有合并iPadOS与macOS计划",
+          "summary": "在苹果2026财年第四季度财报电话会上，新CEO约翰·特努斯回应分析师提问，称没有计划对iPadOS和macOS做根本性改变。看点：苹果明确双系统路线，生态整合预期落空。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/839.htm",
+          "tag": "苹果系统"
+        },
+        {
+          "title": "苹果给 AirPods 5 等耳机推送测试版固件，开发者可尝鲜",
+          "summary": "苹果面向开发者和公开测试用户推送 AirPods 5 等耳机的 Beta 固件 9B5045a。看点：想提前体验新功能或排查兼容问题的用户，可以关注这次测试版的变化。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/870.htm",
+          "tag": "苹果"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "选举日美股分化 道指跌200点芯片股反弹",
+          "summary": "11月4日美股收盘，选举日道指跌200点，标普纳指结束三日连跌，芯片股反弹，费城半导体指数盘中大涨超3%，甲骨文涨超5%。看点：中期选举结果与AI交易回暖交织，科技股波动加大。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixpexk1862320.shtml",
+          "tag": "美股收盘"
+        },
+        {
+          "title": "大宗商品走弱 铜价跌至七周低点金价下跌",
+          "summary": "油价震荡走低，交易员评估美伊和平谈判信号；铜价跌至七周低点，金价下跌，交易员在中期选举日避免建立大规模头寸。看点：地缘与选举不确定性主导大宗定价，避险与工业需求预期分化。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixpexm8310422.shtml",
+          "tag": "大宗商品"
+        },
+        {
+          "title": "热门中概股涨跌互现 京东涨超2%拼多多阿里跌超1%",
+          "summary": "11月4日纳斯达克中国金龙指数收涨0.21%，台积电涨1.55%、京东涨2.32%，拼多多、阿里跌超1%。看点：中概股内部分化，资金在电商与芯片之间重新选择。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixpexh6330011.shtml",
+          "tag": "中概股"
+        },
+        {
+          "title": "美债回吐早盘涨幅 收益率曲线趋陡",
+          "summary": "美国国债周二呈熊市趋陡走势，油价下跌一度提振美债，但午后涨势消退，市场关注中期选举结果与周三再融资安排。看点：利率曲线形态变化反映财政与选举预期，债市波动或传导至股市。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixpexe9554931.shtml",
+          "tag": "美债"
+        },
+        {
+          "title": "日本芯片股大幅下跌 软银集团股价跌5.7%",
+          "summary": "日本芯片相关股票大幅下跌，软银集团跌5.7%，铠侠跌6.0%，爱德万测试跌3.7%。看点：全球AI芯片交易情绪波动，日本半导体板块承压明显。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixpmfi8242787.shtml",
+          "tag": "芯片股"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "欧洲央行管委称若经济状况不变12月存在加息可能",
+          "summary": "欧洲央行管委Martin Kocher表示，如果形势和价格维持当前水平，今年年底前可能加息；德国央行行长Nagel也暗示12月可能进一步收紧。看点：欧洲货币政策转向预期升温，全球利率路径再添变数。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-04/doc-inixpmfe6222598.shtml",
+          "tag": "欧央行"
+        },
+        {
+          "title": "美国中期选举开票 参议院成市场真正变量",
+          "summary": "美国中期选举投票展开，众议院民主党胜局已被市场定价，真正变量是参议院，民主党需净赢4席；美银将“民主党横扫”视为股市可能跌超10%的风险事件。看点：选举结果直接影响科技监管与AI芯片行业环境。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/articles/3785119",
+          "tag": "中期选举"
+        },
+        {
+          "title": "美国职位空缺升至四个月最高 裁员降至逾一年低点",
+          "summary": "美国职位空缺数升至四个月最高，裁员人数降至逾一年低点，美元即期指数上涨0.2%，AI交易回暖推动股市上涨。看点：劳动力市场韧性支撑美元，也影响美联储后续政策判断。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4054672481752194?f=rss",
+          "tag": "就业数据"
+        },
+        {
+          "title": "泰国将进口电动汽车消费税上调至35%",
+          "summary": "泰国副总理兼财政部长艾尼迪3日表示，内阁会议批准将进口纯电动汽车和增程式电动汽车消费税统一上调至35%，新税率2027年1月1日起实施。看点：东南亚电动车市场政策收紧，中国车企出口成本与定价策略受影响。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725705.shtml",
+          "tag": "关税调整"
+        },
+        {
+          "title": "人大常委会报告提出金融工作五方面考虑",
+          "summary": "报告提出货币政策保持适度宽松、流动性充裕，探索AI在金融领域应用并严打非法金融活动，加大对科创和小微企业支持，拓展人民币国际化并加快跨境支付体系建设，常态化运行房地产“白名单”机制。看点：金融政策路线图明确，科创与地产风险化解是重点。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/articles/3785121",
+          "tag": "金融政策"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "谷歌调整K-12教育AI政策 Gemini与搜索默认关闭",
+          "summary": "谷歌宣布从2027年起调整面向K-12教育用户的AI功能管理政策，学校管理员需主动启用，学生才能使用Gemini、NotebookLM及Google Search等服务；若学校全面禁用AI，学生也将无法使用搜索。看点：校园AI管理权交回学校，搜索与AI深度绑定引发新争议。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/880.htm",
+          "tag": "校园AI"
+        },
+        {
+          "title": "墨西哥全国中小学实施手机使用限制",
+          "summary": "自11月3日起，墨西哥全国公立及私立中小学正式实施手机使用限制，上课及课间原则上不得使用手机、智能手表等个人电子设备，特殊教学与紧急情况可例外。看点：多国收紧校园屏幕管理，学生注意力与社交影响成政策焦点。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/896.htm",
+          "tag": "手机禁令"
+        },
+        {
+          "title": "柬埔寨拟在200所公立中小学试行全日制教学",
+          "summary": "柬埔寨首相洪玛奈11月3日表示，计划在200所具备条件的公立中小学校试行全日制教学，每日教学时间从4小时延长至6小时，并分阶段向全国推广。看点：东南亚基础教育课时改革启动，旨在提升教学质量。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-04/10725706.shtml",
+          "tag": "教育改革"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "红果短剧反超豆包 成抖音集团第二大应用",
+          "summary": "QuestMobile报告显示，截至2026年9月国内移动互联网月活12.81亿，抖音集团前三大应用变为抖音、红果短剧、豆包，去重总用户分别为10.2亿等量级，红果反超豆包。看点：短剧流量超越AI助手，字节内部流量格局生变。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4054687391143044?f=rss",
+          "tag": "应用格局"
+        },
+        {
+          "title": "中兴拟成立合资公司出售手机业务 回应称不属实",
+          "summary": "有消息称中兴拟成立合资公司出售手机业务，中兴回应称“不属实”；同期百度否认昆仑芯IPO推迟传闻。看点：手机业务去留与芯片上市节奏，反映大厂资产调整传闻密集。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8192223.html",
+          "tag": "大厂传闻"
+        },
+        {
+          "title": "谷歌Antigravity上线化学信息学技能 1小时筛数千化合物",
+          "summary": "谷歌DeepMind团队11月3日发布博文，为Google Antigravity推出“化学信息学技能”，可加速文献检索、分子分析、模型构建和新分子设计，1小时筛完数千种化合物。看点：AI智能体切入药物研发流程，科研效率工具竞争升温。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/858.htm",
+          "tag": "AI制药"
+        },
+        {
+          "title": "阿里云为达喀尔青奥会打造塞内加尔首个奥运专有云",
+          "summary": "10月31日达喀尔青奥会开幕，阿里云提供云计算和AI技术支持，为塞内加尔打造首个奥运专有云底座，承载票务、注册、赛程查询等核心系统，赛后这朵云将留在当地。看点：中国云厂商借赛事输出“国家云”能力，非洲市场成新战场。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/dhQud8FAggk62CZ2.html",
+          "tag": "云出海"
+        },
+        {
+          "title": "微软329元Xbox Nano迷你手柄开售 支持Wi-Fi直连云游戏",
+          "summary": "微软Xbox Nano迷你手柄11月4日开售，售价329元，被曝支持Wi-Fi直连Xbox Cloud Gaming云游戏平台以降低输入延迟。看点：云游戏硬件去掉中间设备，手柄直连或成新趋势。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/882.htm",
+          "tag": "云游戏"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "苹果iPhone天气App多地显示-32℃ 冲上热搜",
+          "summary": "11月4日多名网友反馈，iPhone自带天气App出现异常，杭州、南京等地11月13日最低气温显示为-32℃，上海显示-31℃，与实际预报相差悬殊。看点：常用工具数据出错影响出行安排，也提醒别把App预报当唯一依据。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/895.htm",
+          "tag": "天气异常"
+        },
+        {
+          "title": "上汽奥迪“买一赠一”营销被立案调查",
+          "summary": "11月3日上海嘉定区市场监管局回复称，已就“AUDI全系买一赠一”营销争议对被举报人上海上汽大众汽车销售有限公司立案处理并正式介入调查。看点：车企促销话术边界受监管审视，消费者购车需看清条款。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/021/838.htm",
+          "tag": "消费维权"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3608.1,
+        "unit": "点",
+        "changePct": -0.82,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2391.65,
+        "unit": "点",
+        "changePct": -2.73,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
