@@ -1,0 +1,375 @@
+{
+  "date": "2026-11-06",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-06T09:00:02+08:00",
+  "coverage": {
+    "from": "2026-11-05T21:30:00+08:00",
+    "to": "2026-11-06T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "美国中期选举民主党夺回两院，特朗普施政空间收窄",
+          "summary": "美国中期选举结果出炉，民主党掀起“蓝潮”，重夺参众两院多数党地位，特朗普政府未来两年施政空间明显收窄。看点：国会“变天”将直接影响财政、关税与AI监管议程，全球市场已用大跌作出反应。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726981.shtml",
+          "tag": "中期选举"
+        },
+        {
+          "title": "特朗普称俄乌冲突已非常接近解决，会见俄特别代表",
+          "summary": "美国总统特朗普当地时间5日表示，他会见了俄罗斯总统特别代表德米特里耶夫，并称俄乌冲突已非常接近解决。看点：若停火取得实质进展，将牵动欧洲能源、粮食与防务格局。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726987.shtml",
+          "tag": "俄乌局势"
+        },
+        {
+          "title": "欧洲多架客机遭炸弹威胁，欧盟称是否关联尚难判断",
+          "summary": "针对欧洲多架客机遭炸弹威胁事件，欧盟委员会5日表示，目前就已报告的事件是否存在关联作出结论为时尚早，各国相关部门仍在开展调查。看点：航空安全事件密集出现，近期赴欧出行需关注航班动态与安检升级。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726982.shtml",
+          "tag": "航空安全"
+        },
+        {
+          "title": "德国巴伐利亚州副州长被发现死于柏林酒店",
+          "summary": "据路透社5日报道，德国自由选民党领导人、巴伐利亚州副州长胡贝特·艾旺格4日被发现死于德国首都柏林一家酒店内，警方随后展开调查。看点：德国地方政要突然身亡，正值欧洲政治敏感期，后续调查结论受关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-06/10726984.shtml",
+          "tag": "德国政坛"
+        },
+        {
+          "title": "新一轮冷空气7日起影响我国，中东部有大范围雨雪",
+          "summary": "中央气象台预计，7日至9日新一轮冷空气将影响我国，中东部出现大风降温和大范围雨雪，华北北部、辽宁南部部分地区雨雪较强。看点：降温雨雪叠加出行高峰，需防范对交通、能源供应和健康的影响。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727006.shtml",
+          "tag": "冷空气"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "谷歌发布Gemini Omni 1.2 Flash视频模型，原生15秒还降价30%",
+          "summary": "谷歌正式推出Gemini Omni 1.2 Flash视频生成模型，在Gemini API与Gemini for business平台全面开放，实现原生15秒视频生成、多轮对话式编辑，较1.1版本降价30%。看点：视频生成进入“更长、更便宜、可对话修改”阶段，创作者和企业的使用门槛进一步降低。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/026.htm",
+          "tag": "视频模型"
+        },
+        {
+          "title": "Claude上线个人理财功能，可绑定银行卡分析消费",
+          "summary": "Anthropic宣布为Claude加入个人理财功能，本周开启灰度测试，面向美国地区Pro、Max及Ultra订阅用户开放，用户可通过Plaid绑定银行和卡账户，用自然语言提问，功能仅有只读权限。看点：AI助手从“聊天”切入“管钱”，金融数据授权与隐私边界将成为下一轮讨论焦点。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/051.htm",
+          "tag": "AI理财"
+        },
+        {
+          "title": "Meta在美国上线Muse AI虚拟形象视频通话",
+          "summary": "Meta宣布美国用户现在可以以可定制的动画虚拟形象与Muse AI进行视频通话，该AI智能体还能代接电话，为后续类似电子宠物的可穿戴设备铺路。看点：AI陪伴从文字走向“露脸通话”，社交巨头的下一个硬件入口正在成形。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/meta-says-us-users-can-now-video-chat-with-their-muse-ai-avatar/",
+          "tag": "AI陪伴"
+        },
+        {
+          "title": "英伟达实测Vera CPU：每瓦多跑60%智能体任务",
+          "summary": "英伟达公布Vera CPU在智能体工作负载上的实测数据，称其可在同一颗处理器中同时实现业界领先的智能体执行速度和每瓦吞吐量，较最快x86 CPU每瓦多跑60%智能体。看点：智能体时代CPU重新成为瓶颈，数据中心省电就是省钱。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/029.htm",
+          "tag": "算力芯片"
+        },
+        {
+          "title": "英伟达称HBM仅增约3%，每美元智能体吞吐量最高提升30倍",
+          "summary": "英伟达发布技术解读，指出GPU显存面临HBM供应趋紧、价格上升的压力，通过方案优化可在HBM仅增约3%的情况下，使每美元智能体吞吐量最高提升30倍。看点：在内存涨价周期里，软硬协同的“省显存”能力直接决定AI推理成本。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/025.htm",
+          "tag": "内存瓶颈"
+        },
+        {
+          "title": "Aina智能戒指带屏幕摇杆麦克风，能跟AI对话",
+          "summary": "Aina推出带屏幕、摇杆和麦克风的智能戒指，还能接电话、在Mac上帮口述笔记。看点：可穿戴设备正从健康监测转向随身AI交互入口，戒指形态能否成为新赛道值得观察。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/ainas-smart-ring-has-a-screen-a-joystick-and-a-mic-so-you-can-talk-to-ai-agents/",
+          "tag": "智能硬件"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "我国成功发射遥感五十一号07-09星",
+          "summary": "11月5日23时58分，长征二号丙运载火箭在西昌卫星发射中心点火升空，成功将遥感五十一号07-09星送入预定轨道，发射任务取得圆满成功，卫星主要用于科学试验、电磁环境探测等领域。看点：长二丙保持高密度发射节奏，遥感与电磁探测能力持续补网。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/028.htm",
+          "tag": "发射成功"
+        },
+        {
+          "title": "苹果M6芯片款iMac、MacBook Pro正式开售",
+          "summary": "苹果M6芯片款iMac、MacBook Pro今日正式开售，起售价分别为12499元、15999元，国补后约10999元、14499元。看点：自研芯片迭代到M6，叠加国补后价格下探，换机窗口比往年更划算。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/022.htm",
+          "tag": "新机开售"
+        },
+        {
+          "title": "京东物流“狼族”机器人升级，保姆狼实现无人分拣",
+          "summary": "11月5日，在2026年CeMAT ASIA亚洲国际物流技术与运输系统展览会上，京东物流推出“智狼”“保姆狼”全新升级方案，智狼取货提速，保姆狼实现无人分拣。看点：仓储机器人从单点搬运走向全流程无人化，物流成本还有下降空间。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/048.htm",
+          "tag": "物流机器人"
+        },
+        {
+          "title": "OpenSSH紧急更新10.6p2，修复可绕过认证的严重漏洞",
+          "summary": "OpenSSH项目11月5日发布紧急更新10.6p2，修复一个允许用257至1024字节长密码绕过SSH认证的漏洞，Alpine Linux等系统受影响。看点：SSH是服务器远程管理的命门，运维人员应尽快升级。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/047.htm",
+          "tag": "安全漏洞"
+        },
+        {
+          "title": "鸿蒙电脑累计发货突破100万台，全面开放侧载",
+          "summary": "在11月5日启幕的2026鸿蒙办公产业峰会上，华为宣布截至2026年10月鸿蒙电脑累计发货量突破100万台，2026年单年发货量有望突破100万台，并正式宣布鸿蒙电脑全面向开发者开放侧载能力。看点：国产桌面系统跨过百万台门槛，开放侧载是补生态的关键一步。",
+          "source": "雷峰网",
+          "url": "https://www.leiphone.com/category/industrynews/6igykQlGwvA6vyCV.html",
+          "tag": "鸿蒙电脑"
+        },
+        {
+          "title": "DeepSeek Harness日活154万，日耗Token约92万亿",
+          "summary": "DeepSeek Harness官方公布，截至11月4日以使用官方API的用户为统计范围，日活跃用户已达154万，日消耗Token约92万亿，并将建设官方插件市场。看点：智能体工具的真实使用规模首次亮出底牌，插件市场意味着生态战开打。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/011.htm",
+          "tag": "智能体"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "美股科技股遭抛售，费城半导体指数跌约12%创历史第二大单日跌幅",
+          "summary": "美国中期选举结束后，美股11月5日遭遇大规模抛售，科技股和AI硬件产业链成为主要下跌板块，费城半导体指数跌约12%，为历史第二大单日跌幅，马斯克、黄仁勋等五大富豪单日财富合计缩水1529亿美元。看点：AI交易拥挤度集中释放，半导体板块的波动性已成为全球风险偏好的风向标。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/046.htm",
+          "tag": "美股大跌"
+        },
+        {
+          "title": "韩国Kospi指数暴跌超8%触发熔断，交易暂停20分钟",
+          "summary": "韩国Kospi指数下跌超过8%，于当地时间上午9点03分触发熔断机制，交易暂停20分钟，韩国交易所同时启动Sidecar机制，三星、SK海力士盘前分别跌12%和15%。看点：存储芯片权重过高的韩股成为这轮AI抛售的重灾区，亚太开盘情绪承压。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixtxma5127869.shtml",
+          "tag": "韩股熔断"
+        },
+        {
+          "title": "科技股抛售席卷亚太，日经跌破6万点步入技术性熊市",
+          "summary": "MSCI亚太指数下跌3%至247.75点，韩国综合股价指数暴跌8.8%跌破5000点并触发熔断，日经225指数下跌逾5%、盘中跌破6万点，自6月高点回落超过20%，正式步入技术性熊市。看点：美股隔夜暴跌向亚太全面传导，区域风险资产短期难言企稳。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/articles/3785315",
+          "tag": "亚太暴跌"
+        },
+        {
+          "title": "美国股指期货续跌，预示亚洲市场开盘低迷",
+          "summary": "美国股指期货早盘继续走弱，此前费城半导体指数收跌12%，三星股价在NextTrade盘前交易中下跌12%，SK海力士下跌15%。看点：期货市场尚未止跌，隔夜风险仍在向亚洲开盘传导。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixtxma5095793.shtml",
+          "tag": "股指期货"
+        },
+        {
+          "title": "银湖资本与沙特PIF就收购Unity进行谈判",
+          "summary": "知情人士透露，游戏软件供应商Unity Software已就被包括私募股权公司银湖资本和沙特主权财富基金PIF在内的投资者财团收购一事进行了磋商。看点：游戏引擎龙头若私有化，将改变开发者工具市场的竞争与定价格局。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixtxky8323323.shtml",
+          "tag": "并购谈判"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "日本9月实际工资同比增2.2%，连续九个月上涨",
+          "summary": "日本政府周五公布数据显示，9月实际工资同比增长2.2%，连续第九个月上涨，增速较8月修正后的1.6%加快。看点：实际工资持续转正，为日本央行继续加息提供数据支撑，日元与日债走向受关注。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4057529956586369?f=rss",
+          "tag": "日本工资"
+        },
+        {
+          "title": "日本名义工资创1997年以来最大升幅，支持12月加息预期",
+          "summary": "日本厚生劳动省周五公布，9月名义工资同比上升4.6%，创1997年以来最大升幅，显示薪资增长动能持续，支持日本央行最快12月再次加息。看点：薪资—通胀正循环若坐实，日本货币政策正常化将加速。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-06/doc-inixtxmh8983616.shtml",
+          "tag": "加息预期"
+        },
+        {
+          "title": "白宫委员会将美联储理事库克听证会推迟至12月14日",
+          "summary": "美国白宫一名官员表示，由总统特朗普任命的特别委员会已将美联储理事丽莎·库克的听证会重新安排至12月14日，此次推迟是应库克方面的请求。看点：美联储人事风波延后，货币政策独立性的博弈仍悬而未决。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3195419",
+          "tag": "美联储"
+        },
+        {
+          "title": "两市融资余额增加66.22亿元",
+          "summary": "截至11月5日，上交所融资余额报11807.98亿元，较前一交易日增加31.91亿元；深交所融资余额报10901.79亿元，增加34.31亿元；两市合计22709.77亿元，较前一交易日增加66.22亿元。看点：杠杆资金在海外暴跌前仍在加仓，今日A股开盘面临情绪考验。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3195448",
+          "tag": "融资余额"
+        },
+        {
+          "title": "年内熊猫债发行超2500亿元，再创历史新高",
+          "summary": "年内熊猫债发行规模超过2500亿元，再创历史新高。看点：境外机构在境内发债融资需求旺盛，人民币资产的国际使用场景继续拓宽。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-06/10727011.shtml",
+          "tag": "熊猫债"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "微软Office 365 A1教育版退役，2028年起取消100TB免费存储",
+          "summary": "微软宣布调整Microsoft 365 Education教育版授权政策，将逐步停用免费Office 365 A1、Student Use Benefit等项目，并计划从2028年1月1日起取消教育机构现有的100TB基础共享云存储额度，免费A0学生版不含Teams与邮箱。看点：学校和教育机构的IT预算要重新算账，免费午餐时代正在结束。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/042.htm",
+          "tag": "教育版退役"
+        },
+        {
+          "title": "教育部聚焦课堂质量，一堂堂“好课”如何炼成",
+          "summary": "教育部网站11月6日发布文章，聚焦课堂教学质量提升，探讨“好课”的打磨过程。看点：课堂质量成为政策抓手，一线教师的教学方式与评价标准或随之调整。",
+          "source": "教育部",
+          "url": "http://www.moe.gov.cn/jyb_xwfb/s5147/202611/t20261106_1457344.html",
+          "tag": "课堂质量"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "OpenAI总裁称大部分收入来自企业业务，2027年具备上市条件",
+          "summary": "OpenAI总裁Greg Brockman在华尔街日报科技会议上表示，公司大部分收入已来自企业业务，并预计2027年具备上市条件，同时强调在企业市场正缩小与Anthropic的差距。看点：AI龙头从卖订阅转向卖企业服务，IPO时间表首次给出明确年份。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8195163.html",
+          "tag": "OpenAI上市"
+        },
+        {
+          "title": "Airbnb宣布2027年上半年推出AI旅行智能体",
+          "summary": "Airbnb表示将在2027年上半年推出AI旅行智能体，帮助旅客规划行程、比较选项、管理预订并在入住期间提供协助。看点：OTA平台把AI智能体做成核心入口，旅行预订的流量分配规则可能被改写。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/",
+          "tag": "AI旅行"
+        },
+        {
+          "title": "Dropbox斥资3.5亿美元收购Tigris Data，加码AI存储",
+          "summary": "Dropbox宣布以3.5亿美元收购分布式对象存储平台Tigris Data，并推出面向开发者的DBX Agent Cloud存储平台，支持AI模型与智能体开发。看点：云存储厂商向AI基础设施转型，开发者存储服务的竞争升温。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/dropbox-acquires-tigris-data-for-350m-to-bolster-its-ai-iinfrastructure/",
+          "tag": "AI存储"
+        },
+        {
+          "title": "Meta警告数据中心遭选举反弹，AI扩张或受阻",
+          "summary": "Meta警告称，社区对大型数据中心项目的政治反对声浪上升，可能威胁未来AI投资，全美多地数据中心公投多数被否。看点：AI基建从资本竞赛转向政治与许可博弈，选址和电价将成为新变量。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/05/metas-warns-that-election-backlash-against-data-centers-could-make-ai-expansion-harder/",
+          "tag": "数据中心"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "全国百余城市中小学开启秋假，多地景区免费或半价",
+          "summary": "11月起，全国百余城市中小学陆续开启秋假，秋冬文旅市场随之火热，多地官宣景区免费、半价等优惠。看点：错峰假期叠加门票优惠，亲子出游成本下降，热门目的地可能迎来一波小高峰。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-06/10726995.shtml",
+          "tag": "秋假出游"
+        },
+        {
+          "title": "无印良品109万条会员信息泄露，含信用卡卡号",
+          "summary": "运营无印良品的良品计划公司更新通报，无印良品官方App及网络商城受影响用户信息进一步涉及姓名、住址等，其中109万条会员信息泄露，含“MUJI Card”信用卡卡号。看点：涉及信用卡号的信息泄露风险更高，相关用户应尽快核对账单并留意异常交易。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/023/002.htm",
+          "tag": "信息泄露"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3689.91,
+        "unit": "点",
+        "changePct": 0.1,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2566.8,
+        "unit": "点",
+        "changePct": 0.87,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
