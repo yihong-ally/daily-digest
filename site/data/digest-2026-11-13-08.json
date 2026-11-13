@@ -1,0 +1,375 @@
+{
+  "date": "2026-11-13",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-13T09:01:40+08:00",
+  "coverage": {
+    "from": "2026-11-12T21:30:00+08:00",
+    "to": "2026-11-13T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "美国华盛顿洛根环岛发生枪击，1死4伤枪手自杀",
+          "summary": "当地时间12日，华盛顿洛根环岛街区发生枪击事件，造成1人死亡、4人受伤，其中一名伤者伤势危重，嫌疑人随后自杀。看点：首都核心区再发枪击，美国枪支暴力与公共安全问题持续发酵。",
+          "source": "中新网",
+          "url": "http://www.chinanews.com.cn/gj/2026/11-13/10731248.shtml",
+          "tag": "枪击事件"
+        },
+        {
+          "title": "胡塞武装称对沙特石油设施和空军基地发动四次打击",
+          "summary": "当地时间12日，也门胡塞武装声明称使用无人机和弹道导弹对沙特阿拉伯的石油设施和军事目标发起四次军事行动。看点：红海与海湾局势再升温，油价与航运风险值得关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-13/10731249.shtml",
+          "tag": "中东局势"
+        },
+        {
+          "title": "贵州毕节威宁县发生4.5级地震，震源深度10公里",
+          "summary": "中国地震台网正式测定，11月13日4时03分贵州毕节市威宁县发生4.5级地震，震源深度10公里。看点：西南山区浅源地震，需留意余震与次生灾害防范。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-13/10731241.shtml",
+          "tag": "地震"
+        },
+        {
+          "title": "中央气象台发大雾黄色预警，十余省区市有大雾",
+          "summary": "中央气象台11月13日06时继续发布大雾黄色预警，十余省区市出现大雾，京津冀等部分地区有浓雾，14日起冷空气影响我国大部。看点：雾霾叠加降温雨雪，出行与健康防护要提前安排。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-13/10731254.shtml",
+          "tag": "天气预警"
+        },
+        {
+          "title": "外交部首次对台湾所谓邦交国部长级官员实施惩戒",
+          "summary": "外交部10月12日宣布对巴拉圭时任通信和技术部部长比利亚特、伯利兹外交部部长丰塞卡采取反制措施，冻结其在华财产并禁止入境，这是中国政府首次惩戒台湾当局所谓“邦交国”部长级官员。看点：涉台外交反制升级，信号意义明确。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/11-13/10731262.shtml",
+          "tag": "涉台反制"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "谷歌发布Gemini 4 Hydrogen，主打日常编程与智能体工作流",
+          "summary": "谷歌正式推出Gemini 4 Hydrogen模型，面向日常编码和智能体工作流，百万Token输入定价1.5美元，并将Gemini 4系列能力下放至所有层级用户。看点：编程与Agent场景的性价比之战再升级，开发者选型多了一个低价选项。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/026/446.htm",
+          "tag": "新模型"
+        },
+        {
+          "title": "Muse的AI可代打美国商家电话，但需付费使用",
+          "summary": "Muse宣布其AI现在可以代替用户向美国企业拨打外呼电话，但该功能并非免费。看点：AI语音代理从演示走向收费落地，客服与预约场景或先被改造。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+          "tag": "AI语音"
+        },
+        {
+          "title": "美联航以网络安全为由，禁止AI智能体代订机票",
+          "summary": "美联航表示不会允许客户使用AI智能体预订航班和管理预订，理由是网络安全风险。看点：AI Agent触碰到平台风控红线，代理自动化的边界开始被明确划线。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/",
+          "tag": "Agent受限"
+        },
+        {
+          "title": "Nebius计划投入400亿美元扩建AI基础设施",
+          "summary": "Nebius计划通过客户预付款和贷款为其400亿美元AI基础设施扩张融资，但微软数据中心项目延期令其融资模式受到质疑。看点：算力军备竞赛进入高杠杆阶段，融资结构风险值得留意。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/",
+          "tag": "算力基建"
+        },
+        {
+          "title": "Fireworks AI遭网络攻击，Notion客户聊天记录被窃",
+          "summary": "Fireworks AI遭遇网络攻击，黑客借此访问了Notion客户的聊天记录，这是该公司两个月内第二次数据泄露。看点：AI中间层服务商成攻击新目标，企业数据链路安全敲响警钟。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/",
+          "tag": "数据泄露"
+        },
+        {
+          "title": "黄仁勋辞职后，英伟达对开源AI的支持会不会变卦？",
+          "summary": "黄仁勋辞去英伟达CEO职务，引发外界对该公司开源AI承诺的质疑，涉及Hugging Face收购、开放权重模型及反对限制的立场。看点：领导层更迭可能改变英伟达在开源生态中的角色，影响整个AI社区。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/12/jensen-huangs-exit-puts-nvidias-support-for-open-source-in-question/",
+          "tag": "开源AI"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "黄仁勋辞任英伟达CEO，CFO克雷斯出任临时CEO",
+          "summary": "英伟达11月12日宣布黄仁勋即日起辞去总裁、CEO及董事会成员职务，CFO科莱特·克雷斯出任临时CEO，哈维·琼斯任首任董事会主席，董事会启动继任者遴选。看点：执掌33年的灵魂人物离场，全球AI算力龙头进入过渡期。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85872",
+          "tag": "英伟达换帅"
+        },
+        {
+          "title": "美国司法部对英伟达启动多项调查，含反垄断",
+          "summary": "据Semafor报道，美国司法部正在开展的多项调查可能将英伟达纳入范围，其中包括反垄断调查。看点：换帅叠加监管调查，英伟达面临治理与合规双重考验。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/026/451.htm",
+          "tag": "反垄断调查"
+        },
+        {
+          "title": "欧几里得望远镜公布首批大规模数据，覆盖超9亿星系",
+          "summary": "欧洲航天局公布欧几里得空间望远镜任务首批大规模观测数据，涵盖超过9亿个星系，用于研究暗物质和暗能量。看点：迄今最大规模的宇宙三维地图之一，基础物理研究的重要节点。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/026/435.htm",
+          "tag": "宇宙观测"
+        },
+        {
+          "title": "奔驰暂停德国工厂全部投资，并考虑关闭部分工厂",
+          "summary": "一份发给员工的备忘录显示，梅赛德斯-奔驰正暂停其在德国工厂的所有投资，并考虑关闭部分工厂，以应对德国高昂的汽车制造成本。看点：欧洲汽车业成本压力显性化，传统豪华品牌开始收缩本土产能。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-13/doc-iniypvhf1123854.shtml",
+          "tag": "车企收缩"
+        },
+        {
+          "title": "英伟达私下确认技术上可追踪芯片以打击走私",
+          "summary": "英伟达代表向伊利诺伊州议员Bill Foster表示，实施《芯片安全法案》要求的反走私措施在技术上可行，尽管行业团体称其“可能不可行”。看点：AI芯片出口管制从纸面走向技术落地，全球供应链合规成本上升。",
+          "source": "MIT科技评论",
+          "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/",
+          "tag": "芯片追踪"
+        },
+        {
+          "title": "海南组建注册资本100亿元的空天集团，主建文昌航天城",
+          "summary": "海南宣布新组建注册资金100亿元的海南空天集团，作为文昌航天城园区投建运主体，推动火箭、卫星和信息产业链落地。看点：地方国资加码商业航天，文昌产业链招商进入实体运作阶段。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-12/10731206.shtml",
+          "tag": "商业航天"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "美股三大指数集体收跌约0.4%，英伟达重挫超4%",
+          "summary": "11月13日美股收盘，三大股指集体收跌约0.4%，英伟达跌超4%，成交额1186亿美元居首，AMD、博通逆势上涨，热门中概股普遍下跌。看点：换帅风波主导隔夜情绪，AI链内部分化明显。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-13/doc-iniypvhf1021853.shtml",
+          "tag": "美股收跌"
+        },
+        {
+          "title": "金价再度跌破3900美元，白银期价同步大跌",
+          "summary": "由于美国通胀持续，市场预期美联储或进一步收紧货币政策，美元走强、美债收益率走高，黄金、白银期价12日大幅下跌，金价再度跌破3900美元。看点：加息预期重定价，避险资产与美元走势出现反向拉扯。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-13/10731242.shtml",
+          "tag": "金价跳水"
+        },
+        {
+          "title": "短期美债收益率四连涨，市场押注12月加息",
+          "summary": "美国2年期国债收益率升至4.862%，四日累计上涨38.8个基点，创2022年6月以来最大四日涨幅，10年期突破5.10%，市场预期12月加息基本成定局。看点：利率路径急转，全球资产估值面临再定价压力。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/articles/3785847",
+          "tag": "美债异动"
+        },
+        {
+          "title": "Anthropic的IPO据悉已获约六倍超额认购",
+          "summary": "知情人士透露，Anthropic的首次公开招股已吸引约六倍认购，投资者对这宗有望成为史上最大规模IPO的交易兴趣浓厚。看点：AI独角兽上市热度爆表，一级市场对AI叙事仍愿买单。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-13/doc-iniypvhp3734331.shtml",
+          "tag": "IPO认购"
+        },
+        {
+          "title": "国际油价12日上涨",
+          "summary": "国际油价12日上涨，市场同时关注胡塞武装对沙特石油设施的打击与供需变化。看点：地缘风险重回油价定价因素，能源成本对通胀的扰动需跟踪。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-13/10731244.shtml",
+          "tag": "油价上涨"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "巴西卢拉政府拟将财政调整目标提升至140亿美元",
+          "summary": "面对投资者对公共债务攀升的担忧，巴西总统卢拉政府正筹备额外预算措施，拟将明年财政调整目标提升至140亿美元。看点：新兴市场财政纪律受考验，巴西资产风险溢价值得关注。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-13/doc-iniypvhn8131167.shtml",
+          "tag": "巴西财政"
+        },
+        {
+          "title": "墨西哥总统回应特朗普关税威胁：无移民大篷车抵边境",
+          "summary": "针对特朗普以关税施压墨方处理移民问题的言论，墨西哥总统辛鲍姆12日表示，自特朗普上任以来未有移民大篷车队伍抵达北部墨美边境。看点：关税与移民议题再度捆绑，美墨贸易关系添变数。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3199437",
+          "tag": "美墨摩擦"
+        },
+        {
+          "title": "应用材料CEO：AI资本支出六成投向芯片领域",
+          "summary": "应用材料CEO盖瑞·狄克森在分析师电话会议上表示，AI超大规模云服务商的大量支出正流向半导体和芯片，估计全部资本支出中的60%投向硅领域。看点：AI投资的钱最终落到哪，设备与材料端最先受益。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-13/doc-iniypvhn8079871.shtml",
+          "tag": "AI资本支出"
+        },
+        {
+          "title": "两市融资余额增加6.85亿元，沪增深减",
+          "summary": "截至11月12日，上交所融资余额报11779.36亿元，较前一交易日增加11.86亿元；深交所报10883.93亿元，减少5.01亿元；两市合计22663.29亿元，增加6.85亿元。看点：杠杆资金小幅回流，市场情绪仍偏谨慎。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3199438",
+          "tag": "融资余额"
+        },
+        {
+          "title": "黄仁勋走了，英伟达5000亿美元AI融资计划也悬了",
+          "summary": "黄仁勋主导的AI融资平台自8月宣布以来零交易落地，核心原因是英伟达仅承诺25%兜底比例，远低于竞争对手博通。看点：失去灵魂人物后，这项旨在将GPU转化为可融资基础设施资产的宏大计划可能遥遥无期。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/articles/3785848",
+          "tag": "AI融资"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "2026世界中文大会召开，聚焦中文国际教育推广",
+          "summary": "2026世界中文大会召开之际，教育部发文称大会旨在深耕中文沃土、架起连心之桥，推动中文国际教育交流。看点：中文出海与语言教育合作是教育对外开放的重要抓手。",
+          "source": "教育部",
+          "url": "http://www.moe.gov.cn/jyb_xwfb/s5147/202611/t20261113_1458085.html",
+          "tag": "中文大会"
+        },
+        {
+          "title": "第十届中华经典诵读港澳展演交流活动举办",
+          "summary": "第十届中华经典诵读港澳展演交流活动举办，面向港澳师生开展经典诵读与文化交流。看点：以诵读为载体的港澳青少年交流持续深化，文化认同教育常态化。",
+          "source": "教育部",
+          "url": "http://www.moe.gov.cn/jyb_xwfb/s5147/202611/t20261113_1458087.html",
+          "tag": "港澳交流"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "京东完成收购德国零售商Ceconomy，13.35亿欧元获59.8%股本",
+          "summary": "京东集团宣布完成对德国消费电子零售商Ceconomy的收购要约，以总对价13.35亿欧元收购其59.8%股本及投票权，Ceconomy成为京东子公司。看点：中国电商巨头借并购直接切入欧洲线下零售网络。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/026/393.htm",
+          "tag": "海外并购"
+        },
+        {
+          "title": "腾讯公关总监辟谣“裁员50%”传闻",
+          "summary": "针对网传腾讯裁员50%的消息，腾讯相关知情人士及公关总监回应称不实，并称微信“看一看”正在小范围测试短剧入口。看点：大厂人员与业务调整传闻频出，短剧入口成新流量试验田。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/026/470.htm",
+          "tag": "辟谣"
+        },
+        {
+          "title": "微信“看一看”小范围测试短剧入口",
+          "summary": "腾讯相关知情人士确认，微信“看一看”正在小范围测试短剧入口，探索内容分发新场景。看点：短剧成平台流量新战场，微信入口级测试影响内容生态格局。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8203507.html",
+          "tag": "短剧入口"
+        },
+        {
+          "title": "中国打工人自掏腰包买AI会员，公司基本不报销",
+          "summary": "生成式AI已成为中国数百万职场人士的日常工具，但雇主很少报销订阅和API费用，且token成本上涨难以预测。看点：AI使用成本正变成打工人的“第二份房租”，折射出企业AI投入的隐性转移。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8203536.html",
+          "tag": "AI消费"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "竞彩大势：德国大胜可期，荷兰主场奏凯",
+          "summary": "11月13日竞彩开售11场赛事，包括友谊赛和欧国联，焦点战为土耳其VS比利时，分析看好德国大胜、荷兰主场取胜。看点：为彩民提供当日投注方向参考。",
+          "source": "新浪",
+          "url": "https://sports.sina.com.cn/l/2026-11-13/doc-iniypvhn8152954.shtml",
+          "tag": "竞彩"
+        },
+        {
+          "title": "足彩彩果：英格兰2-1克罗地亚，土耳其1-2比利时",
+          "summary": "足彩第26163期率先结束7场争夺，欧国联中英格兰2-1小胜克罗地亚，土耳其1-2不敌比利时，阿尔巴尼亚2-0击败芬兰。看点：赛果直接影响足彩奖金分配，彩民可核对中奖情况。",
+          "source": "新浪",
+          "url": "https://sports.sina.com.cn/l/2026-11-13/doc-iniypvhf1089359.shtml",
+          "tag": "足彩"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3655.83,
+        "unit": "点",
+        "changePct": -0.67,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2509.43,
+        "unit": "点",
+        "changePct": -2.44,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
