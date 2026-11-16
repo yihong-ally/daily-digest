@@ -1,0 +1,175 @@
+{
+  "date": "2026-11-15",
+  "slot": "21",
+  "edition": "晚报",
+  "updatedAt": "2026-11-16T17:46:00+08:00",
+  "coverage": {
+    "from": "2026-11-15T09:00:00+08:00",
+    "to": "2026-11-15T21:30:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "马斯克星舰完成试飞，人类首次用发射塔机械臂夹住返回飞船",
+          "summary": "SpaceX星舰在最新一次试飞中由发射塔机械臂成功夹住返回的飞船，被形容为人类首次。看点：可重复使用重型火箭的关键一步，直接关系到未来登月与低成本发射的进度。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1689501?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "星舰回收"
+        },
+        {
+          "title": "英伟达宣布黄仁勋辞去CEO等职务，CFO出任临时CEO",
+          "summary": "英伟达11月12日宣布联合创始人黄仁勋辞去总裁、CEO及董事职务，即时生效，现任CFO Colette Kress出任临时CEO，董事会启动新任CEO遴选。看点：掌舵33年的创始人突然离场，全球AI算力龙头进入过渡期，后续战略走向值得关注。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4067755181003654?f=rss",
+          "tag": "人事巨变"
+        },
+        {
+          "title": "香港迪士尼约1.7万张电子门票被盗，网上售票暂停",
+          "summary": "香港迪士尼乐园约1.7万张电子门票在票务系统中被盗，园方已报警并暂停网上售票及酒店预订，旅客需到合作平台或现场购票。看点：AI被指让黑客找漏洞更快，大型平台的票务与支付安全再次敲响警钟。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85891",
+          "tag": "门票被盗"
+        },
+        {
+          "title": "斯里兰卡亚洲象种群跌破社会临界点，近七成雌象消失",
+          "summary": "一项为期12年的研究显示，斯里兰卡443头野生雌性亚洲象中到2018年近69%已从研究种群消失，象群规模变小、群体更孤立。看点：动物社会网络的断裂被量化，为濒危物种保护提供了新的预警指标。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85890",
+          "tag": "物种保护"
+        },
+        {
+          "title": "建筑机器人公司蔚建科技完成超亿元第五轮融资",
+          "summary": "上海蔚建科技完成超亿元人民币第五轮融资，投资方为财通资本，资金用于生产制造、海外市场开拓和具身智能技术研发，公司连续三年订单复合增长率超100%。看点：建筑机器人从概念走向规模化落地，是具身智能少见的真实商用场景。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4070571639067782?f=rss",
+          "tag": "机器人融资"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": []
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "HomePod mini 2体验：六年更新，音质升级价格也涨",
+          "summary": "苹果时隔六年更新HomePod mini 2，体验显示其体积小但音量更大，外观与音质均有提升，售价偏高。看点：智能音箱赛道沉寂多年后苹果再出手，值不值得买看这篇实测。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1689473?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "新机体验"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": []
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": []
+    },
+    "education": {
+      "label": "教育",
+      "items": []
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": []
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "给 Mac 航拍壁纸排时间表，跟着早晚自动换",
+          "summary": "少数派介绍一款叫 Aerial Switcher 的工具，能让 Mac 的航拍壁纸按一天时间自动切换。看点：苹果同一地点从早到晚都拍了，让壁纸跟着时间走更应景。",
+          "source": "少数派",
+          "url": "https://sspai.com/post/118392",
+          "tag": "工具"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3602.57,
+        "unit": "点",
+        "changePct": -0.87,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2320.02,
+        "unit": "点",
+        "changePct": -4.37,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  },
+  "backfilled": true
+}

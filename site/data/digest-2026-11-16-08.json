@@ -1,0 +1,252 @@
+{
+  "date": "2026-11-16",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-16T17:45:22+08:00",
+  "coverage": {
+    "from": "2026-11-15T21:30:00+08:00",
+    "to": "2026-11-16T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "意大利因Meta擅自读取相册，开出8.05亿欧元最高罚单",
+          "summary": "意大利监管机构认定Meta的Android版Facebook应用默认开启相册访问且未充分告知，对其处以8.05亿欧元罚款，并要求60天内禁用该功能。看点：这是意大利对科技巨头开出的最高罚单之一，涉及约2000万用户，隐私合规成本正急剧上升。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85892",
+          "tag": "隐私罚款"
+        },
+        {
+          "title": "微软全球服务大宕机超30小时，官方宣布恢复",
+          "summary": "微软Microsoft 365服务在全球范围中断超过30小时，影响大量企业办公与个人用户，官方已宣布恢复。看点：云服务单点故障的连锁影响再次暴露，企业应急备份方案值得重新审视。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1689521?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "全球宕机"
+        },
+        {
+          "title": "美国罕见全国停飞超4小时，起因竟是线缆更换",
+          "summary": "美国因线缆更换引发技术故障，导致全美航班停飞超过4小时，属于罕见全国性航空中断事件。看点：基础设施维护失误就能让整个空域停摆，航空系统冗余设计再受拷问。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4071682515817605?f=rss",
+          "tag": "全国停飞"
+        },
+        {
+          "title": "2026年国家医保目录公布，新增107种药品含51个1类新药",
+          "summary": "2026年国家基本医保目录新增药品107个，其中1类新药51个，目录内药品总数增至3331个，包括129万元/支的抗癌药和GLP-1降糖药。看点：3.5万亿医保基金重新分配，高价创新药进医保将直接减轻患者负担。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4070947046675589?f=rss",
+          "tag": "医保目录"
+        },
+        {
+          "title": "黄仁勋被曝考虑重返英伟达任CEO，硅谷盟友组建作战室游说",
+          "summary": "英国《金融时报》报道，被董事会驱逐数天后，黄仁勋正讨论重返英伟达的可能性，多位硅谷高管组建“作战室”游说董事会并计划争取白宫支持。看点：创始人去留牵动全球AI芯片龙头走向，英伟达治理危机可能波及整个AI产业链。",
+          "source": "极客公园",
+          "url": "http://www.geekpark.net/news/373994",
+          "tag": "CEO回归"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "印度Bharat Semi获2400万美元种子轮，AI传感器拿下通用原子订单",
+          "summary": "印度芯片初创公司Bharat Semi完成2400万美元种子轮融资，其AI传感器技术已获得包括General Atomics在内的客户设计订单，瞄准全球AI传感器市场。看点：AI芯片竞争从数据中心向传感器等边缘场景扩散，印度半导体势力开始冒头。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/15/indian-chip-startup-bharat-semi-lands-24m-seed-round-as-it-eyes-global-ai-sensor-market/",
+          "tag": "AI芯片"
+        },
+        {
+          "title": "黄仁勋去留风波发酵，AI行业命脉系于英伟达一人",
+          "summary": "TechCrunch发文讨论黄仁勋可能离开英伟达对AI行业的影响，指出“Jensen就是英伟达，整个经济都押注在英伟达身上”。看点：一家AI算力核心公司的治理动荡，可能通过芯片供应传导至全球AI产业。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/15/is-bad-news-for-jensen-huang-also-bad-news-for-the-ai-industry/",
+          "tag": "行业震荡"
+        },
+        {
+          "title": "国产前沿模型被曝携带Blackwell GPU特征，推理芯片路线引关注",
+          "summary": "有简讯指出国产前沿模型携带Blackwell GPU特征，暗示国内模型训练或推理与英伟达最新架构存在关联。看点：在出口管制背景下，国产大模型与先进GPU的绑定程度是观察算力自主的关键线索。",
+          "source": "少数派",
+          "url": "https://sspai.com/post/119119",
+          "tag": "算力线索"
+        },
+        {
+          "title": "SNL把科技大佬凑一起，演约会和间谍戏码",
+          "summary": "周六夜现场这期让演员一次性模仿多位科技公司高管，主题是约会和间谍桥段。看点：科技大佬的尴尬人设已成固定笑料，这次集中放大更有话题。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/15/snl-gathers-all-the-tech-tycoons-for-a-lesson-in-dating-and-spycraft/",
+          "tag": "娱乐"
+        },
+        {
+          "title": "英伟达下一步怎么走，投资人博主写长文分析",
+          "summary": "Steve Blank 发文讨论英伟达接下来靠什么继续增长。看点：Hacker News 上评论数远超点赞，说明业界对算力巨头前景分歧很大。",
+          "source": "Hacker News",
+          "url": "https://steveblank.com/2026/11/15/whats-next-for-nvidia/",
+          "tag": "芯片"
+        },
+        {
+          "title": "乌鸦做决定比人还快，纽约时报讲研究",
+          "summary": "纽约时报报道研究显示乌鸦的决策速度超过人类。看点：鸟类大脑结构简单却效率惊人，对理解智能与决策机制有启发。",
+          "source": "Hacker News",
+          "url": "https://www.nytimes.com/2026/11/15/science/birdbrain-crows-birds-research-decision.html",
+          "tag": "科研"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "SpaceX首次成功回收星舰上面级，筷子臂夹住飞船",
+          "summary": "SpaceX在Flight 15任务中首次成功回收Starship上面级，Ship 42绕地球飞行14圈、历时22.5小时后被2号发射台筷子臂捕获，同时发射22颗Starlink V3卫星；推进器Booster 22则受控爆炸。看点：星舰两级回收拼图接近完整，大幅降低发射成本的时代加速到来。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85893",
+          "tag": "火箭回收"
+        },
+        {
+          "title": "Skydio发布非对称固定翼无人机F10 Lightrunner",
+          "summary": "Skydio推出采用非对称设计的固定翼无人机F10 Lightrunner，解决了固定翼无人机的一项固有难题。看点：无人机巨头向固定翼长航时赛道延伸，巡检与测绘市场格局可能生变。",
+          "source": "IEEE Spectrum",
+          "url": "https://spectrum.ieee.org/skydio-f10-lightrunner-asymmetrical-drone",
+          "tag": "新无人机"
+        },
+        {
+          "title": "Tor项目遭持续DDoS攻击，紧急发布防御修复版本",
+          "summary": "Tor项目在遭受持续DDoS攻击期间发布安全版本0.4.9.17，提供快速响应的DoS防御修复。看点：匿名网络正成为攻击重点目标，隐私工具的可用性面临实战考验。",
+          "source": "Tor Project Forum",
+          "url": "https://forum.torproject.org/t/security-release-0-4-9-17/22454",
+          "tag": "安全修复"
+        },
+        {
+          "title": "微软365宕机致德国酒店15名客人氯气中毒",
+          "summary": "德国一家酒店因微软365服务中断引发技术故障，导致泳池氯气系统异常，15名客人氯气中毒。看点：云办公软件宕机竟能危及人身安全，关键基础设施对SaaS的依赖风险被严重低估。",
+          "source": "WDR",
+          "url": "https://www1.wdr.de/nrw/rheinland/rhein-erft-kreis/technischer-defekt-chlor-phantasialand-100.html",
+          "tag": "宕机事故"
+        },
+        {
+          "title": "Protomaps让自托管地图瓦片变得便宜又简单",
+          "summary": "Protomaps项目展示了自托管地图瓦片已变得成本低廉且部署简单，在Hacker News获得329点热度。看点：地图数据自主可控门槛下降，中小开发者也能摆脱对商业地图API的依赖。",
+          "source": "Hacker News",
+          "url": "https://bruceroettgers.eu/blog/protomaps/",
+          "tag": "地图开源"
+        },
+        {
+          "title": "老 Bitly 短链被人劫持，汉堡王推文链接中招",
+          "summary": "有报道称早年生成的 Bitly 短链接正被他人接管利用，汉堡王一条推文的链接就遭劫持。看点：短链服务回收旧链接的机制，可能给品牌和用户带来安全风险。",
+          "source": "Hacker News",
+          "url": "https://ransomnews.com/burger-king-tweet-bitly-link-hijack-2026/",
+          "tag": "安全"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "虚拟细胞公司无界进化完成超亿元Pre-A轮，红杉华盖等加注",
+          "summary": "晶泰孵化的虚拟细胞公司无界进化完成超亿元Pre-A轮融资，星连资本、Prosperity7、华盖资本、华控基金、德同资本联合投资，顺为、红杉中国、松禾追加，半年内第二笔。看点：全球虚拟细胞融资总额已破30亿美元，AI制药资本正从分子层面向细胞层面迁移。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4071054629737606?f=rss",
+          "tag": "AI制药融资"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": []
+    },
+    "education": {
+      "label": "教育",
+      "items": []
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": []
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": []
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3602.57,
+        "unit": "点",
+        "changePct": -0.87,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2320.02,
+        "unit": "点",
+        "changePct": -4.37,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
