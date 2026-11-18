@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-18",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-18T09:00:59+08:00",
+  "coverage": {
+    "from": "2026-11-17T21:30:00+08:00",
+    "to": "2026-11-18T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "舒默宣布已锁定足够票数，将当选美参议院多数党领袖",
+          "summary": "美国参议院民主党领袖查克·舒默当地时间17日宣布，他已锁定足够票数当选参议院多数党领袖，并敦促民主党人专注于降低成本和结束腐败。看点：美国参议院权力格局变动，将影响后续立法议程与两党博弈节奏。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-18/10733845.shtml",
+          "tag": "美政坛"
+        },
+        {
+          "title": "俄一架安-12军用运输机坠毁，机上19人全部遇难",
+          "summary": "俄罗斯国防部17日通报，一架安-12军用运输机在西伯利亚西南部克麦罗沃州坠毁，机上19人全部遇难。看点：俄军近期事故频发，事件原因与后续调查值得关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-18/10733839.shtml",
+          "tag": "空难"
+        },
+        {
+          "title": "儿童用品全品类强制国标施行，赠品试用装同受约束",
+          "summary": "儿童用品全品类强制性国家标准正式施行，赠品和试用装也被纳入约束范围。看点：家有孩子的消费者选购用品时多了一层安全底线，商家赠品不能再打擦边球。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-18/10733850.shtml",
+          "tag": "新国标"
+        },
+        {
+          "title": "弹窗广告点进去容易退出来难，为何越关越多引关注",
+          "summary": "媒体报道弹窗广告存在“点进去容易、退出来难”的问题，用户关闭后反而越弹越多。看点：手机和电脑上的弹窗骚扰已成普遍痛点，背后是平台流量变现与用户体验的博弈。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-18/10733844.shtml",
+          "tag": "弹窗广告"
+        },
+        {
+          "title": "中国U19男足2比1力克韩国，时隔八年再夺熊猫杯冠军",
+          "summary": "2026熊猫杯国际青年足球锦标赛收官战17日晚在成都举行，中国U19男足2比1击败韩国U19男足，时隔八年再夺冠军。看点：青年队击败老对手，给低谷中的中国足球带来一丝提振。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/ty/2026/11-18/10733829.shtml",
+          "tag": "熊猫杯"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "OpenAI在Anthropic IPO定价前夜空降双模型GPT-6.2 Astra和Sol",
+          "summary": "就在Anthropic IPO定价前一天，OpenAI突然发布GPT-6.2 Astra和Sol两款模型，称部分领域超越Fable 5.2且成本大降，金融、科研刷新纪录。看点：大模型竞争进入贴身肉搏，IPO窗口前的卡位战直接影响资本市场对AI公司的定价。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/577.htm",
+          "tag": "新模型"
+        },
+        {
+          "title": "微软发布决策AI模型Decision-1.1，跑赢GPT-6 Luna与Gemini",
+          "summary": "微软11月17日正式推出Microsoft-Decision-1.1决策AI模型，已在Microsoft Foundry、OpenRouter和Vercel平台上线，官方称跑赢GPT-6 Luna与Gemini。看点：决策类模型成为新战场，企业做自动化决策多了一个可选项。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/593.htm",
+          "tag": "决策模型"
+        },
+        {
+          "title": "微软发布MAI Image 2.7，称用1/5价格击败GPT Image 2.6登顶",
+          "summary": "微软11月17日发布MAI Image 2.7和MAI Image 2.7 Flash图像生成与编辑模型，并上线由Flash驱动的交互式创作空间Canvas，号称以1/5价格登顶修图模型榜首。看点：图像模型价格战开打，普通用户修图、做图的成本会进一步下降。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/582.htm",
+          "tag": "修图模型"
+        },
+        {
+          "title": "微软自研芯片Maia 200投产，每瓦token性能提升1.7倍",
+          "summary": "微软在Ignite 2026上宣布第二代自研AI加速器Maia 200正式规模化生产，并开始在数据中心运行其最大规模前沿大模型，Teams、Copilot等场景每瓦token处理量最高提升1.7倍。看点：大厂自研芯片替代GPU的进度加快，算力成本结构可能生变。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/597.htm",
+          "tag": "自研芯片"
+        },
+        {
+          "title": "微软发布编程模型MAI Code 2，用5%成本达Claude Opus 5.5约96%性能",
+          "summary": "微软在Ignite 2026发布自研编程模型MAI Code 2和MAI Code 2 Flash，并已在GitHub Copilot上线，官方称以约5%成本达到Claude Opus 5.5约96%的性能。看点：AI编程工具性价比大幅提升，开发者订阅Copilot的理由更充分了。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/579.htm",
+          "tag": "编程模型"
+        },
+        {
+          "title": "商汤发布SenseNova Loop-9B，寒武纪Day 0完成适配",
+          "summary": "商汤科技17日晚正式发布SenseNova Loop-9B模型，采用新型循环计算架构，寒武纪同日宣布Day 0完成适配，打通推理链路。看点：国产模型与国产芯片的协同速度加快，国产算力生态落地更进一步。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/568.htm",
+          "tag": "国产模型"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "小米18 Pro系列国际版巴黎发布，背屏设计出海1399欧元起",
+          "summary": "小米在巴黎发布会上正式推出小米18 Pro系列国际版，把背屏设计带向海外，售价1399欧元起（约合10278元人民币）。看点：国产旗舰以差异化设计冲击欧洲高端市场，海外定价策略值得关注。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/564.htm",
+          "tag": "新机发布"
+        },
+        {
+          "title": "加州DMV叫停Waymo高速公路运营，称对公共安全构成迫在眉睫威胁",
+          "summary": "美国加州车辆管理局已禁止Waymo无人驾驶出租车在加州高速公路运营，理由是其无人驾驶运营对公共安全构成迫在眉睫的威胁，此前Waymo车辆曾试图超越公路巡警。看点：自动驾驶商业化再遇监管红灯，无人出租车的扩张节奏可能放缓。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/600.htm",
+          "tag": "自动驾驶"
+        },
+        {
+          "title": "美国全国停飞事件后，FAA暂停安装新路由器",
+          "summary": "美国联邦航空管理局周二表示将暂停安装新路由器，此前该技术问题导致上周五发布罕见的全国地面停飞令，影响数万架次航班、暂停起飞超四小时，为9·11以来最长中断。看点：空管基础设施老化问题暴露，航空出行安全与效率的平衡再受审视。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4074539912451201?f=rss",
+          "tag": "航空安全"
+        },
+        {
+          "title": "大疆多款产品18日起涨价，Osmo Pocket系列最高涨560元",
+          "summary": "大疆因全球半导体、存储等关键零部件成本持续大幅上涨，自11月18日零时起调整部分产品建议零售价，涉及Osmo Pocket 4P、4、Nano等，最高涨560元。看点：存储涨价潮传导到消费电子终端，想入手口袋相机的用户要重新算预算了。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/567.htm",
+          "tag": "涨价"
+        },
+        {
+          "title": "力箭一号遥十六运载火箭出厂，拟近期海上发射一箭2星",
+          "summary": "力箭一号遥十六运载火箭在广州南沙完成总装测试并通过出厂评审，拟于近期在山东附近海域执行一箭2星发射任务；该型号已累计将119颗卫星送入太空。看点：民商火箭高频发射常态化，海上发射能力持续验证。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/livenews/3201610",
+          "tag": "火箭出厂"
+        },
+        {
+          "title": "微软Win11 26H2内存优化实测，8GB内存机型体验显著改善",
+          "summary": "IT之家实测显示，微软Win11 26H2版本针对内存占用做了优化，8GB内存机型的日常体验显著改善。看点：老电脑用户不必急着加内存条，系统更新可能直接带来流畅度提升。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/539.htm",
+          "tag": "系统优化"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "英伟达财报超预期盘后涨超4%，董事会称无意让黄仁勋复职",
+          "summary": "英伟达17日美股盘后公布2027财年第三财季业绩，营收和利润均超市场预期，盘后股价涨超4%；董事会明确表示无意让黄仁勋回归CEO岗位。看点：创始人风波未伤业绩，但管理层动荡仍是悬在股价上的变量。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/roll/2026-11-18/doc-inizcexp7079491.shtml",
+          "tag": "英伟达财报"
+        },
+        {
+          "title": "标普纳指四连跌软件股重挫，美元结束五连涨",
+          "summary": "隔夜美股标普500和纳指连续第四个交易日下跌，软件股大幅下挫，英伟达盘后涨4%，美元指数结束五连涨。看点：科技股回调与AI叙事分化并行，隔夜情绪将传导至亚太市场开盘。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3201583",
+          "tag": "美股回调"
+        },
+        {
+          "title": "日韩股市高开，韩国KOSPI开盘大涨2.6%",
+          "summary": "18日亚太早盘，日经225指数开盘报59007.40点涨0.25%，韩国综合股价指数开盘上涨2.6%至5098.82点。看点：隔夜美股分化后韩股强势高开，亚太资金情绪出现明显修复。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizcexi1199358.shtml",
+          "tag": "亚太开盘"
+        },
+        {
+          "title": "摩根大通联手现代信用卡，测试AI自己谈金融交易",
+          "summary": "摩根大通与现代信用卡正测试AI智能体能否在无人介入下处理金融交易，甚至自主协商条款。看点：若跑通，银行后台与信用卡议价流程可能被AI接管。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizcexp7100446.shtml",
+          "tag": "AI金融"
+        },
+        {
+          "title": "索尼英国打赢近20亿英镑官司，游戏定价没被判违法",
+          "summary": "伦敦竞争上诉法庭驳回全部诉求，认定原告未能证明索尼借PlayStation垄断地位抬高数字游戏价格。看点：平台抽成与定价模式暂时过关，其他市场同类诉讼可参照。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/544.htm",
+          "tag": "反垄断"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "美银预计美国利率将持续上行，2年期美债收益率年底看至5%",
+          "summary": "美银美国利率策略主管Cabana表示，若短期利率未对经济形成抑制，利率将继续上升，预计2年期美债收益率年底达5%，上次触及该水平是2023年。看点：美债利率若真冲上5%，全球资产定价和汇率都将承压。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3201581",
+          "tag": "美债利率"
+        },
+        {
+          "title": "日本10月贸易逆差收窄至4765亿日元，能源进口仍居高不下",
+          "summary": "日本财务省周三公布，未经调整的10月贸易逆差收窄至4765亿日元（约30亿美元），油价上涨推高进口金额，抵消了出口增长。看点：能源价格正持续侵蚀日本贸易账，日元汇率压力难解。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizcexp7088116.shtml",
+          "tag": "日本贸易"
+        },
+        {
+          "title": "中国—东盟自贸区3.0版升级议定书12月1日正式生效",
+          "summary": "中国—东盟自贸区3.0版升级议定书将于今年12月1日正式生效实施，将赋能覆盖近21亿人口的区域大市场和产业链供应链。看点：区域贸易规则升级，外贸和跨境电商企业将迎来新的关税与准入便利。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733820.shtml",
+          "tag": "自贸区升级"
+        },
+        {
+          "title": "英伟达不请回黄仁勋，还把2028财年增速预期提到75%",
+          "summary": "临时CEO称需求远超供给，新Rubin芯片创公司史上最快爬坡并揽下200亿美元，AI基建财务担保将更克制挑剔。看点：换帅风波后英伟达仍上调预期，AI投入风向转谨慎。",
+          "source": "华尔街见闻",
+          "url": "https://wallstreetcn.com/articles/3786136",
+          "tag": "AI算力"
+        },
+        {
+          "title": "AI数据中心抢电，大功率柴油发电机订单排到2028年",
+          "summary": "全球算力建设提速，备用电源供不应求，头部厂商在手订单已排至2027至2028年，国内今年数据中心需求预计破6000台。看点：AI热潮的配套生意正在变成实打实的紧缺订单。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3201586",
+          "tag": "AI基建"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "研究显示学校禁止手机有助于提高学生成绩",
+          "summary": "一项覆盖2021至2026年间4600所学校、330万名美国三至十年级学生的研究显示，实施严格手机禁令的学校学生MAP测试成绩略有提高，且提升随时间累积；美国已有46个州对学校使用手机设限。看点：手机进校园的利弊之争有了新数据，国内学校管理或可参考。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85915",
+          "tag": "手机禁令"
+        },
+        {
+          "title": "思考乐教育受托人根据股份奖励计划购入13.6万股",
+          "summary": "思考乐教育公告，2026年11月17日受托人根据股份奖励计划在市场上购入合共13.6万股股份，为获选参与者以信托方式持有。看点：教培机构用股份奖励绑定核心员工，反映行业转型期的人才留存压力。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/hkstock/ggscyd/2026-11-18/doc-inizcexp7106156.shtml",
+          "tag": "股份奖励"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "微软苹果接连宕机后，谷歌紧急回应Gmail故障传闻称运行正常",
+          "summary": "在微软365和苹果服务相继发生大规模故障后，网上传出Gmail故障传闻，谷歌18日凌晨紧急回应称未发现大范围中断，并提醒用户查看Workspace状态仪表板。看点：云服务连环故障让用户神经紧绷，基础设施可靠性再成焦点。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/028/591.htm",
+          "tag": "服务故障"
+        },
+        {
+          "title": "免押租赁遭遇信息过度索取，有平台要求通讯录和微信流水",
+          "summary": "消费者反映，电商平台“免押租赁”除身份证、手机号、住址外，还被要求提供通讯录、微信好友、微信流水记录甚至工作群聊录屏，理由是风控需要。看点：租赁经济扩张中的隐私边界问题，普通消费者租相机、租设备时要多留个心眼。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-18/10733846.shtml",
+          "tag": "隐私安全"
+        },
+        {
+          "title": "谷歌罕见发声明：Gmail没崩，一切正常",
+          "summary": "在科技公司服务中断频发的背景下，谷歌特意宣布Gmail运行正常。看点： outage 成常态后，主动报平安本身成了公关动作。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/17/google-joins-the-tech-outage-trend-by-announcing-its-not-having-one/",
+          "tag": "谷歌"
+        },
+        {
+          "title": "DeepMind分出来的AI制药公司Isomorphic融了50亿美元",
+          "summary": "这家2021年从谷歌DeepMind拆出的AI药物发现平台完成C轮50亿美元融资，准备把候选药推进临床试验。看点：AI制药从讲故事进入烧钱做临床的阶段。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/",
+          "tag": "AI制药"
+        },
+        {
+          "title": "微软CEO夸黄仁勋独一无二，同时回应宕机和员工买断",
+          "summary": "纳德拉称被罢免的黄仁勋对科技行业贡献巨大，并回应了大规模服务中断与员工买断计划。看点：一把手公开定调人事与稳定性问题，安抚意味明显。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-18/doc-inizcexm4950812.shtml",
+          "tag": "微软"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "巴甲冲刺：弗拉门戈争冠最稳，七队还在保级缠斗",
+          "summary": "巴甲第35轮11月19日至20日开打，数据回顾显示弗拉门戈争冠形势最稳，另有七队深陷保级混战。看点：赛季末段争冠与保级同时挤压，冷门概率上升。",
+          "source": "新浪",
+          "url": "https://sports.sina.com.cn/l/2026-11-18/doc-inizcexp1690708.shtml",
+          "tag": "巴甲"
+        },
+        {
+          "title": "竞彩情报：内马尔解禁复出，桑托斯客场有看头",
+          "summary": "科里蒂巴近9轮仅1胜、攻防都不稳，桑托斯虽三轮不胜但迎回解禁的内马尔。看点：保级队对上有核心回归的桑托斯，盘面判断更看临场阵容。",
+          "source": "新浪",
+          "url": "https://sports.sina.com.cn/l/2026-11-18/doc-inizcexm4945178.shtml",
+          "tag": "竞彩"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3584.58,
+        "unit": "点",
+        "changePct": -0.5,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2292.2,
+        "unit": "点",
+        "changePct": -1.2,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
