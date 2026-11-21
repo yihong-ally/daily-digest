@@ -1,0 +1,382 @@
+{
+  "date": "2026-11-21",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-21T09:00:58+08:00",
+  "coverage": {
+    "from": "2026-11-20T21:30:00+08:00",
+    "to": "2026-11-21T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "习近平会见新加坡总理黄循财，中新关系再受关注",
+          "summary": "11月20日，习近平会见新加坡总理黄循财。看点：中新关系走向对区域合作与经贸往来有直接影响。",
+          "source": "中新网",
+          "url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-20/1211321.shtml",
+          "tag": "高层会晤"
+        },
+        {
+          "title": "李强与澳大利亚总理共同出席中澳工商界CEO圆桌会",
+          "summary": "李强同澳大利亚总理阿尔巴尼斯共同出席第九届中澳工商界首席执行官圆桌会。看点：中澳经贸关系回暖信号，关注后续贸易与投资合作。",
+          "source": "中新网",
+          "url": "http://www.chinanews.com.cn/tp/hd2011/2026/11-21/1211329.shtml",
+          "tag": "中澳经贸"
+        },
+        {
+          "title": "安理会举行联合国秘书长遴选第九轮意向性投票",
+          "summary": "联合国安理会20日就下一任联合国秘书长遴选举行第九轮意向性投票。看点：遴选进入关键阶段，结果将影响未来全球治理格局。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-21/10735607.shtml",
+          "tag": "联合国"
+        },
+        {
+          "title": "亚太媒体合作伙伴计划成立，首批310家机构覆盖41国",
+          "summary": "由新华社发起的亚太媒体合作伙伴计划正式成立，首批成员机构310家，覆盖亚太41个国家和地区。看点：区域媒体合作网络成形，关注中国在亚太话语权布局。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/11-21/10735610.shtml",
+          "tag": "媒体合作"
+        },
+        {
+          "title": "美股大跌纳指跌超5%，年内涨幅悉数回吐",
+          "summary": "11月20日美股三大指数大幅下跌，纳斯达克综合指数单日跌幅超过5%，年内涨幅全部回吐。看点：AI交易退潮引发全球风险资产重估，关注下周抛压是否延续。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-21/10735615.shtml",
+          "tag": "美股暴跌"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "Anthropic数学家称与Claude合作证明黎曼猜想，陶哲轩称验证需时间",
+          "summary": "Anthropic数学家Levent Alpöge宣称与Claude合作找到黎曼猜想及广义黎曼猜想的证明，仅发布Lean代码，陶哲轩表示验证仍需时间。看点：若获证实将是AI辅助数学的里程碑，但先别急着信。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/297.htm",
+          "tag": "AI数学"
+        },
+        {
+          "title": "OpenAI向ChatGPT Plus用户开放Spaces协作空间，支持多人共同编辑",
+          "summary": "OpenAI宣布向每月20美元的ChatGPT Plus订阅用户开放Spaces协作空间，支持多人共同整理资料、协作处理文档和文件。看点：AI助手从个人工具转向团队协作，办公场景竞争升级。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/288.htm",
+          "tag": "产品升级"
+        },
+        {
+          "title": "匿名AI模型Gestalt登顶设计榜单，Elo评分超人类参考作品",
+          "summary": "Contra Labs于11月18日发布Frontier Design Benchmark榜单，隐身开发中的匿名模型Gestalt在专业设计师盲测中登顶，超过Claude Fable 5.2、GPT-6.1 Sol，设计师偏好评分甚至超过人类参考作品。看点：AI设计能力逼近甚至超越人类审美，设计行业面临直接冲击。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/291.htm",
+          "tag": "AI设计"
+        },
+        {
+          "title": "腾讯WorkBuddy教育公益版覆盖66万用户，混元模型占Token消耗76.3%",
+          "summary": "腾讯SSV发布数据，WorkBuddy教育公益版自10月19日上线以来累计覆盖约66万名用户，混元系列模型占该版本Token总消耗的76.3%。看点：国产大模型在教育公益场景规模化落地，混元生态加速扩张。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-21/10735619.shtml",
+          "tag": "教育AI"
+        },
+        {
+          "title": "METR新报告：AI能力仍沿指数轨迹提升，但判断类任务明显弱于编程",
+          "summary": "AI评估非营利机构METR发布报告更新，发现部分AI能力继续沿指数轨迹提升，但模型在需要判断力的任务上表现不如编程。看点：AI能力边界更清晰，别把编程强等同于全能。",
+          "source": "MIT 科技评论",
+          "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+          "tag": "AI评估"
+        },
+        {
+          "title": "研究者向AI供应链植入200万个追踪标记，发现用户数据大量外泄",
+          "summary": "有研究者用带唯一可追踪秘密的提示词做测试，证明AI供应链中用户数据无法保持私密，隐私灾难浮出水面。看点：用AI处理敏感信息的人该重新评估数据安全风险。",
+          "source": "Ars Technica",
+          "url": "https://arstechnica.com/security/2026/11/a-leaky-ai-supply-chain-is-exposing-secret-user-data-at-an-alarming-rate/",
+          "tag": "AI安全"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "我国成功发射卫星互联网低轨30组卫星",
+          "summary": "11月20日19时59分，我国在海南商业航天发射场使用长征八号甲运载火箭，成功将卫星互联网低轨30组卫星送入预定轨道。看点：中国版卫星互联网组网提速，商业航天进入密集发射期。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/242.htm",
+          "tag": "发射成功"
+        },
+        {
+          "title": "木卫二巨大钠云身世揭秘，线索指向冰下咸水海洋",
+          "summary": "波士顿大学牵头团队分析20多年观测资料，发现木卫二周围延伸至其半径约30倍远的稀薄钠原子云，为冰下海洋探索提供新线索。看点：地外生命探测再添关键证据，木卫二探测任务价值上升。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/300.htm",
+          "tag": "太空发现"
+        },
+        {
+          "title": "Thinking Machines发布Inkling 2 Mini模型",
+          "summary": "Thinking Machines发布Inkling 2 Mini模型，相关页面在Hacker News引发617点热度讨论。看点：新玩家入局小模型赛道，关注其性能与开源策略。",
+          "source": "Hacker News",
+          "url": "https://thinkingmachines.ai/news/inkling-2-mini/",
+          "tag": "新模型"
+        },
+        {
+          "title": "Winedroid演示无需Android运行安卓应用，基于WASM",
+          "summary": "Winedroid发布WASM演示，可在没有Android环境的情况下运行安卓应用。看点：跨平台运行安卓应用的新思路，对开发者和云手机场景有想象空间。",
+          "source": "Hacker News",
+          "url": "https://winedroid.soham.sh/demo/",
+          "tag": "跨平台"
+        },
+        {
+          "title": "GTA 6首日销售额创游戏史最高，预购加首日超2450万份",
+          "summary": "Sensor Tower数据显示，本周四上市的GTA 6预购量和首日销量合计超2450万份，收入约23.6亿美元，开发成本超10亿美元。看点：游戏业史上最大首发，主机生态与玩家时间分配将被重塑。",
+          "source": "奇客Solidot",
+          "url": "https://www.solidot.org/story?sid=85948",
+          "tag": "游戏纪录"
+        },
+        {
+          "title": "华为星芒发布首款阔直板手机OSTA O1 Pro，5499元起",
+          "summary": "华为星芒发布首款阔直板手机OSTA O1 Pro，起售价5499元，号称首款为AI而生的鸿蒙手机。看点：华为新品牌切入AI手机形态，鸿蒙生态再添硬件入口。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1690759?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "新机发布"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "纳指狂泻千点英伟达跌14%，标普道指双双步入回调区间",
+          "summary": "11月20日美股重挫，纳斯达克指数跌超5%抹去年内涨幅，英伟达跌14%，标普500和道指较近期高点回落超10%进入回调区间。看点：AI交易集中抛售引发系统性调整，全球风险资产承压。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-21/doc-inizmruv0035217.shtml",
+          "tag": "美股暴跌"
+        },
+        {
+          "title": "英伟达市值较10月高点蒸发2.73万亿美元，创2008年来最长周线连跌",
+          "summary": "英伟达周五收跌14%，市值约3.03万亿美元，较10月6日高点5.76万亿美元蒸发2.73万亿美元，连续第七周收跌，为2008年金融危机以来最长周线连跌。看点：AI算力龙头估值大幅回撤，产业链情绪受挫。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/302.htm",
+          "tag": "英伟达重挫"
+        },
+        {
+          "title": "国际金价创一年多新低，八日连失五道关口本周跌近9%",
+          "summary": "伦敦现货黄金八个交易日内接连失守4000至3600美元五道整数关口，本周跌幅逼近9%，较年初历史高点回撤约36%。看点：美联储鹰派信号叠加AI股大跌引发金属市场抛售，抄底需谨慎。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-21/10735605.shtml",
+          "tag": "黄金暴跌"
+        },
+        {
+          "title": "避险买盘推动美债大涨，OIS显示12月加息溢价仅23个基点",
+          "summary": "美国国债周五大幅上涨，收益率接近日内低点，曲线前端最多下跌15个基点，OIS定价显示12月会议加息溢价仅23个基点。看点：市场对美联储加息预期迅速降温，债市成资金避风港。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-21/doc-inizmruq6928996.shtml",
+          "tag": "美债大涨"
+        },
+        {
+          "title": "原油连续第三周下跌，布伦特收于92美元上方",
+          "summary": "油价连续第三周下跌，布伦特原油周五小幅上涨收于每桶92美元上方，交易员在伊朗风险与充裕供应之间权衡。看点：供应充足压制地缘溢价，油价弱势利好出行与制造业成本。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-21/doc-inizmruv0018676.shtml",
+          "tag": "油价下跌"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "美联储鹰派信号施压，黄金创3月以来最大单周跌幅",
+          "summary": "黄金连续第五天下跌，创3月以来最大单周跌幅，美联储释放鹰派信号暗示还将进一步加息，AI股票大跌引发金属市场普遍抛售。看点：加息预期与风险资产抛售共振，避险资产也难独善其身。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-21/doc-inizmwan6852758.shtml",
+          "tag": "美联储"
+        },
+        {
+          "title": "特朗普撤换国家网络总监，由五角大楼首席信息官接任",
+          "summary": "特朗普撤换国家网络总监Cairncross，由国防部首席信息官Kirsten接任，白宫称这是淡化技术故障之际的重大人事调整。看点：美国网络安全治理架构变动，关注后续政策走向。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-21/doc-inizmruq6923523.shtml",
+          "tag": "人事变动"
+        },
+        {
+          "title": "加拿大政府与工会联手阻止Stellantis出售安大略省工厂",
+          "summary": "加拿大联邦政府、安大略省政府与工会达成一致，阻止Stellantis将其布兰普顿闲置工厂出售给装甲车制造商Roshel，11月20日各方与Stellantis CEO会谈。看点：北美汽车产业链就业与产能博弈，贸易保护色彩加重。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3203620",
+          "tag": "汽车产业"
+        },
+        {
+          "title": "胡塞武装称重创沙特发电站和港口，沙特联军持续互袭",
+          "summary": "也门胡塞武装称打击沙特吉赞省发电站和港口设施，沙特联军称袭击胡塞多个军事目标，自新一轮升级以来沙特联军袭击达5429次，死亡438人。看点：中东能源设施风险上升，关注对油价与航运的传导。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3203607",
+          "tag": "中东局势"
+        },
+        {
+          "title": "山西朔州要从挖煤转向造新能源，装机目标1800万千瓦",
+          "summary": "朔州在“十五五”规划发布会上提出煤炭由燃料变原料，加快构建新型能源体系，新能源装机瞄准1800万千瓦。看点：资源型城市如何转型，是观察地方经济换挡的样本。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735562.shtml",
+          "tag": "能源转型"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "江南大学回应大学英语改选修：四六级雅思托福可申请免修",
+          "summary": "针对江南大学将大学英语改为选修的报道，校方教务处回应称学生可凭四六级、雅思、托福等成绩申请免修，不符合条件者仍需上课。看点：高校英语教学改革争议，关乎大学生课业安排。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/292.htm",
+          "tag": "高校改革"
+        },
+        {
+          "title": "美国研究警告：最早2027年电网设备可能不够用",
+          "summary": "约翰斯·霍普金斯大学研究称，受铜和钢等材料供应制约，美国最早2027年面临电网设备短缺。看点：基础设施短板与材料供应链问题，值得关注其外溢影响。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/275.htm",
+          "tag": "研究"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "谷歌搜索首页新增可折叠AI侧边栏，可继续此前AI对话",
+          "summary": "谷歌搜索产品副总裁Robby Stein宣布，Google Search首页面向全球桌面端逐步推出可折叠侧边栏，用户可直接从首页查找和继续此前的AI搜索对话。看点：搜索首页AI化，谷歌与AI搜索新势力争夺入口。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/287.htm",
+          "tag": "谷歌搜索"
+        },
+        {
+          "title": "腾讯因《仙逆》盗版起诉百度索赔1亿元",
+          "summary": "IT早报消息，腾讯因《仙逆》盗版问题起诉百度，索赔1亿元。看点：长视频版权大战升级，平台间内容护城河之争白热化。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/294.htm",
+          "tag": "版权诉讼"
+        },
+        {
+          "title": "连亏又高负债的康居人，六成股权近亿元卖给可孚医疗",
+          "summary": "新三板摘牌8天、持续亏损、负债率77%的康居人，六成股权作价近亿元并入可孚医疗。看点：并购能否消化高负债标的，是行业整合的典型观察点。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8213168.html",
+          "tag": "并购"
+        },
+        {
+          "title": "明基推5万多元AI高尔夫投影机，亮度6000流明",
+          "summary": "明基AK900ST“AI高尔夫投影机”在京东发售，短焦设计、6000流明，定价52999元。看点：高价细分娱乐硬件能否打开模拟高尔夫市场。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/030/277.htm",
+          "tag": "新品"
+        },
+        {
+          "title": "险资今年调研A股超1.46万次，偏爱芯片和医疗设备",
+          "summary": "万得数据显示，今年以来险资调研A股公司合计14633次，集中在电子元件、工业机械、集成电路和医疗保健设备。看点：险资调研方向是判断长线资金布局的风向标。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3203624",
+          "tag": "资金动向"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "金价跌破3600美元，银行积存金价格进入7字头并提示风险",
+          "summary": "11月20日国际金价跌破3600美元/盎司，工银积存金报769元/克当日跌3.5%，工商银行、建设银行、招商银行、宁波银行等纷纷发布贵金属市场波动风险提示。看点：金价急跌波及普通投资者，银行提示不宜一次性重仓抄底。",
+          "source": "7x24快讯",
+          "url": "https://wallstreetcn.com/livenews/3203628",
+          "tag": "金价波动"
+        },
+        {
+          "title": "足彩26166期开奖：拜仁主场被科隆逼平爆12倍冷门",
+          "summary": "足彩第26166期14场比赛结束，最大冷门是拜仁1比1科隆，造12倍冷平，另有5场超3倍赛果。看点：冷门频出，彩民复盘赛果和赔率的好素材。",
+          "source": "新浪",
+          "url": "https://sports.sina.com.cn/l/2026-11-21/doc-iniznakn3556373.shtml",
+          "tag": "足彩"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3533.79,
+        "unit": "点",
+        "changePct": -1.23,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2212.13,
+        "unit": "点",
+        "changePct": -3.54,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
