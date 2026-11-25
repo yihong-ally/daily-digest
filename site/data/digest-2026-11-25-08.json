@@ -1,0 +1,375 @@
+{
+  "date": "2026-11-25",
+  "slot": "08",
+  "edition": "晨报",
+  "updatedAt": "2026-11-25T09:00:56+08:00",
+  "coverage": {
+    "from": "2026-11-24T21:30:00+08:00",
+    "to": "2026-11-25T09:00:00+08:00"
+  },
+  "siteName": "每日前沿简报",
+  "sections": {
+    "headlines": {
+      "label": "今日必读",
+      "items": [
+        {
+          "title": "神舟二十四号成功发射，首次搭载外籍航天员",
+          "summary": "11月25日8时18分，神舟二十四号载人飞船在酒泉卫星发射中心由长征二号F遥二十四火箭发射升空，乘组由汤洪波、武毅和巴基斯坦载荷专家穆罕默德·齐尚·阿里组成，这是神舟飞船首次搭载外籍航天员。看点：中国空间站国际合作迈出实质一步，首次开展4项中巴联合科学实验，普通人可关注后续在轨驻留与实验成果。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/031/923.htm",
+          "tag": "发射成功"
+        },
+        {
+          "title": "美国11月消费者信心指数升至103.3，创近两年新高",
+          "summary": "世界大型企业联合会11月24日公布数据显示，美国11月消费者信心指数升至103.3，为2025年1月以来最高值，高于市场预期。看点：作为消费驱动型经济，信心回升可能影响美联储后续利率决策，进而传导至全球市场与你的钱包。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-25/10737297.shtml",
+          "tag": "经济数据"
+        },
+        {
+          "title": "黄仁勋复职后首次全员大会道歉，称正接受心理治疗",
+          "summary": "当地时间11月24日，英伟达CEO黄仁勋在长达1小时的全员会议上向员工致歉，坦言个人严重错误、违反公司行为准则，并称每天接受一个半小时心理治疗。看点：创始人回归能否稳住英伟达治理与市场信心，将影响AI芯片供应链和全球科技股情绪。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-25/10737284.shtml",
+          "tag": "公司治理"
+        },
+        {
+          "title": "欧盟点名5个成员国存在经济失衡风险",
+          "summary": "欧盟11月24日依据“欧洲学期”机制发布宏观经济预警报告，认定意大利、匈牙利、斯洛伐克、罗马尼亚和保加利亚存在经济失衡风险，将于2027年上半年进行深入审查。看点：欧盟财政纪律与成员国经济分化再受关注，可能影响相关国家债券与欧元走势。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gj/2026/11-25/10737298.shtml",
+          "tag": "欧盟预警"
+        },
+        {
+          "title": "FAA例行维护失误致全美航班停飞近5小时",
+          "summary": "美国联邦航空管理局因承包商例行维护中更换铜缆为光纤后设备异常产生大量连接请求，引发空管通信网络拥塞，导致全国范围航班暂停起飞近5小时，数万名旅客滞留、上万架次航班延误或取消。看点：关键基础设施的脆弱性再次暴露，航空出行安全与网络冗余值得持续关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/gn/2026/11-25/10737304.shtml",
+          "tag": "航空安全"
+        }
+      ]
+    },
+    "ai": {
+      "label": "AI · 大模型动态",
+      "items": [
+        {
+          "title": "OpenAI称GPT-6无需专用模型即可设计蛋白质",
+          "summary": "OpenAI于11月24日发布预印本论文，称GPT-6系列模型仅靠推理和通用编程工具就能设计新的蛋白质三维结构和氨基酸序列，团队以GPT-6.2设计的结构为蓝本制作了322个微型结合蛋白，覆盖5个不同靶点，并在多轮实验室测试中验证结合效果。看点：通用大模型向生物设计领域延伸，若可复现将大幅降低药物研发门槛。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/031/902.htm",
+          "tag": "新能力"
+        },
+        {
+          "title": "Anthropic为Claude推出“安装为应用”功能",
+          "summary": "Anthropic宣布为Claude的交互式Artifacts功能推出“安装为应用”选项，允许用户将生成的应用作为独立软件安装到macOS和Windows桌面。看点：AI生成内容从网页预览走向本地可安装软件，普通人用一句话生成小工具的门槛进一步降低。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/031/911.htm",
+          "tag": "产品升级"
+        },
+        {
+          "title": "Meta将Muse智能体引入Instagram私信",
+          "summary": "Meta宣布将Muse智能体引入Instagram私信，用户可直接在IG内与AI对话，功能即日起登陆美国、加拿大、墨西哥、日本和新加坡市场。看点：社交平台把AI助手嵌入高频聊天场景，入口争夺战从独立App转向私信。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/031/916.htm",
+          "tag": "智能体"
+        },
+        {
+          "title": "亚马逊收购Decart，用软件缩小与英伟达芯片差距",
+          "summary": "TechCrunch报道，亚马逊以据报道75亿美元收购Decart，旨在提升其自研Trainium芯片的效率，以软件优化弥补与英伟达的硬件差距。看点：云巨头加速自研芯片生态，长期可能改变AI算力成本结构。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/24/amazons-decart-acquisition-is-a-bet-on-using-software-to-narrow-the-gap-with-nvidia-in-the-ai-chip-race/",
+          "tag": "芯片收购"
+        },
+        {
+          "title": "恒生科技指数首次扩容，纳入AI算力与半导体",
+          "summary": "恒生科技指数将迎来自2020年推出以来首次扩容，覆盖范围向AI算力、半导体、光通信、新能源、智能驾驶及机器人等领域延伸，MINIMAX-W和智谱将被纳入恒生中国企业指数。看点：港股科技资产代表性增强，相关指数基金持仓结构将随之变化，影响投资者配置。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4084421721156225?f=rss",
+          "tag": "指数调整"
+        },
+        {
+          "title": "沃尔玛把黑五折扣搬进Meta的AI助手Muse，聊天就能下单",
+          "summary": "沃尔玛与Meta合作，用户可通过Meta的AI代理Muse浏览并购买黑五促销商品。看点：AI助手正从聊天工具变成真实购物入口，零售与AI平台的结合开始落地。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/24/walmart-teams-up-with-meta-to-bring-black-friday-deals-to-ai-agent-muse/",
+          "tag": "AI应用"
+        }
+      ]
+    },
+    "tech": {
+      "label": "科技硬核",
+      "items": [
+        {
+          "title": "台积电考虑斥资217亿美元在得州建先进晶圆厂",
+          "summary": "台湾《工商时报》援引得州子公司申请文件报道，台积电正考虑斥资217亿美元在得克萨斯州布拉索斯郡兴建至少一座先进晶圆厂及相关设施，瞄准2纳米制程，已递交租税优惠申请。看点：先进制程产能向美国本土转移，全球半导体供应链格局或再调整。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4084470158207364?f=rss",
+          "tag": "晶圆厂"
+        },
+        {
+          "title": "比亚迪与英力士就收购法国汉巴赫工厂展开独家谈判",
+          "summary": "比亚迪11月24日晚宣布与英力士汽车就收购其法国汉巴赫工厂展开独家谈判，目标在当地生产更符合欧洲驾驶者需求的汽车，交易仍需履行与职工代表机构的协商程序。看点：中国车企欧洲本地化生产再落一子，可能影响欧洲电动车市场竞争与就业。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/031/882.htm",
+          "tag": "出海建厂"
+        },
+        {
+          "title": "特斯拉FSD V15开始推送，安全关键场景处理提升25倍",
+          "summary": "中信证券研报称，美西时间11月21日特斯拉开始向早期体验用户推送FSD V15，官网说明其安全关键场景处理能力提升25倍，Reality View可在220ms内通过摄像头信号高精度重建车辆周边3D场景。看点：世界模型在自动驾驶与机器人间共用，智能驾驶迭代速度可能加快。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4084427238075017?f=rss",
+          "tag": "自动驾驶"
+        },
+        {
+          "title": "AMD发布AGESA 1.3.0.1f固件，限制部分锐龙8000电压",
+          "summary": "AMD已发布最新AGESA ComboAM5 PI 1.3.0.1f Patch A固件更新，华硕、微星等主板厂商已陆续推出包含该版本AGESA的AM5主板BIOS更新，部分锐龙8000处理器vCore被限制为1.4V。看点：固件更新直接影响DIY玩家平台稳定性与超频空间，装机用户需留意。",
+          "source": "IT之家",
+          "url": "https://www.ithome.com/1/031/903.htm",
+          "tag": "固件更新"
+        },
+        {
+          "title": "华为鸿蒙终端突破1亿台，发布多款新设备",
+          "summary": "爱范儿早报称，华为鸿蒙终端突破1亿台，并发布Mate X8、Mate 90 Air和小折叠电脑MateBook Fold S。看点：鸿蒙生态规模跨过关键节点，国产操作系统与硬件协同进入新阶段。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1691400?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "鸿蒙生态"
+        },
+        {
+          "title": "YC新项目Versine：用MCP协议跟AI说句话就能转账收钱",
+          "summary": "Versine团队来自Stripe、Databricks和亚马逊，做的是通过AI对话完成收发款的MCP工具，类似语音版Venmo。看点：支付场景接入AI代理，是MCP生态往金融领域延伸的一次尝试。",
+          "source": "Hacker News",
+          "url": "https://news.ycombinator.com/item?id=50634426",
+          "tag": "创业项目"
+        }
+      ]
+    },
+    "finance": {
+      "label": "财经 · 市场",
+      "items": [
+        {
+          "title": "日韩股市低开，韩国综指开盘大跌3.9%",
+          "summary": "11月25日，日经指数开盘下跌0.4%报58383.49点，受银行、金属类股拖累；韩国综合股价指数开盘下跌3.9%报4809.00点。看点：亚太市场风险偏好骤降，可能传导至A股与港股开盘情绪。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizxaum9570912.shtml",
+          "tag": "亚太股市"
+        },
+        {
+          "title": "摩根大通称AI超级周期未结束，标普500明年底前还有14%空间",
+          "summary": "摩根大通策略师将标普500指数2027年底目标位定为8200点，预计美股将在2027年底前继续上涨，AI仍是企业盈利增长主要动力。看点：华尔街对AI行情的分歧加大，该预测为隔夜市场情绪提供参照。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizwwnr1921739.shtml",
+          "tag": "美股展望"
+        },
+        {
+          "title": "大宗商品隔夜分化：油价上涨、铜价走低、金价下挫",
+          "summary": "油价在清淡交投中走高，更多油轮遇袭报道盖过外交努力；铜价跌至去年12月以来最低，科技巨头遭抛售拖累市场和大宗商品；金价下挫。看点：地缘风险与科技股抛售交织，大宗商品波动直接影响国内成品油与工业品价格预期。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizwwnr1886953.shtml",
+          "tag": "大宗商品"
+        },
+        {
+          "title": "摩根大通：SpaceX与特斯拉若合并或助其纳入标普500",
+          "summary": "摩根大通11月24日报告指出，SpaceX与特斯拉若合并，可能使这家火箭公司具备被纳入标普500指数的资格，并引发约相当于其自由流通股10%的被动买入需求。看点：合并传闻叠加指数纳入逻辑，可能影响特斯拉股价与相关ETF资金流向。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizxaup1812321.shtml",
+          "tag": "合并传闻"
+        },
+        {
+          "title": "花旗考虑重返委内瑞拉提供银行服务",
+          "summary": "花旗集团在退出委内瑞拉市场五年后，正考虑重新在当地提供银行服务，此举有望帮助委内瑞拉重新接入美国金融体系。看点：地缘政治缓和信号可能影响拉美资产与能源市场情绪。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizwwnp9671901.shtml",
+          "tag": "银行动向"
+        }
+      ]
+    },
+    "economy": {
+      "label": "宏观经济",
+      "items": [
+        {
+          "title": "澳大利亚10月CPI同比升4.9%，超预期",
+          "summary": "澳大利亚10月未季调CPI同比上升4.9%，预期4.7%，前值4.3%。数据公布后澳元/美元上涨0.4%至0.6665，市场对澳联储降息预期受抑制。看点：通胀反弹强化主要央行维持高利率的理由，影响全球利率路径与汇率。",
+          "source": "36氪",
+          "url": "https://36kr.com/newsflashes/4084450936662404?f=rss",
+          "tag": "通胀数据"
+        },
+        {
+          "title": "日本10月服务业通胀指标创36年最高，强化加息理由",
+          "summary": "周三公布数据显示，日本服务业通胀关键指标10月飙升至1990年以来最高水平，表明价格压力正在扩大，增强了日本央行近期加息的理由。看点：日本货币政策正常化步伐可能加快，日元与全球债市将受牵动。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizxaup1823413.shtml",
+          "tag": "日本通胀"
+        },
+        {
+          "title": "澳大利亚央行官员称金融环境明显具有限制性",
+          "summary": "澳大利亚央行一位高级官员表示，今年五次加息后，澳大利亚金融状况“明显具有限制性”，但判断限制性程度有难度。看点：央行官员表态与超预期CPI形成对照，市场对后续利率路径的博弈加剧。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizxaum9578014.shtml",
+          "tag": "央行表态"
+        },
+        {
+          "title": "摩根大通：日元贬值压力将持续至2027年",
+          "summary": "摩根大通策略师预计，尽管基本面有所改善，日元在2027年仍将面临下行压力，日元上涨趋势“完全逆转”的可能性“不大”。看点：日元弱势影响赴日旅游、进口成本与套息交易，与普通人钱包直接相关。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizxaup1797957.shtml",
+          "tag": "日元汇率"
+        },
+        {
+          "title": "澳洲通胀涨得比预期快，澳元立刻走高，降息预期被压下去",
+          "summary": "澳大利亚最新通胀数据快于预期，澳元兑美元上涨0.4%至0.6665，市场对澳央行降息的押注减弱。看点：一份通胀数据就改变了货币政策预期，是观察利率路径的典型样本。",
+          "source": "新浪",
+          "url": "https://finance.sina.com.cn/stock/usstock/c/2026-11-25/doc-inizxauq8620623.shtml",
+          "tag": "通胀"
+        }
+      ]
+    },
+    "education": {
+      "label": "教育",
+      "items": [
+        {
+          "title": "顶尖AI学院仍用板书教学，AI时代课堂引思考",
+          "summary": "中新网报道，在AI能力越来越强的背景下，顶尖AI学院教师魏哲巍上课却愈发信任板书，坚持“古法教学”。看点：AI工具普及后，教育界对基础训练与思维过程的再审视，值得家长与学生关注。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/sh/2026/11-25/10737290.shtml",
+          "tag": "AI教育"
+        },
+        {
+          "title": "人社部发布11个新职业，数字新职业人才缺口超百万",
+          "summary": "今年9月人力资源和社会保障部等部门发布11个新职业和23个新工种，随着数字技术应用场景拓展，一批数字新职业为求职者提供更多选择，相关人才缺口超百万。看点：新职业目录直接影响职业教育培训方向与就业选择，考生和求职者可提前布局。",
+          "source": "中新网",
+          "url": "https://www.chinanews.com.cn/cj/2026/11-25/10737286.shtml",
+          "tag": "新职业"
+        }
+      ]
+    },
+    "internet": {
+      "label": "互联网大厂",
+      "items": [
+        {
+          "title": "豆包灰度测试“豆包购物”，AI助理接入电商",
+          "summary": "36氪早报称，豆包正在灰度测试“豆包购物”功能，同时推出AI个人助理“小豆”。看点：字节把AI助手与电商交易打通，入口级AI商业化竞争升温。",
+          "source": "36氪",
+          "url": "https://36kr.com/p/4084431441488260?f=rss",
+          "tag": "AI电商"
+        },
+        {
+          "title": "阿里巴巴回应新加坡子公司被列入美实体清单",
+          "summary": "钛媒体晨报称，新加坡子公司被列入美国实体清单，阿里巴巴作出回应；同期中国在5个自贸试验区开展人工智能标准化自主开放试点。看点：科技企业跨境合规压力持续，出海业务需关注供应链与政策风险。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8216719.html",
+          "tag": "实体清单"
+        },
+        {
+          "title": "腾讯WorkBuddy推进办公Agent，大厂AI办公战升级",
+          "summary": "钛媒体Edge AI早报称，腾讯WorkBuddy推进办公Agent，同时OpenAI与思科开源Shirudo前移运行时防御。看点：办公场景成为智能体落地主战场，职场人的工具链可能快速变化。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8216877.html",
+          "tag": "办公Agent"
+        },
+        {
+          "title": "陪伴机器人新鲜劲过了，家里还有多少人真在用、真肯付钱",
+          "summary": "钛媒体讨论主打陪伴的机器人在新鲜感消退后，家庭实际使用率和持续付费意愿到底如何。看点：硬件加情感的生意能不能留住用户，是这类产品最现实的考验。",
+          "source": "钛媒体",
+          "url": "https://www.tmtpost.com/8212446.html",
+          "tag": "智能硬件"
+        }
+      ]
+    },
+    "life": {
+      "label": "生活 · 消费",
+      "items": [
+        {
+          "title": "比亚迪唐EV上市，18.79万元起续航850公里",
+          "summary": "比亚迪唐EV正式上市，起售价18.79万元，取消七座布局换来850公里续航，并配备线控底盘。看点：20万级纯电SUV续航与底盘配置再升级，家庭购车选择更丰富。",
+          "source": "爱范儿",
+          "url": "https://www.ifanr.com/1691381?utm_source=rss&utm_medium=rss&utm_campaign=",
+          "tag": "新车上市"
+        },
+        {
+          "title": "Tidal将下架数百万首AI生成歌曲",
+          "summary": "音乐流媒体Tidal宣布将禁止并移除数百万首完全由AI生成的曲目，但仍接受AI辅助创作的作品。看点：AI音乐泛滥冲击流媒体生态，平台规则变化影响音乐人与听众的内容供给。",
+          "source": "TechCrunch",
+          "url": "https://techcrunch.com/2026/11/24/tidal-to-ban-and-remove-millions-of-ai-generated-tracks-as-ai-slop-inundates-music-streaming/",
+          "tag": "AI音乐"
+        }
+      ]
+    }
+  },
+  "watchlist": {
+    "stocks": [
+      {
+        "id": "sh000001",
+        "name": "上证指数",
+        "code": "000001",
+        "value": 3548.37,
+        "unit": "点",
+        "changePct": 0.27,
+        "ytd": null,
+        "note": "A股大盘基准 · 实时行情"
+      },
+      {
+        "id": "sz399006",
+        "name": "创业板指",
+        "code": "399006",
+        "value": 2278.99,
+        "unit": "点",
+        "changePct": -0.05,
+        "ytd": null,
+        "note": "成长股风向标 · 实时行情"
+      },
+      {
+        "id": "comex_gold",
+        "name": "COMEX 黄金(期货)",
+        "code": "GC",
+        "value": 4500,
+        "unit": "美元/盎司",
+        "changePct": null,
+        "ytd": null,
+        "static": true,
+        "note": "静态参考值 · 未接实时行情源，涨跌以行情软件为准"
+      }
+    ],
+    "funds": [
+      {
+        "id": "fund_founder",
+        "name": "方正富邦新兴成长混合A",
+        "code": "—",
+        "value": 2.2426,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 64.32,
+        "note": "分散配置电新/有色/化工，年内回报 64.32%，同类前 5%"
+      },
+      {
+        "id": "fund_yinhua",
+        "name": "银华甄选价值成长混合A",
+        "code": "—",
+        "value": 1.9302,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 30.85,
+        "note": "化工/电力对冲配置，近一年最大回撤仅 14.20%"
+      },
+      {
+        "id": "fund_wanjia",
+        "name": "万家精选混合A",
+        "code": "—",
+        "value": 3.6882,
+        "unit": "累计净值(元)",
+        "changePct": null,
+        "ytd": 36.38,
+        "note": "能源为底，逢低布局消费/有色，年内 36.38%"
+      },
+      {
+        "id": "fund_huaan_gold",
+        "name": "华安黄金ETF",
+        "code": "518880",
+        "value": 1031,
+        "unit": "规模(亿元)",
+        "changePct": null,
+        "ytd": null,
+        "note": "黄金主题基金龙头，规模 1031 亿元"
+      }
+    ]
+  }
+}
